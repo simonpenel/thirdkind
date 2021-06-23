@@ -1,0 +1,2828 @@
+<recPhylo 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.recg.org ./recGeneTreeXML.xsd"
+	xmlns="http://www.recg.org">
+<spTree>
+<phylogeny>
+<clade>
+		<name>n0</name>
+	<clade>
+			<name>n1</name>
+		<clade>
+				<name>n7</name>
+			<clade>
+					<name>n83</name>
+			</clade>
+			<clade>
+					<name>n84</name>
+				<clade>
+						<name>n223</name>
+					<clade>
+							<name>n231</name>
+					</clade>
+					<clade>
+							<name>n232</name>
+						<clade>
+								<name>n267</name>
+						</clade>
+						<clade>
+								<name>n268</name>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+						<name>n224</name>
+				</clade>
+			</clade>
+		</clade>
+		<clade>
+				<name>n8</name>
+			<clade>
+					<name>n63</name>
+			</clade>
+			<clade>
+					<name>n64</name>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+			<name>n2</name>
+		<clade>
+				<name>n3</name>
+			<clade>
+					<name>n9</name>
+				<clade>
+						<name>n11</name>
+					<clade>
+							<name>n13</name>
+						<clade>
+								<name>n19</name>
+						</clade>
+						<clade>
+								<name>n20</name>
+							<clade>
+									<name>n31</name>
+								<clade>
+										<name>n35</name>
+									<clade>
+											<name>n147</name>
+									</clade>
+									<clade>
+											<name>n148</name>
+										<clade>
+												<name>n193</name>
+											<clade>
+													<name>n197</name>
+											</clade>
+											<clade>
+													<name>n198</name>
+												<clade>
+														<name>n313</name>
+												</clade>
+												<clade>
+														<name>n314</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>n194</name>
+											<clade>
+													<name>n203</name>
+											</clade>
+											<clade>
+													<name>n204</name>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n36</name>
+									<clade>
+											<name>n245</name>
+									</clade>
+									<clade>
+											<name>n246</name>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+									<name>n32</name>
+								<clade>
+										<name>n73</name>
+									<clade>
+											<name>n105</name>
+										<clade>
+												<name>n159</name>
+											<clade>
+													<name>n189</name>
+											</clade>
+											<clade>
+													<name>n190</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n160</name>
+											<clade>
+													<name>n171</name>
+											</clade>
+											<clade>
+													<name>n172</name>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+											<name>n106</name>
+										<clade>
+												<name>n135</name>
+										</clade>
+										<clade>
+												<name>n136</name>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n74</name>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n14</name>
+						<clade>
+								<name>n23</name>
+							<clade>
+									<name>n33</name>
+								<clade>
+										<name>n49</name>
+									<clade>
+											<name>n99</name>
+									</clade>
+									<clade>
+											<name>n100</name>
+										<clade>
+												<name>n133</name>
+											<clade>
+													<name>n187</name>
+											</clade>
+											<clade>
+													<name>n188</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n134</name>
+											<clade>
+													<name>n283</name>
+												<clade>
+														<name>n317</name>
+												</clade>
+												<clade>
+														<name>n318</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n284</name>
+												<clade>
+														<name>n309</name>
+												</clade>
+												<clade>
+														<name>n310</name>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n50</name>
+									<clade>
+											<name>n55</name>
+										<clade>
+												<name>n61</name>
+											<clade>
+													<name>n71</name>
+												<clade>
+														<name>n77</name>
+												</clade>
+												<clade>
+														<name>n78</name>
+													<clade>
+															<name>n237</name>
+													</clade>
+													<clade>
+															<name>n238</name>
+														<clade>
+																<name>n297</name>
+														</clade>
+														<clade>
+																<name>n298</name>
+															<clade>
+																	<name>n305</name>
+															</clade>
+															<clade>
+																	<name>n306</name>
+															</clade>
+														</clade>
+													</clade>
+												</clade>
+											</clade>
+											<clade>
+													<name>n72</name>
+												<clade>
+														<name>n247</name>
+													<clade>
+															<name>n307</name>
+													</clade>
+													<clade>
+															<name>n308</name>
+													</clade>
+												</clade>
+												<clade>
+														<name>n248</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>n62</name>
+											<clade>
+													<name>n163</name>
+												<clade>
+														<name>n215</name>
+												</clade>
+												<clade>
+														<name>n216</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n164</name>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+											<name>n56</name>
+										<clade>
+												<name>n213</name>
+										</clade>
+										<clade>
+												<name>n214</name>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+									<name>n34</name>
+								<clade>
+										<name>n89</name>
+									<clade>
+											<name>n273</name>
+									</clade>
+									<clade>
+											<name>n274</name>
+									</clade>
+								</clade>
+								<clade>
+										<name>n90</name>
+									<clade>
+											<name>n131</name>
+										<clade>
+												<name>n261</name>
+										</clade>
+										<clade>
+												<name>n262</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>n132</name>
+										<clade>
+												<name>n137</name>
+											<clade>
+													<name>n199</name>
+											</clade>
+											<clade>
+													<name>n200</name>
+												<clade>
+														<name>n269</name>
+												</clade>
+												<clade>
+														<name>n270</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>n138</name>
+											<clade>
+													<name>n227</name>
+												<clade>
+														<name>n285</name>
+												</clade>
+												<clade>
+														<name>n286</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n228</name>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+								<name>n24</name>
+							<clade>
+									<name>n37</name>
+								<clade>
+										<name>n65</name>
+								</clade>
+								<clade>
+										<name>n66</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n38</name>
+								<clade>
+										<name>n87</name>
+									<clade>
+											<name>n177</name>
+									</clade>
+									<clade>
+											<name>n178</name>
+									</clade>
+								</clade>
+								<clade>
+										<name>n88</name>
+									<clade>
+											<name>n95</name>
+										<clade>
+												<name>n129</name>
+											<clade>
+													<name>n179</name>
+											</clade>
+											<clade>
+													<name>n180</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n130</name>
+											<clade>
+													<name>n233</name>
+												<clade>
+														<name>n311</name>
+												</clade>
+												<clade>
+														<name>n312</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n234</name>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+											<name>n96</name>
+										<clade>
+												<name>n225</name>
+										</clade>
+										<clade>
+												<name>n226</name>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+						<name>n12</name>
+					<clade>
+							<name>n79</name>
+						<clade>
+								<name>n81</name>
+						</clade>
+						<clade>
+								<name>n82</name>
+							<clade>
+									<name>n121</name>
+							</clade>
+							<clade>
+									<name>n122</name>
+								<clade>
+										<name>n125</name>
+									<clade>
+											<name>n127</name>
+										<clade>
+												<name>n139</name>
+										</clade>
+										<clade>
+												<name>n140</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>n128</name>
+										<clade>
+												<name>n169</name>
+											<clade>
+													<name>n191</name>
+											</clade>
+											<clade>
+													<name>n192</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n170</name>
+											<clade>
+													<name>n259</name>
+											</clade>
+											<clade>
+													<name>n260</name>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n126</name>
+									<clade>
+											<name>n271</name>
+									</clade>
+									<clade>
+											<name>n272</name>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n80</name>
+						<clade>
+								<name>n277</name>
+						</clade>
+						<clade>
+								<name>n278</name>
+							<clade>
+									<name>n295</name>
+							</clade>
+							<clade>
+									<name>n296</name>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+					<name>n10</name>
+				<clade>
+						<name>n59</name>
+					<clade>
+							<name>n69</name>
+						<clade>
+								<name>n289</name>
+						</clade>
+						<clade>
+								<name>n290</name>
+						</clade>
+					</clade>
+					<clade>
+							<name>n70</name>
+						<clade>
+								<name>n161</name>
+						</clade>
+						<clade>
+								<name>n162</name>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+						<name>n60</name>
+				</clade>
+			</clade>
+		</clade>
+		<clade>
+				<name>n4</name>
+			<clade>
+					<name>n5</name>
+				<clade>
+						<name>n15</name>
+					<clade>
+							<name>n21</name>
+						<clade>
+								<name>n41</name>
+							<clade>
+									<name>n239</name>
+								<clade>
+										<name>n257</name>
+								</clade>
+								<clade>
+										<name>n258</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n240</name>
+							</clade>
+						</clade>
+						<clade>
+								<name>n42</name>
+							<clade>
+									<name>n75</name>
+								<clade>
+										<name>n275</name>
+								</clade>
+								<clade>
+										<name>n276</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n76</name>
+								<clade>
+										<name>n93</name>
+									<clade>
+											<name>n97</name>
+									</clade>
+									<clade>
+											<name>n98</name>
+										<clade>
+												<name>n173</name>
+											<clade>
+													<name>n195</name>
+											</clade>
+											<clade>
+													<name>n196</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n174</name>
+											<clade>
+													<name>n217</name>
+												<clade>
+														<name>n301</name>
+													<clade>
+															<name>n315</name>
+													</clade>
+													<clade>
+															<name>n316</name>
+													</clade>
+												</clade>
+												<clade>
+														<name>n302</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n218</name>
+												<clade>
+														<name>n229</name>
+												</clade>
+												<clade>
+														<name>n230</name>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n94</name>
+									<clade>
+											<name>n155</name>
+									</clade>
+									<clade>
+											<name>n156</name>
+										<clade>
+												<name>n201</name>
+										</clade>
+										<clade>
+												<name>n202</name>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n22</name>
+						<clade>
+								<name>n115</name>
+						</clade>
+						<clade>
+								<name>n116</name>
+							<clade>
+									<name>n165</name>
+							</clade>
+							<clade>
+									<name>n166</name>
+								<clade>
+										<name>n167</name>
+								</clade>
+								<clade>
+										<name>n168</name>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+						<name>n16</name>
+					<clade>
+							<name>n25</name>
+						<clade>
+								<name>n39</name>
+							<clade>
+									<name>n43</name>
+								<clade>
+										<name>n111</name>
+									<clade>
+											<name>n123</name>
+										<clade>
+												<name>n157</name>
+											<clade>
+													<name>n249</name>
+											</clade>
+											<clade>
+													<name>n250</name>
+												<clade>
+														<name>n265</name>
+												</clade>
+												<clade>
+														<name>n266</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>n158</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>n124</name>
+										<clade>
+												<name>n141</name>
+											<clade>
+													<name>n211</name>
+											</clade>
+											<clade>
+													<name>n212</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n142</name>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n112</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n44</name>
+								<clade>
+										<name>n51</name>
+									<clade>
+											<name>n281</name>
+									</clade>
+									<clade>
+											<name>n282</name>
+									</clade>
+								</clade>
+								<clade>
+										<name>n52</name>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+								<name>n40</name>
+							<clade>
+									<name>n175</name>
+							</clade>
+							<clade>
+									<name>n176</name>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n26</name>
+						<clade>
+								<name>n45</name>
+							<clade>
+									<name>n47</name>
+								<clade>
+										<name>n85</name>
+									<clade>
+											<name>n113</name>
+										<clade>
+												<name>n153</name>
+										</clade>
+										<clade>
+												<name>n154</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>n114</name>
+										<clade>
+												<name>n205</name>
+											<clade>
+													<name>n255</name>
+											</clade>
+											<clade>
+													<name>n256</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>n206</name>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>n86</name>
+									<clade>
+											<name>n107</name>
+									</clade>
+									<clade>
+											<name>n108</name>
+										<clade>
+												<name>n117</name>
+											<clade>
+													<name>n183</name>
+												<clade>
+														<name>n185</name>
+													<clade>
+															<name>n207</name>
+														<clade>
+																<name>n241</name>
+														</clade>
+														<clade>
+																<name>n242</name>
+														</clade>
+													</clade>
+													<clade>
+															<name>n208</name>
+														<clade>
+																<name>n287</name>
+														</clade>
+														<clade>
+																<name>n288</name>
+														</clade>
+													</clade>
+												</clade>
+												<clade>
+														<name>n186</name>
+												</clade>
+											</clade>
+											<clade>
+													<name>n184</name>
+												<clade>
+														<name>n299</name>
+												</clade>
+												<clade>
+														<name>n300</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>n118</name>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+									<name>n48</name>
+								<clade>
+										<name>n253</name>
+								</clade>
+								<clade>
+										<name>n254</name>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+								<name>n46</name>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+					<name>n6</name>
+				<clade>
+						<name>n17</name>
+					<clade>
+							<name>n29</name>
+						<clade>
+								<name>n67</name>
+							<clade>
+									<name>n101</name>
+							</clade>
+							<clade>
+									<name>n102</name>
+								<clade>
+										<name>n279</name>
+								</clade>
+								<clade>
+										<name>n280</name>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+								<name>n68</name>
+							<clade>
+									<name>n145</name>
+								<clade>
+										<name>n293</name>
+								</clade>
+								<clade>
+										<name>n294</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n146</name>
+								<clade>
+										<name>n181</name>
+								</clade>
+								<clade>
+										<name>n182</name>
+									<clade>
+											<name>n209</name>
+										<clade>
+												<name>n263</name>
+										</clade>
+										<clade>
+												<name>n264</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>n210</name>
+										<clade>
+												<name>n221</name>
+										</clade>
+										<clade>
+												<name>n222</name>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n30</name>
+						<clade>
+								<name>n91</name>
+							<clade>
+									<name>n219</name>
+							</clade>
+							<clade>
+									<name>n220</name>
+							</clade>
+						</clade>
+						<clade>
+								<name>n92</name>
+							<clade>
+									<name>n143</name>
+								<clade>
+										<name>n151</name>
+								</clade>
+								<clade>
+										<name>n152</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>n144</name>
+								<clade>
+										<name>n149</name>
+								</clade>
+								<clade>
+										<name>n150</name>
+									<clade>
+											<name>n303</name>
+									</clade>
+									<clade>
+											<name>n304</name>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+						<name>n18</name>
+					<clade>
+							<name>n27</name>
+						<clade>
+								<name>n53</name>
+							<clade>
+									<name>n57</name>
+							</clade>
+							<clade>
+									<name>n58</name>
+								<clade>
+										<name>n109</name>
+									<clade>
+											<name>n291</name>
+									</clade>
+									<clade>
+											<name>n292</name>
+									</clade>
+								</clade>
+								<clade>
+										<name>n110</name>
+									<clade>
+											<name>n243</name>
+									</clade>
+									<clade>
+											<name>n244</name>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+								<name>n54</name>
+							<clade>
+									<name>n103</name>
+							</clade>
+							<clade>
+									<name>n104</name>
+								<clade>
+										<name>n235</name>
+								</clade>
+								<clade>
+										<name>n236</name>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+							<name>n28</name>
+						<clade>
+								<name>n119</name>
+							<clade>
+									<name>n251</name>
+							</clade>
+							<clade>
+									<name>n252</name>
+							</clade>
+						</clade>
+						<clade>
+								<name>n120</name>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</spTree>
+<recGeneTree>
+<phylogeny rooted="true">
+<clade>
+	<name>NULL</name>
+	<eventsRec>
+		<speciation speciesLocation="n0"/>
+	</eventsRec>
+	<clade>
+		<name>NULL</name>
+		<eventsRec>
+			<speciation speciesLocation="n1"/>
+		</eventsRec>
+			<clade>
+			<name>loss</name>
+			<eventsRec>
+				<loss speciesLocation="n7"/>
+			</eventsRec>
+		</clade>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="n8"/>
+			</eventsRec>
+			<clade>
+				<name>n64_71</name>
+				<eventsRec>
+					<leaf speciesLocation="n64"/>
+				</eventsRec>
+			</clade>
+			<clade>
+				<name>n63_70</name>
+				<eventsRec>
+					<leaf speciesLocation="n63"/>
+				</eventsRec>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+		<name>NULL</name>
+		<eventsRec>
+			<speciation speciesLocation="n2"/>
+		</eventsRec>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="n4"/>
+			</eventsRec>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="n5"/>
+				</eventsRec>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n15"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n21"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<branchingOut speciesLocation="n42"/>
+							</eventsRec>
+								<clade>
+								<name>loss</name>
+								<eventsRec>
+									<loss speciesLocation="n42"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<transferBack destinationSpecies="n27"/>
+									<speciation speciesLocation="n27"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n54"/>
+									</eventsRec>
+									<clade>
+										<name>n236_233</name>
+										<eventsRec>
+											<speciation speciesLocation="n104"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="n235"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n236_233</name>
+											<eventsRec>
+												<leaf speciesLocation="n236"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>n103_104</name>
+										<eventsRec>
+											<leaf speciesLocation="n103"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n53"/>
+									</eventsRec>
+									<clade>
+										<name>n57_62</name>
+										<eventsRec>
+											<leaf speciesLocation="n57"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n58"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n109"/>
+											</eventsRec>
+											<clade>
+												<name>n291_286</name>
+												<eventsRec>
+													<leaf speciesLocation="n291"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n292_287</name>
+												<eventsRec>
+													<leaf speciesLocation="n292"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n110"/>
+											</eventsRec>
+											<clade>
+												<name>n244_241</name>
+												<eventsRec>
+													<leaf speciesLocation="n244"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n243_240</name>
+												<eventsRec>
+													<leaf speciesLocation="n243"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n41"/>
+							</eventsRec>
+							<clade>
+								<name>n240_237</name>
+								<eventsRec>
+									<leaf speciesLocation="n240"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n239"/>
+								</eventsRec>
+								<clade>
+									<name>n258_255</name>
+									<eventsRec>
+										<leaf speciesLocation="n258"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n257_254</name>
+									<eventsRec>
+										<leaf speciesLocation="n257"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n22"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n116"/>
+							</eventsRec>
+							<clade>
+								<name>n165_170</name>
+								<eventsRec>
+									<leaf speciesLocation="n165"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n166"/>
+								</eventsRec>
+								<clade>
+									<name>n168_173</name>
+									<eventsRec>
+										<leaf speciesLocation="n168"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n167_172</name>
+									<eventsRec>
+										<leaf speciesLocation="n167"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>n115_118</name>
+							<eventsRec>
+								<leaf speciesLocation="n115"/>
+							</eventsRec>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n16"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n26"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n45"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n47"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n85"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n113"/>
+										</eventsRec>
+										<clade>
+											<name>n154_161</name>
+											<eventsRec>
+												<leaf speciesLocation="n154"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n153_160</name>
+											<eventsRec>
+												<leaf speciesLocation="n153"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n114"/>
+										</eventsRec>
+										<clade>
+											<name>n206_207</name>
+											<eventsRec>
+												<leaf speciesLocation="n206"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n205"/>
+											</eventsRec>
+											<clade>
+												<name>n255_252</name>
+												<eventsRec>
+													<leaf speciesLocation="n255"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n256_253</name>
+												<eventsRec>
+													<leaf speciesLocation="n256"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n86"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n108"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n117"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n183"/>
+												</eventsRec>
+												<clade>
+													<name>NULL</name>
+													<eventsRec>
+														<speciation speciesLocation="n185"/>
+													</eventsRec>
+													<clade>
+														<name>NULL</name>
+														<eventsRec>
+															<speciation speciesLocation="n207"/>
+														</eventsRec>
+														<clade>
+															<name>n242_239</name>
+															<eventsRec>
+																<leaf speciesLocation="n242"/>
+															</eventsRec>
+														</clade>
+														<clade>
+															<name>n241_238</name>
+															<eventsRec>
+																<leaf speciesLocation="n241"/>
+															</eventsRec>
+														</clade>
+													</clade>
+													<clade>
+														<name>NULL</name>
+														<eventsRec>
+															<speciation speciesLocation="n208"/>
+														</eventsRec>
+														<clade>
+															<name>n287_282</name>
+															<eventsRec>
+																<leaf speciesLocation="n287"/>
+															</eventsRec>
+														</clade>
+														<clade>
+															<name>n288_283</name>
+															<eventsRec>
+																<leaf speciesLocation="n288"/>
+															</eventsRec>
+														</clade>
+													</clade>
+												</clade>
+												<clade>
+													<name>n186_191</name>
+													<eventsRec>
+														<leaf speciesLocation="n186"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n184"/>
+												</eventsRec>
+												<clade>
+													<name>n300_297</name>
+													<eventsRec>
+														<leaf speciesLocation="n300"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n299_296</name>
+													<eventsRec>
+														<leaf speciesLocation="n299"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>n118_121</name>
+											<eventsRec>
+												<leaf speciesLocation="n118"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>n107_108</name>
+										<eventsRec>
+											<leaf speciesLocation="n107"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n48"/>
+								</eventsRec>
+								<clade>
+									<name>n254_251</name>
+									<eventsRec>
+										<leaf speciesLocation="n254"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n253_250</name>
+									<eventsRec>
+										<leaf speciesLocation="n253"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>n46_53</name>
+							<eventsRec>
+								<leaf speciesLocation="n46"/>
+							</eventsRec>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n25"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n39"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n44"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n51"/>
+									</eventsRec>
+									<clade>
+										<name>n282_277</name>
+										<eventsRec>
+											<leaf speciesLocation="n282"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n281_276</name>
+										<eventsRec>
+											<leaf speciesLocation="n281"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>n52_57</name>
+									<eventsRec>
+										<leaf speciesLocation="n52"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n43"/>
+								</eventsRec>
+									<clade>
+									<name>loss</name>
+									<eventsRec>
+										<loss speciesLocation="n112"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n111"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n124"/>
+										</eventsRec>
+										<clade>
+											<name>n212_213</name>
+											<eventsRec>
+												<speciation speciesLocation="n141"/>
+											</eventsRec>
+												<clade>
+												<name>loss</name>
+												<eventsRec>
+													<loss speciesLocation="n211"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n212_213</name>
+												<eventsRec>
+													<leaf speciesLocation="n212"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>n142_149</name>
+											<eventsRec>
+												<leaf speciesLocation="n142"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n123"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n157"/>
+											</eventsRec>
+											<clade>
+												<name>n249_246</name>
+												<eventsRec>
+													<leaf speciesLocation="n249"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n250"/>
+												</eventsRec>
+												<clade>
+													<name>n265_262</name>
+													<eventsRec>
+														<leaf speciesLocation="n265"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n266_263</name>
+													<eventsRec>
+														<leaf speciesLocation="n266"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>n158_163</name>
+											<eventsRec>
+												<leaf speciesLocation="n158"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n40"/>
+							</eventsRec>
+							<clade>
+								<name>n176_179</name>
+								<eventsRec>
+									<leaf speciesLocation="n176"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>n175_178</name>
+								<eventsRec>
+									<leaf speciesLocation="n175"/>
+								</eventsRec>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="n6"/>
+				</eventsRec>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n18"/>
+					</eventsRec>
+						<clade>
+						<name>loss</name>
+						<eventsRec>
+							<loss speciesLocation="n27"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n28"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<duplication speciesLocation="n120"/>
+							</eventsRec>
+							<clade>
+								<name>n120_186</name>
+								<eventsRec>
+									<leaf speciesLocation="n120"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>n120_187</name>
+								<eventsRec>
+									<leaf speciesLocation="n120"/>
+								</eventsRec>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n119"/>
+							</eventsRec>
+							<clade>
+								<name>n251_248</name>
+								<eventsRec>
+									<leaf speciesLocation="n251"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>n252_249</name>
+								<eventsRec>
+									<leaf speciesLocation="n252"/>
+								</eventsRec>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n17"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n29"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n67"/>
+							</eventsRec>
+							<clade>
+								<name>n101_102</name>
+								<eventsRec>
+									<leaf speciesLocation="n101"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n102"/>
+								</eventsRec>
+								<clade>
+									<name>n279_274</name>
+									<eventsRec>
+										<leaf speciesLocation="n279"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n280_275</name>
+									<eventsRec>
+										<leaf speciesLocation="n280"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n68"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n146"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<branchingOut speciesLocation="n181"/>
+									</eventsRec>
+									<clade>
+										<name>n181_288</name>
+										<eventsRec>
+											<leaf speciesLocation="n181"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n211_289</name>
+										<eventsRec>
+											<transferBack destinationSpecies="n211"/>
+											<leaf speciesLocation="n211"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n182"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n210"/>
+										</eventsRec>
+										<clade>
+											<name>n221_220</name>
+											<eventsRec>
+												<leaf speciesLocation="n221"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n222_221</name>
+											<eventsRec>
+												<leaf speciesLocation="n222"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n209"/>
+										</eventsRec>
+										<clade>
+											<name>n263_260</name>
+											<eventsRec>
+												<leaf speciesLocation="n263"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n264_261</name>
+											<eventsRec>
+												<leaf speciesLocation="n264"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n145"/>
+								</eventsRec>
+								<clade>
+									<name>n294_291</name>
+									<eventsRec>
+										<leaf speciesLocation="n294"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n293_290</name>
+									<eventsRec>
+										<leaf speciesLocation="n293"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<branchingOut speciesLocation="n30"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<transferBack destinationSpecies="n7"/>
+								<speciation speciesLocation="n7"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<branchingOut speciesLocation="n83"/>
+								</eventsRec>
+								<clade>
+									<name>n74_135</name>
+									<eventsRec>
+										<transferBack destinationSpecies="n74"/>
+										<leaf speciesLocation="n74"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n83_134</name>
+									<eventsRec>
+										<leaf speciesLocation="n83"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n84"/>
+								</eventsRec>
+								<clade>
+									<name>n224_223</name>
+									<eventsRec>
+										<leaf speciesLocation="n224"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n223"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n232"/>
+										</eventsRec>
+										<clade>
+											<name>n267_264</name>
+											<eventsRec>
+												<leaf speciesLocation="n267"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n268_265</name>
+											<eventsRec>
+												<leaf speciesLocation="n268"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>n231_228</name>
+										<eventsRec>
+											<leaf speciesLocation="n231"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n30"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n92"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n143"/>
+									</eventsRec>
+									<clade>
+										<name>n152_159</name>
+										<eventsRec>
+											<leaf speciesLocation="n152"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n151_158</name>
+										<eventsRec>
+											<leaf speciesLocation="n151"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n144"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n150"/>
+										</eventsRec>
+										<clade>
+											<name>n304_299</name>
+											<eventsRec>
+												<leaf speciesLocation="n304"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n303_298</name>
+											<eventsRec>
+												<leaf speciesLocation="n303"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>n149_156</name>
+										<eventsRec>
+											<leaf speciesLocation="n149"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n91"/>
+								</eventsRec>
+								<clade>
+									<name>n220_219</name>
+									<eventsRec>
+										<leaf speciesLocation="n220"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n219_218</name>
+									<eventsRec>
+										<leaf speciesLocation="n219"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="n3"/>
+			</eventsRec>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="n10"/>
+				</eventsRec>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n59"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n70"/>
+						</eventsRec>
+						<clade>
+							<name>n161_166</name>
+							<eventsRec>
+								<leaf speciesLocation="n161"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>n162_167</name>
+							<eventsRec>
+								<leaf speciesLocation="n162"/>
+							</eventsRec>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n69"/>
+						</eventsRec>
+						<clade>
+							<name>n290_285</name>
+							<eventsRec>
+								<leaf speciesLocation="n290"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>n289_284</name>
+							<eventsRec>
+								<leaf speciesLocation="n289"/>
+							</eventsRec>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>n60_65</name>
+					<eventsRec>
+						<leaf speciesLocation="n60"/>
+					</eventsRec>
+				</clade>
+			</clade>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="n9"/>
+				</eventsRec>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n12"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n80"/>
+						</eventsRec>
+						<clade>
+							<name>n277_272</name>
+							<eventsRec>
+								<leaf speciesLocation="n277"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n278"/>
+							</eventsRec>
+							<clade>
+								<name>n295_292</name>
+								<eventsRec>
+									<leaf speciesLocation="n295"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>n296_293</name>
+								<eventsRec>
+									<leaf speciesLocation="n296"/>
+								</eventsRec>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n79"/>
+						</eventsRec>
+						<clade>
+							<name>n81_86</name>
+							<eventsRec>
+								<leaf speciesLocation="n81"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n82"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n122"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n125"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n128"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n169"/>
+											</eventsRec>
+											<clade>
+												<name>n191_196</name>
+												<eventsRec>
+													<leaf speciesLocation="n191"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n192_197</name>
+												<eventsRec>
+													<leaf speciesLocation="n192"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n170"/>
+											</eventsRec>
+											<clade>
+												<name>n260_257</name>
+												<eventsRec>
+													<leaf speciesLocation="n260"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n259_256</name>
+												<eventsRec>
+													<leaf speciesLocation="n259"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n127"/>
+										</eventsRec>
+										<clade>
+											<name>n139_146</name>
+											<eventsRec>
+												<leaf speciesLocation="n139"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n140_147</name>
+											<eventsRec>
+												<leaf speciesLocation="n140"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n126"/>
+									</eventsRec>
+									<clade>
+										<name>n271_268</name>
+										<eventsRec>
+											<leaf speciesLocation="n271"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n272_269</name>
+										<eventsRec>
+											<leaf speciesLocation="n272"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>n121_124</name>
+								<eventsRec>
+									<leaf speciesLocation="n121"/>
+								</eventsRec>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="n11"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n13"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n20"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n32"/>
+								</eventsRec>
+									<clade>
+									<name>loss</name>
+									<eventsRec>
+										<loss speciesLocation="n74"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n73"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n105"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n160"/>
+											</eventsRec>
+											<clade>
+												<name>n172_177</name>
+												<eventsRec>
+													<leaf speciesLocation="n172"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n171_176</name>
+												<eventsRec>
+													<leaf speciesLocation="n171"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n159"/>
+											</eventsRec>
+											<clade>
+												<name>n190_195</name>
+												<eventsRec>
+													<leaf speciesLocation="n190"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n189_194</name>
+												<eventsRec>
+													<leaf speciesLocation="n189"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<duplication speciesLocation="n106"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n106"/>
+											</eventsRec>
+											<clade>
+												<name>n135_142</name>
+												<eventsRec>
+													<leaf speciesLocation="n135"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n136_143</name>
+												<eventsRec>
+													<leaf speciesLocation="n136"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n106"/>
+											</eventsRec>
+											<clade>
+												<name>n135_140</name>
+												<eventsRec>
+													<leaf speciesLocation="n135"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n136_141</name>
+												<eventsRec>
+													<leaf speciesLocation="n136"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n31"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n36"/>
+									</eventsRec>
+									<clade>
+										<name>n246_243</name>
+										<eventsRec>
+											<leaf speciesLocation="n246"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n245_242</name>
+										<eventsRec>
+											<leaf speciesLocation="n245"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n35"/>
+									</eventsRec>
+									<clade>
+										<name>n147_154</name>
+										<eventsRec>
+											<leaf speciesLocation="n147"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n148"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n194"/>
+											</eventsRec>
+											<clade>
+												<name>n203_204</name>
+												<eventsRec>
+													<leaf speciesLocation="n203"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n204_205</name>
+												<eventsRec>
+													<leaf speciesLocation="n204"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n193"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n198"/>
+												</eventsRec>
+												<clade>
+													<name>n314_309</name>
+													<eventsRec>
+														<leaf speciesLocation="n314"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n313_308</name>
+													<eventsRec>
+														<leaf speciesLocation="n313"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>n197_200</name>
+												<eventsRec>
+													<leaf speciesLocation="n197"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>n19_20</name>
+							<eventsRec>
+								<leaf speciesLocation="n19"/>
+							</eventsRec>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="n14"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n24"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n38"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n88"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n96"/>
+										</eventsRec>
+										<clade>
+											<name>n225_224</name>
+											<eventsRec>
+												<leaf speciesLocation="n225"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n226_225</name>
+											<eventsRec>
+												<leaf speciesLocation="n226"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n95"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n130"/>
+											</eventsRec>
+											<clade>
+												<name>n234_231</name>
+												<eventsRec>
+													<leaf speciesLocation="n234"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n233"/>
+												</eventsRec>
+												<clade>
+													<name>n312_307</name>
+													<eventsRec>
+														<leaf speciesLocation="n312"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n311_306</name>
+													<eventsRec>
+														<leaf speciesLocation="n311"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n129"/>
+											</eventsRec>
+											<clade>
+												<name>n180_183</name>
+												<eventsRec>
+													<leaf speciesLocation="n180"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n179_182</name>
+												<eventsRec>
+													<leaf speciesLocation="n179"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n87"/>
+									</eventsRec>
+									<clade>
+										<name>n178_181</name>
+										<eventsRec>
+											<leaf speciesLocation="n178"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n177_180</name>
+										<eventsRec>
+											<leaf speciesLocation="n177"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n37"/>
+								</eventsRec>
+								<clade>
+									<name>n66_73</name>
+									<eventsRec>
+										<leaf speciesLocation="n66"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>n65_72</name>
+									<eventsRec>
+										<leaf speciesLocation="n65"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="n23"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n33"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n49"/>
+									</eventsRec>
+									<clade>
+										<name>n99_100</name>
+										<eventsRec>
+											<leaf speciesLocation="n99"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n100"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n133"/>
+											</eventsRec>
+											<clade>
+												<name>n187_192</name>
+												<eventsRec>
+													<leaf speciesLocation="n187"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>n188_193</name>
+												<eventsRec>
+													<leaf speciesLocation="n188"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n134"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n284"/>
+												</eventsRec>
+												<clade>
+													<name>n309_304</name>
+													<eventsRec>
+														<leaf speciesLocation="n309"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n310_305</name>
+													<eventsRec>
+														<leaf speciesLocation="n310"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n283"/>
+												</eventsRec>
+												<clade>
+													<name>n318_311</name>
+													<eventsRec>
+														<leaf speciesLocation="n318"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n317_310</name>
+													<eventsRec>
+														<leaf speciesLocation="n317"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n50"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n55"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n62"/>
+											</eventsRec>
+											<clade>
+												<name>n164_169</name>
+												<eventsRec>
+													<leaf speciesLocation="n164"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n163"/>
+												</eventsRec>
+												<clade>
+													<name>n216_217</name>
+													<eventsRec>
+														<leaf speciesLocation="n216"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n215_216</name>
+													<eventsRec>
+														<leaf speciesLocation="n215"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n61"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n71"/>
+												</eventsRec>
+												<clade>
+													<name>n77_82</name>
+													<eventsRec>
+														<leaf speciesLocation="n77"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>NULL</name>
+													<eventsRec>
+														<speciation speciesLocation="n78"/>
+													</eventsRec>
+													<clade>
+														<name>n237_234</name>
+														<eventsRec>
+															<leaf speciesLocation="n237"/>
+														</eventsRec>
+													</clade>
+													<clade>
+														<name>NULL</name>
+														<eventsRec>
+															<speciation speciesLocation="n238"/>
+														</eventsRec>
+														<clade>
+															<name>NULL</name>
+															<eventsRec>
+																<speciation speciesLocation="n298"/>
+															</eventsRec>
+															<clade>
+																<name>n305_300</name>
+																<eventsRec>
+																	<leaf speciesLocation="n305"/>
+																</eventsRec>
+															</clade>
+															<clade>
+																<name>n306_301</name>
+																<eventsRec>
+																	<leaf speciesLocation="n306"/>
+																</eventsRec>
+															</clade>
+														</clade>
+														<clade>
+															<name>n297_294</name>
+															<eventsRec>
+																<leaf speciesLocation="n297"/>
+															</eventsRec>
+														</clade>
+													</clade>
+												</clade>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n72"/>
+												</eventsRec>
+												<clade>
+													<name>NULL</name>
+													<eventsRec>
+														<speciation speciesLocation="n247"/>
+													</eventsRec>
+													<clade>
+														<name>n308_303</name>
+														<eventsRec>
+															<leaf speciesLocation="n308"/>
+														</eventsRec>
+													</clade>
+													<clade>
+														<name>n307_302</name>
+														<eventsRec>
+															<leaf speciesLocation="n307"/>
+														</eventsRec>
+													</clade>
+												</clade>
+												<clade>
+													<name>n248_245</name>
+													<eventsRec>
+														<leaf speciesLocation="n248"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n56"/>
+										</eventsRec>
+										<clade>
+											<name>n213_214</name>
+											<eventsRec>
+												<leaf speciesLocation="n213"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n214_215</name>
+											<eventsRec>
+												<leaf speciesLocation="n214"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="n34"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n89"/>
+									</eventsRec>
+									<clade>
+										<name>n273_270</name>
+										<eventsRec>
+											<leaf speciesLocation="n273"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>n274_271</name>
+										<eventsRec>
+											<leaf speciesLocation="n274"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="n90"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n132"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n138"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n227"/>
+												</eventsRec>
+												<clade>
+													<name>n285_280</name>
+													<eventsRec>
+														<leaf speciesLocation="n285"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n286_281</name>
+													<eventsRec>
+														<leaf speciesLocation="n286"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>n228_227</name>
+												<eventsRec>
+													<leaf speciesLocation="n228"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="n137"/>
+											</eventsRec>
+											<clade>
+												<name>n199_202</name>
+												<eventsRec>
+													<leaf speciesLocation="n199"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="n200"/>
+												</eventsRec>
+												<clade>
+													<name>n269_266</name>
+													<eventsRec>
+														<leaf speciesLocation="n269"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>n270_267</name>
+													<eventsRec>
+														<leaf speciesLocation="n270"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="n131"/>
+										</eventsRec>
+										<clade>
+											<name>n262_259</name>
+											<eventsRec>
+												<leaf speciesLocation="n262"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>n261_258</name>
+											<eventsRec>
+												<leaf speciesLocation="n261"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

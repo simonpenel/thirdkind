@@ -1,0 +1,645 @@
+<recPhylo>
+<spTree>
+<phylogeny><clade>
+<name>88</name>
+<clade>
+<name>87</name>
+<clade>
+<name>83</name>
+<clade>
+<name>79</name>
+<clade>
+<name>74</name>
+<clade>
+<name>68</name>
+<clade>
+<name>60</name>
+<clade>
+<name>45</name>
+<clade>
+<name>Metazoa</name>
+</clade>
+<clade>
+<name>Choanoflagellata</name>
+</clade>
+</clade>
+<clade>
+<name>Filasterea</name>
+</clade>
+</clade>
+<clade>
+<name>46</name>
+<clade>
+<name>Rotosphaerida</name>
+</clade>
+<clade>
+<name>Fungi</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>Amoebozoa</name>
+</clade>
+</clade>
+<clade>
+<name>Discoba</name>
+</clade>
+</clade>
+<clade>
+<name>75</name>
+<clade>
+<name>69</name>
+<clade>
+<name>61</name>
+<clade>
+<name>47</name>
+<clade>
+<name>Chlorophyta</name>
+</clade>
+<clade>
+<name>Streptophyta</name>
+</clade>
+</clade>
+<clade>
+<name>Rhodophyta</name>
+</clade>
+</clade>
+<clade>
+<name>Glaucocystophyceae</name>
+</clade>
+</clade>
+<clade>
+<name>48</name>
+<clade>
+<name>Alveolata</name>
+</clade>
+<clade>
+<name>Stramenopiles</name>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>86</name>
+<clade>
+<name>85</name>
+<clade>
+<name>80</name>
+<clade>
+<name>76</name>
+<clade>
+<name>70</name>
+<clade>
+<name>49</name>
+<clade>
+<name>Firmicutes</name>
+</clade>
+<clade>
+<name>Tenericutes</name>
+</clade>
+</clade>
+<clade>
+<name>62</name>
+<clade>
+<name>50</name>
+<clade>
+<name>Actinobacteria</name>
+</clade>
+<clade>
+<name>DeinococcusThermus</name>
+</clade>
+</clade>
+<clade>
+<name>Chloroflexi</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>51</name>
+<clade>
+<name>Synergistetes</name>
+</clade>
+<clade>
+<name>Fusobacteria</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>63</name>
+<clade>
+<name>52</name>
+<clade>
+<name>Caldiserica</name>
+</clade>
+<clade>
+<name>Thermotogae</name>
+</clade>
+</clade>
+<clade>
+<name>Aquificae</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>84</name>
+<clade>
+<name>81</name>
+<clade>
+<name>71</name>
+<clade>
+<name>64</name>
+<clade>
+<name>53</name>
+<clade>
+<name>Lentisphaerae</name>
+</clade>
+<clade>
+<name>Verrucomicrobia</name>
+</clade>
+</clade>
+<clade>
+<name>54</name>
+<clade>
+<name>Planctomycetes</name>
+</clade>
+<clade>
+<name>Chlamydiae</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>Elusimicrobia</name>
+</clade>
+</clade>
+<clade>
+<name>77</name>
+<clade>
+<name>55</name>
+<clade>
+<name>Fibrobacteres</name>
+</clade>
+<clade>
+<name>Gemmatimonadetes</name>
+</clade>
+</clade>
+<clade>
+<name>65</name>
+<clade>
+<name>56</name>
+<clade>
+<name>Bacteroidetes</name>
+</clade>
+<clade>
+<name>Chlorobi</name>
+</clade>
+</clade>
+<clade>
+<name>Calditrichaeota</name>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>82</name>
+<clade>
+<name>72</name>
+<clade>
+<name>66</name>
+<clade>
+<name>57</name>
+<clade>
+<name>Thermodesulfobacteria</name>
+</clade>
+<clade>
+<name>delta/epsilon</name>
+</clade>
+</clade>
+<clade>
+<name>Nitrospirae</name>
+</clade>
+</clade>
+<clade>
+<name>Acidobacteria</name>
+</clade>
+</clade>
+<clade>
+<name>78</name>
+<clade>
+<name>73</name>
+<clade>
+<name>67</name>
+<clade>
+<name>58</name>
+<clade>
+<name>Betaproteobacteria</name>
+</clade>
+<clade>
+<name>Gammaproteobacteria</name>
+</clade>
+</clade>
+<clade>
+<name>Alphaproteobacteria</name>
+</clade>
+</clade>
+<clade>
+<name>59</name>
+<clade>
+<name>Chrysiogenetes</name>
+</clade>
+<clade>
+<name>Deferribacteres</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>Spirochaetes</name>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>Cyanobacteria</name>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>UNSAMPLED</name>
+</clade>
+</clade>
+ </phylogeny>
+</spTree><recGeneTree>
+<phylogeny rooted="true">
+<clade>
+<name>38</name>
+<eventsRec>
+<branchingOut speciesLocation="78"></branchingOut>
+</eventsRec>
+<clade>
+<name>TLFD_1_18_42</name>
+<eventsRec>
+<transferBack destinationSpecies="UNSAMPLED"></transferBack>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="UNSAMPLED"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>18</name>
+<eventsRec>
+<transferBack destinationSpecies="75"></transferBack>
+<branchingOut speciesLocation="75"></branchingOut>
+</eventsRec>
+<clade>
+<name>4</name>
+<eventsRec>
+<transferBack destinationSpecies="UNSAMPLED"></transferBack>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>2</name>
+<eventsRec>
+<transferBack destinationSpecies="Actinobacteria"></transferBack>
+<branchingOut speciesLocation="Actinobacteria"></branchingOut>
+</eventsRec>
+<clade>
+<name>Actinobacteria</name>
+<eventsRec>
+<leaf speciesLocation="Actinobacteria" geneName="Actinobacteria"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>Firmicutes</name>
+<eventsRec>
+<transferBack destinationSpecies="Firmicutes"></transferBack>
+<leaf speciesLocation="Firmicutes" geneName="Firmicutes"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>TLFD_1_3_42</name>
+<eventsRec>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="UNSAMPLED"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Lentisphaerae</name>
+<eventsRec>
+<transferBack destinationSpecies="Lentisphaerae"></transferBack>
+<leaf speciesLocation="Lentisphaerae" geneName="Lentisphaerae"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>17</name>
+<eventsRec>
+<speciation speciesLocation="75"></speciation>
+</eventsRec>
+<clade>
+<name>7</name>
+<eventsRec>
+<speciation speciesLocation="48"></speciation>
+</eventsRec>
+<clade>
+<name>Alveolata</name>
+<eventsRec>
+<leaf speciesLocation="Alveolata" geneName="Alveolata"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>Stramenopiles</name>
+<eventsRec>
+<leaf speciesLocation="Stramenopiles" geneName="Stramenopiles"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>SL_1_16_69</name>
+<eventsRec>
+<speciation speciesLocation="69"></speciation>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="Glaucocystophyceae"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>16</name>
+<eventsRec>
+<speciation speciesLocation="61"></speciation>
+</eventsRec>
+<clade>
+<name>12</name>
+<eventsRec>
+<branchingOut speciesLocation="Rhodophyta"></branchingOut>
+</eventsRec>
+<clade>
+<name>TLFD_1_8_42</name>
+<eventsRec>
+<transferBack destinationSpecies="UNSAMPLED"></transferBack>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="UNSAMPLED"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Chloroflexi</name>
+<eventsRec>
+<transferBack destinationSpecies="Chloroflexi"></transferBack>
+<leaf speciesLocation="Chloroflexi" geneName="Chloroflexi"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>11</name>
+<eventsRec>
+<branchingOut speciesLocation="Rhodophyta"></branchingOut>
+</eventsRec>
+<clade>
+<name>Glaucocystophyceae</name>
+<eventsRec>
+<transferBack destinationSpecies="Glaucocystophyceae"></transferBack>
+<leaf speciesLocation="Glaucocystophyceae" geneName="Glaucocystophyceae"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>Rhodophyta</name>
+<eventsRec>
+<leaf speciesLocation="Rhodophyta" geneName="Rhodophyta"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>15</name>
+<eventsRec>
+<speciation speciesLocation="47"></speciation>
+</eventsRec>
+<clade>
+<name>Chlorophyta</name>
+<eventsRec>
+<leaf speciesLocation="Chlorophyta" geneName="Chlorophyta"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>Streptophyta</name>
+<eventsRec>
+<leaf speciesLocation="Streptophyta" geneName="Streptophyta"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>37</name>
+<eventsRec>
+<speciation speciesLocation="78"></speciation>
+</eventsRec>
+<clade>
+<name>35</name>
+<eventsRec>
+<branchingOut speciesLocation="73"></branchingOut>
+</eventsRec>
+<clade>
+<name>33</name>
+<eventsRec>
+<branchingOut speciesLocation="73"></branchingOut>
+</eventsRec>
+<clade>
+<name>23</name>
+<eventsRec>
+<transferBack destinationSpecies="73"></transferBack>
+<branchingOut speciesLocation="73"></branchingOut>
+</eventsRec>
+<clade>
+<name>21</name>
+<eventsRec>
+<speciation speciesLocation="73"></speciation>
+</eventsRec>
+<clade>
+<name>SL_1_19_67</name>
+<eventsRec>
+<speciation speciesLocation="67"></speciation>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="58"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Alphaproteobacteria</name>
+<eventsRec>
+<leaf speciesLocation="Alphaproteobacteria" geneName="Alphaproteobacteria"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>SL_1_20_59</name>
+<eventsRec>
+<speciation speciesLocation="59"></speciation>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="Deferribacteres"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Chrysiogenetes</name>
+<eventsRec>
+<leaf speciesLocation="Chrysiogenetes" geneName="Chrysiogenetes"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>TLFD_1_22_42</name>
+<eventsRec>
+<transferBack destinationSpecies="UNSAMPLED"></transferBack>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="UNSAMPLED"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>DeinococcusThermus</name>
+<eventsRec>
+<transferBack destinationSpecies="DeinococcusThermus"></transferBack>
+<leaf speciesLocation="DeinococcusThermus" geneName="DeinococcusThermus"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>32</name>
+<eventsRec>
+<transferBack destinationSpecies="74"></transferBack>
+<speciation speciesLocation="74"></speciation>
+</eventsRec>
+<clade>
+<name>Amoebozoa</name>
+<eventsRec>
+<leaf speciesLocation="Amoebozoa" geneName="Amoebozoa"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>31</name>
+<eventsRec>
+<speciation speciesLocation="68"></speciation>
+</eventsRec>
+<clade>
+<name>27</name>
+<eventsRec>
+<speciation speciesLocation="46"></speciation>
+</eventsRec>
+<clade>
+<name>TL_1_25_34</name>
+<eventsRec>
+<branchingOut speciesLocation="Rotosphaerida"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="Rotosphaerida"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Discoba</name>
+<eventsRec>
+<transferBack destinationSpecies="Discoba"></transferBack>
+<leaf speciesLocation="Discoba" geneName="Discoba"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>Fungi</name>
+<eventsRec>
+<leaf speciesLocation="Fungi" geneName="Fungi"></leaf>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+<name>30</name>
+<eventsRec>
+<speciation speciesLocation="60"></speciation>
+</eventsRec>
+<clade>
+<name>Filasterea</name>
+<eventsRec>
+<leaf speciesLocation="Filasterea" geneName="Filasterea"></leaf>
+</eventsRec>
+</clade>
+<clade>
+<name>SL_1_29_45</name>
+<eventsRec>
+<speciation speciesLocation="45"></speciation>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="Choanoflagellata"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Metazoa</name>
+<eventsRec>
+<leaf speciesLocation="Metazoa" geneName="Metazoa"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>TLFD_1_34_42</name>
+<eventsRec>
+<transferBack destinationSpecies="UNSAMPLED"></transferBack>
+<branchingOut speciesLocation="UNSAMPLED"></branchingOut>
+</eventsRec>
+<clade>
+<name>LOST</name>
+<eventsRec>
+<loss speciesLocation="UNSAMPLED"></loss>
+</eventsRec>
+</clade>
+<clade>
+<name>Chlamydiae</name>
+<eventsRec>
+<transferBack destinationSpecies="Chlamydiae"></transferBack>
+<leaf speciesLocation="Chlamydiae" geneName="Chlamydiae"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+<name>Spirochaetes</name>
+<eventsRec>
+<leaf speciesLocation="Spirochaetes" geneName="Spirochaetes"></leaf>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

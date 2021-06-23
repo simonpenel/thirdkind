@@ -1,0 +1,92 @@
+<recPhylo>
+ <spTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>1</name>
+    <clade>
+     <name>0</name>
+     <clade>
+      <name>a</name>
+     </clade>
+     <clade>
+      <name>b</name>
+     </clade>
+    </clade>
+    <clade>
+     <name>c</name>
+    </clade>
+   </clade>
+  </phylogeny>
+ </spTree>
+<!-- family 1 tree 1 (total cost = 4, duplications = 2, losses = 0, contraction threshold = no) -->
+ <recGeneTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>0</name>
+    <eventsRec>
+     <speciation speciesLocation="1"></speciation>
+    </eventsRec>
+    <clade>
+     <name>c1</name>
+     <eventsRec>
+      <leaf geneName="c1" speciesLocation="c"></leaf>
+     </eventsRec>
+    </clade>
+    <clade>
+     <name>03_duplication</name>
+     <eventsRec>
+      <duplication speciesLocation="0"></duplication>
+     </eventsRec>
+     <clade>
+      <name>01_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a2</name>
+       <eventsRec>
+        <leaf geneName="a2" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b4_duplication</name>
+       <eventsRec>
+        <duplication speciesLocation="b"></duplication>
+       </eventsRec>
+       <clade>
+        <name>b1</name>
+        <eventsRec>
+         <leaf geneName="b1" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+       <clade>
+        <name>b2</name>
+        <eventsRec>
+         <leaf geneName="b2" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+     </clade>
+     <clade>
+      <name>02_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a1</name>
+       <eventsRec>
+        <leaf geneName="a1" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b3</name>
+       <eventsRec>
+        <leaf geneName="b3" speciesLocation="b"></leaf>
+       </eventsRec>
+      </clade>
+     </clade>
+    </clade>
+   </clade>
+  </phylogeny>
+ </recGeneTree>
+</recPhylo>

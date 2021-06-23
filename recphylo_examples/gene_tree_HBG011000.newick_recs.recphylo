@@ -1,0 +1,1671 @@
+<recPhylo>
+ <spTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>53</name>
+    <clade>
+     <name>52</name>
+     <branch_length>0.486923</branch_length>
+     <clade>
+      <name>Danio_rerio</name>
+      <branch_length>0.486923</branch_length>
+     </clade>
+     <clade>
+      <name>51</name>
+      <branch_length>0.486923</branch_length>
+      <clade>
+       <name>50</name>
+       <branch_length>0.486923</branch_length>
+       <clade>
+        <name>14</name>
+        <branch_length>0.486923</branch_length>
+        <clade>
+         <name>9</name>
+         <branch_length>0.486923</branch_length>
+         <clade>
+          <name>5</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>2</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>0</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Tetraodon_nigroviridis</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>Oryctolagus_cuniculus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+           <clade>
+            <name>1</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Otolemur_garnettii</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>Macropus_eugenii</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+          </clade>
+          <clade>
+           <name>4</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>3</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Saccharomyces_cerevisiae</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>Gallus_gallus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+           <clade>
+            <name>Xenopus_tropicalis</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+         </clade>
+         <clade>
+          <name>8</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>6</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>Pteropus_vampyrus</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+           <clade>
+            <name>Monodelphis_domestica</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+          <clade>
+           <name>7</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>Procavia_capensis</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+           <clade>
+            <name>Drosophila_melanogaster</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+         </clade>
+        </clade>
+        <clade>
+         <name>13</name>
+         <branch_length>0.486923</branch_length>
+         <clade>
+          <name>11</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>10</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>Taeniopygia_guttata</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+           <clade>
+            <name>Sarcophilus_harrisii</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+          <clade>
+           <name>Rattus_norvegicus</name>
+           <branch_length>0.486923</branch_length>
+          </clade>
+         </clade>
+         <clade>
+          <name>12</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>Microcebus_murinus</name>
+           <branch_length>0.486923</branch_length>
+          </clade>
+          <clade>
+           <name>Erinaceus_europaeus</name>
+           <branch_length>0.486923</branch_length>
+          </clade>
+         </clade>
+        </clade>
+       </clade>
+       <clade>
+        <name>49</name>
+        <branch_length>0.486923</branch_length>
+        <clade>
+         <name>42</name>
+         <branch_length>0.486923</branch_length>
+         <clade>
+          <name>17</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>15</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>Callithrix_jacchus</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+           <clade>
+            <name>Choloepus_hoffmanni</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+          <clade>
+           <name>16</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>Tarsius_syrichta</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+           <clade>
+            <name>Macaca_mulatta</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+         </clade>
+         <clade>
+          <name>41</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>35</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>24</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>20</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>19</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Myotis_lucifugus</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>18</name>
+               <branch_length>0.486923</branch_length>
+               <clade>
+                <name>Dipodomys_ordii</name>
+                <branch_length>0.486923</branch_length>
+               </clade>
+               <clade>
+                <name>Bos_taurus</name>
+                <branch_length>0.486923</branch_length>
+               </clade>
+              </clade>
+             </clade>
+             <clade>
+              <name>Homo_sapiens</name>
+              <branch_length>0.486923</branch_length>
+             </clade>
+            </clade>
+            <clade>
+             <name>23</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>21</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Ochotona_princeps</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>Tupaia_belangeri</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+             </clade>
+             <clade>
+              <name>22</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Equus_caballus</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>Loxodonta_africana</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+             </clade>
+            </clade>
+           </clade>
+           <clade>
+            <name>34</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>30</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>27</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>26</name>
+               <branch_length>0.486923</branch_length>
+               <clade>
+                <name>25</name>
+                <branch_length>0.486923</branch_length>
+                <clade>
+                 <name>Ciona_intestinalis</name>
+                 <branch_length>0.486923</branch_length>
+                </clade>
+                <clade>
+                 <name>Ciona_savignyi</name>
+                 <branch_length>0.486923</branch_length>
+                </clade>
+               </clade>
+               <clade>
+                <name>Pongo_abelii</name>
+                <branch_length>0.486923</branch_length>
+               </clade>
+              </clade>
+              <clade>
+               <name>Takifugu_rubripes</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+             </clade>
+             <clade>
+              <name>29</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Pan_troglodytes</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>28</name>
+               <branch_length>0.486923</branch_length>
+               <clade>
+                <name>Oryzias_latipes</name>
+                <branch_length>0.486923</branch_length>
+               </clade>
+               <clade>
+                <name>Gasterosteus_aculeatus</name>
+                <branch_length>0.486923</branch_length>
+               </clade>
+              </clade>
+             </clade>
+            </clade>
+            <clade>
+             <name>33</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>31</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Ailuropoda_melanoleuca</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>Cavia_porcellus</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+             </clade>
+             <clade>
+              <name>32</name>
+              <branch_length>0.486923</branch_length>
+              <clade>
+               <name>Vicugna_pacos</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+              <clade>
+               <name>Caenorhabditis_elegans</name>
+               <branch_length>0.486923</branch_length>
+              </clade>
+             </clade>
+            </clade>
+           </clade>
+          </clade>
+          <clade>
+           <name>40</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>37</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>36</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>Gorilla_gorilla</name>
+              <branch_length>0.486923</branch_length>
+             </clade>
+             <clade>
+              <name>Nomascus_leucogenys</name>
+              <branch_length>0.486923</branch_length>
+             </clade>
+            </clade>
+            <clade>
+             <name>Sorex_araneus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+           <clade>
+            <name>39</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Sus_scrofa</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>38</name>
+             <branch_length>0.486923</branch_length>
+             <clade>
+              <name>Felis_catus</name>
+              <branch_length>0.486923</branch_length>
+             </clade>
+             <clade>
+              <name>Canis_lupus_familiaris</name>
+              <branch_length>0.486923</branch_length>
+             </clade>
+            </clade>
+           </clade>
+          </clade>
+         </clade>
+        </clade>
+        <clade>
+         <name>48</name>
+         <branch_length>0.486923</branch_length>
+         <clade>
+          <name>47</name>
+          <branch_length>0.486923</branch_length>
+          <clade>
+           <name>44</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>43</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Ornithorhynchus_anatinus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>Petromyzon_marinus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+           <clade>
+            <name>Tursiops_truncatus</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+          <clade>
+           <name>46</name>
+           <branch_length>0.486923</branch_length>
+           <clade>
+            <name>45</name>
+            <branch_length>0.486923</branch_length>
+            <clade>
+             <name>Echinops_telfairi</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+            <clade>
+             <name>Dasypus_novemcinctus</name>
+             <branch_length>0.486923</branch_length>
+            </clade>
+           </clade>
+           <clade>
+            <name>Mus_musculus</name>
+            <branch_length>0.486923</branch_length>
+           </clade>
+          </clade>
+         </clade>
+         <clade>
+          <name>Spermophilus_tridecemlineatus</name>
+          <branch_length>0.486923</branch_length>
+         </clade>
+        </clade>
+       </clade>
+      </clade>
+      <clade>
+       <name>Meleagris_gallopavo</name>
+       <branch_length>0.486923</branch_length>
+      </clade>
+     </clade>
+    </clade>
+    <clade>
+     <name>Anolis_carolinensis</name>
+     <branch_length>0.486923</branch_length>
+    </clade>
+   </clade>
+  </phylogeny>
+ </spTree>
+<!-- family 1 tree 1 re-rooting (total cost = 423, duplications = 46, losses = 331, contraction threshold = no) -->
+ <recGeneTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>14</name>
+    <eventsRec>
+     <speciation speciesLocation="53"></speciation>
+    </eventsRec>
+    <clade>
+     <name>ENSACAP00000003035</name>
+     <eventsRec>
+      <leaf geneName="ENSACAP00000003035" speciesLocation="Anolis_carolinensis"></leaf>
+     </eventsRec>
+    </clade>
+    <clade>
+     <name>527_duplication</name>
+     <eventsRec>
+      <duplication speciesLocation="52"></duplication>
+     </eventsRec>
+     <clade>
+      <name>13</name>
+      <eventsRec>
+       <duplication speciesLocation="52"></duplication>
+      </eventsRec>
+      <clade>
+       <name>12</name>
+       <eventsRec>
+        <duplication speciesLocation="52"></duplication>
+       </eventsRec>
+       <clade>
+        <name>11</name>
+        <eventsRec>
+         <speciation speciesLocation="52"></speciation>
+        </eventsRec>
+        <clade>
+         <name>ENSDARP00000122260</name>
+         <eventsRec>
+          <leaf geneName="ENSDARP00000122260" speciesLocation="Danio_rerio"></leaf>
+         </eventsRec>
+        </clade>
+        <clade>
+         <name>516_speciation</name>
+         <eventsRec>
+          <speciationLoss speciesLocation="51"></speciationLoss>
+          <duplication speciesLocation="50"></duplication>
+         </eventsRec>
+         <clade>
+          <name>9</name>
+          <eventsRec>
+           <duplication speciesLocation="50"></duplication>
+          </eventsRec>
+          <clade>
+           <name>8</name>
+           <eventsRec>
+            <speciation speciesLocation="50"></speciation>
+           </eventsRec>
+           <clade>
+            <name>1433_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="14"></speciationLoss>
+             <speciationLoss speciesLocation="9"></speciationLoss>
+             <speciationLoss speciesLocation="5"></speciationLoss>
+             <speciationLoss speciesLocation="2"></speciationLoss>
+             <speciationLoss speciesLocation="0"></speciationLoss>
+             <leaf geneName="ENSTNIP00000011582" speciesLocation="Tetraodon_nigroviridis"></leaf>
+            </eventsRec>
+           </clade>
+           <clade>
+            <name>4935_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="49"></speciationLoss>
+             <speciationLoss speciesLocation="42"></speciationLoss>
+             <speciationLoss speciesLocation="41"></speciationLoss>
+             <speciationLoss speciesLocation="35"></speciationLoss>
+             <speciationLoss speciesLocation="34"></speciationLoss>
+             <speciationLoss speciesLocation="30"></speciationLoss>
+             <speciationLoss speciesLocation="27"></speciationLoss>
+             <leaf geneName="ENSTRUP00000026803" speciesLocation="Takifugu_rubripes"></leaf>
+            </eventsRec>
+           </clade>
+          </clade>
+          <clade>
+           <name>5060_speciation</name>
+           <eventsRec>
+            <speciationLoss speciesLocation="50"></speciationLoss>
+            <speciationLoss speciesLocation="49"></speciationLoss>
+            <speciationLoss speciesLocation="42"></speciationLoss>
+            <speciationLoss speciesLocation="41"></speciationLoss>
+            <speciationLoss speciesLocation="35"></speciationLoss>
+            <speciationLoss speciesLocation="34"></speciationLoss>
+            <speciationLoss speciesLocation="30"></speciationLoss>
+            <speciationLoss speciesLocation="29"></speciationLoss>
+            <speciationLoss speciesLocation="28"></speciationLoss>
+            <leaf geneName="Gas" speciesLocation="Gasterosteus_aculeatus"></leaf>
+           </eventsRec>
+          </clade>
+         </clade>
+         <clade>
+          <name>5061_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="50"></speciationLoss>
+           <speciationLoss speciesLocation="49"></speciationLoss>
+           <speciationLoss speciesLocation="42"></speciationLoss>
+           <speciationLoss speciesLocation="41"></speciationLoss>
+           <speciationLoss speciesLocation="35"></speciationLoss>
+           <speciationLoss speciesLocation="34"></speciationLoss>
+           <speciationLoss speciesLocation="30"></speciationLoss>
+           <speciationLoss speciesLocation="29"></speciationLoss>
+           <speciationLoss speciesLocation="28"></speciationLoss>
+           <leaf geneName="ENSORLP00000006292" speciesLocation="Oryzias_latipes"></leaf>
+          </eventsRec>
+         </clade>
+        </clade>
+       </clade>
+       <clade>
+        <name>524_speciation</name>
+        <eventsRec>
+         <speciationLoss speciesLocation="52"></speciationLoss>
+         <speciationLoss speciesLocation="51"></speciationLoss>
+         <speciationLoss speciesLocation="50"></speciationLoss>
+         <speciationLoss speciesLocation="14"></speciationLoss>
+         <speciationLoss speciesLocation="9"></speciationLoss>
+         <speciationLoss speciesLocation="5"></speciationLoss>
+         <speciationLoss speciesLocation="4"></speciationLoss>
+         <leaf geneName="ENSXETP00000039244" speciesLocation="Xenopus_tropicalis"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+      <clade>
+       <name>525_speciation</name>
+       <eventsRec>
+        <speciationLoss speciesLocation="52"></speciationLoss>
+        <speciationLoss speciesLocation="51"></speciationLoss>
+        <duplication speciesLocation="50"></duplication>
+       </eventsRec>
+       <clade>
+        <name>6</name>
+        <eventsRec>
+         <duplication speciesLocation="50"></duplication>
+        </eventsRec>
+        <clade>
+         <name>3</name>
+         <eventsRec>
+          <speciation speciesLocation="50"></speciation>
+         </eventsRec>
+         <clade>
+          <name>1430_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="14"></speciationLoss>
+           <speciationLoss speciesLocation="9"></speciationLoss>
+           <speciationLoss speciesLocation="5"></speciationLoss>
+           <speciationLoss speciesLocation="4"></speciationLoss>
+           <speciationLoss speciesLocation="3"></speciationLoss>
+           <leaf geneName="YPL117C" speciesLocation="Saccharomyces_cerevisiae"></leaf>
+          </eventsRec>
+         </clade>
+         <clade>
+          <name>4932_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="49"></speciationLoss>
+           <speciationLoss speciesLocation="42"></speciationLoss>
+           <speciationLoss speciesLocation="41"></speciationLoss>
+           <speciationLoss speciesLocation="35"></speciationLoss>
+           <speciationLoss speciesLocation="34"></speciationLoss>
+           <speciationLoss speciesLocation="33"></speciationLoss>
+           <speciationLoss speciesLocation="32"></speciationLoss>
+           <leaf geneName="K06H7.9.1" speciesLocation="Caenorhabditis_elegans"></leaf>
+          </eventsRec>
+         </clade>
+        </clade>
+        <clade>
+         <name>5058_speciation</name>
+         <eventsRec>
+          <speciationLoss speciesLocation="50"></speciationLoss>
+          <speciationLoss speciesLocation="49"></speciationLoss>
+          <speciationLoss speciesLocation="42"></speciationLoss>
+          <speciationLoss speciesLocation="41"></speciationLoss>
+          <speciationLoss speciesLocation="35"></speciationLoss>
+          <speciationLoss speciesLocation="34"></speciationLoss>
+          <speciationLoss speciesLocation="30"></speciationLoss>
+          <speciationLoss speciesLocation="27"></speciationLoss>
+          <speciationLoss speciesLocation="26"></speciationLoss>
+          <speciation speciesLocation="25"></speciation>
+         </eventsRec>
+         <clade>
+          <name>4</name>
+          <eventsRec>
+           <duplication speciesLocation="Ciona_intestinalis"></duplication>
+          </eventsRec>
+          <clade>
+           <name>ENSCINP00000027980</name>
+           <eventsRec>
+            <leaf geneName="ENSCINP00000027980" speciesLocation="Ciona_intestinalis"></leaf>
+           </eventsRec>
+          </clade>
+          <clade>
+           <name>ENSCINP00000004433</name>
+           <eventsRec>
+            <leaf geneName="ENSCINP00000004433" speciesLocation="Ciona_intestinalis"></leaf>
+           </eventsRec>
+          </clade>
+         </clade>
+         <clade>
+          <name>ENSCSAVP00000009215</name>
+          <eventsRec>
+           <leaf geneName="ENSCSAVP00000009215" speciesLocation="Ciona_savignyi"></leaf>
+          </eventsRec>
+         </clade>
+        </clade>
+       </clade>
+       <clade>
+        <name>5059_speciation</name>
+        <eventsRec>
+         <speciationLoss speciesLocation="50"></speciationLoss>
+         <speciationLoss speciesLocation="14"></speciationLoss>
+         <speciationLoss speciesLocation="9"></speciationLoss>
+         <speciationLoss speciesLocation="8"></speciationLoss>
+         <speciationLoss speciesLocation="7"></speciationLoss>
+         <leaf geneName="Dro" speciesLocation="Drosophila_melanogaster"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+     </clade>
+     <clade>
+      <name>526_speciation</name>
+      <eventsRec>
+       <speciationLoss speciesLocation="52"></speciationLoss>
+       <duplication speciesLocation="51"></duplication>
+      </eventsRec>
+      <clade>
+       <name>16</name>
+       <eventsRec>
+        <duplication speciesLocation="51"></duplication>
+       </eventsRec>
+       <clade>
+        <name>15</name>
+        <eventsRec>
+         <speciation speciesLocation="51"></speciation>
+        </eventsRec>
+        <clade>
+         <name>ENSMGAP00000005440</name>
+         <eventsRec>
+          <leaf geneName="ENSMGAP00000005440" speciesLocation="Meleagris_gallopavo"></leaf>
+         </eventsRec>
+        </clade>
+        <clade>
+         <name>5056_speciation</name>
+         <eventsRec>
+          <speciationLoss speciesLocation="50"></speciationLoss>
+          <speciationLoss speciesLocation="14"></speciationLoss>
+          <speciationLoss speciesLocation="9"></speciationLoss>
+          <speciationLoss speciesLocation="5"></speciationLoss>
+          <speciationLoss speciesLocation="4"></speciationLoss>
+          <speciationLoss speciesLocation="3"></speciationLoss>
+          <leaf geneName="ENSGALP00000010861" speciesLocation="Gallus_gallus"></leaf>
+         </eventsRec>
+        </clade>
+       </clade>
+       <clade>
+        <name>514_speciation</name>
+        <eventsRec>
+         <speciationLoss speciesLocation="51"></speciationLoss>
+         <speciationLoss speciesLocation="50"></speciationLoss>
+         <speciationLoss speciesLocation="14"></speciationLoss>
+         <speciationLoss speciesLocation="13"></speciationLoss>
+         <speciationLoss speciesLocation="11"></speciationLoss>
+         <speciationLoss speciesLocation="10"></speciationLoss>
+         <leaf geneName="ENSTGUP00000000854" speciesLocation="Taeniopygia_guttata"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+      <clade>
+       <name>515_speciation</name>
+       <eventsRec>
+        <speciationLoss speciesLocation="51"></speciationLoss>
+        <duplication speciesLocation="50"></duplication>
+       </eventsRec>
+       <clade>
+        <name>42</name>
+        <eventsRec>
+         <duplication speciesLocation="50"></duplication>
+        </eventsRec>
+        <clade>
+         <name>43</name>
+         <eventsRec>
+          <duplication speciesLocation="50"></duplication>
+         </eventsRec>
+         <clade>
+          <name>65</name>
+          <eventsRec>
+           <duplication speciesLocation="50"></duplication>
+          </eventsRec>
+          <clade>
+           <name>68</name>
+           <eventsRec>
+            <duplication speciesLocation="50"></duplication>
+           </eventsRec>
+           <clade>
+            <name>70</name>
+            <eventsRec>
+             <duplication speciesLocation="50"></duplication>
+            </eventsRec>
+            <clade>
+             <name>69</name>
+             <eventsRec>
+              <speciation speciesLocation="50"></speciation>
+             </eventsRec>
+             <clade>
+              <name>145_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="14"></speciationLoss>
+               <speciationLoss speciesLocation="13"></speciationLoss>
+               <speciationLoss speciesLocation="12"></speciationLoss>
+               <leaf geneName="ENSEEUP00000011424" speciesLocation="Erinaceus_europaeus"></leaf>
+              </eventsRec>
+             </clade>
+             <clade>
+              <name>496_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="49"></speciationLoss>
+               <speciationLoss speciesLocation="42"></speciationLoss>
+               <speciationLoss speciesLocation="41"></speciationLoss>
+               <speciationLoss speciesLocation="40"></speciationLoss>
+               <speciationLoss speciesLocation="37"></speciationLoss>
+               <leaf geneName="ENSSARP00000010453" speciesLocation="Sorex_araneus"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+            <clade>
+             <name>5040_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="50"></speciationLoss>
+              <duplication speciesLocation="49"></duplication>
+             </eventsRec>
+             <clade>
+              <name>1</name>
+              <eventsRec>
+               <duplication speciesLocation="49"></duplication>
+              </eventsRec>
+              <clade>
+               <name>0</name>
+               <eventsRec>
+                <speciation speciesLocation="49"></speciation>
+               </eventsRec>
+               <clade>
+                <name>424_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="42"></speciationLoss>
+                 <speciationLoss speciesLocation="41"></speciationLoss>
+                 <speciationLoss speciesLocation="35"></speciationLoss>
+                 <speciationLoss speciesLocation="24"></speciationLoss>
+                 <speciationLoss speciesLocation="20"></speciationLoss>
+                 <speciationLoss speciesLocation="19"></speciationLoss>
+                 <speciationLoss speciesLocation="18"></speciationLoss>
+                 <leaf geneName="ENSBTAP00000005323" speciesLocation="Bos_taurus"></leaf>
+                </eventsRec>
+               </clade>
+               <clade>
+                <name>481_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="48"></speciationLoss>
+                 <speciationLoss speciesLocation="47"></speciationLoss>
+                 <speciationLoss speciesLocation="44"></speciationLoss>
+                 <leaf geneName="ENSTTRP00000010594" speciesLocation="Tursiops_truncatus"></leaf>
+                </eventsRec>
+               </clade>
+              </clade>
+              <clade>
+               <name>494_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="49"></speciationLoss>
+                <speciationLoss speciesLocation="42"></speciationLoss>
+                <speciationLoss speciesLocation="41"></speciationLoss>
+                <speciationLoss speciesLocation="35"></speciationLoss>
+                <speciationLoss speciesLocation="34"></speciationLoss>
+                <speciationLoss speciesLocation="33"></speciationLoss>
+                <speciationLoss speciesLocation="32"></speciationLoss>
+                <leaf geneName="ENSVPAP00000007975" speciesLocation="Vicugna_pacos"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+             <clade>
+              <name>495_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="49"></speciationLoss>
+               <speciationLoss speciesLocation="42"></speciationLoss>
+               <speciation speciesLocation="41"></speciation>
+              </eventsRec>
+              <clade>
+               <name>352_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="35"></speciationLoss>
+                <speciationLoss speciesLocation="34"></speciationLoss>
+                <speciationLoss speciesLocation="33"></speciationLoss>
+                <speciationLoss speciesLocation="31"></speciationLoss>
+                <leaf geneName="ENSAMEP00000002011" speciesLocation="Ailuropoda_melanoleuca"></leaf>
+               </eventsRec>
+              </clade>
+              <clade>
+               <name>401_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="40"></speciationLoss>
+                <speciationLoss speciesLocation="39"></speciationLoss>
+                <speciationLoss speciesLocation="38"></speciationLoss>
+                <leaf geneName="ENSFCAP00000002496" speciesLocation="Felis_catus"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+            </clade>
+           </clade>
+           <clade>
+            <name>67</name>
+            <eventsRec>
+             <duplication speciesLocation="50"></duplication>
+            </eventsRec>
+            <clade>
+             <name>66</name>
+             <eventsRec>
+              <speciation speciesLocation="50"></speciation>
+             </eventsRec>
+             <clade>
+              <name>147_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="14"></speciationLoss>
+               <speciationLoss speciesLocation="9"></speciationLoss>
+               <speciationLoss speciesLocation="8"></speciationLoss>
+               <speciationLoss speciesLocation="6"></speciationLoss>
+               <leaf geneName="ENSPVAP00000005565" speciesLocation="Pteropus_vampyrus"></leaf>
+              </eventsRec>
+             </clade>
+             <clade>
+              <name>497_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="49"></speciationLoss>
+               <speciationLoss speciesLocation="42"></speciationLoss>
+               <speciationLoss speciesLocation="41"></speciationLoss>
+               <speciationLoss speciesLocation="35"></speciationLoss>
+               <speciationLoss speciesLocation="24"></speciationLoss>
+               <speciationLoss speciesLocation="20"></speciationLoss>
+               <speciationLoss speciesLocation="19"></speciationLoss>
+               <leaf geneName="ENSMLUP00000022548" speciesLocation="Myotis_lucifugus"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+            <clade>
+             <name>5041_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="50"></speciationLoss>
+              <speciationLoss speciesLocation="49"></speciationLoss>
+              <speciationLoss speciesLocation="42"></speciationLoss>
+              <speciationLoss speciesLocation="41"></speciationLoss>
+              <speciationLoss speciesLocation="35"></speciationLoss>
+              <speciationLoss speciesLocation="24"></speciationLoss>
+              <speciationLoss speciesLocation="23"></speciationLoss>
+              <speciationLoss speciesLocation="22"></speciationLoss>
+              <leaf geneName="ENSECAP00000022536" speciesLocation="Equus_caballus"></leaf>
+             </eventsRec>
+            </clade>
+           </clade>
+          </clade>
+          <clade>
+           <name>64</name>
+           <eventsRec>
+            <duplication speciesLocation="50"></duplication>
+           </eventsRec>
+           <clade>
+            <name>63</name>
+            <eventsRec>
+             <duplication speciesLocation="50"></duplication>
+            </eventsRec>
+            <clade>
+             <name>60</name>
+             <eventsRec>
+              <duplication speciesLocation="50"></duplication>
+             </eventsRec>
+             <clade>
+              <name>46</name>
+              <eventsRec>
+               <duplication speciesLocation="50"></duplication>
+              </eventsRec>
+              <clade>
+               <name>45</name>
+               <eventsRec>
+                <duplication speciesLocation="50"></duplication>
+               </eventsRec>
+               <clade>
+                <name>44</name>
+                <eventsRec>
+                 <speciation speciesLocation="50"></speciation>
+                </eventsRec>
+                <clade>
+                 <name>149_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="14"></speciationLoss>
+                  <speciationLoss speciesLocation="13"></speciationLoss>
+                  <speciationLoss speciesLocation="11"></speciationLoss>
+                  <leaf geneName="ENSRNOP00000022389" speciesLocation="Rattus_norvegicus"></leaf>
+                 </eventsRec>
+                </clade>
+                <clade>
+                 <name>499_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="49"></speciationLoss>
+                  <speciationLoss speciesLocation="48"></speciationLoss>
+                  <speciationLoss speciesLocation="47"></speciationLoss>
+                  <speciationLoss speciesLocation="46"></speciationLoss>
+                  <leaf geneName="ENSMUSP00000132780" speciesLocation="Mus_musculus"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+               <clade>
+                <name>5042_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="50"></speciationLoss>
+                 <speciationLoss speciesLocation="49"></speciationLoss>
+                 <speciationLoss speciesLocation="42"></speciationLoss>
+                 <speciationLoss speciesLocation="41"></speciationLoss>
+                 <speciationLoss speciesLocation="35"></speciationLoss>
+                 <speciationLoss speciesLocation="34"></speciationLoss>
+                 <speciationLoss speciesLocation="33"></speciationLoss>
+                 <speciationLoss speciesLocation="31"></speciationLoss>
+                 <leaf geneName="ENSCPOP00000002348" speciesLocation="Cavia_porcellus"></leaf>
+                </eventsRec>
+               </clade>
+              </clade>
+              <clade>
+               <name>5043_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="50"></speciationLoss>
+                <speciationLoss speciesLocation="49"></speciationLoss>
+                <speciationLoss speciesLocation="42"></speciationLoss>
+                <speciationLoss speciesLocation="41"></speciationLoss>
+                <speciationLoss speciesLocation="35"></speciationLoss>
+                <speciationLoss speciesLocation="24"></speciationLoss>
+                <speciationLoss speciesLocation="20"></speciationLoss>
+                <speciationLoss speciesLocation="19"></speciationLoss>
+                <speciationLoss speciesLocation="18"></speciationLoss>
+                <leaf geneName="ENSDORP00000009653" speciesLocation="Dipodomys_ordii"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+             <clade>
+              <name>59</name>
+              <eventsRec>
+               <duplication speciesLocation="50"></duplication>
+              </eventsRec>
+              <clade>
+               <name>55</name>
+               <eventsRec>
+                <duplication speciesLocation="50"></duplication>
+               </eventsRec>
+               <clade>
+                <name>48</name>
+                <eventsRec>
+                 <speciation speciesLocation="50"></speciation>
+                </eventsRec>
+                <clade>
+                 <name>47</name>
+                 <eventsRec>
+                  <speciation speciesLocation="14"></speciation>
+                 </eventsRec>
+                 <clade>
+                  <name>95_speciation</name>
+                  <eventsRec>
+                   <speciationLoss speciesLocation="9"></speciationLoss>
+                   <speciationLoss speciesLocation="5"></speciationLoss>
+                   <speciationLoss speciesLocation="2"></speciationLoss>
+                   <speciationLoss speciesLocation="1"></speciationLoss>
+                   <leaf geneName="ENSOGAP00000013277" speciesLocation="Otolemur_garnettii"></leaf>
+                  </eventsRec>
+                 </clade>
+                 <clade>
+                  <name>134_speciation</name>
+                  <eventsRec>
+                   <speciationLoss speciesLocation="13"></speciationLoss>
+                   <speciationLoss speciesLocation="12"></speciationLoss>
+                   <leaf geneName="ENSMICP00000012170" speciesLocation="Microcebus_murinus"></leaf>
+                  </eventsRec>
+                 </clade>
+                </clade>
+                <clade>
+                 <name>4912_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="49"></speciationLoss>
+                  <speciationLoss speciesLocation="42"></speciationLoss>
+                  <speciationLoss speciesLocation="17"></speciationLoss>
+                  <speciationLoss speciesLocation="16"></speciationLoss>
+                  <leaf geneName="ENSTSYP00000000701" speciesLocation="Tarsius_syrichta"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+               <clade>
+                <name>5044_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="50"></speciationLoss>
+                 <speciationLoss speciesLocation="49"></speciationLoss>
+                 <speciation speciesLocation="42"></speciation>
+                </eventsRec>
+                <clade>
+                 <name>49</name>
+                 <eventsRec>
+                  <speciation speciesLocation="17"></speciation>
+                 </eventsRec>
+                 <clade>
+                  <name>152_speciation</name>
+                  <eventsRec>
+                   <speciationLoss speciesLocation="15"></speciationLoss>
+                   <leaf geneName="ENSCJAP00000015624" speciesLocation="Callithrix_jacchus"></leaf>
+                  </eventsRec>
+                 </clade>
+                 <clade>
+                  <name>162_speciation</name>
+                  <eventsRec>
+                   <speciationLoss speciesLocation="16"></speciationLoss>
+                   <leaf geneName="ENSMMUP00000022523" speciesLocation="Macaca_mulatta"></leaf>
+                  </eventsRec>
+                 </clade>
+                </clade>
+                <clade>
+                 <name>53</name>
+                 <eventsRec>
+                  <duplication speciesLocation="41"></duplication>
+                 </eventsRec>
+                 <clade>
+                  <name>50</name>
+                  <eventsRec>
+                   <speciation speciesLocation="41"></speciation>
+                  </eventsRec>
+                  <clade>
+                   <name>3510_speciation</name>
+                   <eventsRec>
+                    <speciationLoss speciesLocation="35"></speciationLoss>
+                    <speciationLoss speciesLocation="34"></speciationLoss>
+                    <speciationLoss speciesLocation="30"></speciationLoss>
+                    <speciationLoss speciesLocation="27"></speciationLoss>
+                    <speciationLoss speciesLocation="26"></speciationLoss>
+                    <leaf geneName="ENSPPYP00000002358" speciesLocation="Pongo_abelii"></leaf>
+                   </eventsRec>
+                  </clade>
+                  <clade>
+                   <name>409_speciation</name>
+                   <eventsRec>
+                    <speciationLoss speciesLocation="40"></speciationLoss>
+                    <speciationLoss speciesLocation="37"></speciationLoss>
+                    <speciationLoss speciesLocation="36"></speciationLoss>
+                    <leaf geneName="ENSNLEP00000016458" speciesLocation="Nomascus_leucogenys"></leaf>
+                   </eventsRec>
+                  </clade>
+                 </clade>
+                 <clade>
+                  <name>52</name>
+                  <eventsRec>
+                   <speciation speciesLocation="41"></speciation>
+                  </eventsRec>
+                  <clade>
+                   <name>51</name>
+                   <eventsRec>
+                    <speciation speciesLocation="35"></speciation>
+                   </eventsRec>
+                   <clade>
+                    <name>249_speciation</name>
+                    <eventsRec>
+                     <speciationLoss speciesLocation="24"></speciationLoss>
+                     <speciationLoss speciesLocation="20"></speciationLoss>
+                     <leaf geneName="ENSP00000370748" speciesLocation="Homo_sapiens"></leaf>
+                    </eventsRec>
+                   </clade>
+                   <clade>
+                    <name>349_speciation</name>
+                    <eventsRec>
+                     <speciationLoss speciesLocation="34"></speciationLoss>
+                     <speciationLoss speciesLocation="30"></speciationLoss>
+                     <speciationLoss speciesLocation="29"></speciationLoss>
+                     <leaf geneName="ENSPTRP00000003784" speciesLocation="Pan_troglodytes"></leaf>
+                    </eventsRec>
+                   </clade>
+                  </clade>
+                  <clade>
+                   <name>4010_speciation</name>
+                   <eventsRec>
+                    <speciationLoss speciesLocation="40"></speciationLoss>
+                    <speciationLoss speciesLocation="37"></speciationLoss>
+                    <speciationLoss speciesLocation="36"></speciationLoss>
+                    <leaf geneName="ENSGGOP00000000922" speciesLocation="Gorilla_gorilla"></leaf>
+                   </eventsRec>
+                  </clade>
+                 </clade>
+                </clade>
+               </clade>
+              </clade>
+              <clade>
+               <name>58</name>
+               <eventsRec>
+                <duplication speciesLocation="50"></duplication>
+               </eventsRec>
+               <clade>
+                <name>57</name>
+                <eventsRec>
+                 <speciation speciesLocation="50"></speciation>
+                </eventsRec>
+                <clade>
+                 <name>1413_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="14"></speciationLoss>
+                  <speciationLoss speciesLocation="9"></speciationLoss>
+                  <speciationLoss speciesLocation="5"></speciationLoss>
+                  <speciationLoss speciesLocation="2"></speciationLoss>
+                  <speciationLoss speciesLocation="0"></speciationLoss>
+                  <duplication speciesLocation="Oryctolagus_cuniculus"></duplication>
+                 </eventsRec>
+                 <clade>
+                  <name>Ory2</name>
+                  <eventsRec>
+                   <leaf geneName="Ory2" speciesLocation="Oryctolagus_cuniculus"></leaf>
+                  </eventsRec>
+                 </clade>
+                 <clade>
+                  <name>Ory1</name>
+                  <eventsRec>
+                   <leaf geneName="Ory1" speciesLocation="Oryctolagus_cuniculus"></leaf>
+                  </eventsRec>
+                 </clade>
+                </clade>
+                <clade>
+                 <name>4914_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="49"></speciationLoss>
+                  <speciationLoss speciesLocation="42"></speciationLoss>
+                  <speciationLoss speciesLocation="41"></speciationLoss>
+                  <speciationLoss speciesLocation="35"></speciationLoss>
+                  <speciationLoss speciesLocation="24"></speciationLoss>
+                  <speciationLoss speciesLocation="23"></speciationLoss>
+                  <speciationLoss speciesLocation="21"></speciationLoss>
+                  <leaf geneName="ENSOPRP00000007955" speciesLocation="Ochotona_princeps"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+               <clade>
+                <name>5045_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="50"></speciationLoss>
+                 <speciationLoss speciesLocation="49"></speciationLoss>
+                 <speciationLoss speciesLocation="42"></speciationLoss>
+                 <speciationLoss speciesLocation="41"></speciationLoss>
+                 <speciationLoss speciesLocation="35"></speciationLoss>
+                 <speciationLoss speciesLocation="24"></speciationLoss>
+                 <speciationLoss speciesLocation="23"></speciationLoss>
+                 <speciationLoss speciesLocation="21"></speciationLoss>
+                 <leaf geneName="ENSTBEP00000001866" speciesLocation="Tupaia_belangeri"></leaf>
+                </eventsRec>
+               </clade>
+              </clade>
+             </clade>
+            </clade>
+            <clade>
+             <name>62</name>
+             <eventsRec>
+              <duplication speciesLocation="50"></duplication>
+             </eventsRec>
+             <clade>
+              <name>61</name>
+              <eventsRec>
+               <speciation speciesLocation="50"></speciation>
+              </eventsRec>
+              <clade>
+               <name>1415_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="14"></speciationLoss>
+                <speciationLoss speciesLocation="9"></speciationLoss>
+                <speciationLoss speciesLocation="8"></speciationLoss>
+                <speciationLoss speciesLocation="7"></speciationLoss>
+                <leaf geneName="Pro" speciesLocation="Procavia_capensis"></leaf>
+               </eventsRec>
+              </clade>
+              <clade>
+               <name>4916_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="49"></speciationLoss>
+                <speciationLoss speciesLocation="42"></speciationLoss>
+                <speciationLoss speciesLocation="41"></speciationLoss>
+                <speciationLoss speciesLocation="35"></speciationLoss>
+                <speciationLoss speciesLocation="24"></speciationLoss>
+                <speciationLoss speciesLocation="23"></speciationLoss>
+                <speciationLoss speciesLocation="22"></speciationLoss>
+                <leaf geneName="ENSLAFP00000003104" speciesLocation="Loxodonta_africana"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+             <clade>
+              <name>5046_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="50"></speciationLoss>
+               <speciationLoss speciesLocation="49"></speciationLoss>
+               <speciationLoss speciesLocation="48"></speciationLoss>
+               <speciationLoss speciesLocation="47"></speciationLoss>
+               <speciationLoss speciesLocation="46"></speciationLoss>
+               <speciationLoss speciesLocation="45"></speciationLoss>
+               <leaf geneName="ENSETEP00000005413" speciesLocation="Echinops_telfairi"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+           </clade>
+           <clade>
+            <name>5047_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="50"></speciationLoss>
+             <speciationLoss speciesLocation="49"></speciationLoss>
+             <speciationLoss speciesLocation="48"></speciationLoss>
+             <speciationLoss speciesLocation="47"></speciationLoss>
+             <speciationLoss speciesLocation="46"></speciationLoss>
+             <speciationLoss speciesLocation="45"></speciationLoss>
+             <leaf geneName="ENSDNOP00000009112" speciesLocation="Dasypus_novemcinctus"></leaf>
+            </eventsRec>
+           </clade>
+          </clade>
+         </clade>
+         <clade>
+          <name>5048_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="50"></speciationLoss>
+           <speciationLoss speciesLocation="14"></speciationLoss>
+           <speciation speciesLocation="9"></speciation>
+          </eventsRec>
+          <clade>
+           <name>55_speciation</name>
+           <eventsRec>
+            <speciationLoss speciesLocation="5"></speciationLoss>
+            <speciationLoss speciesLocation="2"></speciationLoss>
+            <speciationLoss speciesLocation="1"></speciationLoss>
+            <leaf geneName="ENSMEUP00000013398" speciesLocation="Macropus_eugenii"></leaf>
+           </eventsRec>
+          </clade>
+          <clade>
+           <name>85_speciation</name>
+           <eventsRec>
+            <speciationLoss speciesLocation="8"></speciationLoss>
+            <speciationLoss speciesLocation="6"></speciationLoss>
+            <leaf geneName="ENSMODP00000007423" speciesLocation="Monodelphis_domestica"></leaf>
+           </eventsRec>
+          </clade>
+         </clade>
+        </clade>
+        <clade>
+         <name>5049_speciation</name>
+         <eventsRec>
+          <speciationLoss speciesLocation="50"></speciationLoss>
+          <speciationLoss speciesLocation="49"></speciationLoss>
+          <speciationLoss speciesLocation="48"></speciationLoss>
+          <speciationLoss speciesLocation="47"></speciationLoss>
+          <speciationLoss speciesLocation="44"></speciationLoss>
+          <speciationLoss speciesLocation="43"></speciationLoss>
+          <leaf geneName="ENSOANP00000009709" speciesLocation="Ornithorhynchus_anatinus"></leaf>
+         </eventsRec>
+        </clade>
+       </clade>
+       <clade>
+        <name>40</name>
+        <eventsRec>
+         <duplication speciesLocation="50"></duplication>
+        </eventsRec>
+        <clade>
+         <name>38</name>
+         <eventsRec>
+          <duplication speciesLocation="50"></duplication>
+         </eventsRec>
+         <clade>
+          <name>35</name>
+          <eventsRec>
+           <duplication speciesLocation="50"></duplication>
+          </eventsRec>
+          <clade>
+           <name>25</name>
+           <eventsRec>
+            <duplication speciesLocation="50"></duplication>
+           </eventsRec>
+           <clade>
+            <name>24</name>
+            <eventsRec>
+             <duplication speciesLocation="50"></duplication>
+            </eventsRec>
+            <clade>
+             <name>23</name>
+             <eventsRec>
+              <duplication speciesLocation="50"></duplication>
+             </eventsRec>
+             <clade>
+              <name>21</name>
+              <eventsRec>
+               <duplication speciesLocation="50"></duplication>
+              </eventsRec>
+              <clade>
+               <name>20</name>
+               <eventsRec>
+                <speciation speciesLocation="50"></speciation>
+               </eventsRec>
+               <clade>
+                <name>1420_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="14"></speciationLoss>
+                 <speciationLoss speciesLocation="13"></speciationLoss>
+                 <speciationLoss speciesLocation="11"></speciationLoss>
+                 <duplication speciesLocation="Rattus_norvegicus"></duplication>
+                </eventsRec>
+                <clade>
+                 <name>ENSRNOP00000045142</name>
+                 <eventsRec>
+                  <leaf geneName="ENSRNOP00000045142" speciesLocation="Rattus_norvegicus"></leaf>
+                 </eventsRec>
+                </clade>
+                <clade>
+                 <name>ENSRNOP00000048056</name>
+                 <eventsRec>
+                  <leaf geneName="ENSRNOP00000048056" speciesLocation="Rattus_norvegicus"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+               <clade>
+                <name>4921_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="49"></speciationLoss>
+                 <speciationLoss speciesLocation="48"></speciationLoss>
+                 <speciationLoss speciesLocation="47"></speciationLoss>
+                 <speciationLoss speciesLocation="46"></speciationLoss>
+                 <duplication speciesLocation="Mus_musculus"></duplication>
+                </eventsRec>
+                <clade>
+                 <name>ENSMUSP00000036621</name>
+                 <eventsRec>
+                  <leaf geneName="ENSMUSP00000036621" speciesLocation="Mus_musculus"></leaf>
+                 </eventsRec>
+                </clade>
+                <clade>
+                 <name>ENSMUSP00000021573</name>
+                 <eventsRec>
+                  <leaf geneName="ENSMUSP00000021573" speciesLocation="Mus_musculus"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+              </clade>
+              <clade>
+               <name>5050_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="50"></speciationLoss>
+                <speciationLoss speciesLocation="14"></speciationLoss>
+                <speciationLoss speciesLocation="13"></speciationLoss>
+                <speciationLoss speciesLocation="11"></speciationLoss>
+                <leaf geneName="ENSRNOP00000033936" speciesLocation="Rattus_norvegicus"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+             <clade>
+              <name>22</name>
+              <eventsRec>
+               <speciation speciesLocation="50"></speciation>
+              </eventsRec>
+              <clade>
+               <name>1422_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="14"></speciationLoss>
+                <speciationLoss speciesLocation="13"></speciationLoss>
+                <speciationLoss speciesLocation="12"></speciationLoss>
+                <leaf geneName="ENSEEUP00000009090" speciesLocation="Erinaceus_europaeus"></leaf>
+               </eventsRec>
+              </clade>
+              <clade>
+               <name>4923_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="49"></speciationLoss>
+                <speciationLoss speciesLocation="42"></speciationLoss>
+                <speciationLoss speciesLocation="41"></speciationLoss>
+                <speciationLoss speciesLocation="40"></speciationLoss>
+                <speciationLoss speciesLocation="37"></speciationLoss>
+                <leaf geneName="ENSSARP00000003113" speciesLocation="Sorex_araneus"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+            </clade>
+            <clade>
+             <name>5051_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="50"></speciationLoss>
+              <speciationLoss speciesLocation="49"></speciationLoss>
+              <speciationLoss speciesLocation="42"></speciationLoss>
+              <speciationLoss speciesLocation="41"></speciationLoss>
+              <speciationLoss speciesLocation="35"></speciationLoss>
+              <speciationLoss speciesLocation="24"></speciationLoss>
+              <speciationLoss speciesLocation="23"></speciationLoss>
+              <speciationLoss speciesLocation="21"></speciationLoss>
+              <leaf geneName="ENSTBEP00000008257" speciesLocation="Tupaia_belangeri"></leaf>
+             </eventsRec>
+            </clade>
+           </clade>
+           <clade>
+            <name>5052_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="50"></speciationLoss>
+             <speciationLoss speciesLocation="49"></speciationLoss>
+             <speciationLoss speciesLocation="48"></speciationLoss>
+             <speciationLoss speciesLocation="47"></speciationLoss>
+             <speciationLoss speciesLocation="46"></speciationLoss>
+             <speciationLoss speciesLocation="45"></speciationLoss>
+             <leaf geneName="ENSDNOP00000008185" speciesLocation="Dasypus_novemcinctus"></leaf>
+            </eventsRec>
+           </clade>
+          </clade>
+          <clade>
+           <name>34</name>
+           <eventsRec>
+            <duplication speciesLocation="50"></duplication>
+           </eventsRec>
+           <clade>
+            <name>27</name>
+            <eventsRec>
+             <speciation speciesLocation="50"></speciation>
+            </eventsRec>
+            <clade>
+             <name>1425_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="14"></speciationLoss>
+              <speciationLoss speciesLocation="13"></speciationLoss>
+              <speciationLoss speciesLocation="11"></speciationLoss>
+              <duplication speciesLocation="Rattus_norvegicus"></duplication>
+             </eventsRec>
+             <clade>
+              <name>ENSRNOP00000049372</name>
+              <eventsRec>
+               <leaf geneName="ENSRNOP00000049372" speciesLocation="Rattus_norvegicus"></leaf>
+              </eventsRec>
+             </clade>
+             <clade>
+              <name>ENSRNOP00000047209</name>
+              <eventsRec>
+               <leaf geneName="ENSRNOP00000047209" speciesLocation="Rattus_norvegicus"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+            <clade>
+             <name>4926_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="49"></speciationLoss>
+              <speciationLoss speciesLocation="48"></speciationLoss>
+              <leaf geneName="ENSSTOP00000009016" speciesLocation="Spermophilus_tridecemlineatus"></leaf>
+             </eventsRec>
+            </clade>
+           </clade>
+           <clade>
+            <name>5053_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="50"></speciationLoss>
+             <speciationLoss speciesLocation="49"></speciationLoss>
+             <duplication speciesLocation="42"></duplication>
+            </eventsRec>
+            <clade>
+             <name>28</name>
+             <eventsRec>
+              <speciation speciesLocation="42"></speciation>
+             </eventsRec>
+             <clade>
+              <name>1716_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="17"></speciationLoss>
+               <speciationLoss speciesLocation="15"></speciationLoss>
+               <leaf geneName="ENSCHOP00000007940" speciesLocation="Choloepus_hoffmanni"></leaf>
+              </eventsRec>
+             </clade>
+             <clade>
+              <name>4122_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="41"></speciationLoss>
+               <speciationLoss speciesLocation="35"></speciationLoss>
+               <speciationLoss speciesLocation="24"></speciationLoss>
+               <speciationLoss speciesLocation="23"></speciationLoss>
+               <speciationLoss speciesLocation="22"></speciationLoss>
+               <leaf geneName="ENSLAFP00000005209" speciesLocation="Loxodonta_africana"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+            <clade>
+             <name>4225_speciation</name>
+             <eventsRec>
+              <speciationLoss speciesLocation="42"></speciationLoss>
+              <duplication speciesLocation="41"></duplication>
+             </eventsRec>
+             <clade>
+              <name>31</name>
+              <eventsRec>
+               <duplication speciesLocation="41"></duplication>
+              </eventsRec>
+              <clade>
+               <name>30</name>
+               <eventsRec>
+                <duplication speciesLocation="41"></duplication>
+               </eventsRec>
+               <clade>
+                <name>29</name>
+                <eventsRec>
+                 <speciation speciesLocation="41"></speciation>
+                </eventsRec>
+                <clade>
+                 <name>3517_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="35"></speciationLoss>
+                  <speciationLoss speciesLocation="24"></speciationLoss>
+                  <speciationLoss speciesLocation="20"></speciationLoss>
+                  <leaf geneName="ENSP00000277517" speciesLocation="Homo_sapiens"></leaf>
+                 </eventsRec>
+                </clade>
+                <clade>
+                 <name>4017_speciation</name>
+                 <eventsRec>
+                  <speciationLoss speciesLocation="40"></speciationLoss>
+                  <speciationLoss speciesLocation="37"></speciationLoss>
+                  <speciationLoss speciesLocation="36"></speciationLoss>
+                  <leaf geneName="ENSGGOP00000013055" speciesLocation="Gorilla_gorilla"></leaf>
+                 </eventsRec>
+                </clade>
+               </clade>
+               <clade>
+                <name>4123_speciation</name>
+                <eventsRec>
+                 <speciationLoss speciesLocation="41"></speciationLoss>
+                 <speciationLoss speciesLocation="35"></speciationLoss>
+                 <speciationLoss speciesLocation="34"></speciationLoss>
+                 <speciationLoss speciesLocation="30"></speciationLoss>
+                 <speciationLoss speciesLocation="29"></speciationLoss>
+                 <leaf geneName="ENSPTRP00000003781" speciesLocation="Pan_troglodytes"></leaf>
+                </eventsRec>
+               </clade>
+              </clade>
+              <clade>
+               <name>4124_speciation</name>
+               <eventsRec>
+                <speciationLoss speciesLocation="41"></speciationLoss>
+                <speciationLoss speciesLocation="40"></speciationLoss>
+                <speciationLoss speciesLocation="37"></speciationLoss>
+                <speciationLoss speciesLocation="36"></speciationLoss>
+                <leaf geneName="ENSNLEP00000016453" speciesLocation="Nomascus_leucogenys"></leaf>
+               </eventsRec>
+              </clade>
+             </clade>
+             <clade>
+              <name>4125_speciation</name>
+              <eventsRec>
+               <speciationLoss speciesLocation="41"></speciationLoss>
+               <speciationLoss speciesLocation="35"></speciationLoss>
+               <speciationLoss speciesLocation="24"></speciationLoss>
+               <speciationLoss speciesLocation="23"></speciationLoss>
+               <speciationLoss speciesLocation="21"></speciationLoss>
+               <leaf geneName="ENSTBEP00000000980" speciesLocation="Tupaia_belangeri"></leaf>
+              </eventsRec>
+             </clade>
+            </clade>
+           </clade>
+          </clade>
+         </clade>
+         <clade>
+          <name>5054_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="50"></speciationLoss>
+           <duplication speciesLocation="14"></duplication>
+          </eventsRec>
+          <clade>
+           <name>36</name>
+           <eventsRec>
+            <speciation speciesLocation="14"></speciation>
+           </eventsRec>
+           <clade>
+            <name>912_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="9"></speciationLoss>
+             <speciationLoss speciesLocation="8"></speciationLoss>
+             <speciationLoss speciesLocation="6"></speciationLoss>
+             <leaf geneName="ENSMODP00000007397" speciesLocation="Monodelphis_domestica"></leaf>
+            </eventsRec>
+           </clade>
+           <clade>
+            <name>1312_speciation</name>
+            <eventsRec>
+             <speciationLoss speciesLocation="13"></speciationLoss>
+             <speciationLoss speciesLocation="11"></speciationLoss>
+             <speciationLoss speciesLocation="10"></speciationLoss>
+             <leaf geneName="ENSSHAP00000017556" speciesLocation="Sarcophilus_harrisii"></leaf>
+            </eventsRec>
+           </clade>
+          </clade>
+          <clade>
+           <name>1427_speciation</name>
+           <eventsRec>
+            <speciationLoss speciesLocation="14"></speciationLoss>
+            <speciationLoss speciesLocation="9"></speciationLoss>
+            <speciationLoss speciesLocation="5"></speciationLoss>
+            <speciationLoss speciesLocation="2"></speciationLoss>
+            <speciationLoss speciesLocation="1"></speciationLoss>
+            <leaf geneName="ENSMEUP00000013932" speciesLocation="Macropus_eugenii"></leaf>
+           </eventsRec>
+          </clade>
+         </clade>
+        </clade>
+        <clade>
+         <name>5055_speciation</name>
+         <eventsRec>
+          <speciationLoss speciesLocation="50"></speciationLoss>
+          <speciation speciesLocation="14"></speciation>
+         </eventsRec>
+         <clade>
+          <name>914_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="9"></speciationLoss>
+           <speciationLoss speciesLocation="8"></speciationLoss>
+           <speciationLoss speciesLocation="6"></speciationLoss>
+           <leaf geneName="ENSMODP00000007408" speciesLocation="Monodelphis_domestica"></leaf>
+          </eventsRec>
+         </clade>
+         <clade>
+          <name>1314_speciation</name>
+          <eventsRec>
+           <speciationLoss speciesLocation="13"></speciationLoss>
+           <speciationLoss speciesLocation="11"></speciationLoss>
+           <speciationLoss speciesLocation="10"></speciationLoss>
+           <leaf geneName="ENSSHAP00000017751" speciesLocation="Sarcophilus_harrisii"></leaf>
+          </eventsRec>
+         </clade>
+        </clade>
+       </clade>
+      </clade>
+     </clade>
+    </clade>
+   </clade>
+  </phylogeny>
+ </recGeneTree>
+</recPhylo>

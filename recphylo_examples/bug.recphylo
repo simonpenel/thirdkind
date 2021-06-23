@@ -1,0 +1,163 @@
+<recPhylo>
+ <spTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>1</name>
+    <clade>
+     <name>0</name>
+     <clade>
+      <name>a</name>
+     </clade>
+     <clade>
+      <name>b</name>
+     </clade>
+    </clade>
+    <clade>
+     <name>c</name>
+    </clade>
+   </clade>
+  </phylogeny>
+ </spTree>
+<!-- family 1 tree 1 (total cost = 4, duplications = 2, losses = 0, contraction threshold = no, execution time = 0 s.) -->
+ <recGeneTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>0</name>
+    <eventsRec>
+     <speciation speciesLocation="1"></speciation>
+    </eventsRec>
+    <clade>
+     <name>c1_c</name>
+     <eventsRec>
+      <leaf geneName="c1_c" speciesLocation="c"></leaf>
+     </eventsRec>
+    </clade>
+    <clade>
+     <name>03_loss</name>
+     <eventsRec>
+      <loss speciesLocation="0"></loss>
+     </eventsRec>
+     <clade>
+      <name>01_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a2_a</name>
+       <eventsRec>
+        <leaf geneName="a2_a" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b3_b</name>
+       <eventsRec>
+        <leaf geneName="b3_b" speciesLocation="b"></leaf>
+       </eventsRec>
+      </clade>
+     </clade>
+     <clade>
+      <name>02_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a1_a</name>
+       <eventsRec>
+        <leaf geneName="a1_a" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b4_loss</name>
+       <eventsRec>
+        <loss speciesLocation="b"></loss>
+       </eventsRec>
+       <clade>
+        <name>b1_b</name>
+        <eventsRec>
+         <leaf geneName="b1_b" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+       <clade>
+        <name>b2_b</name>
+        <eventsRec>
+         <leaf geneName="b2_b" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+     </clade>
+    </clade>
+   </clade>
+  </phylogeny>
+ </recGeneTree>
+<!-- family 2 tree 1 (total cost = 4, duplications = 2, losses = 0, contraction threshold = no, execution time = 0 s.) -->
+ <recGeneTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>0</name>
+    <eventsRec>
+     <speciation speciesLocation="1"></speciation>
+    </eventsRec>
+    <clade>
+     <name>c1_c</name>
+     <eventsRec>
+      <leaf geneName="c1_c" speciesLocation="c"></leaf>
+     </eventsRec>
+    </clade>
+    <clade>
+     <name>03_loss</name>
+     <eventsRec>
+      <loss speciesLocation="0"></loss>
+     </eventsRec>
+     <clade>
+      <name>01_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a2_a</name>
+       <eventsRec>
+        <leaf geneName="a2_a" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b3_b</name>
+       <eventsRec>
+        <leaf geneName="b3_b" speciesLocation="b"></leaf>
+       </eventsRec>
+      </clade>
+     </clade>
+     <clade>
+      <name>09_speciation</name>
+      <eventsRec>
+       <speciation speciesLocation="0"></speciation>
+      </eventsRec>
+      <clade>
+       <name>a1_a</name>
+       <eventsRec>
+        <leaf geneName="a1_a" speciesLocation="a"></leaf>
+       </eventsRec>
+      </clade>
+      <clade>
+       <name>b4_loss</name>
+       <eventsRec>
+        <loss speciesLocation="b"></loss>
+       </eventsRec>
+       <clade>
+        <name>b1_b</name>
+        <eventsRec>
+         <leaf geneName="b1_b" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+       <clade>
+        <name>b2_b</name>
+        <eventsRec>
+         <leaf geneName="b2_b" speciesLocation="b"></leaf>
+        </eventsRec>
+       </clade>
+      </clade>
+     </clade>
+    </clade>
+   </clade>
+  </phylogeny>
+ </recGeneTree>
+</recPhylo>

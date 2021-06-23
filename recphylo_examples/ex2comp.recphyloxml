@@ -1,0 +1,100 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>comp20</name>
+<clade>
+ <name>comp21</name>
+<clade>
+ <name>D</name>
+</clade>
+<clade>
+ <name>E</name>
+</clade>
+</clade>
+<clade>
+ <name>F</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<spTree>
+<phylogeny>
+<clade>
+ <name>comp10</name>
+<clade>
+ <name>comp11</name>
+<clade>
+ <name>A</name>
+</clade>
+<clade>
+ <name>B</name>
+</clade>
+</clade>
+<clade>
+ <name>C</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="comp10"/>
+</eventsRec>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="comp11"/>
+</eventsRec>
+<clade>
+ <name>A</name>
+<eventsRec>
+<leaf speciesLocation="A"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>1</name>
+<eventsRec>
+<branchingOut speciesLocation="B"/>
+</eventsRec>
+<clade>
+ <name>6</name>
+<eventsRec>
+<transferBack destinationSpecies="comp21"/>
+<speciation speciesLocation="comp21"/>
+</eventsRec>
+<clade>
+ <name>D</name>
+<eventsRec>
+<leaf speciesLocation="D"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>E</name>
+<eventsRec>
+<leaf speciesLocation="E"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>B</name>
+<eventsRec>
+<leaf speciesLocation="B"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>C</name>
+<eventsRec>
+<leaf speciesLocation="C"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

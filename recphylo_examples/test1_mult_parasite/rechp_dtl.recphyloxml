@@ -1,0 +1,243 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>h0</name>
+<clade>
+ <name>h1</name>
+<clade>
+ <name>h2</name>
+</clade>
+<clade>
+ <name>h3</name>
+</clade>
+</clade>
+<clade>
+ <name>h4</name>
+<clade>
+ <name>h5</name>
+<clade>
+ <name>h6</name>
+</clade>
+<clade>
+ <name>h7</name>
+</clade>
+</clade>
+<clade>
+ <name>h8</name>
+<clade>
+ <name>h9</name>
+<clade>
+ <name>h10</name>
+</clade>
+<clade>
+ <name>h11</name>
+</clade>
+</clade>
+<clade>
+ <name>h12</name>
+<clade>
+ <name>h13</name>
+</clade>
+<clade>
+ <name>h14</name>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>p0_1</name>
+<eventsRec>
+<duplication speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p0_2</name>
+<eventsRec>
+<speciation speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p0_4</name>
+<eventsRec>
+<branchingOut speciesLocation="h2"/>
+</eventsRec>
+<clade>
+ <name>p0_8</name>
+<eventsRec>
+<transferBack destinationSpecies="h3"/>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_5</name>
+<eventsRec>
+<duplication speciesLocation="h2"/>
+</eventsRec>
+<clade>
+ <name>p0_6</name>
+<eventsRec>
+<leaf speciesLocation="h2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_7</name>
+<eventsRec>
+<leaf speciesLocation="h2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_3</name>
+<eventsRec>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_9</name>
+<eventsRec>
+<speciation speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p0_10</name>
+<eventsRec>
+<leaf speciesLocation="h2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_11</name>
+<eventsRec>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>2</id><clade>
+ <name>p1_1</name>
+<eventsRec>
+<speciation speciesLocation="h8"/>
+</eventsRec>
+<clade>
+ <name>p1_2</name>
+<eventsRec>
+<speciation speciesLocation="h9"/>
+</eventsRec>
+<clade>
+ <name>p1_3</name>
+<eventsRec>
+<branchingOut speciesLocation="h10"/>
+</eventsRec>
+<clade>
+ <name>p1_5</name>
+<eventsRec>
+<transferBack destinationSpecies="h2"/>
+<leaf speciesLocation="h2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p1_4</name>
+<eventsRec>
+<leaf speciesLocation="h10"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p1_6</name>
+<eventsRec>
+<leaf speciesLocation="h11"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p1_7</name>
+<eventsRec>
+<branchingOut speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p1_11</name>
+<eventsRec>
+<transferBack destinationSpecies="h1"/>
+<speciation speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p1_12</name>
+<eventsRec>
+<branchingOut speciesLocation="h2"/>
+</eventsRec>
+<clade>
+ <name>p1_16</name>
+<eventsRec>
+<transferBack destinationSpecies="h12"/>
+<speciation speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p1_17</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p1_18</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p1_13</name>
+<eventsRec>
+<branchingOut speciesLocation="h2"/>
+</eventsRec>
+<clade>
+ <name>p1_15</name>
+<eventsRec>
+<transferBack destinationSpecies="h10"/>
+<leaf speciesLocation="h10"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p1_14</name>
+<eventsRec>
+<leaf speciesLocation="h2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p1_19</name>
+<eventsRec>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p1_8</name>
+<eventsRec>
+<speciation speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p1_9</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p1_10</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

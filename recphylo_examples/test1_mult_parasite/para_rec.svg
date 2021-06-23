@@ -1,0 +1,47 @@
+<svg height="315" viewBox="-7.5 52.5 495 435" width="375" xmlns="http://www.w3.org/2000/svg">
+<style>
+.gene { font:  10px serif; fill:blue; }
+</style>
+<g transform="translate(  -7.5 367.5) rotate(-90 0 0 ) ">
+<path d="M188.25,57 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M112.5,120 L112.5,60 L191.25,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="112.5" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M45,180 L45,120 L112.5,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M39,174 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 45 180)"/>
+<path d="M0,300 L0,180 L45,180" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<path d="M-1,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M0,294 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<text class="gene" transform="rotate(90 -5,310)" x="-5" y="310">
+p0_8
+</text>
+<path d="M90,240 L90,180 L45,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M87,237 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M60,300 L60,240 L90,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M59,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 55,310)" x="55" y="310">
+p0_6
+</text>
+<path d="M120,300 L120,240 L90,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M119,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 115,310)" x="115" y="310">
+p0_7
+</text>
+<path d="M180,300 L180,120 L112.5,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M179,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 175,310)" x="175" y="310">
+p0_3
+</text>
+<path d="M270,120 L270,60 L191.25,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="270" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M240,300 L240,120 L270,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M239,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 235,310)" x="235" y="310">
+p0_10
+</text>
+<path d="M300,300 L300,120 L270,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M299,299 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 295,310)" x="295" y="310">
+p0_11
+</text>
+</g>
+</svg>

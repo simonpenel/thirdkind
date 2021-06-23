@@ -1,0 +1,157 @@
+<recPhylo
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.recg.org ./recGeneTreeXML.xsd"
+  xmlns="http://www.recg.org">
+  <spTree>
+    <phylogeny>
+      <clade>
+        <name>13</name>
+        <clade>
+          <name>12</name>
+          <clade>
+            <name>10</name>
+            <clade>
+              <name>1</name>
+            </clade>
+            <clade>
+              <name>8</name>
+              <clade>
+                <name>2</name>
+              </clade>
+              <clade>
+                <name>3</name>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>9</name>
+            <clade>
+              <name>4</name>
+            </clade>
+            <clade>
+              <name>5</name>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>11</name>
+          <clade>
+            <name>6</name>
+          </clade>
+          <clade>
+            <name>7</name>
+          </clade>
+        </clade>
+      </clade>
+    </phylogeny>
+  </spTree>
+  <recGeneTree>
+    <phylogeny rooted="true">
+      <clade>
+        <name>a</name>
+        <eventsRec>
+          <speciation speciesLocation="11"></speciation>
+        </eventsRec>
+        <clade>
+          <name>n</name>
+          <eventsRec>
+            <leaf speciesLocation="7"></leaf>
+          </eventsRec>
+        </clade>
+        <clade>
+          <name>b</name>
+          <eventsRec>
+            <branchingOut speciesLocation="6"></branchingOut>
+          </eventsRec>
+          <clade>
+            <name>LOSS</name>
+            <eventsRec>
+              <loss speciesLocation="6"></loss>
+            </eventsRec>
+          </clade>
+          <clade>
+            <name>b.c</name>
+            <eventsRec>
+              <bifurcationOut></bifurcationOut>
+            </eventsRec>
+            <clade>
+              <name>c</name>
+              <eventsRec>
+                <transferBack destinationSpecies="5"></transferBack>
+                <branchingOut speciesLocation="5"></branchingOut>
+              </eventsRec>
+              <clade>
+                <name>l</name>
+                <eventsRec>
+                  <leaf speciesLocation="5"></leaf>
+                </eventsRec>
+              </clade>
+              <clade>
+                <name>k</name>
+                <eventsRec>
+                  <transferBack destinationSpecies="4"></transferBack>
+                  <leaf speciesLocation="4"></leaf>
+                </eventsRec>
+              </clade>
+            </clade>
+            <clade>
+              <name>d</name>
+              <eventsRec>
+                <transferBack destinationSpecies="10"></transferBack>
+                <speciation speciesLocation="10"></speciation>
+              </eventsRec>
+              <clade>
+                <name>e</name>
+                <eventsRec>
+                  <duplication speciesLocation="8"></duplication>
+                </eventsRec>
+                <clade>
+                  <name>h</name>
+                  <eventsRec>
+                    <speciation speciesLocation="8"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>LOSS</name>
+                    <eventsRec>
+                      <loss speciesLocation="3"></loss>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>h.c</name>
+                    <eventsRec>
+                      <leaf speciesLocation="2"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>f</name>
+                  <eventsRec>
+                    <speciation speciesLocation="8"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>j</name>
+                    <eventsRec>
+                      <leaf speciesLocation="3"></leaf>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>i</name>
+                    <eventsRec>
+                      <leaf speciesLocation="2"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <name>g</name>
+                <eventsRec>
+                  <leaf speciesLocation="1"></leaf>
+                </eventsRec>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </phylogeny>
+  </recGeneTree>
+</recPhylo>

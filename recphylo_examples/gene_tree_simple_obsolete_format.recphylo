@@ -1,0 +1,57 @@
+<recPhylo>
+ <spTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>1</name>
+    <clade>
+     <name>0</name>
+     <clade>
+      <name>a</name>
+     </clade>
+     <clade>
+      <name>b</name>
+     </clade>
+    </clade>
+    <clade>
+     <name>c</name>
+    </clade>
+   </clade>
+  </phylogeny>
+ </spTree>
+<!-- family 1 tree 1 (total cost = 3, duplications = 1, losses = 1, contraction threshold = no) -->
+ <recGeneTree>
+  <phylogeny rooted="true">
+   <clade>
+    <name>0</name>
+    <eventsRec>
+     <speciation speciesLocation="1"></speciation>
+    </eventsRec>
+    <clade>
+     <name>c1</name>
+     <eventsRec>
+      <leaf geneName="c1" speciesLocation="c"></leaf>
+     </eventsRec>
+    </clade>
+    <clade>
+     <name>01_speciation</name>
+     <eventsRec>
+      <speciationLoss speciesLocation="0"></speciationLoss>
+      <duplication speciesLocation="a"></duplication>
+     </eventsRec>
+     <clade>
+      <name>a1</name>
+      <eventsRec>
+       <leaf geneName="a1" speciesLocation="a"></leaf>
+      </eventsRec>
+     </clade>
+     <clade>
+      <name>a2</name>
+      <eventsRec>
+       <leaf geneName="a2" speciesLocation="a"></leaf>
+      </eventsRec>
+     </clade>
+    </clade>
+   </clade>
+  </phylogeny>
+ </recGeneTree>
+</recPhylo>
