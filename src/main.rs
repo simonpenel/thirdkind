@@ -263,7 +263,7 @@ println!("List of species trees roots : {:?}",global_roots);
 info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
 println!();
 println!("Building svg 1: reconciled pipe symbiote tree(s) with gene tree(s) [{}]",
-    outfile_mapped_2);
+    outfile_mapped_1);
 // ---------------------------------------------------------
 // Generate svg of the lobal parasite pipe tree and  path
 // genes trees
