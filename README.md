@@ -1,5 +1,5 @@
 # thirdkind
-Drawing reconciled phylogenetic trees  allowing 1, 2 or 3 reconcillation levels
+Drawing reconciled phylogenetic trees  allowing 1, 2 or 3 reconciliation levels
 
 [![thirdkind at crates.io](https://img.shields.io/crates/v/thirdkind.svg)](https://crates.io/crates/thirdkind)
 
