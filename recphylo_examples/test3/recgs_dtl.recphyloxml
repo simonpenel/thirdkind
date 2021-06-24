@@ -1,0 +1,465 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>p0_1</name>
+<clade>
+ <name>p0_2</name>
+<clade>
+ <name>p0_3</name>
+<clade>
+ <name>p0_4</name>
+<clade>
+ <name>p0_5</name>
+<clade>
+ <name>p0_6</name>
+</clade>
+<clade>
+ <name>p0_7</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_8</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_9</name>
+<clade>
+ <name>p0_10</name>
+<clade>
+ <name>p0_11</name>
+<clade>
+ <name>p0_12</name>
+</clade>
+<clade>
+ <name>p0_13</name>
+<clade>
+ <name>p0_14</name>
+</clade>
+<clade>
+ <name>p0_15</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_16</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_17</name>
+<clade>
+ <name>p0_18</name>
+<clade>
+ <name>p0_19</name>
+</clade>
+<clade>
+ <name>p0_20</name>
+<clade>
+ <name>p0_21</name>
+</clade>
+<clade>
+ <name>p0_22</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_23</name>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_24</name>
+<clade>
+ <name>p0_25</name>
+<clade>
+ <name>p0_26</name>
+<clade>
+ <name>p0_27</name>
+</clade>
+<clade>
+ <name>p0_28</name>
+<clade>
+ <name>p0_29</name>
+<clade>
+ <name>p0_30</name>
+</clade>
+<clade>
+ <name>p0_31</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_32</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_33</name>
+<clade>
+ <name>p0_34</name>
+</clade>
+<clade>
+ <name>p0_35</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_36</name>
+<clade>
+ <name>p0_37</name>
+<clade>
+ <name>p0_38</name>
+</clade>
+<clade>
+ <name>p0_39</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_40</name>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_41</name>
+<clade>
+ <name>p0_42</name>
+</clade>
+<clade>
+ <name>p0_43</name>
+<clade>
+ <name>p0_44</name>
+<clade>
+ <name>p0_45</name>
+<clade>
+ <name>p0_46</name>
+</clade>
+<clade>
+ <name>p0_47</name>
+</clade>
+</clade>
+<clade>
+ <name>p0_48</name>
+<clade>
+ <name>p0_49</name>
+</clade>
+<clade>
+ <name>p0_50</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_51</name>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="p0_25"/>
+</eventsRec>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="p0_26"/>
+</eventsRec>
+<clade>
+ <name>gl6</name>
+<eventsRec>
+<leaf speciesLocation="p0_27"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>1</name>
+<eventsRec>
+<speciation speciesLocation="p0_28"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="p0_29"/>
+</eventsRec>
+<clade>
+ <name>gl5</name>
+<eventsRec>
+<leaf speciesLocation="p0_30"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl4</name>
+<eventsRec>
+<leaf speciesLocation="p0_31"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>gl3</name>
+<eventsRec>
+<leaf speciesLocation="p0_32"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>2</name>
+<eventsRec>
+<speciation speciesLocation="p0_33"/>
+</eventsRec>
+<clade>
+ <name>gl2</name>
+<eventsRec>
+<leaf speciesLocation="p0_34"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>15</name>
+<eventsRec>
+<branchingOut speciesLocation="p0_35"/>
+</eventsRec>
+<clade>
+ <name>gl0</name>
+<eventsRec>
+<transferBack destinationSpecies="p0_31"/>
+<leaf speciesLocation="p0_31"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl1</name>
+<eventsRec>
+<leaf speciesLocation="p0_35"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>2</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="p0_3"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="p0_4"/>
+</eventsRec>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="p0_5"/>
+</eventsRec>
+<clade>
+ <name>gl12</name>
+<eventsRec>
+<leaf speciesLocation="p0_6"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl11</name>
+<eventsRec>
+<leaf speciesLocation="p0_7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>gl10</name>
+<eventsRec>
+<leaf speciesLocation="p0_8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>2</name>
+<eventsRec>
+<speciation speciesLocation="p0_9"/>
+</eventsRec>
+<clade>
+ <name>6</name>
+<eventsRec>
+<speciation speciesLocation="p0_10"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="p0_11"/>
+</eventsRec>
+<clade>
+ <name>gl9</name>
+<eventsRec>
+<leaf speciesLocation="p0_12"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>13</name>
+<eventsRec>
+<branchingOut speciesLocation="p0_13"/>
+</eventsRec>
+<clade>
+ <name>17</name>
+<eventsRec>
+<transferBack destinationSpecies="p0_48"/>
+<speciation speciesLocation="p0_48"/>
+</eventsRec>
+<clade>
+ <name>gl6</name>
+<eventsRec>
+<leaf speciesLocation="p0_49"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl5</name>
+<eventsRec>
+<leaf speciesLocation="p0_50"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>16</name>
+<eventsRec>
+<speciation speciesLocation="p0_13"/>
+</eventsRec>
+<clade>
+ <name>gl8</name>
+<eventsRec>
+<leaf speciesLocation="p0_14"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl7</name>
+<eventsRec>
+<leaf speciesLocation="p0_15"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>gl4</name>
+<eventsRec>
+<leaf speciesLocation="p0_16"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="p0_17"/>
+</eventsRec>
+<clade>
+ <name>30</name>
+<eventsRec>
+<speciation speciesLocation="p0_18"/>
+</eventsRec>
+<clade>
+ <name>gl3</name>
+<eventsRec>
+<leaf speciesLocation="p0_19"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<speciation speciesLocation="p0_20"/>
+</eventsRec>
+<clade>
+ <name>gl2</name>
+<eventsRec>
+<leaf speciesLocation="p0_21"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl1</name>
+<eventsRec>
+<leaf speciesLocation="p0_22"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>gl0</name>
+<eventsRec>
+<leaf speciesLocation="p0_23"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>3</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="p0_41"/>
+</eventsRec>
+<clade>
+ <name>gl5</name>
+<eventsRec>
+<leaf speciesLocation="p0_42"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>4</name>
+<eventsRec>
+<speciation speciesLocation="p0_43"/>
+</eventsRec>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="p0_44"/>
+</eventsRec>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="p0_45"/>
+</eventsRec>
+<clade>
+ <name>gl4</name>
+<eventsRec>
+<leaf speciesLocation="p0_46"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl3</name>
+<eventsRec>
+<leaf speciesLocation="p0_47"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8</name>
+<eventsRec>
+<speciation speciesLocation="p0_48"/>
+</eventsRec>
+<clade>
+ <name>gl2</name>
+<eventsRec>
+<leaf speciesLocation="p0_49"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>gl1</name>
+<eventsRec>
+<leaf speciesLocation="p0_50"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>gl0</name>
+<eventsRec>
+<leaf speciesLocation="p0_51"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

@@ -1,0 +1,123 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>big_host</name>
+<clade>
+ <name>h</name>
+<clade>
+ <name>C</name>
+<clade>
+ <name>A</name>
+</clade>
+<clade>
+ <name>B</name>
+</clade>
+</clade>
+<clade>
+ <name>D</name>
+</clade>
+</clade>
+<clade>
+ <name>big_host0</name>
+<clade>
+ <name>p4r</name>
+<clade>
+ <name>p4d</name>
+</clade>
+<clade>
+ <name>p4c</name>
+<clade>
+ <name>p4b</name>
+</clade>
+<clade>
+ <name>p4a</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p5r</name>
+<clade>
+ <name>p5a</name>
+</clade>
+<clade>
+ <name>p5b</name>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="p4r"/>
+</eventsRec>
+<clade>
+ <name>g4d</name>
+<eventsRec>
+<leaf speciesLocation="p4d"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>4</name>
+<eventsRec>
+<branchingOut speciesLocation="p4c"/>
+</eventsRec>
+<clade>
+ <name>3</name>
+<eventsRec>
+<transferBack destinationSpecies="p5r"/>
+<speciation speciesLocation="p5r"/>
+</eventsRec>
+<clade>
+ <name>g4a</name>
+<eventsRec>
+<leaf speciesLocation="p5a"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>g4b</name>
+<eventsRec>
+<leaf speciesLocation="p5b"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>2</name>
+<eventsRec>
+<branchingOut speciesLocation="p4c"/>
+</eventsRec>
+<clade>
+ <name>g4e</name>
+<eventsRec>
+<transferBack destinationSpecies="p4a"/>
+<leaf speciesLocation="p4a"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>g4f</name>
+<eventsRec>
+<speciation speciesLocation="p4c"/>
+</eventsRec>
+<clade>
+ <name>g4f.l</name>
+<eventsRec>
+<leaf speciesLocation="p4b"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>g4fLOSS</name>
+<eventsRec>
+<loss speciesLocation="p4a"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

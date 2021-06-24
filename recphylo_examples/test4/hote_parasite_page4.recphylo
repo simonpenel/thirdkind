@@ -1,0 +1,76 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>h</name>
+<clade>
+ <name>C</name>
+<clade>
+ <name>A</name>
+</clade>
+<clade>
+ <name>B</name>
+</clade>
+</clade>
+<clade>
+ <name>D</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>p4r</name>
+<eventsRec>
+<speciation speciesLocation="h"/>
+</eventsRec>
+<clade>
+ <name>p4c</name>
+<eventsRec>
+<speciation speciesLocation="C"/>
+</eventsRec>
+<clade>
+ <name>p4a</name>
+<eventsRec>
+<leaf speciesLocation="A"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p4b</name>
+<eventsRec>
+<leaf speciesLocation="B"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p4d</name>
+<eventsRec>
+<leaf speciesLocation="D"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>2</id><clade>
+ <name>p5r</name>
+<eventsRec>
+<speciation speciesLocation="C"/>
+</eventsRec>
+<clade>
+ <name>p5a</name>
+<eventsRec>
+<leaf speciesLocation="A"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p5b</name>
+<eventsRec>
+<leaf speciesLocation="B"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

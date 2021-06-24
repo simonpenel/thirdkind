@@ -1,0 +1,386 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>h0</name>
+<clade>
+ <name>h1</name>
+<clade>
+ <name>h2</name>
+<clade>
+ <name>h3</name>
+</clade>
+<clade>
+ <name>h4</name>
+</clade>
+</clade>
+<clade>
+ <name>h5</name>
+<clade>
+ <name>h6</name>
+<clade>
+ <name>h7</name>
+</clade>
+<clade>
+ <name>h8</name>
+<clade>
+ <name>h9</name>
+</clade>
+<clade>
+ <name>h10</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>h11</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>h12</name>
+<clade>
+ <name>h13</name>
+</clade>
+<clade>
+ <name>h14</name>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>p0_1</name>
+<eventsRec>
+<duplication speciesLocation="h0"/>
+</eventsRec>
+<clade>
+ <name>p0_2</name>
+<eventsRec>
+<speciation speciesLocation="h0"/>
+</eventsRec>
+<clade>
+ <name>p0_3</name>
+<eventsRec>
+<speciation speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p0_4</name>
+<eventsRec>
+<speciation speciesLocation="h2"/>
+</eventsRec>
+<clade>
+ <name>p0_5</name>
+<eventsRec>
+<duplication speciesLocation="h3"/>
+</eventsRec>
+<clade>
+ <name>p0_6</name>
+<eventsRec>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_7</name>
+<eventsRec>
+<leaf speciesLocation="h3"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_8</name>
+<eventsRec>
+<leaf speciesLocation="h4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_9</name>
+<eventsRec>
+<duplication speciesLocation="h5"/>
+</eventsRec>
+<clade>
+ <name>p0_10</name>
+<eventsRec>
+<speciation speciesLocation="h5"/>
+</eventsRec>
+<clade>
+ <name>p0_11</name>
+<eventsRec>
+<speciation speciesLocation="h6"/>
+</eventsRec>
+<clade>
+ <name>p0_12</name>
+<eventsRec>
+<leaf speciesLocation="h7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_13</name>
+<eventsRec>
+<speciation speciesLocation="h8"/>
+</eventsRec>
+<clade>
+ <name>p0_14</name>
+<eventsRec>
+<leaf speciesLocation="h9"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_15</name>
+<eventsRec>
+<leaf speciesLocation="h10"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_16</name>
+<eventsRec>
+<leaf speciesLocation="h11"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_17</name>
+<eventsRec>
+<speciation speciesLocation="h5"/>
+</eventsRec>
+<clade>
+ <name>p0_18</name>
+<eventsRec>
+<speciation speciesLocation="h6"/>
+</eventsRec>
+<clade>
+ <name>p0_19</name>
+<eventsRec>
+<leaf speciesLocation="h7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_20</name>
+<eventsRec>
+<speciation speciesLocation="h8"/>
+</eventsRec>
+<clade>
+ <name>p0_21</name>
+<eventsRec>
+<leaf speciesLocation="h9"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_22</name>
+<eventsRec>
+<leaf speciesLocation="h10"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_23</name>
+<eventsRec>
+<leaf speciesLocation="h11"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_24</name>
+<eventsRec>
+<duplication speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p0_25</name>
+<eventsRec>
+<speciation speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p0_26</name>
+<eventsRec>
+<duplication speciesLocation="h13"/>
+</eventsRec>
+<clade>
+ <name>p0_27</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_28</name>
+<eventsRec>
+<duplication speciesLocation="h13"/>
+</eventsRec>
+<clade>
+ <name>p0_29</name>
+<eventsRec>
+<branchingOut speciesLocation="h13"/>
+</eventsRec>
+<clade>
+ <name>p0_31</name>
+<eventsRec>
+<transferBack destinationSpecies="h14"/>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_30</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_32</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_33</name>
+<eventsRec>
+<duplication speciesLocation="h14"/>
+</eventsRec>
+<clade>
+ <name>p0_34</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_35</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_36</name>
+<eventsRec>
+<speciation speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p0_37</name>
+<eventsRec>
+<duplication speciesLocation="h13"/>
+</eventsRec>
+<clade>
+ <name>p0_38</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_39</name>
+<eventsRec>
+<leaf speciesLocation="h13"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_40</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_41</name>
+<eventsRec>
+<speciation speciesLocation="h0"/>
+</eventsRec>
+<clade>
+ <name>p0_43</name>
+<eventsRec>
+<speciation speciesLocation="h1"/>
+</eventsRec>
+<clade>
+ <name>p0_43.l</name>
+<eventsRec>
+<speciation speciesLocation="h5"/>
+</eventsRec>
+<clade>
+ <name>p0_44</name>
+<eventsRec>
+<speciation speciesLocation="h6"/>
+</eventsRec>
+<clade>
+ <name>p0_45</name>
+<eventsRec>
+<duplication speciesLocation="h7"/>
+</eventsRec>
+<clade>
+ <name>p0_46</name>
+<eventsRec>
+<leaf speciesLocation="h7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_47</name>
+<eventsRec>
+<leaf speciesLocation="h7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_48</name>
+<eventsRec>
+<speciation speciesLocation="h8"/>
+</eventsRec>
+<clade>
+ <name>p0_49</name>
+<eventsRec>
+<leaf speciesLocation="h9"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_50</name>
+<eventsRec>
+<leaf speciesLocation="h10"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>p0_51</name>
+<eventsRec>
+<leaf speciesLocation="h11"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_43LOSS</name>
+<eventsRec>
+<loss speciesLocation="h2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p0_42</name>
+<eventsRec>
+<speciation speciesLocation="h12"/>
+</eventsRec>
+<clade>
+ <name>p0_42.l</name>
+<eventsRec>
+<leaf speciesLocation="h14"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>p0_42LOSS</name>
+<eventsRec>
+<loss speciesLocation="h13"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
