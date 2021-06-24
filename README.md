@@ -40,27 +40,27 @@ https://raw.githubusercontent.com/simonpenel/rectree2svg/f9ee031fa23b815ff7cc729
 
 ## Example 1
 
-reconciled pipe symbiote tree(s) with gene tree(s):
+reconciled symbiote tree with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_1.svg
 
-symbiote-host reconciliation plus gene transfers:
+symbiote-host reconciliation plus mapped gene transfers:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_2.svg
 
-pipe host tree with gene tree(s) inside:
+host tree with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_3.svg
 
 
 ## Example 2
 
-reconciled pipe symbiote tree(s) with gene tree(s):
+reconciled pipe symbiote trees with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
 
 
-symbiote-host reconciliation plus gene transfers:
+symbiote-host reconciliation plus mapped gene transfers:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_2.svg
 
 
-pipe host tree with gene tree(s) inside:
+host tree with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_3.svg
 
 
