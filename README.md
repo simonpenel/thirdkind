@@ -52,7 +52,7 @@ https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b523
 
 ## Example 2
 
-reconciled pipe symbiote trees with associated gene trees:
+reconciled symbiote trees with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
 
 
