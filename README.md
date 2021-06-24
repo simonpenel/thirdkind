@@ -18,7 +18,7 @@ Keywords:  phylogeny, reconciled trees, phylogenetic trees
 
 phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
-# 2-levels output examples:
+# Output examples of 2-levels visualisation:
 
 single gene reconciliation in recphyloxml:
 
@@ -36,20 +36,31 @@ multiple gene trees with redundant transfers. Display only 1 gene tree and the t
 
 https://raw.githubusercontent.com/simonpenel/rectree2svg/f9ee031fa23b815ff7cc7298fd0dc4fb45707d53/transfers_abundance.svg
 
-# 3-levels output examples:
+# Output examples of 3-levels visualisation::
 
+## 1
+
+reconciled pipe symbiote tree(s) with gene tree(s):
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_1.svg
 
+symbiote-host reconciliation plus gene transfers:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_2.svg
 
+pipe host tree with gene tree(s) inside:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_3.svg
 
 
+## 2
 
+reconciled pipe symbiote tree(s) with gene tree(s):
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
 
+
+symbiote-host reconciliation plus gene transfers:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_2.svg
 
+
+pipe host tree with gene tree(s) inside:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_3.svg
 
 
