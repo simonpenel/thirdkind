@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/simonpenel/rectree2svg/f9ee031fa23b815ff7cc729
 
 # Output examples of 3-levels visualisation::
 
-## 1
+## Example 1
 
 reconciled pipe symbiote tree(s) with gene tree(s):
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_1.svg
@@ -50,7 +50,7 @@ pipe host tree with gene tree(s) inside:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_3.svg
 
 
-## 2
+## Example 2
 
 reconciled pipe symbiote tree(s) with gene tree(s):
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
