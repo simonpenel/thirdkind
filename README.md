@@ -123,7 +123,7 @@ The default values are the values of the "config_default.txt" file.
 Modify the default values and save it into  "my_config.txt" then type:
 
 ```
-rectree2svg -f recphylo_examples/FAM000600_reconciliated_big.recphylo -c my_config.txt -b
+thirdkind -f recphylo_examples/FAM000600_reconciliated_big.recphylo -c my_config.txt -b
 
 ```
 
