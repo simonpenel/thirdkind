@@ -5,11 +5,13 @@ Drawing reconciled phylogenetic trees  allowing 1, 2 or 3 reconciliation levels
 
 
 
-Build a svg representation of a phylogenetic reconciled (or not) tree with events (loss, duplication, speciation, transfer).
+Build  svg representations of  phylogenetic reconciled (or not) trees with events (loss, duplication, speciation, transfer).
 
-Read a recphyloxml file:  create a svg representation of the  gene tree(s) and the associated species tree.
+* Input one newick or phyloxml file -> a svg representation of the tree with node events
 
-Read a newick (rooted tree only) or phyloxml file: create a svg representation of the gene tree only .
+* Input one recphyloxml file -> a svg representation of the  "path" gene (or symbiot) tree(s) inside the associated "pipe" species (or host) tree
+   
+* Input two recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
 
 
 Keywords:  phylogeny, reconciled trees, phylogenetic trees
