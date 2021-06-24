@@ -18,7 +18,7 @@ Keywords:  phylogeny, reconciled trees, phylogenetic trees
 
 phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
-# Output examples
+# 2-levels output examples:
 
 single gene reconciliation in recphyloxml:
 
@@ -35,6 +35,22 @@ https://raw.githubusercontent.com/simonpenel/rectree2svg/684e2ecccf04408cf15815e
 multiple gene trees with redundant transfers. Display only 1 gene tree and the transfers according to the abundance of the transfer:
 
 https://raw.githubusercontent.com/simonpenel/rectree2svg/f9ee031fa23b815ff7cc7298fd0dc4fb45707d53/transfers_abundance.svg
+
+# 3-levels output examples:
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_1.svg
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_2.svg
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_3.svg
+
+
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_2.svg
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_3.svg
 
 
 # Install:
