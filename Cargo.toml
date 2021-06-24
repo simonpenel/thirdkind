@@ -1,6 +1,6 @@
 [package]
 name = "thirdkind"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
 edition = "2018"
 description ="Read  phylogenetic tree(s) in newick, phyloxml or recPhyloXML file and build a svg representation of the tree(s) allowing 1, 2 or 3 reconcillation levels"
@@ -16,4 +16,4 @@ log = "0.4.14"
 env_logger = "0.8.3"
 getopt = "1.1.0"
 webbrowser = "0.5.5"
-light_phylogeny = "0.22.0"
+light_phylogeny = "0.22.1"
