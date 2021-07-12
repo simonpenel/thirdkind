@@ -163,9 +163,9 @@ thirdkind -f recphylo_examples/FAM000600_reconciliated_big.recphylo -c my_config
 
 # Using the API light_phylogeny:
 
-thirdkind uses the light_phylogeny crate:
+thirdkind uses the light_phylogeny library:
 
-https://crates.io/crates/light_phylogeny
+https://github.com/simonpenel/light_phylogeny/wiki
 
 
 # recPhyloXML documentation
