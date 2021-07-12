@@ -10,7 +10,7 @@ Build  svg representations of  phylogenetic reconciled (or not) trees with event
 * Input one newick or phyloxml file -> a svg representation of the tree with node events
 
 * Input one recphyloxml file -> a svg representation of the  "path" gene (or symbiot) tree(s) inside the associated "pipe" species (or host) tree
-   
+
 * Input two recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
 
 
@@ -76,7 +76,7 @@ Install cargo:
 
 or for Windows see  https://doc.rust-lang.org/cargo/getting-started/installation.html
 
-Once Cargo is installed just open a terminal and type:
+Once Cargo is installed just open a new terminal and type:
 
     cargo install thirdkind
 
@@ -84,6 +84,11 @@ You may as well install from the sources. Clone or download  the sources here ht
 
     cargo build --release
     target/release/thirdkind -h
+
+Note:
+
+Since Rust does not include its own linker yet, you need to have a C compiler like gcc installed to act as the linker.
+
 
 # Run the binary:
 Read a newick, phyloxml or recPhyloXML file and create a svg.
