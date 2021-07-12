@@ -79,8 +79,10 @@ or for Windows see  https://doc.rust-lang.org/cargo/getting-started/installation
 Once Cargo is installed just open a new terminal and type:
 
     cargo install thirdkind
+    thirdkind
 
-You may as well install from the sources. Clone or download  the sources here https://github.com/simonpenel/thirdkind and type:
+You may as well install from the sources. This may be useful if you want to use the examples.
+Clone or download  the sources here https://github.com/simonpenel/thirdkind and type:
 
     cargo build --release
     target/release/thirdkind -h
@@ -159,9 +161,9 @@ thirdkind -f recphylo_examples/FAM000600_reconciliated_big.recphylo -c my_config
 
 ```
 
-# Using the API:
+# Using the API light_phylogeny:
 
-rectree2svg use the light_phylogeny crate:
+thirdkind uses the light_phylogeny crate:
 
 https://crates.io/crates/light_phylogeny
 
