@@ -29,7 +29,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-b][-c config file][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L]\
-    [-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-t #][-v][-W width]",programe_name);
+    [-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
@@ -52,7 +52,9 @@ fn display_help(programe_name:String) {
     println!("    -S : display node support");
     println!("    -t <t> : redudant transfers are displayed as one, with opacity according \
     to abundance and only if abundance is higher tan t. Only one gene is displayed.");
-    println!("    -T <n> : with option -t, select the gene to display");
+    println!("    -T <n> : with option -t, select the gene to display.");
+    println!("    -u <t> : same as -t, but apply to the '-f' input file only.");
+    println!("    -U <n> : same as -T, but apply to the '-f' input file only.");
     println!("    -v : verbose");
     println!("    -W width : multiply the tree width by factor 'width' (default 1.0)");
     println!("");
@@ -112,13 +114,17 @@ fn main()  {
     if args.len() == 1 {
          display_help(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bf:F:g:G:hH:iIJl:Lo:Opr:sSt:T:vW:");
+    let mut opts = getopt::Parser::new(&args, "c:bf:F:g:G:hH:iIJl:Lo:Opr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
     let mut nb_args = 0;
     let mut level3 = false; // Affichage à 3 niveaux
     let mut _format = Format::Newick;
+    // 2nd level file option
+    let mut thickness_thresh_2nd = 0;
+    let mut thickness_gene_2nd = 0;
+    let mut thickness_flag_2nd = false;
     loop {
         match opts.next().transpose() {
             Err(err) => {
@@ -195,6 +201,25 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('u', Some(string)) => {
+                        thickness_thresh_2nd = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("Error! Please give a integer value with -t option");
+                                process::exit(1);
+                            },
+                        };
+                        thickness_flag_2nd = true;
+                    },
+                    Opt('U', Some(string)) => {
+                        thickness_gene_2nd = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("Error! Please give a integer value with -T option");
+                                process::exit(1);
+                            },
+                        };
+                    },
                     Opt('l', Some(string)) => {
                         options.real_length_flag = true;
                         options.scale = match string.parse::<f32>(){
@@ -249,7 +274,7 @@ fn main()  {
         let  outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
         let  outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
 
-        let transfers = vec![]; // Initialise transfers
+        let mut transfers = vec![]; // Initialise transfers
 // ---------------------------------------------------------
 // Create a structure Arena for the global parasite pipe
 // tree and a vector of structures Arena for gene path trees
@@ -276,8 +301,35 @@ println!("Building svg 1: reconciled pipe symbiote tree(s) with gene tree(s) [{}
 // Generate svg of the lobal parasite pipe tree and  path
 // genes trees
 // ---------------------------------------------------------
+
+if options.thickness_flag {
+    if options.thickness_gene > nb_gntree {
+        println!("There are only {} genes in the file, unable to display gene #{}",
+        nb_gntree,options.thickness_gene);
+        process::exit(1);
+    }
+    //  Recupere les transferts
+    transfers = get_gtransfer(&mut path_genes[0]);
+    let mut i = 1;
+    while i < nb_gntree {
+        let gene_transfer = get_gtransfer(&mut path_genes[i]);
+        for val in gene_transfer {
+            transfers.push(val);
+        }
+        i = i + 1;
+    }
+    println!("Transfers = {:?}",transfers);
+    let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+    selected_gene_trees.push(path_genes.remove(options.thickness_gene));
+    recphyloxml_processing(&mut global_pipe_parasite, &mut selected_gene_trees, &mut options,
+        &config, true, &transfers, outfile_gene_para);
+    }
+    else {
 recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
         &transfers,outfile_gene_para);
+    }
+
+let  transfers = vec![]; // ReInitialise transfers
 // ---------------------------------------------------------
 // Create a structure Arena for the host pipe tree and a
 // vector of structures Arena for parasite path trees
@@ -303,8 +355,19 @@ if nb_parasite_path != nb_parasite_pipe {
 // ---------------------------------------------------------
 // Generate svg of the host pipe tree and path symbiote trees
 // ---------------------------------------------------------
+// Modify the option if needed
+options.thickness_flag = false;
+if thickness_flag_2nd {
+    options.thickness_gene = thickness_gene_2nd;
+    options.thickness_thresh = thickness_thresh_2nd;
+    recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options, &config,
+        true, &transfers,outfile_para_host);
+}
+
+else {
 recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options, &config,
     true, &transfers,outfile_para_host);
+}
 // ---------------------------------------------------------
 // Generation of first 3 levels svg
 // ---------------------------------------------------------
