@@ -103,6 +103,7 @@ Usage:
 
     -b : open svg in browser
     -c configfile: use a configuration file    
+    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option).
     -F phylo/recphylo: force format phyloXML/recPhyloXML    
     -g 2nd level input file
     -G <n> : display the gene #n in phyloxml style (no species tree)
