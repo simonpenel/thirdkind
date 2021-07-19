@@ -32,6 +32,8 @@ fn display_help(programe_name:String) {
     [-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
+    println!("    -e : the node associated to FREE_LIVING are drawned in an \
+    external tree (free_living option).");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
@@ -166,6 +168,7 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('e', None) => options.free_living = true,
                     Opt('i', None) => options.gene_internal = true,
                     Opt('I', None) => options.species_internal = true,
                     Opt('J', None) => options.thickness_disp_score = true,

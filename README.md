@@ -34,6 +34,10 @@ multiple genes reconciliation recphyloxml:
 
 https://raw.githubusercontent.com/simonpenel/rectree2svg/684e2ecccf04408cf15815e3fb71bbeebfa19d12/tree2svg.example.svg
 
+example with "free living" species:
+
+https://raw.githubusercontent.com/simonpenel/thirdkind/9eb47ce644998164ff56cc68eb765c0c8a24d389/output_examples/thirdkind_fl_example.svg
+
 multiple gene trees with redundant transfers. Display only 1 gene tree and the transfers according to the abundance of the transfer:
 
 https://raw.githubusercontent.com/simonpenel/rectree2svg/f9ee031fa23b815ff7cc7298fd0dc4fb45707d53/transfers_abundance.svg
@@ -103,6 +107,7 @@ Usage:
 
     -b : open svg in browser
     -c configfile: use a configuration file    
+    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option).
     -F phylo/recphylo: force format phyloXML/recPhyloXML    
     -g 2nd level input file
     -G <n> : display the gene #n in phyloxml style (no species tree)
