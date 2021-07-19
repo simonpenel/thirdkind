@@ -28,10 +28,12 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L]\
+    println!("{} -f input file [-b][-c config file][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L]\
     [-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-t #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
+    println!("    -e : the node associated to FREE_LIVING are drawned in an \
+    external tree (free_living option).");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
@@ -112,7 +114,7 @@ fn main()  {
     if args.len() == 1 {
          display_help(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bf:F:g:G:hH:iIJl:Lo:Opr:sSt:T:vW:");
+    let mut opts = getopt::Parser::new(&args, "c:bef:F:g:G:hH:iIJl:Lo:Opr:sSt:T:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -160,6 +162,7 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('e', None) => options.free_living = true,
                     Opt('i', None) => options.gene_internal = true,
                     Opt('I', None) => options.species_internal = true,
                     Opt('J', None) => options.thickness_disp_score = true,
