@@ -321,13 +321,14 @@ if options.thickness_flag {
     println!("Transfers = {:?}",transfers);
     let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
     selected_gene_trees.push(path_genes.remove(options.thickness_gene));
-    recphyloxml_processing(&mut global_pipe_parasite, &mut selected_gene_trees, &mut options,
-        &config, true, &transfers, outfile_gene_para);
+    let mut _global_pipe_parasite = global_pipe_parasite.clone();
+    recphyloxml_processing(&mut _global_pipe_parasite, &mut selected_gene_trees, &mut options,
+        &config, true, &transfers, outfile_gene_para.clone());
     }
-    else {
+//     else {
 recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
         &transfers,outfile_gene_para);
-    }
+    // }
 
 let  transfers = vec![]; // ReInitialise transfers
 // ---------------------------------------------------------
