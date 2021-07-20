@@ -34,7 +34,7 @@ fn display_help(programe_name:String) {
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
-    external tree (free_living option).");
+    external tree (free_living option)");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
@@ -45,7 +45,7 @@ fn display_help(programe_name:String) {
     println!("    -J : with option -t, display the abundance of redudant transfers");
     println!("    -l factor : use branch length, using the given factor (default 1.0)");
     println!("    -L : display as landscape");
-    println!("    -m : the input file (-f) is a liss of recphyloxml files");
+    println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile : set name of output file");
     println!("    -O switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : build a phylogram");
