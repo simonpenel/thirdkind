@@ -1,0 +1,4058 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>enterobacteria.nwk0</name>
+<clade>
+ <name>enterobacteria.nwk1</name>
+<clade>
+ <name>enterobacteria.nwk2</name>
+<clade>
+ <name>enterobacteria.nwk3</name>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+</clade>
+<clade>
+ <name>enterobacteria.nwk4</name>
+<clade>
+ <name>enterobacteria.nwk5</name>
+<clade>
+ <name>enterobacteria.nwk6</name>
+<clade>
+ <name>enterobacteria.nwk7</name>
+<clade>
+ <name>enterobacteria.nwk8</name>
+<clade>
+ <name>enterobacteria.nwk9</name>
+<clade>
+ <name>enterobacteria.nwk10</name>
+<clade>
+ <name>ECUMA</name>
+</clade>
+<clade>
+ <name>enterobacteria.nwk11</name>
+<clade>
+ <name>EKOCA</name>
+</clade>
+<clade>
+ <name>ELAFE</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk12</name>
+<clade>
+ <name>enterobacteria.nwk13</name>
+<clade>
+ <name>EPSPA</name>
+</clade>
+<clade>
+ <name>enterobacteria.nwk14</name>
+<clade>
+ <name>ESPPA</name>
+</clade>
+<clade>
+ <name>ESPPS</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk15</name>
+<clade>
+ <name>ECURT</name>
+</clade>
+<clade>
+ <name>ECURV</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwAmC</name>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk16</name>
+<clade>
+ <name>EwApS</name>
+</clade>
+<clade>
+ <name>EwDaI</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk17</name>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk18</name>
+<clade>
+ <name>enterobacteria.nwk19</name>
+<clade>
+ <name>enterobacteria.nwk20</name>
+<clade>
+ <name>HCURT</name>
+</clade>
+<clade>
+ <name>HCURV</name>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk21</name>
+<clade>
+ <name>Hamiltonella_defensa_ZA17</name>
+</clade>
+<clade>
+ <name>Hamiltonella_defensa_5AT</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk22</name>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>enterobacteria.nwk23</name>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>25</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>37</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>37.l</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<transferBack destinationSpecies="EwBiE"/>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>40</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>40.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<transferBack destinationSpecies="EwApS"/>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>40LOSS</name>
+<eventsRec>
+<loss speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>37LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>28</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92.l</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>23.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+<clade>
+ <name>20</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk20"/>
+<branchingOut speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>12</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk9"/>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<transferBack destinationSpecies="ELAFE"/>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>6</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA.l</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EKOCALOSS</name>
+<eventsRec>
+<loss speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>11</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>51</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>55</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>23LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>2</id><clade>
+ <name>0</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk18"/>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92.l</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>39</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>31</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>20.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>24.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApS.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>24LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>20LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>19</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk19"/>
+<branchingOut speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk20"/>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>8.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk8"/>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8.l.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>47</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>51</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>8.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>18</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>32</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>3</id><clade>
+ <name>0</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<transferBack destinationSpecies="Yersinia_pestis_CO92"/>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>47</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>39</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>20.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>27</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>30</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_calida_DSM_22759.l</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759LOSS</name>
+<eventsRec>
+<loss speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>20LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>19</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk19"/>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+<clade>
+ <name>8.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk9"/>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA.l</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EPSPALOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>54</name>
+<eventsRec>
+<branchingOut speciesLocation="EPSTX"/>
+</eventsRec>
+<clade>
+ <name>58</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk14"/>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>8LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>18</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>40</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>4</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>17</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>33</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>36</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApS.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>37</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>20.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+<clade>
+ <name>23</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>20LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>19</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk8"/>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>51</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>55</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>9</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>9.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk20"/>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>9LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1.l</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>5</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>28</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>28.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>25</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>22</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>19</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>18</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk22"/>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>16</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>16.l</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk19"/>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>9.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>9LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>8.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk8"/>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8.l.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>59</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>63</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>8.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>16LOSS</name>
+<eventsRec>
+<loss speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>21</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>36</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk5"/>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>39</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>37</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92.l</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>28LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>26</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>6</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>49</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>49.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>37</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>31</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>19</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk22"/>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>19.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk7"/>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>16.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>7.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>7.l.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7LOSS</name>
+<eventsRec>
+<loss speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>ECURT</name>
+<eventsRec>
+<leaf speciesLocation="ECURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ECURV</name>
+<eventsRec>
+<leaf speciesLocation="ECURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>16LOSS</name>
+<eventsRec>
+<loss speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>19LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>33</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>38</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>41</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>41.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+<clade>
+ <name>Hamiltonella_defensa_ZA17</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_ZA17"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Hamiltonella_defensa_5AT</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_5AT"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>41LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>49LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>39</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>7</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>50</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>50.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>27</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>27.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>31</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>31.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>43</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwDaI</name>
+<eventsRec>
+<leaf speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>31LOSS</name>
+<eventsRec>
+<loss speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>30</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<transferBack destinationSpecies="Escherichia_coli_K12_MG1655"/>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>27LOSS</name>
+<eventsRec>
+<loss speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>26</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>23.l</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>22</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk22"/>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>20</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>12</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk9"/>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<transferBack destinationSpecies="EKOCA"/>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>6</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>ELAFE.l</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFELOSS</name>
+<eventsRec>
+<loss speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>11</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>63</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>67</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>23LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>50LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>28</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>8</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>17</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>41</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>44</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>47</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>45</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>20</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>24</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>26</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>26.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+<clade>
+ <name>Hamiltonella_defensa_ZA17</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_ZA17"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Hamiltonella_defensa_5AT</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_5AT"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>26LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>19</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk7"/>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>16.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>63</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>67</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>ECURT</name>
+<eventsRec>
+<leaf speciesLocation="ECURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ECURV</name>
+<eventsRec>
+<leaf speciesLocation="ECURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>16LOSS</name>
+<eventsRec>
+<loss speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1.l</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>9</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>48</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>17</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk18"/>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>21.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+<clade>
+ <name>40</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>21LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>20</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>24</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk4"/>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>24.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApS.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>24LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>27</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>27.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>27LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>16</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>9.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>9LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>8</name>
+<eventsRec>
+<branchingOut speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+<clade>
+ <name>8.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk9"/>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>55</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>59</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>8LOSS</name>
+<eventsRec>
+<loss speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>18</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>10</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>0.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>38</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>35</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>34</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk22"/>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>32</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>29</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>26</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>23</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>12</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<transferBack destinationSpecies="EKOCA"/>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>6</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>ELAFE.l</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFELOSS</name>
+<eventsRec>
+<loss speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>11</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>71</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>75</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>ECURT</name>
+<eventsRec>
+<leaf speciesLocation="ECURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ECURV</name>
+<eventsRec>
+<leaf speciesLocation="ECURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwDaI</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwDaI.l</name>
+<eventsRec>
+<leaf speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwDaILOSS</name>
+<eventsRec>
+<loss speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>31</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>36</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>39</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>43</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>42</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>42.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+<clade>
+ <name>Hamiltonella_defensa_ZA17</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_ZA17"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Hamiltonella_defensa_5AT</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_5AT"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>42LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>0LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>11</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>36</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>32</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>28</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>25</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>22</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>19</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>3</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>7.l</name>
+<eventsRec>
+<branchingOut speciesLocation="EPSTX"/>
+</eventsRec>
+<clade>
+ <name>55</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk13"/>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>59</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>9</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>ECURT</name>
+<eventsRec>
+<leaf speciesLocation="ECURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ECURV</name>
+<eventsRec>
+<leaf speciesLocation="ECURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>21</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwDaI</name>
+<eventsRec>
+<leaf speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>27</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>Yersinia_pestis_CO92.l</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_pierantonius_SOPE</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>12</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk0"/>
+</eventsRec>
+<clade>
+ <name>0.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>22</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>22.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>25</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>28</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk18"/>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>31</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>35</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>35.l</name>
+<eventsRec>
+<branchingOut speciesLocation="HCURT"/>
+</eventsRec>
+<clade>
+ <name>35.l.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>35.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>35LOSS</name>
+<eventsRec>
+<loss speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk21"/>
+</eventsRec>
+<clade>
+ <name>Hamiltonella_defensa_ZA17</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_ZA17"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Hamiltonella_defensa_5AT</name>
+<eventsRec>
+<leaf speciesLocation="Hamiltonella_defensa_5AT"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>29</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>48</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>51</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwAmC</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+<clade>
+ <name>EwAmC.l</name>
+<eventsRec>
+<leaf speciesLocation="EwAmC"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwAmCLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>49</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>22LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>24.l</name>
+<eventsRec>
+<branchingOut speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk8"/>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>10</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>2</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>12</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>68</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>72</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>14</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+<clade>
+ <name>ECURT</name>
+<eventsRec>
+<leaf speciesLocation="ECURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ECURV</name>
+<eventsRec>
+<leaf speciesLocation="ECURV"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>24LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>0LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>13</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk1"/>
+</eventsRec>
+<clade>
+ <name>53</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>21</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk8"/>
+<speciation speciesLocation="enterobacteria.nwk8"/>
+</eventsRec>
+<clade>
+ <name>21.l</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>14</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk20"/>
+<speciation speciesLocation="enterobacteria.nwk20"/>
+</eventsRec>
+<clade>
+ <name>HCURT</name>
+<eventsRec>
+<leaf speciesLocation="HCURT"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>HCURV</name>
+<eventsRec>
+<leaf speciesLocation="HCURV"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>13</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk9"/>
+</eventsRec>
+<clade>
+ <name>10</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk10"/>
+</eventsRec>
+<clade>
+ <name>ECUMA</name>
+<eventsRec>
+<leaf speciesLocation="ECUMA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>2</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk11"/>
+</eventsRec>
+<clade>
+ <name>EKOCA</name>
+<eventsRec>
+<leaf speciesLocation="EKOCA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ELAFE</name>
+<eventsRec>
+<leaf speciesLocation="ELAFE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>12</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk12"/>
+</eventsRec>
+<clade>
+ <name>56</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk13"/>
+</eventsRec>
+<clade>
+ <name>EPSPA</name>
+<eventsRec>
+<leaf speciesLocation="EPSPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>60</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk14"/>
+</eventsRec>
+<clade>
+ <name>ESPPA</name>
+<eventsRec>
+<leaf speciesLocation="ESPPA"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>ESPPS</name>
+<eventsRec>
+<leaf speciesLocation="ESPPS"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>EPSTX</name>
+<eventsRec>
+<leaf speciesLocation="EPSTX"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>21LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk15"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>22</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk2"/>
+</eventsRec>
+<clade>
+ <name>26</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk3"/>
+</eventsRec>
+<clade>
+ <name>Escherichia_coli_K12_MG1655</name>
+<eventsRec>
+<leaf speciesLocation="Escherichia_coli_K12_MG1655"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>38</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk4"/>
+</eventsRec>
+<clade>
+ <name>41</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk5"/>
+</eventsRec>
+<clade>
+ <name>EwApS</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk6"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk16"/>
+</eventsRec>
+<clade>
+ <name>EwApS.l.l</name>
+<eventsRec>
+<leaf speciesLocation="EwApS"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>EwApS.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="EwDaI"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwApSLOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>EwBiE</name>
+<eventsRec>
+<leaf speciesLocation="EwBiE"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>42</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk17"/>
+</eventsRec>
+<clade>
+ <name>Pantoea_gaviniae_DSM_22758</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Pantoea_calida_DSM_22759</name>
+<eventsRec>
+<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>25</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk18"/>
+</eventsRec>
+<clade>
+ <name>28</name>
+<eventsRec>
+<branchingOut speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+<clade>
+ <name>28.l</name>
+<eventsRec>
+<transferBack destinationSpecies="enterobacteria.nwk23"/>
+<speciation speciesLocation="enterobacteria.nwk23"/>
+</eventsRec>
+<clade>
+ <name>Photorhabdus_luminescens_TTO1</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_luminescens_TTO1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Photorhabdus_asymbiotica_ATCC43949</name>
+<eventsRec>
+<leaf speciesLocation="Photorhabdus_asymbiotica_ATCC43949"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>28LOSS</name>
+<eventsRec>
+<loss speciesLocation="enterobacteria.nwk19"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>Yersinia_pestis_CO92</name>
+<eventsRec>
+<leaf speciesLocation="Yersinia_pestis_CO92"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1</name>
+<eventsRec>
+<speciation speciesLocation="enterobacteria.nwk22"/>
+</eventsRec>
+<clade>
+ <name>Sodalis_praecaptivus_HS1.l</name>
+<eventsRec>
+<leaf speciesLocation="Sodalis_praecaptivus_HS1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>Sodalis_praecaptivus_HS1LOSS</name>
+<eventsRec>
+<loss speciesLocation="Sodalis_pierantonius_SOPE"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

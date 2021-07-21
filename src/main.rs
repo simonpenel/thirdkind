@@ -28,12 +28,13 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L]\
-    [-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
+    println!("{} -f input file [-b][-c config file][-e][-F format][-g input file][-G #][-h]\
+    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
-    external tree (free_living option).");
+    external tree (free_living option)");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
@@ -44,6 +45,7 @@ fn display_help(programe_name:String) {
     println!("    -J : with option -t, display the abundance of redudant transfers");
     println!("    -l factor : use branch length, using the given factor (default 1.0)");
     println!("    -L : display as landscape");
+    println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile : set name of output file");
     println!("    -O switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : build a phylogram");
@@ -116,12 +118,13 @@ fn main()  {
     if args.len() == 1 {
          display_help(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bf:F:g:G:hH:iIJl:Lo:Opr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "c:bef:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
     let mut nb_args = 0;
     let mut level3 = false; // Affichage à 3 niveaux
+    let mut multiple_files = false;
     let mut _format = Format::Newick;
     // 2nd level file option
     let mut thickness_thresh_2nd = 0;
@@ -172,6 +175,7 @@ fn main()  {
                     Opt('i', None) => options.gene_internal = true,
                     Opt('I', None) => options.species_internal = true,
                     Opt('J', None) => options.thickness_disp_score = true,
+                    Opt('m', None) => multiple_files = true,
                     Opt('b', None) => options.open_browser = true,
                     Opt('r', Some(string)) => {
                         options.ratio = match string.parse::<f32>(){
@@ -194,6 +198,7 @@ fn main()  {
                             },
                         };
                         options.thickness_flag = true;
+                        options.thickness_gene = 1 ; // TO DO : a mettre dans les options
                     },
                     Opt('T', Some(string)) => {
                         options.thickness_gene = match string.parse::<usize>(){
@@ -298,13 +303,10 @@ println!("Number of symbiote trees : {}",nb_parasite_pipe);
 println!("List of species trees roots : {:?}",global_roots);
 info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
 println!();
-println!("Building svg 1: reconciled pipe symbiote tree(s) with gene tree(s) [{}]",
-    outfile_mapped_1);
 // ---------------------------------------------------------
-// Generate svg of the lobal parasite pipe tree and  path
-// genes trees
+// Generate svg of the global parasite pipe tree and  path
+// genes trees (outfile_gene_para)
 // ---------------------------------------------------------
-
 if options.thickness_flag {
     if options.thickness_gene > nb_gntree {
         println!("There are only {} genes in the file, unable to display gene #{}",
@@ -322,16 +324,23 @@ if options.thickness_flag {
         i = i + 1;
     }
     println!("Transfers = {:?}",transfers);
+    let mut _path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
+    for i in 0 .. path_genes.len() {
+         _path_genes.push(path_genes[i].copie());
+    }
     let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-    selected_gene_trees.push(path_genes.remove(options.thickness_gene));
-    let mut _global_pipe_parasite = global_pipe_parasite.clone();
+    selected_gene_trees.push(_path_genes.remove(options.thickness_gene-1));
+    let mut _global_pipe_parasite = global_pipe_parasite.copie();
     recphyloxml_processing(&mut _global_pipe_parasite, &mut selected_gene_trees, &mut options,
         &config, true, &transfers, outfile_gene_para.clone());
+    transfers = vec![];
+    recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
+                &transfers,"tmpfile.svg".to_string());
     }
-//     else {
-recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
-        &transfers,outfile_gene_para);
-    // }
+    else {
+        recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
+            &transfers,outfile_gene_para);
+    }
 
 let  transfers = vec![]; // ReInitialise transfers
 // ---------------------------------------------------------
@@ -375,6 +384,9 @@ recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options, 
 // ---------------------------------------------------------
 // Generation of first 3 levels svg
 // ---------------------------------------------------------
+println!("Building svg 1: reconciled pipe symbiote tree(s) with gene tree(s) [{}]",
+    outfile_mapped_1);
+// ------------------------
 info!("Symbiote trees as a 'path tree' : {:?}",path_para_trees);
 info!("Symbiote tree as a 'pipe tree' : {:?}",global_pipe_parasite);
 println!("==============================================");
@@ -522,6 +534,91 @@ if nb_parasite_path != nb_parasite_pipe {
 }
 
     }
+    else if multiple_files {
+        // get the url
+        let path = env::current_dir().expect("Unable to get current dir");
+        let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
+        println!("Multiple files processing:");
+        let multifilename = &infile_sh.clone();
+        let contents = fs::read_to_string(multifilename).expect("Unable to read inout file.");
+        let files = contents.lines();
+        // let mut sp_tree: ArenaTree<String> = ArenaTree::default();
+        // Creation du vecteur de structure ArenaTree pour les genes
+        // ---------------------------------------------------------
+        let mut gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        // Empty additional transfers
+        let mut transfers = vec![];
+        let mut sp_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+
+        for filename in files {
+            println!("Processing file {}",filename);
+            // On cree une structure Arena pour l'arbre d'espece
+            // et un vecteur de  structures Arena pour le(s) arbres de gènes
+            // -------------------------------------------------------------
+            // Creation de la structure ArenaTree pour l'arbre d'espece
+            // --------------------------------------------------------
+            let mut _sp_tree: ArenaTree<String> = ArenaTree::default();
+            // Creation du vecteur de structure ArenaTree pour les genes
+            // ---------------------------------------------------------
+            let mut _gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+            // Empty additional transfers
+            // let mut transfers = vec![];
+            let mut _global_roots: std::vec::Vec<usize> = Vec::new();
+            read_recphyloxml_multi(filename.to_string(), &mut _sp_tree, &mut _gene_trees,
+                &mut _global_roots);
+            let  nb_gntree =  _gene_trees.len().clone();
+            println!("Number of gene trees : {}",nb_gntree);
+            info!("List of gene trees : {:?}",_gene_trees);
+            gene_trees.append(&mut _gene_trees);
+            sp_trees.push(_sp_tree);
+        }
+        let  nb_gntree =  gene_trees.len().clone();
+        println!("Total number of gene trees : {}",nb_gntree);
+        info!("List of all gene trees : {:?}",gene_trees);
+        if options.thickness_flag {
+            if options.thickness_gene > nb_gntree {
+                println!("There are only {} genes in the file, unable to display gene #{}",
+                nb_gntree,options.thickness_gene);
+                process::exit(1);
+            }
+            //  Recupere les transferts
+            transfers = get_gtransfer(&mut gene_trees[0]);
+            let mut i = 1;
+            while i < nb_gntree {
+                let gene_transfer = get_gtransfer(&mut gene_trees[i]);
+                for val in gene_transfer {
+                    transfers.push(val);
+                }
+                i = i + 1;
+            }
+            info!("Transfers = {:?}",transfers);
+            let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+            selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
+            recphyloxml_processing(&mut sp_trees[0], &mut selected_gene_trees, &mut options,
+                &config, true, &transfers, outfile);
+        }
+        else {
+            if options.disp_gene  > 0 {
+                // On traite l'arbre de gene comme un arbre au format phylxoml
+                if options.disp_gene > nb_gntree {
+                    println!("There are only {} genes in the file, unable to display gene #{}",
+                        nb_gntree,options.disp_gene);
+                        process::exit(1);
+                    }
+                let  mut tree = &mut gene_trees[options.disp_gene-1];
+                phyloxml_processing(&mut tree, &options, &config, outfile);
+            }
+            else {
+                recphyloxml_processing(&mut sp_trees[0],&mut  gene_trees, &mut options,
+                    &config,true, &transfers, outfile);
+            }
+        }
+        if options.open_browser {
+            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+                info!("Browser OK");
+            }
+        }
+    }
     // Traitement d'un fichier unique qui peu etre newick, phyloXML ou recPhyloXML
     else {
         // Determination du format
@@ -609,9 +706,9 @@ if nb_parasite_path != nb_parasite_pipe {
                         }
                         i = i + 1;
                     }
-                    println!("Transfers = {:?}",transfers);
+                    info!("Transfers = {:?}",transfers);
                     let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-                    selected_gene_trees.push(gene_trees.remove(options.thickness_gene));
+                    selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
                     recphyloxml_processing(&mut sp_tree, &mut selected_gene_trees, &mut options,
                         &config, true, &transfers, outfile);
                     }
