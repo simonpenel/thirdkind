@@ -1,0 +1,157 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>geo0</name>
+<clade>
+ <name>geo1</name>
+<clade>
+ <name>geo2</name>
+<clade>
+ <name>Asia</name>
+</clade>
+<clade>
+ <name>Europe</name>
+</clade>
+</clade>
+<clade>
+ <name>Africa</name>
+</clade>
+</clade>
+<clade>
+ <name>outgroup</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>pop0</name>
+<eventsRec>
+<speciation speciesLocation="geo0"/>
+</eventsRec>
+<clade>
+ <name>pop1</name>
+<eventsRec>
+<duplication speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop2</name>
+<eventsRec>
+<duplication speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop3</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop4</name>
+<eventsRec>
+<speciation speciesLocation="geo2"/>
+</eventsRec>
+<clade>
+ <name>pop5</name>
+<eventsRec>
+<duplication speciesLocation="Asia"/>
+</eventsRec>
+<clade>
+ <name>pop6</name>
+<eventsRec>
+<duplication speciesLocation="Asia"/>
+</eventsRec>
+<clade>
+ <name>hpEastAsia</name>
+<eventsRec>
+<leaf speciesLocation="Asia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>hpAsia2</name>
+<eventsRec>
+<leaf speciesLocation="Asia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>hpSahul</name>
+<eventsRec>
+<leaf speciesLocation="Asia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>hpEurope_7</name>
+<eventsRec>
+<leaf speciesLocation="Europe"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="Africa"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>pop7</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>hpEurope_4</name>
+<eventsRec>
+<speciation speciesLocation="geo2"/>
+</eventsRec>
+<clade>
+ <name>hpEurope_4.l</name>
+<eventsRec>
+<leaf speciesLocation="Europe"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>hpEurope_4LOSS</name>
+<eventsRec>
+<loss speciesLocation="Asia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>hpAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="Africa"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>hpAfrica2</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>hpAfrica2.l</name>
+<eventsRec>
+<leaf speciesLocation="Africa"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>hpAfrica2LOSS</name>
+<eventsRec>
+<loss speciesLocation="geo2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
