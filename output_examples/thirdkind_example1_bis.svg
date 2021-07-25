@@ -1,0 +1,801 @@
+<svg height="6735" viewBox="-7.5 52.5 1295 6855" width="1175" xmlns="http://www.w3.org/2000/svg">
+<style>
+.gene { font:  10px serif; fill:blue; }
+</style>
+<style>
+.support { font:  10px serif; fill: red; }
+</style>
+<g transform="translate(  -7.5 6787.5) rotate(-90 0 0 ) ">
+<path d="M1944.0437,57 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M80.1416,120 L80.1416,60 L1947.0437,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="80.1416" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M0,1020 L0,120 L80.1416,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M-1,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 -5,1030)" x="-5" y="1030">
+PBURS_035.PE38
+</text>
+<path d="M160.2832,180 L160.2832,120 L80.1416,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="160.2832" cy="180" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M60,1020 L60,180 L160.2832,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M59,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 55,1030)" x="55" y="1030">
+PPOLY_039.PE194
+</text>
+<path d="M260.5664,240 L260.5664,180 L160.2832,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="260.5664" cy="240" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M120,960 L120,240 L260.5664,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M120,952 l0,16 M112,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 120 960)"/>
+<text class="gene" transform="rotate(90 115,970)" x="115" y="970">
+loss
+</text>
+<path d="M401.1328,300 L401.1328,240 L260.5664,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="401.1328" cy="300" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M180,1020 L180,300 L401.1328,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M179,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 175,1030)" x="175" y="1030">
+PCAUD_0020.PE230
+</text>
+<path d="M622.2656,360 L622.2656,300 L401.1328,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="622.2656" cy="360" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M240,1020 L240,360 L622.2656,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M239,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 235,1030)" x="235" y="1030">
+PMUL_0005.PE18
+</text>
+<path d="M1004.53125,420 L1004.53125,360 L622.2656,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1001.53125,417 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M427.5,480 L427.5,420 L1004.53125,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="427.5" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M300,960 L300,480 L427.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M300,952 l0,16 M292,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 300 960)"/>
+<text class="gene" transform="rotate(90 295,970)" x="295" y="970">
+loss
+</text>
+<path d="M555,540 L555,480 L427.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="555" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M412.5,600 L412.5,540 L555,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="412.5" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M360,1020 L360,600 L412.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M359,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 355,1030)" x="355" y="1030">
+PBIAU_0001.PE341
+</text>
+<path d="M465,660 L465,600 L412.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="465" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M420,960 L420,660 L465,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M420,952 l0,16 M412,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 420 960)"/>
+<text class="gene" transform="rotate(90 415,970)" x="415" y="970">
+loss
+</text>
+<path d="M510,720 L510,660 L465,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="510" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M480,960 L480,720 L510,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M480,952 l0,16 M472,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 480 960)"/>
+<text class="gene" transform="rotate(90 475,970)" x="475" y="970">
+loss
+</text>
+<path d="M540,1020 L540,720 L510,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M539,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 535,1030)" x="535" y="1030">
+PPENT_008.PE257
+</text>
+<path d="M697.5,600 L697.5,540 L555,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="697.5" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M630,660 L630,600 L697.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="630" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M600,1020 L600,660 L630,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M599,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 595,1030)" x="595" y="1030">
+PDECA_0078.PE104
+</text>
+<path d="M660,1020 L660,660 L630,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M659,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 655,1030)" x="655" y="1030">
+PDODE_0455.PE17
+</text>
+<path d="M765,660 L765,600 L697.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="765" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M720,960 L720,660 L765,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M720,952 l0,16 M712,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 720 960)"/>
+<text class="gene" transform="rotate(90 715,970)" x="715" y="970">
+loss
+</text>
+<path d="M810,720 L810,660 L765,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="810" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M780,1020 L780,720 L810,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M779,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 775,1030)" x="775" y="1030">
+POCTAK8_277030.PE256
+</text>
+<path d="M840,1020 L840,720 L810,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M839,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 835,1030)" x="835" y="1030">
+POCTA138_004.PE261
+</text>
+<path d="M1581.5625,480 L1581.5625,420 L1004.53125,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1581.5625" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1348.125,540 L1348.125,480 L1581.5625,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1348.125" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1155,600 L1155,540 L1348.125,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1155" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1050,660 L1050,600 L1155,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1050" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M975,720 L975,660 L1050,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="975" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M930,780 L930,720 L975,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="930" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M900,1020 L900,780 L930,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M899,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 895,1030)" x="895" y="1030">
+PTRED_129357.PE186
+</text>
+<path d="M960,1020 L960,780 L930,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M959,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 955,1030)" x="955" y="1030">
+PQUAD_0002.PE186
+</text>
+<path d="M1020,1020 L1020,720 L975,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1019,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1015,1030)" x="1015" y="1030">
+PNOVA_0001.PE189
+</text>
+<path d="M1125,720 L1125,660 L1050,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1125" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1080,1020 L1080,720 L1125,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1079,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1075,1030)" x="1075" y="1030">
+PPENT_004.PE242
+</text>
+<path d="M1170,780 L1170,720 L1125,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1170" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1140,1020 L1140,780 L1170,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1139,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1135,1030)" x="1135" y="1030">
+PPRIMIR4_015.PE76
+</text>
+<path d="M1200,1020 L1200,780 L1170,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1199,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1195,1030)" x="1195" y="1030">
+PPRIMAZ9_004.PE328
+</text>
+<path d="M1260,1020 L1260,600 L1155,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1259,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1255,1030)" x="1255" y="1030">
+PBIAU_0004.PE238
+</text>
+<path d="M1541.25,600 L1541.25,540 L1348.125,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1541.25" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1432.5,660 L1432.5,600 L1541.25,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1432.5" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1350,720 L1350,660 L1432.5,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1350" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1320,1020 L1320,720 L1350,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1319,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1315,1030)" x="1315" y="1030">
+POCTAK8_277078.PE202
+</text>
+<path d="M1380,1020 L1380,720 L1350,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1379,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1375,1030)" x="1375" y="1030">
+POCTA138_010.PE268
+</text>
+<path d="M1515,720 L1515,660 L1432.5,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1515" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1470,780 L1470,720 L1515,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1470" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1440,1020 L1440,780 L1470,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1439,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1435,1030)" x="1435" y="1030">
+PTETRD4_6.PE205
+</text>
+<path d="M1500,1020 L1500,780 L1470,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1499,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1495,1030)" x="1495" y="1030">
+PTETR51_6.PE205
+</text>
+<path d="M1560,1020 L1560,720 L1515,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1559,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1555,1030)" x="1555" y="1030">
+PTETR32_003.PE399
+</text>
+<path d="M1650,660 L1650,600 L1541.25,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1650" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1620,1020 L1620,660 L1650,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1619,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1615,1030)" x="1615" y="1030">
+PDECA_0080.PE117
+</text>
+<path d="M1680,1020 L1680,660 L1650,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1679,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1675,1030)" x="1675" y="1030">
+PDODE_0389.PE19
+</text>
+<path d="M1815,540 L1815,480 L1581.5625,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1815" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1740,1020 L1740,540 L1815,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1739,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1735,1030)" x="1735" y="1030">
+PSEXA_002.PE231
+</text>
+<path d="M1890,600 L1890,540 L1815,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1887,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1830,660 L1830,600 L1890,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1830" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1800,1020 L1800,660 L1830,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1799,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1795,1030)" x="1795" y="1030">
+PJENN_0230.PE43
+</text>
+<path d="M1860,1020 L1860,660 L1830,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1859,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1855,1030)" x="1855" y="1030">
+PSONN_015.PE211
+</text>
+<path d="M1950,660 L1950,600 L1890,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1950" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1920,1020 L1920,660 L1950,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1919,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1915,1030)" x="1915" y="1030">
+PSONN_007.PE272
+</text>
+<path d="M1980,1020 L1980,660 L1950,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1979,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1975,1030)" x="1975" y="1030">
+PJENN_0288.PE42
+</text>
+<path d="M3813.9458,120 L3813.9458,60 L1947.0437,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3813.9458" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2040,1020 L2040,120 L3813.9458,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2039,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2035,1030)" x="2035" y="1030">
+PBURS_187.PE51
+</text>
+<path d="M5587.8916,180 L5587.8916,120 L3813.9458,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5587.8916" cy="180" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4455.7837,240 L4455.7837,180 L5587.8916,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4449.7837,234 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 4455.7837 240)"/>
+<path d="M2747.3438,300 L2747.3438,240 L4455.7837,240" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="2747.3438" cy="300" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2747.3438,294 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<path d="M2302.5,360 L2302.5,300 L2747.3438,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2299.5,357 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2130,420 L2130,360 L2302.5,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2130" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2100,960 L2100,420 L2130,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2100,952 l0,16 M2092,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 2100 960)"/>
+<text class="gene" transform="rotate(90 2095,970)" x="2095" y="970">
+loss
+</text>
+<path d="M2160,1020 L2160,420 L2130,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2159,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2155,1030)" x="2155" y="1030">
+PSEXA_042.PE235
+</text>
+<path d="M2475,420 L2475,360 L2302.5,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2475" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2370,480 L2370,420 L2475,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2367,477 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2295,540 L2295,480 L2370,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2295" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2250,600 L2250,540 L2295,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2247,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2220,1020 L2220,600 L2250,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2219,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2215,1030)" x="2215" y="1030">
+PJENN_0198.PE58
+</text>
+<path d="M2280,1020 L2280,600 L2250,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2279,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2275,1030)" x="2275" y="1030">
+PJENN_0219.PE43
+</text>
+<path d="M2340,1020 L2340,540 L2295,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2339,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2335,1030)" x="2335" y="1030">
+PSONN_042.PE288
+</text>
+<path d="M2445,540 L2445,480 L2370,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2445" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2400,960 L2400,540 L2445,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2400,952 l0,16 M2392,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 2400 960)"/>
+<text class="gene" transform="rotate(90 2395,970)" x="2395" y="970">
+loss
+</text>
+<path d="M2490,600 L2490,540 L2445,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2487,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2460,1020 L2460,600 L2490,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2459,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2455,1030)" x="2455" y="1030">
+PSONN_040.PE285
+</text>
+<path d="M2520,1020 L2520,600 L2490,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2519,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2515,1030)" x="2515" y="1030">
+PSONN_040.PE284
+</text>
+<path d="M2580,1020 L2580,420 L2475,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2579,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2575,1030)" x="2575" y="1030">
+PSEXA_051.PE43
+</text>
+<path d="M3192.1875,360 L3192.1875,300 L2747.3438,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3192.1875" cy="360" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2801.25,420 L2801.25,360 L3192.1875,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2801.25" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2692.5,480 L2692.5,420 L2801.25,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2692.5" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2640,960 L2640,480 L2692.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2640,952 l0,16 M2632,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 2640 960)"/>
+<text class="gene" transform="rotate(90 2635,970)" x="2635" y="970">
+loss
+</text>
+<path d="M2745,540 L2745,480 L2692.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2745" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2700,1020 L2700,540 L2745,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2699,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2695,1030)" x="2695" y="1030">
+PPENT_036.PE52
+</text>
+<path d="M2790,600 L2790,540 L2745,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="2790" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M2760,1020 L2760,600 L2790,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2759,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2755,1030)" x="2755" y="1030">
+PPRIMAZ9_032.PE269
+</text>
+<path d="M2820,1020 L2820,600 L2790,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2819,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2815,1030)" x="2815" y="1030">
+PPRIMIR4_035.PE46
+</text>
+<path d="M2910,480 L2910,420 L2801.25,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2907,477 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2880,1020 L2880,480 L2910,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2879,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2875,1030)" x="2875" y="1030">
+PBIAU_0310.PE18
+</text>
+<path d="M2940,1020 L2940,480 L2910,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2939,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2935,1030)" x="2935" y="1030">
+PBIAU_0326.PE17
+</text>
+<path d="M3583.125,420 L3583.125,360 L3192.1875,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3577.125,414 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 3583.125 420)"/>
+<path d="M3187.5,480 L3187.5,420 L3583.125,420" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="3187.5" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3187.5,474 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<path d="M3075,540 L3075,480 L3187.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3075" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3030,600 L3030,540 L3075,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3030" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3000,1020 L3000,600 L3030,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M2999,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 2995,1030)" x="2995" y="1030">
+PPRIMAZ9_054.PE247
+</text>
+<path d="M3060,1020 L3060,600 L3030,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3059,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3055,1030)" x="3055" y="1030">
+PPRIMIR4_054.PE195
+</text>
+<path d="M3120,1020 L3120,540 L3075,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3119,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3115,1030)" x="3115" y="1030">
+PPENT_049.PE47
+</text>
+<path d="M3300,540 L3300,480 L3187.5,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3300" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3210,600 L3210,540 L3300,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3207,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3180,1020 L3180,600 L3210,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3179,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3175,1030)" x="3175" y="1030">
+PNOVA_0233.PE24
+</text>
+<path d="M3240,1020 L3240,600 L3210,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3239,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3235,1030)" x="3235" y="1030">
+PNOVA_0200.PE22
+</text>
+<path d="M3390,600 L3390,540 L3300,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3387,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3330,660 L3330,600 L3390,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3330" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3300,1020 L3300,660 L3330,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3299,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3295,1030)" x="3295" y="1030">
+PTRED_129363.PE214
+</text>
+<path d="M3360,1020 L3360,660 L3330,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3359,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3355,1030)" x="3355" y="1030">
+PQUAD_0211.PE41
+</text>
+<path d="M3450,660 L3450,600 L3390,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3450" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3420,1020 L3420,660 L3450,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3419,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3415,1030)" x="3415" y="1030">
+PQUAD_0193.PE37
+</text>
+<path d="M3480,1020 L3480,660 L3450,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3479,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3475,1030)" x="3475" y="1030">
+PTRED_129364.PE249
+</text>
+<path d="M3978.75,480 L3978.75,420 L3583.125,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3975.75,477 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3768.75,540 L3768.75,480 L3978.75,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3768.75" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3667.5,600 L3667.5,540 L3768.75,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3667.5" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3585,660 L3585,600 L3667.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3585" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3540,1020 L3540,660 L3585,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3539,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3535,1030)" x="3535" y="1030">
+PTETR32_060.PE237
+</text>
+<path d="M3630,720 L3630,660 L3585,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3630" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3600,960 L3600,720 L3630,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3600,952 l0,16 M3592,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 3600 960)"/>
+<text class="gene" transform="rotate(90 3595,970)" x="3595" y="970">
+loss
+</text>
+<path d="M3660,1020 L3660,720 L3630,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3659,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3655,1030)" x="3655" y="1030">
+PTETR51_44.PE44
+</text>
+<path d="M3750,660 L3750,600 L3667.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3750" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3720,960 L3720,660 L3750,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3720,952 l0,16 M3712,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 3720 960)"/>
+<text class="gene" transform="rotate(90 3715,970)" x="3715" y="970">
+loss
+</text>
+<path d="M3780,1020 L3780,660 L3750,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3779,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3775,1030)" x="3775" y="1030">
+POCTA138_038.PE237
+</text>
+<path d="M3870,600 L3870,540 L3768.75,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="3870" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3840,1020 L3840,600 L3870,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3839,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3835,1030)" x="3835" y="1030">
+PDODE_0189.PE47
+</text>
+<path d="M3900,1020 L3900,600 L3870,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3899,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3895,1030)" x="3895" y="1030">
+PDECA_0182.PE71
+</text>
+<path d="M4188.75,540 L4188.75,480 L3978.75,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4188.75" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4087.5,600 L4087.5,540 L4188.75,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4087.5" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4005,660 L4005,600 L4087.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4005" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M3960,1020 L3960,660 L4005,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M3959,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 3955,1030)" x="3955" y="1030">
+PTETR32_001.PE392
+</text>
+<path d="M4050,720 L4050,660 L4005,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4050" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4020,1020 L4020,720 L4050,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4019,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4015,1030)" x="4015" y="1030">
+PTETR51_18.PE280
+</text>
+<path d="M4080,1020 L4080,720 L4050,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4079,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4075,1030)" x="4075" y="1030">
+PTETRD4_18.PE288
+</text>
+<path d="M4170,660 L4170,600 L4087.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4170" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4140,1020 L4140,660 L4170,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4139,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4135,1030)" x="4135" y="1030">
+POCTAK8_277005.PE276
+</text>
+<path d="M4200,1020 L4200,660 L4170,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4199,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4195,1030)" x="4195" y="1030">
+POCTA138_023.PE306
+</text>
+<path d="M4290,600 L4290,540 L4188.75,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4290" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4260,1020 L4260,600 L4290,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4259,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4255,1030)" x="4255" y="1030">
+PDECA_0217.PE36
+</text>
+<path d="M4320,1020 L4320,600 L4290,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4319,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4315,1030)" x="4315" y="1030">
+PDODE_0176.PE64
+</text>
+<path d="M6164.2236,300 L6164.2236,240 L4455.7837,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6164.2236" cy="300" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5668.4473,360 L5668.4473,300 L6164.2236,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5668.4473" cy="360" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4736.8945,420 L4736.8945,360 L5668.4473,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4736.8945" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4380,1020 L4380,420 L4736.8945,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4379,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4375,1030)" x="4375" y="1030">
+PMUL_0011.PE106
+</text>
+<path d="M5093.789,480 L5093.789,420 L4736.8945,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5093.789" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4560,540 L4560,480 L5093.789,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4560" cy="540" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4470,600 L4470,540 L4560,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4467,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4440,1020 L4440,600 L4470,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4439,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4435,1030)" x="4435" y="1030">
+PSEXA_039.PE267
+</text>
+<path d="M4500,1020 L4500,600 L4470,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4499,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4495,1030)" x="4495" y="1030">
+PSEXA_032.PE16
+</text>
+<path d="M4650,600 L4650,540 L4560,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4647,597 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4590,660 L4590,600 L4650,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4590" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4560,1020 L4560,660 L4590,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4559,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4555,1030)" x="4555" y="1030">
+PSONN_031.PE343
+</text>
+<path d="M4620,1020 L4620,660 L4590,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4619,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4615,1030)" x="4615" y="1030">
+PJENN_0095.PE28
+</text>
+<path d="M4710,660 L4710,600 L4650,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4710" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4680,1020 L4680,660 L4710,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4679,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4675,1030)" x="4675" y="1030">
+PSONN_038.PE323
+</text>
+<path d="M4740,1020 L4740,660 L4710,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4739,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4735,1030)" x="4735" y="1030">
+PJENN_0012.PE18
+</text>
+<path d="M5627.578,540 L5627.578,480 L5093.789,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5624.578,537 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5174.5313,600 L5174.5313,540 L5627.578,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5174.5313" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5013.75,660 L5013.75,600 L5174.5313,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5013.75" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4897.5,720 L4897.5,660 L5013.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4897.5" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4830,780 L4830,720 L4897.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4830" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4800,960 L4800,780 L4830,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4800,952 l0,16 M4792,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 4800 960)"/>
+<text class="gene" transform="rotate(90 4795,970)" x="4795" y="970">
+loss
+</text>
+<path d="M4860,1020 L4860,780 L4830,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4859,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4855,1030)" x="4855" y="1030">
+POCTA138_052.PE18
+</text>
+<path d="M4965,780 L4965,720 L4897.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="4965" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4920,1020 L4920,780 L4965,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4919,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4915,1030)" x="4915" y="1030">
+PTETR32_051.PE18
+</text>
+<path d="M5010,840 L5010,780 L4965,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5010" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M4980,1020 L4980,840 L5010,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M4979,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 4975,1030)" x="4975" y="1030">
+PTETRD4_36.PE259
+</text>
+<path d="M5040,1020 L5040,840 L5010,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5039,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5035,1030)" x="5035" y="1030">
+PTETR51_36.PE269
+</text>
+<path d="M5130,720 L5130,660 L5013.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5130" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5100,1020 L5100,720 L5130,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5099,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5095,1030)" x="5095" y="1030">
+PDODE_0162.PE71
+</text>
+<path d="M5160,1020 L5160,720 L5130,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5159,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5155,1030)" x="5155" y="1030">
+PDECA_0160.PE71
+</text>
+<path d="M5335.3125,660 L5335.3125,600 L5174.5313,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5335.3125" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5250,720 L5250,660 L5335.3125,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5247,717 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5220,1020 L5220,720 L5250,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5219,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5215,1030)" x="5215" y="1030">
+PBIAU_0321.PE1
+</text>
+<path d="M5280,1020 L5280,720 L5250,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5279,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5275,1030)" x="5275" y="1030">
+PBIAU_0468.PE19
+</text>
+<path d="M5420.625,720 L5420.625,660 L5335.3125,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5420.625" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5340,960 L5340,720 L5420.625,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5340,952 l0,16 M5332,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 5340 960)"/>
+<text class="gene" transform="rotate(90 5335,970)" x="5335" y="970">
+loss
+</text>
+<path d="M5501.25,780 L5501.25,720 L5420.625,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5501.25" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5430,840 L5430,780 L5501.25,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5430" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5400,1020 L5400,840 L5430,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5399,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5395,1030)" x="5395" y="1030">
+PQUAD_0266.PE13
+</text>
+<path d="M5460,1020 L5460,840 L5430,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5459,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5455,1030)" x="5455" y="1030">
+PTRED_129511.PE14
+</text>
+<path d="M5572.5,840 L5572.5,780 L5501.25,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5566.5,834 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 5572.5 840)"/>
+<path d="M5520,1020 L5520,840 L5572.5,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5519,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5515,1030)" x="5515" y="1030">
+PNOVA_0658.PE17
+</text>
+<path d="M5625,900 L5625,840 L5572.5,840" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="5625" cy="900" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5625,894 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<path d="M5580,1020 L5580,900 L5625,900" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5579,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5575,1030)" x="5575" y="1030">
+PPENT_055.PE15
+</text>
+<path d="M5670,960 L5670,900 L5625,900" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5670" cy="960" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5640,960 L5640,960 L5670,960" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5640,952 l0,16 M5632,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 5640 960)"/>
+<text class="gene" transform="rotate(90 5635,970)" x="5635" y="970">
+loss
+</text>
+<path d="M5700,1020 L5700,960 L5670,960" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5699,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5695,1030)" x="5695" y="1030">
+PPRIMAZ9_047.PE16
+</text>
+<path d="M6080.625,600 L6080.625,540 L5627.578,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6080.625" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5883.75,660 L5883.75,600 L6080.625,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5883.75" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5790,720 L5790,660 L5883.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5790" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5760,1020 L5760,720 L5790,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5759,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5755,1030)" x="5755" y="1030">
+PDODE_0527.PE13
+</text>
+<path d="M5820,1020 L5820,720 L5790,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5819,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5815,1030)" x="5815" y="1030">
+PDECA_0138.PE23
+</text>
+<path d="M5977.5,720 L5977.5,660 L5883.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5977.5" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5910,780 L5910,720 L5977.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="5910" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M5880,1020 L5880,780 L5910,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5879,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5875,1030)" x="5875" y="1030">
+POCTAK8_277025.PE300
+</text>
+<path d="M5940,1020 L5940,780 L5910,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5939,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5935,1030)" x="5935" y="1030">
+POCTA138_032.PE13
+</text>
+<path d="M6045,780 L6045,720 L5977.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6045" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6000,1020 L6000,780 L6045,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M5999,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 5995,1030)" x="5995" y="1030">
+PTETR32_036.PE16
+</text>
+<path d="M6090,840 L6090,780 L6045,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6090" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6060,1020 L6060,840 L6090,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6059,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6055,1030)" x="6055" y="1030">
+PTETRD4_21.PE14
+</text>
+<path d="M6120,1020 L6120,840 L6090,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6119,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6115,1030)" x="6115" y="1030">
+PTETR51_21.PE13
+</text>
+<path d="M6277.5,660 L6277.5,600 L6080.625,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6277.5" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6180,960 L6180,660 L6277.5,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6180,952 l0,16 M6172,960 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 6180 960)"/>
+<text class="gene" transform="rotate(90 6175,970)" x="6175" y="970">
+loss
+</text>
+<path d="M6375,720 L6375,660 L6277.5,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6375" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6285,780 L6285,720 L6375,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6285" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6240,1020 L6240,780 L6285,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6239,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6235,1030)" x="6235" y="1030">
+PNOVA_0775.PE16
+</text>
+<path d="M6330,840 L6330,780 L6285,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6330" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6300,1020 L6300,840 L6330,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6299,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6295,1030)" x="6295" y="1030">
+PTRED_129375.PE283
+</text>
+<path d="M6360,1020 L6360,840 L6330,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6359,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6355,1030)" x="6355" y="1030">
+PQUAD_0047.PE149
+</text>
+<path d="M6465,780 L6465,720 L6375,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6465" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6420,1020 L6420,780 L6465,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6419,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6415,1030)" x="6415" y="1030">
+PPENT_035.PE16
+</text>
+<path d="M6510,840 L6510,780 L6465,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="6510" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M6480,1020 L6480,840 L6510,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6479,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6475,1030)" x="6475" y="1030">
+PPRIMAZ9_033.PE308
+</text>
+<path d="M6540,1020 L6540,840 L6510,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6539,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6535,1030)" x="6535" y="1030">
+PPRIMIR4_024.PE264
+</text>
+<path d="M6600,1020 L6600,360 L5668.4473,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6599,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6595,1030)" x="6595" y="1030">
+PCAUD_0007.PE78
+</text>
+<path d="M6660,1020 L6660,300 L6164.2236,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6659,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6655,1030)" x="6655" y="1030">
+PGOER_065.PE89
+</text>
+<path d="M6720,1020 L6720,180 L5587.8916,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M6719,1019 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 6715,1030)" x="6715" y="1030">
+PPOLY_002.PE1020
+</text>
+</g>
+</svg>
