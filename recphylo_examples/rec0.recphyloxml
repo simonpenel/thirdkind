@@ -1,0 +1,4674 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>pop0</name>
+<clade>
+ <name>pop1</name>
+<clade>
+ <name>pop2</name>
+<clade>
+ <name>pop3</name>
+<clade>
+ <name>pop4</name>
+<clade>
+ <name>pop5</name>
+<clade>
+ <name>pop6</name>
+<clade>
+ <name>hpEastAsia</name>
+</clade>
+<clade>
+ <name>hpAsia2</name>
+</clade>
+</clade>
+<clade>
+ <name>hpSahul</name>
+</clade>
+</clade>
+<clade>
+ <name>hpEurope_7</name>
+</clade>
+</clade>
+<clade>
+ <name>hpNEAfrica</name>
+</clade>
+</clade>
+<clade>
+ <name>pop7</name>
+<clade>
+ <name>hpEurope_4</name>
+</clade>
+<clade>
+ <name>hpAfrica1</name>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>hpAfrica2</name>
+</clade>
+</clade>
+<clade>
+ <name>outgroup</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>394</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>202</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639325.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>199</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>198</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003058655.1_Sweden_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639635.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>196</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012615.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>193</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>33</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>30</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>29</name>
+<eventsRec>
+<transferBack destinationSpecies="pop2"/>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfrica</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfrica.l</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfricaLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>408</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003638055.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000475755.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>27</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012575.1_ColombiaCartagenadeIndias_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>23</name>
+<eventsRec>
+<transferBack destinationSpecies="pop2"/>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>419</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>454</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>454.l</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002026755.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003060035.1_FranceBordeaux_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>454LOSS</name>
+<eventsRec>
+<loss speciesLocation="pop5"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636385.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>418</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>422</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533515.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636545.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>421</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>425</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>440</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476275.1_South_Africa_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639725.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002533925.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>424</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>427</name>
+<eventsRec>
+<transferBack destinationSpecies="hpNEAfrica"/>
+<branchingOut speciesLocation="hpNEAfrica"/>
+</eventsRec>
+<clade>
+ <name>430</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275105.1_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639485.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636985.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002012405.1_ColombiaTunja_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>21</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>21.l</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003638025.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEastAsia"/>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>18</name>
+<eventsRec>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>15</name>
+<eventsRec>
+<transferBack destinationSpecies="outgroup"/>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>11</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000007905.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000162575.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000200595.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000237285.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCA_000259255.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCA_000009305.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003638535.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>21LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637105.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>34</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>38</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003635585.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>186</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637605.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639285.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>37</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002027125.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>40</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>43</name>
+<eventsRec>
+<branchingOut speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>47</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345645.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>131</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>134</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>137</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>140</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>143</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475675.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>147</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>150</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476935.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000477015.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000477135.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637485.1_AustraliaPerth_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>141</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>160</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>163</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476295.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476475.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476655.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476615.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>138</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>173</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475735.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476815.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475895.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001653455.1_Angola_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>46</name>
+<eventsRec>
+<branchingOut speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahul</name>
+<eventsRec>
+<transferBack destinationSpecies="hpSahul"/>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>49</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>52</name>
+<eventsRec>
+<branchingOut speciesLocation="pop6"/>
+</eventsRec>
+<clade>
+ <name>GCF_000224575.1_IndiaWestBengal_hpAsia2</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAsia2"/>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>56</name>
+<eventsRec>
+<speciation speciesLocation="pop6"/>
+</eventsRec>
+<clade>
+ <name>59</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>62</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>65</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>68</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>71</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275185.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>75</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>78</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>81</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>84</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000285035.1_Vietnam_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000392455.3_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002204015.1_ChinaHangzhou_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001446385.2_Malaysia_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>79</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000296035.2_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>95</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>98</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000766025.1_Taiwan_hspMaori</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637515.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636065.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636905.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001653395.1_SouthKoreaSeoul_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>66</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>109</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000349505.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001940095.1_Singapore_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000521245.1_China_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>63</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_002357555.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002357615.1_Japan_hpEastAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476435.1_South_Africa_hpAsia2</name>
+<eventsRec>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>53</name>
+<eventsRec>
+<duplication speciesLocation="hpSahul"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653435.1_AustraliaJigalong_hpSahul</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653475.1_PapuaNewGuineaGoroka_hpSahul</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003058595.1_Sweden_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>203</name>
+<eventsRec>
+<branchingOut speciesLocation="hpNEAfrica"/>
+</eventsRec>
+<clade>
+ <name>206</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>209</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>213</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_001998205.1_ColombiaTuquerres_hspWAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>308</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>312</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>379</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>382</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000344965.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638295.1_AustraliaPerth_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000345085.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002026705.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>311</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>314</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>317</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274525.2_Colombia_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001998245.1_ColombiaTuquerres_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002533055.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>315</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274785.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>327</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>330</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>333</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475435.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>337</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>340</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>343</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>346</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>349</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475455.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000604285.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476515.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000604265.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637885.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003635645.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475615.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>331</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475775.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>363</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>366</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636325.1_AustraliaPerth_hspSAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637225.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>367</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636965.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637755.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>212</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275525.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>215</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_001999865.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>218</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>221</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<duplication speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>224</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>227</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>230</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273845.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>234</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>237</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273985.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000275505.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>238</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637865.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638175.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002093735.1_MoroccoRabat_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>228</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>251</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>254</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>257</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>260</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274845.2_USAClevelandOH_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>264</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345465.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000345605.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000345445.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003059505.1_FranceBordeaux_hpWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000345105.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>252</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002534215.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002026805.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>225</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274765.2_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000475575.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>222</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653415.1_SouthAfricaCapeTown_hspSAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>285</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533375.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>288</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>292</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002026885.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000477175.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>291</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>291.l</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475655.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003635665.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>291LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475595.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_900451295.1_Nigeria_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>204</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003050665.1_USAVA_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000448425.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>2</id><clade>
+ <name>0</name>
+<eventsRec>
+<duplication speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>335</name>
+<eventsRec>
+<duplication speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>338</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>342</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003050665.1_USAVA_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639325.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>341</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>345</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>345.l</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahul</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahul.l</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahulLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop6"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476275.1_South_Africa_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>345LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>344</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639285.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>347</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274525.2_Colombia_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001998205.1_ColombiaTuquerres_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>339</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>366</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>366.l</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>369</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>369.l</name>
+<eventsRec>
+<speciation speciesLocation="pop6"/>
+</eventsRec>
+<clade>
+ <name>369.l.l</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>372</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275185.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>376</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000296035.2_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>380</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>383</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000349505.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000392455.3_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001940095.1_Singapore_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>373</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>392</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>395</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>398</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>401</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>404</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>407</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>410</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>413</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000285035.1_Vietnam_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637515.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>414</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_001446385.2_Malaysia_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638025.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000766025.1_Taiwan_hspMaori</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002357555.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001653395.1_SouthKoreaSeoul_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>402</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_002204015.1_ChinaHangzhou_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636905.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000521245.1_China_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002357615.1_Japan_hpEastAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636065.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>369.lLOSS</name>
+<eventsRec>
+<loss speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>369LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002534215.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>366LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>367</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002026705.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>438</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003638535.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>441</name>
+<eventsRec>
+<duplication speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>444</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476435.1_South_Africa_hpAsia2</name>
+<eventsRec>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476435.1_South_Africa_hpAsia2.l</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAsia2"/>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476435.1_South_Africa_hpAsia2LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637865.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>445</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533055.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002026805.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>337</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639725.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>334</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637605.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>331</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533515.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>328</name>
+<eventsRec>
+<duplication speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>256</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>20</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>20.l</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653475.1_PapuaNewGuineaGoroka_hpSahul</name>
+<eventsRec>
+<transferBack destinationSpecies="hpSahul"/>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>17</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653435.1_AustraliaJigalong_hpSahul</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653435.1_AustraliaJigalong_hpSahul.l</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653435.1_AustraliaJigalong_hpSahulLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop6"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>14</name>
+<eventsRec>
+<branchingOut speciesLocation="hpEurope_7"/>
+</eventsRec>
+<clade>
+ <name>11</name>
+<eventsRec>
+<transferBack destinationSpecies="outgroup"/>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000007905.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000162575.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000200595.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000237285.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCA_000259255.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003635585.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>20LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>21</name>
+<eventsRec>
+<duplication speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>24</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012575.1_ColombiaCartagenadeIndias_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>27</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>30</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>33</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>36</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>39</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>42</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>45</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCA_000009305.1_outgroup</name>
+<eventsRec>
+<transferBack destinationSpecies="outgroup"/>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>49</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475895.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>53</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476615.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637485.1_AustraliaPerth_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>46</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>61</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>64</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475735.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476815.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476475.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476655.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475675.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>40</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000477135.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653455.1_Angola_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>37</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476295.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476935.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476515.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>31</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>86</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>89</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>92</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533375.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>95</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>99</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>207</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>214</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275505.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638295.1_AustraliaPerth_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475775.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>206</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274765.2_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000345465.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>98</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274845.2_USAClevelandOH_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>101</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345105.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>104</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345645.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>107</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000344965.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>110</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>114</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>161</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>164</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>167</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345085.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>171</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012405.1_ColombiaTunja_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003635665.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>168</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>179</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475655.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637885.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>180</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>187</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000477175.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000604265.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000604285.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475575.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>162</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003635645.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636965.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>113</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>116</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>119</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>122</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>125</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>128</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273845.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000275525.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001999865.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>126</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273985.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003059505.1_FranceBordeaux_hpWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000345605.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>120</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475435.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>144</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637105.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653415.1_SouthAfricaCapeTown_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>117</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637755.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>152</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475455.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000477015.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>93</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345445.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>225</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_900451295.1_Nigeria_hpNEAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpNEAfrica"/>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637225.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000448425.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>87</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274785.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>235</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>238</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>241</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475595.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638175.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475615.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636325.1_AustraliaPerth_hspSAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>25</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275105.1_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002093735.1_MoroccoRabat_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>257</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003058595.1_Sweden_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>260</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>264</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_001998245.1_ColombiaTuquerres_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639485.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>263</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_002027125.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>266</name>
+<eventsRec>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>270</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533925.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639635.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>269</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>272</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_002026885.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>275</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_003638055.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>278</name>
+<eventsRec>
+<duplication speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>281</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_003058655.1_Sweden_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>284</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636545.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636545.1_AustraliaPerth_hpEurope.l</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636545.1_AustraliaPerth_hpEuropeLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop5"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>287</name>
+<eventsRec>
+<branchingOut speciesLocation="hpNEAfrica"/>
+</eventsRec>
+<clade>
+ <name>GCF_000224575.1_IndiaWestBengal_hpAsia2</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAsia2"/>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>291</name>
+<eventsRec>
+<duplication speciesLocation="hpNEAfrica"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636385.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636985.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>282</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012615.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012615.1_ColombiaBogota_hpEurope.l</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002012615.1_ColombiaBogota_hpEuropeLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop5"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>273</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003060035.1_FranceBordeaux_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>308</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002026755.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000475755.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+<recGeneTree>
+<phylogeny rooted="true"><id>3</id><clade>
+ <name>0</name>
+<eventsRec>
+<speciation speciesLocation="pop0"/>
+</eventsRec>
+<clade>
+ <name>9</name>
+<eventsRec>
+<branchingOut speciesLocation="pop1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003635665.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>12</name>
+<eventsRec>
+<speciation speciesLocation="pop1"/>
+</eventsRec>
+<clade>
+ <name>16</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>16.l</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274525.2_Colombia_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>452</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475655.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>456</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475775.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003635645.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>16LOSS</name>
+<eventsRec>
+<loss speciesLocation="pop3"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>15</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>19</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>410</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>413</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>416</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>419</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>422</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>425</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>428</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274785.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000475435.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475455.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637755.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476515.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>420</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000604285.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>440</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637225.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637885.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475595.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636965.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636325.1_AustraliaPerth_hspSAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>18</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003637865.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>21</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475615.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>24</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>28</name>
+<eventsRec>
+<transferBack destinationSpecies="pop2"/>
+<branchingOut speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475755.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>95</name>
+<eventsRec>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>98</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636385.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpNEAfrica"/>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>101</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>105</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>256</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>259</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>262</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>265</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>268</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275105.1_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>272</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639635.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003639725.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>269</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476275.1_South_Africa_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002026885.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>266</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002533925.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003058655.1_Sweden_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>263</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002534215.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638535.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002026755.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>257</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>296</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_002027125.1_MexicoMexicoCity_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003058595.1_Sweden_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637105.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>104</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639285.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>107</name>
+<eventsRec>
+<branchingOut speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>110</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<duplication speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>113</name>
+<eventsRec>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>116</name>
+<eventsRec>
+<transferBack destinationSpecies="pop4"/>
+<duplication speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>119</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>123</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEurope_4"/>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000476435.1_South_Africa_hpAsia2</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAsia2"/>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637605.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>122</name>
+<eventsRec>
+<branchingOut speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>125</name>
+<eventsRec>
+<transferBack destinationSpecies="pop6"/>
+<speciation speciesLocation="pop6"/>
+</eventsRec>
+<clade>
+ <name>GCF_003638025.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000224575.1_IndiaWestBengal_hpAsia2</name>
+<eventsRec>
+<leaf speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>126</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>133</name>
+<eventsRec>
+<branchingOut speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636905.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEastAsia"/>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>136</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>139</name>
+<eventsRec>
+<speciation speciesLocation="pop6"/>
+</eventsRec>
+<clade>
+ <name>139.l</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>142</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>145</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>148</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000275185.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653395.1_SouthKoreaSeoul_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001940095.1_Singapore_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>146</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>157</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>160</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>163</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000285035.1_Vietnam_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>167</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000349505.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000392455.3_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>164</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_002204015.1_ChinaHangzhou_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003636065.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000766025.1_Taiwan_hspMaori</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>158</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>181</name>
+<eventsRec>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000521245.1_China_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003637515.1_AustraliaPerth_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002357615.1_Japan_hpEastAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001446385.2_Malaysia_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>139LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpAsia2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>140</name>
+<eventsRec>
+<branchingOut speciesLocation="hpSahul"/>
+</eventsRec>
+<clade>
+ <name>191</name>
+<eventsRec>
+<transferBack destinationSpecies="hpEastAsia"/>
+<duplication speciesLocation="hpEastAsia"/>
+</eventsRec>
+<clade>
+ <name>GCF_000296035.2_MalaysiaKL_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002357555.1_Japan_hspEAsia</name>
+<eventsRec>
+<leaf speciesLocation="hpEastAsia"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>192</name>
+<eventsRec>
+<duplication speciesLocation="hpSahul"/>
+</eventsRec>
+<clade>
+ <name>GCF_001653435.1_AustraliaJigalong_hpSahul</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653475.1_PapuaNewGuineaGoroka_hpSahul</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003636545.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>120</name>
+<eventsRec>
+<speciation speciesLocation="pop4"/>
+</eventsRec>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahul</name>
+<eventsRec>
+<speciation speciesLocation="pop5"/>
+</eventsRec>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahul.l</name>
+<eventsRec>
+<leaf speciesLocation="hpSahul"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000513515.1_AustraliaWesternAustralia_hpSahulLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop6"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>212</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003050665.1_USAVA_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003635585.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_7"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>117</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>221</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_003060035.1_FranceBordeaux_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_003638055.1_AustraliaPerth_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001653415.1_SouthAfricaCapeTown_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>114</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>229</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>232</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>235</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>238</name>
+<eventsRec>
+<duplication speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>241</name>
+<eventsRec>
+<branchingOut speciesLocation="hpEurope_4"/>
+</eventsRec>
+<clade>
+ <name>GCF_001998205.1_ColombiaTuquerres_hspWAfrica1</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002533055.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_001998245.1_ColombiaTuquerres_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002533515.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002533375.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003639485.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002012405.1_ColombiaTunja_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfrica</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfrica.l</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002832025.1_IndiaManipal_hpNEAfricaLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop4"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>99</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012575.1_ColombiaCartagenadeIndias_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>306</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>309</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica2"/>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>313</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<branchingOut speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>392</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000448425.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000475575.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>393</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_003639325.1_SpainHospitaldeSabadellBarcelona_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002026705.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>312</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>316</name>
+<eventsRec>
+<transferBack destinationSpecies="pop7"/>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274765.2_USAClevelandOH_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>376</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>379</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000274845.2_USAClevelandOH_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>383</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345085.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000345445.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003638175.1_AustraliaPerth_hspSAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>315</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345645.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>318</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345105.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>321</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>325</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>364</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273985.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000275525.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003059505.1_FranceBordeaux_hpWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>324</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000344965.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>327</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>330</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>333</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000273845.1_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000345605.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_002026805.1_MexicoMexicoCity_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>331</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>342</name>
+<eventsRec>
+<transferBack destinationSpecies="pop2"/>
+<speciation speciesLocation="pop2"/>
+</eventsRec>
+<clade>
+ <name>GCF_900451295.1_Nigeria_hpNEAfrica</name>
+<eventsRec>
+<speciation speciesLocation="pop3"/>
+</eventsRec>
+<clade>
+ <name>GCF_900451295.1_Nigeria_hpNEAfrica.l</name>
+<eventsRec>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_900451295.1_Nigeria_hpNEAfricaLOSS</name>
+<eventsRec>
+<loss speciesLocation="pop4"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>345</name>
+<eventsRec>
+<speciation speciesLocation="pop7"/>
+</eventsRec>
+<clade>
+ <name>GCF_002012615.1_ColombiaBogota_hpEurope</name>
+<eventsRec>
+<leaf speciesLocation="hpEurope_4"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000275505.2_USAClevelandOH_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>343</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>343.l</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000345465.2_The_Gambia_hspWAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>355</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_001999865.1_ColombiaTumaco_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_002093735.1_MoroccoRabat_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>343LOSS</name>
+<eventsRec>
+<loss speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003638295.1_AustraliaPerth_hspWAfrica1</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>27</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_003636985.1_AustraliaPerth_hpNEAfrica</name>
+<eventsRec>
+<transferBack destinationSpecies="hpNEAfrica"/>
+<leaf speciesLocation="hpNEAfrica"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>30</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>33</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>36</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>40</name>
+<eventsRec>
+<transferBack destinationSpecies="hpAfrica1"/>
+<duplication speciesLocation="hpAfrica1"/>
+</eventsRec>
+<clade>
+ <name>GCF_000477175.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000604265.1_South_Africa_hpAfrica</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica1"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>39</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>42</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>45</name>
+<eventsRec>
+<branchingOut speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCA_000009305.1_outgroup</name>
+<eventsRec>
+<transferBack destinationSpecies="outgroup"/>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000476295.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476935.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>43</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>54</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>57</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475675.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>61</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>64</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>67</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>70</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000475735.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_000477015.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476475.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476615.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000475895.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_003637485.1_AustraliaPerth_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>55</name>
+<eventsRec>
+<duplication speciesLocation="hpAfrica2"/>
+</eventsRec>
+<clade>
+ <name>GCF_000477135.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCF_001653455.1_Angola_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476815.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>GCF_000476655.1_South_Africa_hpAfrica2</name>
+<eventsRec>
+<leaf speciesLocation="hpAfrica2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>11</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>8</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>5</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000007905.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000162575.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>7</name>
+<eventsRec>
+<duplication speciesLocation="outgroup"/>
+</eventsRec>
+<clade>
+ <name>GCA_000200595.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>GCA_000237285.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>GCA_000259255.1_outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
