@@ -276,6 +276,11 @@ fn main()  {
          display_help(args[0].to_string());
     }
 
+    // Setting options on thickness
+    options.thickness_flag = thickness_flag_1st;
+    options.thickness_gene = thickness_gene_1st;
+    options.thickness_thresh = thickness_thresh_1st;
+
 // ================================================================================================
 //          RECONCILIATION A 3 NIVEAUX
 // ================================================================================================
@@ -548,7 +553,6 @@ fn main()  {
         //
         // GENE-PARASITE-HOST  STUFF : MAP2
         //
-
         // ---------------------------------------------------------
         // Generation of second 3 levels svg
         // ---------------------------------------------------------
@@ -586,7 +590,9 @@ fn main()  {
         if thickness_flag_2nd {
             // On ajoute les transferts de paraistes au transferts de gene
             options.thickness_flag = true;
-
+            options.thickness_gene = thickness_gene_2nd;
+            options.thickness_thresh = thickness_thresh_2nd;
+            //  Create the svg from temporary variables
             for val in transfers_para {
                 mapped_gene_transfers.push(val);
             }
@@ -602,64 +608,71 @@ fn main()  {
                 info!("Browser OK");
             }
         }
+        //  Simple tree of the parasite
+        reset_pos(&mut global_pipe_parasite);
+        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_para_simple.svg".to_string());
+        reset_pos(&mut tree_host_pipe);
+        //  Simple tree of the host
+        phyloxml_processing(&mut tree_host_pipe, &mut options, &config,"thirdkind_host_simple.svg".to_string());
+        //  Simple trees of the genes
+        let mut i = 0;
+        while i < nb_parasite_pipe {
+            reset_pos(&mut path_para_trees[i]);
+            phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
+            i = i + 1;
+        }
 
-reset_pos(&mut global_pipe_parasite);
-phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_para_simple.svg".to_string());
-reset_pos(&mut tree_host_pipe);
-phyloxml_processing(&mut tree_host_pipe, &mut options, &config,"thirdkind_host_simple.svg".to_string());
-let mut i = 0;
-while i < nb_parasite_pipe {
-    reset_pos(&mut path_para_trees[i]);
-    phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
-    i = i + 1;
-}
+        //
+        // GENE-PARASITE-HOST  STUFF : MAP3
+        //
+        // ---------------------------------------------------------
+        // Generation of third 3 levels svg UNDER DEVELOPMENT
+        // --------------------------------------------------------
+        println!();
+        println!("Building svg 3: pipe host tree with gene tree(s) inside [{}]",outfile_mapped_3);
+        map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
+        reset_pos(&mut tree_host_pipe);
+        let mut i = 0;
+        while i < nb_gntree {
+            reset_pos(&mut path_genes[i]);
+            i = i + 1;
+        }
+        recphyloxml_processing(&mut tree_host_pipe, &mut path_genes, &mut options, &config,
+            true, &vec![],outfile_mapped_3);
+        let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_3.svg".to_string());
+        if options.open_browser {
+            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+                info!("Browser OK");
+            }
+        }
+        println!("Output files:");
+        println!(" - thirdkind_host_simple.svg ...... 1 level:  host tree");
+        let mut i = 0;
+        while i < nb_parasite_pipe {
+            println!(" - thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",&i);
+            i = i + 1;
+        }
+        println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
+        println!(" - thirdkind_gene_para.svg ........ 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
+        println!(" - thirdkind_symbiote_host.svg .... 2 levels: pipe host tree with symbiote tree(s) inside");
+        println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled pipe symbiote tree(s) with gene tree(s)");
+        println!(" - thirdkind_mapped_2.svg ........  3 levels: symbiote-host reconciliation plus gene transfers");
+        println!(" - thirdkind_mapped_3.svg ........  3 levels: pipe host tree with gene tree(s) inside");
 
-// ---------------------------------------------------------
-// Generation of third 3 levels svg UNDER DEVELOPMENT
-// --------------------------------------------------------
-println!();
-println!("Building svg 3: pipe host tree with gene tree(s) inside [{}]",
-    outfile_mapped_3);
-map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
-reset_pos(&mut tree_host_pipe);
-let mut i = 0;
-while i < nb_gntree {
-    reset_pos(&mut path_genes[i]);
-    i = i + 1;
-}
-recphyloxml_processing(&mut tree_host_pipe, &mut path_genes, &mut options, &config,
-    true, &vec![],outfile_mapped_3);
-
-let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_3.svg".to_string());
-    if options.open_browser {
-        if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
-            info!("Browser OK");
+        if nb_parasite_path != nb_parasite_pipe {
+            println!();
+            println!("==============================================");
+            println!("Error! Different number of symbiote trees in the 2 files!");
+            println!("       Resulting svg will be incomplete.");
+            println!("==============================================");
+            println!();
         }
     }
-println!("Output files:");
-println!(" - thirdkind_host_simple.svg ...... 1 level:  host tree");
-let mut i = 0;
-while i < nb_parasite_pipe {
-    println!(" - thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",&i);
-    i = i + 1;
-}
-println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
-println!(" - thirdkind_gene_para.svg ........ 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
-println!(" - thirdkind_symbiote_host.svg .... 2 levels: pipe host tree with symbiote tree(s) inside");
-println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled pipe symbiote tree(s) with gene tree(s)");
-println!(" - thirdkind_mapped_2.svg ........  3 levels: symbiote-host reconciliation plus gene transfers");
-println!(" - thirdkind_mapped_3.svg ........  3 levels: pipe host tree with gene tree(s) inside");
 
-if nb_parasite_path != nb_parasite_pipe {
-    println!();
-    println!("==============================================");
-    println!("Error! Different number of symbiote trees in the 2 files!");
-    println!("       Resulting svg will be incomplete.");
-    println!("==============================================");
-    println!();
-}
+    // =================================
+    //  RECONCILIATION A 2 DEUX NIVEAUX
+    // =================================
 
-    }
     else if multiple_files {
         // get the url
         let path = env::current_dir().expect("Unable to get current dir");
