@@ -288,10 +288,8 @@ fn main()  {
         let  outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
         let  outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
         let transfers = vec![]; // Initialise transfers
-        let mut transfers_gene = vec![]; // Initialise transfers_gene
-        let mut transfers_para = vec![]; // Initialise transfers_para
-        // let mut selected_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-        // let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        let mut transfers_gene = vec![]; // Transferts de genes
+        let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
 
         //
         // GENE - PARASITE STUFF
@@ -527,6 +525,7 @@ fn main()  {
         // if thickness_flag_1st {
         // reset_pos(&mut selected_gene_trees[0]);
         // }
+
         // Reset the option
         options.thickness_flag = false;
         //  option -t is on
