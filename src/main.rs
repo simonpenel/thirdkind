@@ -36,7 +36,7 @@ fn display_help(programe_name:String) {
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
     external tree (free_living option)");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
-    println!("    -g 2nd level input file");
+    println!("    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
     println!("    -h : help");
     println!("    -H height : multiply the tree height by factor 'height' (default 1.0)");
@@ -55,18 +55,19 @@ fn display_help(programe_name:String) {
     println!("    -s : drawing species tree only");
     println!("    -S : display node support");
     println!("    -t <t> : redudant transfers are displayed as one, with opacity according \
-    to abundance and only if abundance is higher tan t. Only one gene is displayed.");
+    to abundance and only if abundance is higher tan t.\n             Only one gene is displayed.");
     println!("    -T <n> : with option -t, select the gene to display.");
-    println!("    -u <t> : same as -t, but apply to the '-f' input file only.");
-    println!("    -U <n> : same as -T, but apply to the '-f' input file only.");
+    println!("    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.");
+    println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
     println!("    -W width : multiply the tree width by factor 'width' (default 1.0)");
     println!("");
     println!("    Note on -b option : you must set a browser as default application for opening \
     svg file");
     println!("");
-    println!("    Note on -g option : this will generate 3-levels reconciliation svg.");
+    println!("    Note on -g option : this will generate 3-levels reconciliation svg files.");
     println!("    For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f");
+    println!("    The -t/-g options are not totally implemented for the mapped_1/2/3 svg output files.");
     println!("");
     println!("Input format is guessed according to the file name extension:");
 
@@ -216,7 +217,7 @@ fn main()  {
                         thickness_thresh_2nd = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -t option");
+                                eprintln!("Error! Please give a integer value with -u option");
                                 process::exit(1);
                             },
                         };
@@ -226,7 +227,7 @@ fn main()  {
                         thickness_gene_2nd = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -T option");
+                                eprintln!("Error! Please give a integer value with -U option");
                                 process::exit(1);
                             },
                         };
