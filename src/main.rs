@@ -343,14 +343,10 @@ fn main()  {
                 i = i + 1;
             }
             println!("Transfers (genes) = {:?}",transfers_gene);
-            // Define a temporary copy of the  genes
-            let mut _path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
-                for i in 0 .. path_genes.len() {
-                    _path_genes.push(path_genes[i].copie());
-                }
             // Define the unique gene wich is selected
             let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            selected_gene_trees.push(_path_genes.remove(thickness_gene_1st-1));
+            selected_gene_trees.push(path_genes[thickness_gene_1st-1].copie());
+
             // Define a temporary copy of the species tree
             let mut _global_pipe_parasite = global_pipe_parasite.copie();
             // Set options
