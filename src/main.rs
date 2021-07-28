@@ -545,50 +545,57 @@ fn main()  {
             }
         }
 
-// ---------------------------------------------------------
-// Generation of second 3 levels svg
-// ---------------------------------------------------------
-println!();
-println!("Building svg 2:  symbiote tree(s) within host pipe tree and mapped gene transfers [{}]",
-    outfile_mapped_2);
-let mut i = 0;
-let gene_transfers = get_gtransfer(&mut path_genes[i]);
-info!("Transfers = {:?}",gene_transfers);
-let mut mapped_gene_transfers = map_transfer_mul(gene_transfers, &mut path_para_trees);
-info!("Mapped transfers = {:?}",mapped_gene_transfers);
-i = i + 1;
-while i < nb_gntree {
-    let gene_transfers = get_gtransfer(&mut path_genes[i]);
-    info!("Transfers = {:?}",gene_transfers);
-    let mapped = map_transfer(gene_transfers, &mut path_para_trees[0]);
-    info!("Mapped transfers = {:?}",mapped);
-    for val in mapped {
-        mapped_gene_transfers.push(val);
-    }
-    i = i + 1;
-}
-reset_pos(&mut tree_host_pipe);
-let mut i = 0;
-while i < nb_parasite_pipe {
-    reset_pos(&mut path_para_trees[i]);
-    i = i + 1;
-}
+        //
+        // GENE-PARASITE-HOST  STUFF : MAP2
+        //
 
-options.thickness_flag = false;
-if thickness_flag_2nd {
-// options.thickness_flag = true;
-}
+        // ---------------------------------------------------------
+        // Generation of second 3 levels svg
+        // ---------------------------------------------------------
+        println!();
+        println!("Building svg 2:  symbiote tree(s) within host pipe tree and mapped gene transfers [{}]",
+            outfile_mapped_2);
+        let mut i = 0;
+        // We get the gene transfer here again, but they will be mapped
+        let gene_transfers = get_gtransfer(&mut path_genes[i]);
+        info!("Transfers = {:?}",gene_transfers);
+        let mut mapped_gene_transfers = map_transfer_mul(gene_transfers, &mut path_para_trees);
+        info!("Mapped transfers = {:?}",mapped_gene_transfers);
+        i = i + 1;
+        while i < nb_gntree {
+            let gene_transfers = get_gtransfer(&mut path_genes[i]);
+            info!("Transfers = {:?}",gene_transfers);
+            let mapped = map_transfer_mul(gene_transfers, &mut path_para_trees);
+            info!("Mapped transfers = {:?}",mapped);
+            for val in mapped {
+                mapped_gene_transfers.push(val);
+            }
+            i = i + 1;
+        }
+        info!("Mapped transfers = {:?}",mapped_gene_transfers);
+        // Reseting the pipe and the paths
+        reset_pos(&mut tree_host_pipe);
+        let mut i = 0;
+        while i < nb_parasite_pipe {
+            reset_pos(&mut path_para_trees[i]);
+            i = i + 1;
+        }
 
-// attention on ne remape pas
-recphyloxml_processing(&mut tree_host_pipe, &mut path_para_trees, &mut options, &config,
-    false, &mapped_gene_transfers,outfile_mapped_2);
-let path = env::current_dir().expect("Unable to get current dir");
-let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_2.svg".to_string());
-if options.open_browser {
-    if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
-        info!("Browser OK");
-    }
-}
+        options.thickness_flag = false;
+        if thickness_flag_2nd {
+            // options.thickness_flag = true;
+        }
+
+        // attention on ne remape pas
+        recphyloxml_processing(&mut tree_host_pipe, &mut path_para_trees, &mut options, &config,
+            false, &mapped_gene_transfers,outfile_mapped_2);
+        let path = env::current_dir().expect("Unable to get current dir");
+        let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_2.svg".to_string());
+        if options.open_browser {
+            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+                info!("Browser OK");
+            }
+        }
 
 reset_pos(&mut global_pipe_parasite);
 phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_para_simple.svg".to_string());
