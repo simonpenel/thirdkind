@@ -438,7 +438,7 @@ fn main()  {
             &config, true, &transfers_para, outfile_para_host.clone());
             // We need to run again with the current variables, because we need the upddated
             // _tree_host_pipe path_para_trees
-            recphyloxml_processing(&mut _tree_host_pipe,&mut  path_para_trees, &mut options,
+            recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
                  &config,true, &transfers,"tmpfile2.svg".to_string());
 
         }
@@ -580,10 +580,16 @@ fn main()  {
             reset_pos(&mut path_para_trees[i]);
             i = i + 1;
         }
-
+        // Setting option to false because we dont want the parasite transerst to be hidden
         options.thickness_flag = false;
+
         if thickness_flag_2nd {
-            // options.thickness_flag = true;
+            // On ajoute les transferts de paraistes au transferts de gene
+            options.thickness_flag = true;
+
+            for val in transfers_para {
+                mapped_gene_transfers.push(val);
+            }
         }
 
         // attention on ne remape pas
