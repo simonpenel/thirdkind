@@ -1,0 +1,193 @@
+<recPhylo> 
+<recGeneTree>
+<phylogeny rooted="true">
+<clade>
+	<name>NULL</name>
+	<eventsRec>
+		<duplication speciesLocation="species_1"/>
+	</eventsRec>
+	<clade>
+		<name>NULL</name>
+		<eventsRec>
+			<speciation speciesLocation="species_1"/>
+		</eventsRec>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<duplication speciesLocation="TELLI"/>
+			</eventsRec>
+			<clade>
+				<name>TELLI_121.PE20</name>
+				<eventsRec>
+					<leaf speciesLocation="TELLI"/>
+				</eventsRec>
+			</clade>
+			<clade>
+				<name>TELLI_60.PE125</name>
+				<eventsRec>
+					<leaf speciesLocation="TELLI"/>
+				</eventsRec>
+			</clade>
+		</clade>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="species_0"/>
+			</eventsRec>
+				<clade>
+				<name>loss</name>
+				<eventsRec>
+					<loss speciesLocation="TMALA"/>
+				</eventsRec>
+			</clade>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<duplication speciesLocation="TTHER"/>
+				</eventsRec>
+				<clade>
+					<name>TTHER_4729.PE1</name>
+					<eventsRec>
+						<leaf speciesLocation="TTHER"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>TTHER_4660.PE8</name>
+					<eventsRec>
+						<leaf speciesLocation="TTHER"/>
+					</eventsRec>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+		<name>NULL</name>
+		<eventsRec>
+			<speciation speciesLocation="species_1"/>
+		</eventsRec>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<duplication speciesLocation="species_0"/>
+			</eventsRec>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<duplication speciesLocation="species_0"/>
+				</eventsRec>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<speciation speciesLocation="species_0"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<duplication speciesLocation="TTHER"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<duplication speciesLocation="TTHER"/>
+							</eventsRec>
+							<clade>
+								<name>TTHER_4783.PE1</name>
+								<eventsRec>
+									<leaf speciesLocation="TTHER"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>TTHER_4717.PE39</name>
+								<eventsRec>
+									<leaf speciesLocation="TTHER"/>
+								</eventsRec>
+							</clade>
+						</clade>
+						<clade>
+							<name>TTHER_4674.PE29</name>
+							<eventsRec>
+								<leaf speciesLocation="TTHER"/>
+							</eventsRec>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<branchingOut speciesLocation="TMALA"/>
+						</eventsRec>
+						<clade>
+							<name>TELLI_36.PE69</name>
+							<eventsRec>
+								<transferBack destinationSpecies="TELLI"/>
+								<leaf speciesLocation="TELLI"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>TMALA_9.PE79</name>
+							<eventsRec>
+								<leaf speciesLocation="TMALA"/>
+							</eventsRec>
+						</clade>
+					</clade>
+				</clade>
+				<clade>
+					<name>TMALA_47.PE86</name>
+					<eventsRec>
+						<speciation speciesLocation="species_0"/>
+					</eventsRec>
+						<clade>
+						<name>loss</name>
+						<eventsRec>
+							<loss speciesLocation="TTHER"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>TMALA_47.PE86</name>
+						<eventsRec>
+							<leaf speciesLocation="TMALA"/>
+						</eventsRec>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="species_0"/>
+				</eventsRec>
+					<clade>
+					<name>loss</name>
+					<eventsRec>
+						<loss speciesLocation="TTHER"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<duplication speciesLocation="TMALA"/>
+					</eventsRec>
+					<clade>
+						<name>TMALA_47.PE70</name>
+						<eventsRec>
+							<leaf speciesLocation="TMALA"/>
+						</eventsRec>
+					</clade>
+					<clade>
+						<name>TMALA_47.PE79</name>
+						<eventsRec>
+							<leaf speciesLocation="TMALA"/>
+						</eventsRec>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+		<clade>
+			<name>TELLI_7.PE357</name>
+			<eventsRec>
+				<leaf speciesLocation="TELLI"/>
+			</eventsRec>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
