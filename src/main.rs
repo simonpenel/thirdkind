@@ -28,11 +28,13 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-e][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
+    println!("    -d fontsize: set font size for gene trees");
+    println!("    -D fontsize: set font size for species trees");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
     external tree (free_living option)");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
@@ -119,7 +121,7 @@ fn main()  {
     if args.len() == 1 {
          display_help(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bef:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "c:bd:D:ef:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -251,6 +253,24 @@ fn main()  {
                         },
                     Opt('c', Some(string)) => {
                         set_config(string, &mut config);
+                    },
+                    Opt('d', Some(string)) => {
+                        config.gene_police_size = match string.parse::<usize>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("Error! Please give a integer value with -d option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('D', Some(string)) => {
+                        config.species_police_size = match string.parse::<usize>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("Error! Please give a integer value with -D option");
+                                process::exit(1);
+                            },
+                        };
                     },
                     Opt('f', Some(string)) => {
                         infile_sh = string.clone();
