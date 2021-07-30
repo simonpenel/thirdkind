@@ -36,8 +36,11 @@ multiple genes reconciliation:
 
 https://raw.githubusercontent.com/simonpenel/thirdkind/70a7a11aa89eda61926c5cabf221f47bb44e3409/output_examples/thirdkind_example4.svg
 
+real length with recPhyloXML file:
 
-example with "free living" species:
+https://raw.githubusercontent.com/simonpenel/thirdkind/b084872f02a758702e0f90543c715862729166a5/output_examples/thirdkind_real_length.svg
+
+using a  "free living" species:
 
 https://raw.githubusercontent.com/simonpenel/thirdkind/9eb47ce644998164ff56cc68eb765c0c8a24d389/output_examples/thirdkind_fl_example.svg
 
