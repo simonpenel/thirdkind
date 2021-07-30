@@ -107,37 +107,45 @@ Format is guessed according to filename (default is newick)
 
 Usage:
 
-    thirdkind -f input file [-b][-c config file][-F format][-g input file][-G #][-h][-i][-I][-l factor][-o output file][-p][-r ratio][-s][-v]
-
+    thirdkind -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
     -b : open svg in browser
-    -c configfile: use a configuration file    
-    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option).
-    -F phylo/recphylo: force format phyloXML/recPhyloXML    
-    -g 2nd level input file
+    -c configfile: use a configuration file
+    -d fontsize: set font size for gene trees
+    -D fontsize: set font size for species trees
+    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option)
+    -F phylo/recphylo: force format phyloXML/recPhyloXML
+    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)
     -G <n> : display the gene #n in phyloxml style (no species tree)
-    -h : help    
-    -H height : multiply the tree height by factor 'height' (default 1.0)
+    -h : help
+    -H height : multiply the tree height by factor 'height'
     -i : display internal gene nodes
     -I : display internal species nodes
     -J : with option -t, display the abundance of redudant transfers
+    -l factor : use branch length, multiplied by the given factor in case of newick/phyloxml,
+                and by an optimised factor in case of recphyloxml
     -L : display as landscape
-    -l factor: use branch length, using the given factor
-    -o outputfile : set name of output file    
+    -m : the input file (-f) is a list of recphyloxml files
+    -o outputfile : set name of output file
     -O switching nodes in order to minimise transfer crossings (under development)
-    -p : build a phylogram   
+    -p : build a phylogram
+    -P : pipe species tree uniformisation
     -r ratio : set the ratio between width of species and gene tree.
                Default 1.0, you usualy do not need to change it.
-    -s : drawing species tree only    
+    -s : drawing species tree only
     -S : display node support
-    -t <t> : redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher tan t. Only one gene is displayed.
-    -T <n> : with option -t, select the gene to display
-    -v : verbose   
-    -W width : multiply the tree width by factor 'width' (default 1.0)
+    -t <t> : redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher tan t.
+             Only one gene is displayed.
+    -T <n> : with option -t, select the gene to display.
+    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.
+    -U <n> : same as -T with -t, but for -u
+    -v : verbose
+    -W width : multiply the tree width by factor 'width'
 
     Note on -b option : you must set a browser as default application for opening svg file
 
-    Note on -g option : this will generate 3-levels reconciliation svg. For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
-
+    Note on -g option : this will generate 3-levels reconciliation svg files.
+    For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
+    The -t/-g options are not totally implemented for the mapped_1/2/3 svg output files.
 
 `Input format is guessed according to the file name extension:`
 
@@ -151,11 +159,12 @@ Usage:
 You will find several input file examples in recphylo_examples and xml_examples directories.
 
 # Examples:
-
-    thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
-    thirdkind -f recphylo_examples/concat.xml -b -t 0
-    thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
-    thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
+  thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
+  thirdkind -f recphylo_examples/concat.xml -b -t 0
+  thirdkind -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1
+  thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
+  thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
+  thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
 
 # Configuration file:
 
