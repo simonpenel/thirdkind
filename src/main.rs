@@ -41,11 +41,12 @@ fn display_help(programe_name:String) {
     println!("    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
     println!("    -h : help");
-    println!("    -H height : multiply the tree height by factor 'height' (default 1.0)");
+    println!("    -H height : multiply the tree height by factor 'height'");
     println!("    -i : display internal gene nodes");
     println!("    -I : display internal species nodes");
     println!("    -J : with option -t, display the abundance of redudant transfers");
-    println!("    -l factor : use branch length, using the given factor (default 1.0)");
+    println!("    -l factor : use branch length, multiplied by the given factor in case of newick/phyloxml,");
+    println!("                and by an optimised factor in case of recphyloxml");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile : set name of output file");
@@ -63,7 +64,7 @@ fn display_help(programe_name:String) {
     println!("    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.");
     println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
-    println!("    -W width : multiply the tree width by factor 'width' (default 1.0)");
+    println!("    -W width : multiply the tree width by factor 'width'");
     println!("");
     println!("    Note on -b option : you must set a browser as default application for opening \
     svg file");
@@ -86,9 +87,11 @@ fn display_help(programe_name:String) {
     println!("About phyloXML format: http://www.phyloxml.org/");
     println!("phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/");
     println!("");
-    println!("Examples:");
+    println!("Examples with recPhyloXML files:");
     println!("{} -f recphylo_examples/FAM000297_reconciliated.recphylo  -b", programe_name);
     println!("{} -f recphylo_examples/concat.xml -b -t 0 ", programe_name);
+    println!("{} -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1", programe_name);
+    println!("{} -f recphylo_examples/testfiles -m -b -t 3 -J", programe_name);
     println!("{} -f recphylo_examples/test2/hote_parasite_page2.recphylo  \
     -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  ", programe_name);
     println!("{} -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml \
@@ -238,6 +241,7 @@ fn main()  {
                     },
                     Opt('l', Some(string)) => {
                         options.real_length_flag = true;
+                        options.uniform = false; // In case we deal with a recphyloxml
                         options.scale = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
@@ -697,6 +701,9 @@ fn main()  {
     // =================================
 
     else if multiple_files {
+        if options.real_length_flag {
+            println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
+        };
         // get the url
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
@@ -835,6 +842,9 @@ fn main()  {
             },
             // Recphyloxml
             Format::Recphyloxml => {
+                if options.real_length_flag {
+                    println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
+                }
                 // On cree une structure Arena pour l'arbre d'espece
                 // et un vecteur de  structures Arena pour le(s) arbres de gènes
                 // -------------------------------------------------------------
