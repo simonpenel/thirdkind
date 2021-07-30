@@ -160,12 +160,12 @@ Usage:
 You will find several input file examples in recphylo_examples and xml_examples directories.
 
 # Examples:
-  thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
-  thirdkind -f recphylo_examples/concat.xml -b -t 0
-  thirdkind -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1
-  thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
-  thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
-  thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
+    thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
+    thirdkind -f recphylo_examples/concat.xml -b -t 0
+    thirdkind -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1
+    thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
+    thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
+    thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
 
 # Configuration file:
 
