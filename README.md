@@ -53,7 +53,7 @@ multiple gene trees reconciliation with redundant transfers. Display only 1 gene
 https://raw.githubusercontent.com/simonpenel/thirdkind/70a7a11aa89eda61926c5cabf221f47bb44e3409/output_examples/thirdkind_example2.svg
 
 
-# Output examples of 3-levels visualisation::
+# Output examples of 3-levels visualisation:
 
 ## Example 1
 
