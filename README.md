@@ -14,7 +14,8 @@ Build  svg representations of  phylogenetic reconciled (or not) trees with event
 * Input two recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
 
 
-Keywords:  phylogeny, reconciled trees, phylogenetic trees
+# Keywords:
+phylogeny, reconciled trees, phylogenetic trees, reconciliation, visualisation, svg, recphyloxml, phyloxml, 3 levels reconciliation, gene transfer, speciation, duplication, loss
 
 # Formats:
 
