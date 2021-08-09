@@ -43,7 +43,8 @@ https://raw.githubusercontent.com/simonpenel/thirdkind/b084872f02a758702e0f90543
 
 using a  "free living" species:
 
-https://raw.githubusercontent.com/simonpenel/thirdkind/9eb47ce644998164ff56cc68eb765c0c8a24d389/output_examples/thirdkind_fl_example.svg
+https://raw.githubusercontent.com/simonpenel/thirdkind/0f8ff64838fc7676b2e98542e953c4ccc9f45c62/output_examples/thirdkind_fl_example2.svg
+
 
 multiple "spTree":
 
