@@ -156,7 +156,7 @@ Usage:
 
     Note on -g option : this will generate 3-levels reconciliation svg files.
     For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
-    The -t/-g options are not totally implemented for the mapped_1/2/3 svg output files.
+    The -t/-u options are not totally implemented for the mapped_1/2/3 svg output files.
 
 `Input format is guessed according to the file name extension:`
 
