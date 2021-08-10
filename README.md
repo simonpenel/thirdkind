@@ -117,12 +117,13 @@ Format is guessed according to filename (default is newick)
 Usage:
 
     thirdkind -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
-    
+
     -b : open svg in browser
     -c configfile: use a configuration file
     -d fontsize: set font size for gene trees
     -D fontsize: set font size for species trees
-    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option)
+    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and superposed in case of multiple genes
+    -E : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and shifted in case of multiple genes
     -F phylo/recphylo: force format phyloXML/recPhyloXML
     -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)
     -G <n> : display the gene #n in phyloxml style (no species tree)

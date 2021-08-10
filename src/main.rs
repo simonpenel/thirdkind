@@ -28,7 +28,7 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -b : open svg in browser");
@@ -36,7 +36,9 @@ fn display_help(programe_name:String) {
     println!("    -d fontsize: set font size for gene trees");
     println!("    -D fontsize: set font size for species trees");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
-    external tree (free_living option)");
+    external tree (free_living option) and superposed in case of multiple genes");
+    println!("    -E : the node associated to FREE_LIVING are drawned in an \
+    external tree (free_living option) and shifted in case of multiple genes");
     println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
@@ -125,7 +127,7 @@ fn main()  {
     if args.len() == 1 {
          display_help(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bd:D:ef:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "c:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -183,6 +185,10 @@ fn main()  {
                         };
                     },
                     Opt('e', None) => options.free_living = true,
+                    Opt('E', None) => {
+                        options.free_living = true;
+                        options.free_living_shift = true;
+                        },
                     Opt('i', None) => options.gene_internal = true,
                     Opt('I', None) => options.species_internal = true,
                     Opt('J', None) => options.thickness_disp_score = true,
