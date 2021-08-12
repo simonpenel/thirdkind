@@ -190,6 +190,17 @@ thirdkind -f recphylo_examples/FAM000600_reconciliated_big.recphylo -c my_config
 
 ```
 
+Contents of a configuration file :
+
+    species_color:pink
+    species_opacity:0.9
+    single_gene_color:blue
+    gene_opacity:0.9
+    species_police_color:orange
+    species_police_size:12
+    gene_police_size:10
+    bezier:1
+
 # Using the API light_phylogeny:
 
 thirdkind uses the light_phylogeny library:
