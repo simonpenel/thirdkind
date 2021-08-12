@@ -320,8 +320,8 @@ fn main()  {
     if level3 {
         // Traitement de 2 fichier fichiers recPhyloXML
         println!("Two reconciled files => displaying 3-levels reconciliations. ");
-        let  outfile_gene_para = String::from("thirdkind_gene_para.svg");
-        let  outfile_para_host = String::from("thirdkind_para_host.svg");
+        let  outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
+        let  outfile_para_host = String::from("thirdkind_symbiote_host.svg");
         let  outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
         let  outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
         let  outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
@@ -643,7 +643,7 @@ fn main()  {
         }
         //  Simple tree of the parasite
         reset_pos(&mut global_pipe_parasite);
-        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_para_simple.svg".to_string());
+        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_symbiote_simple.svg".to_string());
         reset_pos(&mut tree_host_pipe);
         //  Simple tree of the host
         phyloxml_processing(&mut tree_host_pipe, &mut options, &config,"thirdkind_host_simple.svg".to_string());
@@ -686,7 +686,7 @@ fn main()  {
             i = i + 1;
         }
         println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
-        println!(" - thirdkind_gene_para.svg ........ 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
+        println!(" - thirdkind_gene_symbiote.svg ........ 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
         println!(" - thirdkind_symbiote_host.svg .... 2 levels: pipe host tree with symbiote tree(s) inside");
         println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled pipe symbiote tree(s) with gene tree(s)");
         println!(" - thirdkind_mapped_2.svg ........  3 levels: symbiote-host reconciliation plus gene transfers");
