@@ -143,13 +143,7 @@
 </clade>
 </clade>
 <clade>
- <name>enterobacteria17</name>
-<clade>
- <name>Pantoea_gaviniae_DSM_22758</name>
-</clade>
-<clade>
- <name>Pantoea_calida_DSM_22759</name>
-</clade>
+ <name>Pantoea</name>
 </clade>
 </clade>
 </clade>
@@ -377,12 +371,12 @@
 <clade>
  <name>enterobacteria16</name>
 <eventsRec>
-<duplication speciesLocation="EwDaI"/>
+<speciation speciesLocation="enterobacteria16"/>
 </eventsRec>
 <clade>
  <name>EwApS</name>
 <eventsRec>
-<leaf speciesLocation="EwDaI"/>
+<leaf speciesLocation="EwApS"/>
 </eventsRec>
 </clade>
 <clade>
@@ -401,20 +395,20 @@
 </clade>
 </clade>
 <clade>
- <name>enterobacteria17</name>
+ <name>Pantoea</name>
 <eventsRec>
-<speciation speciesLocation="enterobacteria17"/>
+<duplication speciesLocation="Pantoea"/>
 </eventsRec>
 <clade>
  <name>Pantoea_gaviniae_DSM_22758</name>
 <eventsRec>
-<leaf speciesLocation="Pantoea_gaviniae_DSM_22758"/>
+<leaf speciesLocation="Pantoea"/>
 </eventsRec>
 </clade>
 <clade>
  <name>Pantoea_calida_DSM_22759</name>
 <eventsRec>
-<leaf speciesLocation="Pantoea_calida_DSM_22759"/>
+<leaf speciesLocation="Pantoea"/>
 </eventsRec>
 </clade>
 </clade>

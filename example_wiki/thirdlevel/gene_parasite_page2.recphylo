@@ -90,7 +90,7 @@
 </clade>
 </clade>
 <clade>
- <name>enterobacteria17</name>
+ <name>Pantoea</name>
 <clade>
  <name>Pantoea_gaviniae_DSM_22758</name>
 </clade>
@@ -245,7 +245,7 @@
 <clade>
  <name>Pantoea_calida_DSM_22759</name>
 <eventsRec>
-<speciation speciesLocation="enterobacteria17"/>
+<speciation speciesLocation="Pantoea"/>
 </eventsRec>
 <clade>
  <name>Pantoea_calida_DSM_22759.l</name>
@@ -287,7 +287,7 @@
 <clade>
  <name>EwBiELOSS</name>
 <eventsRec>
-<loss speciesLocation="enterobacteria17"/>
+<loss speciesLocation="Pantoea"/>
 </eventsRec>
 </clade>
 </clade>
