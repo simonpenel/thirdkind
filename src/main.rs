@@ -715,7 +715,7 @@ fn main()  {
         let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
         println!("Multiple files processing:");
         let multifilename = &infile_sh.clone();
-        let contents = fs::read_to_string(multifilename).expect("Unable to read inout file.");
+        let contents = fs::read_to_string(multifilename).expect("Unable to read input file.");
         let files = contents.lines();
         // let mut sp_tree: ArenaTree<String> = ArenaTree::default();
         // Creation du vecteur de structure ArenaTree pour les genes
