@@ -2,3 +2,5 @@
 *.xml
 *.sh
 *.tar
+*.ini
+*mod
