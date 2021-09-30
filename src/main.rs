@@ -560,6 +560,14 @@ fn main()  {
             reset_pos(&mut path_genes[i]);
             i = i + 1;
         }
+        // PATCH POURRI je passe le free_living a false
+        // car on ne veut pas recreer une branche free_living
+        // dans l'arbre d'espece
+		// les sortoes mapped_2 et mapped_3 ne sont pas jolies
+        // Attention, ca marche avec light_phylogeny = "0.31.0"
+        // A l'avenir on va essayer de traiter ça dans  light_phylogeny
+        options.free_living = false;
+
         // if thickness_flag_1st {
         // reset_pos(&mut selected_gene_trees[0]);
         // }
@@ -582,7 +590,6 @@ fn main()  {
                 info!("Browser OK");
             }
         }
-
         //
         // GENE-PARASITE-HOST  STUFF : MAP2
         //
