@@ -1,11 +1,11 @@
 [package]
 name = "thirdkind"
-version = "2.3.0"
+version = "2.3.1"
 authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
 edition = "2018"
 description ="Read  phylogenetic tree(s) in newick, phyloxml or recPhyloXML file and build a svg representation of the tree(s) allowing 1, 2 or 3 reconcillation levels"
 license="CECILL-2.1"
-keywords=["phylogeny", "recphyloxml", "tree-reconciliation", "svg", "phylogenetic-tree"]
+keywords=["phylogeny", "recphyloxml", "tree-reconciliation", "svg", "bioinformatics"]
 homepage = "https://github.com/simonpenel/thirdkind/wiki"
 repository = "https://github.com/simonpenel/thirdkind"
 readme = "README.md"
