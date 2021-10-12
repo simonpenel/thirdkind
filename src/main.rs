@@ -19,8 +19,26 @@ use webbrowser::{Browser};
 use light_phylogeny::*;
 use log::{info};
 
-// Message d'erreur
-// ----------------
+// Message d'aide court
+// --------------------
+fn display_usage(programe_name:String) {
+    const VERSION: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
+    const NAME: Option<&'static str> = option_env!("CARGO_PKG_NAME");
+    const DESCRIPTION: Option<&'static str> = option_env!("CARGO_PKG_DESCRIPTION");
+    println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
+    println!("{}", DESCRIPTION.unwrap_or("unknown"));
+    println!();
+    println!("Usage:");
+    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
+        println!();
+    println!("Get help:");
+    println!("{} -h ",programe_name);
+    process::exit(1);
+}
+// Message d'aide etendu
+// ---------------------
 fn display_help(programe_name:String) {
     const VERSION: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
     const NAME: Option<&'static str> = option_env!("CARGO_PKG_NAME");
@@ -98,8 +116,6 @@ fn display_help(programe_name:String) {
     -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  ", programe_name);
     println!("{} -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml \
      -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b", programe_name);
-
-
     process::exit(1);
 }
 /// enum of the possible input file Formats
@@ -125,7 +141,7 @@ fn main()  {
     // ------------------------------------
     let args: Vec<String> = std::env::args().collect();
     if args.len() == 1 {
-         display_help(args[0].to_string());
+         display_usage(args[0].to_string());
     }
     let mut opts = getopt::Parser::new(&args, "c:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
@@ -306,7 +322,7 @@ fn main()  {
         }
     }
     if nb_args != 1 {
-         display_help(args[0].to_string());
+         display_usage(args[0].to_string());
     }
 
     // Setting options on thickness
