@@ -1,0 +1,1323 @@
+<recPhylo> 
+<spTree>
+<phylogeny>
+<clade>
+		<name>species_24</name>
+	<clade>
+			<name>species_2</name>
+		<clade>
+				<name>TBORE</name>
+		</clade>
+		<clade>
+				<name>species_1</name>
+			<clade>
+					<name>TELLI</name>
+			</clade>
+			<clade>
+					<name>species_0</name>
+				<clade>
+						<name>TMALA</name>
+				</clade>
+				<clade>
+						<name>TTHER</name>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+			<name>species_23</name>
+		<clade>
+				<name>PBURS</name>
+		</clade>
+		<clade>
+				<name>species_22</name>
+			<clade>
+					<name>PPOLY</name>
+			</clade>
+			<clade>
+					<name>species_21</name>
+				<clade>
+						<name>PGOER</name>
+				</clade>
+				<clade>
+						<name>species_20</name>
+					<clade>
+							<name>PCAUD</name>
+					</clade>
+					<clade>
+							<name>species_19</name>
+						<clade>
+								<name>PMUL</name>
+						</clade>
+						<clade>
+								<name>species_18</name>
+							<clade>
+									<name>species_4</name>
+								<clade>
+										<name>species_3</name>
+									<clade>
+											<name>PJENN</name>
+									</clade>
+									<clade>
+											<name>PSONN</name>
+									</clade>
+								</clade>
+								<clade>
+										<name>PSEXA</name>
+								</clade>
+							</clade>
+							<clade>
+									<name>species_17</name>
+								<clade>
+										<name>species_10</name>
+									<clade>
+											<name>species_5</name>
+										<clade>
+												<name>PDECA</name>
+										</clade>
+										<clade>
+												<name>PDODE</name>
+										</clade>
+									</clade>
+									<clade>
+											<name>species_9</name>
+										<clade>
+												<name>species_6</name>
+											<clade>
+													<name>POCTA138</name>
+											</clade>
+											<clade>
+													<name>POCTAK8</name>
+											</clade>
+										</clade>
+										<clade>
+												<name>species_8</name>
+											<clade>
+													<name>PTETR32</name>
+											</clade>
+											<clade>
+													<name>species_7</name>
+												<clade>
+														<name>PTETR51</name>
+												</clade>
+												<clade>
+														<name>PTETRD4</name>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+										<name>species_16</name>
+									<clade>
+											<name>PBIAU</name>
+									</clade>
+									<clade>
+											<name>species_15</name>
+										<clade>
+												<name>species_12</name>
+											<clade>
+													<name>PNOVA</name>
+											</clade>
+											<clade>
+													<name>species_11</name>
+												<clade>
+														<name>PQUAD</name>
+												</clade>
+												<clade>
+														<name>PTRED</name>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+												<name>species_14</name>
+											<clade>
+													<name>PPENT</name>
+											</clade>
+											<clade>
+													<name>species_13</name>
+												<clade>
+														<name>PPRIMAZ9</name>
+												</clade>
+												<clade>
+														<name>PPRIMIR4</name>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+		</clade>
+	</clade>
+</clade>
+</phylogeny>
+</spTree>
+<recGeneTree>
+<phylogeny rooted="true">
+<clade>
+	<name>NULL</name>
+	<eventsRec>
+		<speciation speciesLocation="species_21"/>
+	</eventsRec>
+	<clade>
+		<name>NULL</name>
+		<eventsRec>
+			<duplication speciesLocation="species_20"/>
+		</eventsRec>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="species_20"/>
+			</eventsRec>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="species_19"/>
+				</eventsRec>
+				<clade>
+					<name>PMUL_0005.PE131</name>
+					<eventsRec>
+						<leaf speciesLocation="PMUL"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<duplication speciesLocation="species_18"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="species_18"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="species_4"/>
+							</eventsRec>
+							<clade>
+								<name>PSEXA_013.PE172</name>
+								<eventsRec>
+									<leaf speciesLocation="PSEXA"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>PJENN_0002.PE149</name>
+								<eventsRec>
+									<speciation speciesLocation="species_3"/>
+								</eventsRec>
+									<clade>
+									<name>loss</name>
+									<eventsRec>
+										<loss speciesLocation="PSONN"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>PJENN_0002.PE149</name>
+									<eventsRec>
+										<leaf speciesLocation="PJENN"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<duplication speciesLocation="species_17"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_17"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_16"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_15"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_12"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_11"/>
+												</eventsRec>
+												<clade>
+													<name>PTRED_129379.PE215</name>
+													<eventsRec>
+														<leaf speciesLocation="PTRED"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PQUAD_0116.PE4</name>
+													<eventsRec>
+														<leaf speciesLocation="PQUAD"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>PNOVA_1075.PE5</name>
+												<eventsRec>
+													<leaf speciesLocation="PNOVA"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>PPRIMAZ9_002_2.PE251</name>
+											<eventsRec>
+												<speciation speciesLocation="species_14"/>
+											</eventsRec>
+												<clade>
+												<name>loss</name>
+												<eventsRec>
+													<loss speciesLocation="PPENT"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PPRIMAZ9_002_2.PE251</name>
+												<eventsRec>
+													<speciation speciesLocation="species_13"/>
+												</eventsRec>
+													<clade>
+													<name>loss</name>
+													<eventsRec>
+														<loss speciesLocation="PPRIMIR4"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PPRIMAZ9_002_2.PE251</name>
+													<eventsRec>
+														<leaf speciesLocation="PPRIMAZ9"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>PBIAU_0083.PE61</name>
+										<eventsRec>
+											<leaf speciesLocation="PBIAU"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_10"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_9"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_6"/>
+											</eventsRec>
+											<clade>
+												<name>POCTA138_016.PE242</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTA138"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>POCTAK8_276987.PE180</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTAK8"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_8"/>
+											</eventsRec>
+											<clade>
+												<name>PTETR32_016.PE195</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETR32"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_7"/>
+												</eventsRec>
+												<clade>
+													<name>PTETR51_11.PE190</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETR51"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PTETRD4_11.PE182</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETRD4"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_5"/>
+										</eventsRec>
+										<clade>
+											<name>PDECA_0016.PE82</name>
+											<eventsRec>
+												<leaf speciesLocation="PDECA"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>PDODE_0365.PE31</name>
+											<eventsRec>
+												<leaf speciesLocation="PDODE"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<branchingOut speciesLocation="species_17"/>
+								</eventsRec>
+								<clade>
+									<name>PPRIMAZ9_012.PE271</name>
+									<eventsRec>
+										<transferBack destinationSpecies="PPRIMAZ9"/>
+										<leaf speciesLocation="PPRIMAZ9"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_17"/>
+									</eventsRec>
+									<clade>
+										<name>PBIAU_0311.PE38</name>
+										<eventsRec>
+											<speciation speciesLocation="species_16"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="species_15"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>PBIAU_0311.PE38</name>
+											<eventsRec>
+												<leaf speciesLocation="PBIAU"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_10"/>
+										</eventsRec>
+										<clade>
+											<name>PNOVA_0924.PE4</name>
+											<eventsRec>
+												<branchingOut speciesLocation="species_5"/>
+											</eventsRec>
+												<clade>
+												<name>loss</name>
+												<eventsRec>
+													<loss speciesLocation="species_5"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PNOVA_0924.PE4</name>
+												<eventsRec>
+													<transferBack destinationSpecies="PNOVA"/>
+													<leaf speciesLocation="PNOVA"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_9"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_6"/>
+												</eventsRec>
+												<clade>
+													<name>POCTAK8_277002.PE197</name>
+													<eventsRec>
+														<leaf speciesLocation="POCTAK8"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>POCTA138_008.PE268</name>
+													<eventsRec>
+														<leaf speciesLocation="POCTA138"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_8"/>
+												</eventsRec>
+													<clade>
+													<name>loss</name>
+													<eventsRec>
+														<loss speciesLocation="PTETR32"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>NULL</name>
+													<eventsRec>
+														<speciation speciesLocation="species_7"/>
+													</eventsRec>
+													<clade>
+														<name>PTETR51_7.PE198</name>
+														<eventsRec>
+															<leaf speciesLocation="PTETR51"/>
+														</eventsRec>
+													</clade>
+													<clade>
+														<name>PTETRD4_7.PE199</name>
+														<eventsRec>
+															<leaf speciesLocation="PTETRD4"/>
+														</eventsRec>
+													</clade>
+												</clade>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="species_18"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<duplication speciesLocation="species_17"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_17"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_16"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_15"/>
+										</eventsRec>
+											<clade>
+											<name>loss</name>
+											<eventsRec>
+												<loss speciesLocation="species_12"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_14"/>
+											</eventsRec>
+											<clade>
+												<name>PPRIMAZ9_008.PE205</name>
+												<eventsRec>
+													<speciation speciesLocation="species_13"/>
+												</eventsRec>
+													<clade>
+													<name>loss</name>
+													<eventsRec>
+														<loss speciesLocation="PPRIMIR4"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PPRIMAZ9_008.PE205</name>
+													<eventsRec>
+														<leaf speciesLocation="PPRIMAZ9"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>PPENT_008.PE319</name>
+												<eventsRec>
+													<leaf speciesLocation="PPENT"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>PBIAU_0001.PE281</name>
+										<eventsRec>
+											<leaf speciesLocation="PBIAU"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_10"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_5"/>
+										</eventsRec>
+										<clade>
+											<name>PDODE_0323.PE34</name>
+											<eventsRec>
+												<leaf speciesLocation="PDODE"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>PDECA_0334.PE32</name>
+											<eventsRec>
+												<leaf speciesLocation="PDECA"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_9"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_6"/>
+											</eventsRec>
+											<clade>
+												<name>POCTA138_004.PE204</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTA138"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>POCTAK8_277030.PE309</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTAK8"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_8"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_7"/>
+												</eventsRec>
+												<clade>
+													<name>PTETR51_3.PE208</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETR51"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PTETRD4_3.PE203</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETRD4"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>PTETR32_008.PE212</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETR32"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_17"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_16"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_15"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_12"/>
+											</eventsRec>
+											<clade>
+												<name>PNOVA_0400.PE23</name>
+												<eventsRec>
+													<leaf speciesLocation="PNOVA"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_11"/>
+												</eventsRec>
+												<clade>
+													<name>PQUAD_0002.PE231</name>
+													<eventsRec>
+														<leaf speciesLocation="PQUAD"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PTRED_129357.PE236</name>
+													<eventsRec>
+														<leaf speciesLocation="PTRED"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_14"/>
+											</eventsRec>
+											<clade>
+												<name>PPRIMAZ9_004.PE376</name>
+												<eventsRec>
+													<speciation speciesLocation="species_13"/>
+												</eventsRec>
+													<clade>
+													<name>loss</name>
+													<eventsRec>
+														<loss speciesLocation="PPRIMIR4"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PPRIMAZ9_004.PE376</name>
+													<eventsRec>
+														<leaf speciesLocation="PPRIMAZ9"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>PPENT_004.PE193</name>
+												<eventsRec>
+													<leaf speciesLocation="PPENT"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>PBIAU_0004.PE192</name>
+										<eventsRec>
+											<leaf speciesLocation="PBIAU"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_10"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_5"/>
+										</eventsRec>
+										<clade>
+											<name>PDECA_0191.PE24</name>
+											<eventsRec>
+												<leaf speciesLocation="PDECA"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>PDODE_0387.PE24</name>
+											<eventsRec>
+												<leaf speciesLocation="PDODE"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_9"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_8"/>
+											</eventsRec>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<speciation speciesLocation="species_7"/>
+												</eventsRec>
+												<clade>
+													<name>PTETR51_6.PE255</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETR51"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PTETRD4_6.PE258</name>
+													<eventsRec>
+														<leaf speciesLocation="PTETRD4"/>
+													</eventsRec>
+												</clade>
+											</clade>
+											<clade>
+												<name>PTETR32_003.PE450</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETR32"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_6"/>
+											</eventsRec>
+											<clade>
+												<name>POCTAK8_277078.PE151</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTAK8"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>POCTA138_010.PE213</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTA138"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="species_4"/>
+							</eventsRec>
+							<clade>
+								<name>PSEXA_009.PE250</name>
+								<eventsRec>
+									<leaf speciesLocation="PSEXA"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_3"/>
+								</eventsRec>
+								<clade>
+									<name>PSONN_007.PE336</name>
+									<eventsRec>
+										<leaf speciesLocation="PSONN"/>
+									</eventsRec>
+								</clade>
+								<clade>
+									<name>PJENN_0200.PE44</name>
+									<eventsRec>
+										<leaf speciesLocation="PJENN"/>
+									</eventsRec>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+				<name>PCAUD_0017.PE39</name>
+				<eventsRec>
+					<leaf speciesLocation="PCAUD"/>
+				</eventsRec>
+			</clade>
+		</clade>
+		<clade>
+			<name>NULL</name>
+			<eventsRec>
+				<speciation speciesLocation="species_20"/>
+			</eventsRec>
+			<clade>
+				<name>NULL</name>
+				<eventsRec>
+					<speciation speciesLocation="species_19"/>
+				</eventsRec>
+				<clade>
+					<name>PMUL_0007.PE275</name>
+					<eventsRec>
+						<leaf speciesLocation="PMUL"/>
+					</eventsRec>
+				</clade>
+				<clade>
+					<name>NULL</name>
+					<eventsRec>
+						<duplication speciesLocation="species_18"/>
+					</eventsRec>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="species_18"/>
+						</eventsRec>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="species_4"/>
+							</eventsRec>
+							<clade>
+								<name>PSEXA_030.PE214</name>
+								<eventsRec>
+									<leaf speciesLocation="PSEXA"/>
+								</eventsRec>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<duplication speciesLocation="species_3"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_3"/>
+									</eventsRec>
+									<clade>
+										<name>PJENN_0036.PE120</name>
+										<eventsRec>
+											<leaf speciesLocation="PJENN"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>PSONN_054.PE38</name>
+										<eventsRec>
+											<leaf speciesLocation="PSONN"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_3"/>
+									</eventsRec>
+									<clade>
+										<name>PJENN_0083.PE128</name>
+										<eventsRec>
+											<leaf speciesLocation="PJENN"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>PSONN_024.PE113</name>
+										<eventsRec>
+											<leaf speciesLocation="PSONN"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="species_17"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_16"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_15"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_12"/>
+										</eventsRec>
+										<clade>
+											<name>PNOVA_0098.PE11</name>
+											<eventsRec>
+												<leaf speciesLocation="PNOVA"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_11"/>
+											</eventsRec>
+											<clade>
+												<name>PQUAD_0014.PE83</name>
+												<eventsRec>
+													<leaf speciesLocation="PQUAD"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PTRED_129370.PE219</name>
+												<eventsRec>
+													<leaf speciesLocation="PTRED"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_14"/>
+										</eventsRec>
+										<clade>
+											<name>PPENT_040.PE93</name>
+											<eventsRec>
+												<leaf speciesLocation="PPENT"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_13"/>
+											</eventsRec>
+											<clade>
+												<name>PPRIMAZ9_036.PE94</name>
+												<eventsRec>
+													<leaf speciesLocation="PPRIMAZ9"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PPRIMIR4_046.PE81</name>
+												<eventsRec>
+													<leaf speciesLocation="PPRIMIR4"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>PBIAU_0011.PE261</name>
+									<eventsRec>
+										<leaf speciesLocation="PBIAU"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_10"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_5"/>
+									</eventsRec>
+									<clade>
+										<name>PDODE_0101.PE101</name>
+										<eventsRec>
+											<leaf speciesLocation="PDODE"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>PDECA_0102.PE51</name>
+										<eventsRec>
+											<leaf speciesLocation="PDECA"/>
+										</eventsRec>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_9"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_6"/>
+										</eventsRec>
+										<clade>
+											<name>POCTAK8_277022.PE96</name>
+											<eventsRec>
+												<leaf speciesLocation="POCTAK8"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>POCTA138_046.PE99</name>
+											<eventsRec>
+												<leaf speciesLocation="POCTA138"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_8"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_7"/>
+											</eventsRec>
+											<clade>
+												<name>PTETR51_26.PE243</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETR51"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PTETRD4_26.PE244</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETRD4"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>PTETR32_041.PE252</name>
+											<eventsRec>
+												<leaf speciesLocation="PTETR32"/>
+											</eventsRec>
+										</clade>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+					<clade>
+						<name>NULL</name>
+						<eventsRec>
+							<speciation speciesLocation="species_18"/>
+						</eventsRec>
+							<clade>
+							<name>loss</name>
+							<eventsRec>
+								<loss speciesLocation="species_4"/>
+							</eventsRec>
+						</clade>
+						<clade>
+							<name>NULL</name>
+							<eventsRec>
+								<speciation speciesLocation="species_17"/>
+							</eventsRec>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_16"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_15"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_14"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_13"/>
+											</eventsRec>
+											<clade>
+												<name>PPRIMIR4_018.PE234</name>
+												<eventsRec>
+													<leaf speciesLocation="PPRIMIR4"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>NULL</name>
+												<eventsRec>
+													<duplication speciesLocation="PPRIMAZ9"/>
+												</eventsRec>
+												<clade>
+													<name>PPRIMAZ9_028.PE109</name>
+													<eventsRec>
+														<leaf speciesLocation="PPRIMAZ9"/>
+													</eventsRec>
+												</clade>
+												<clade>
+													<name>PPRIMAZ9_028.PE108</name>
+													<eventsRec>
+														<leaf speciesLocation="PPRIMAZ9"/>
+													</eventsRec>
+												</clade>
+											</clade>
+										</clade>
+										<clade>
+											<name>PPENT_026.PE272</name>
+											<eventsRec>
+												<leaf speciesLocation="PPENT"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_12"/>
+										</eventsRec>
+										<clade>
+											<name>PNOVA_0014.PE104</name>
+											<eventsRec>
+												<leaf speciesLocation="PNOVA"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_11"/>
+											</eventsRec>
+											<clade>
+												<name>PTRED_129372.PE104</name>
+												<eventsRec>
+													<leaf speciesLocation="PTRED"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PQUAD_0010.PE106</name>
+												<eventsRec>
+													<leaf speciesLocation="PQUAD"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>PBIAU_0006.PE268</name>
+									<eventsRec>
+										<leaf speciesLocation="PBIAU"/>
+									</eventsRec>
+								</clade>
+							</clade>
+							<clade>
+								<name>NULL</name>
+								<eventsRec>
+									<speciation speciesLocation="species_10"/>
+								</eventsRec>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_9"/>
+									</eventsRec>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_8"/>
+										</eventsRec>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<speciation speciesLocation="species_7"/>
+											</eventsRec>
+											<clade>
+												<name>PTETR51_9.PE284</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETR51"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>PTETRD4_9.PE288</name>
+												<eventsRec>
+													<leaf speciesLocation="PTETRD4"/>
+												</eventsRec>
+											</clade>
+										</clade>
+										<clade>
+											<name>PTETR32_020.PE116</name>
+											<eventsRec>
+												<leaf speciesLocation="PTETR32"/>
+											</eventsRec>
+										</clade>
+									</clade>
+									<clade>
+										<name>NULL</name>
+										<eventsRec>
+											<speciation speciesLocation="species_6"/>
+										</eventsRec>
+										<clade>
+											<name>POCTAK8_277020.PE241</name>
+											<eventsRec>
+												<leaf speciesLocation="POCTAK8"/>
+											</eventsRec>
+										</clade>
+										<clade>
+											<name>NULL</name>
+											<eventsRec>
+												<duplication speciesLocation="POCTA138"/>
+											</eventsRec>
+											<clade>
+												<name>POCTA138_021.PE283</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTA138"/>
+												</eventsRec>
+											</clade>
+											<clade>
+												<name>POCTA138_021.PE281</name>
+												<eventsRec>
+													<leaf speciesLocation="POCTA138"/>
+												</eventsRec>
+											</clade>
+										</clade>
+									</clade>
+								</clade>
+								<clade>
+									<name>NULL</name>
+									<eventsRec>
+										<speciation speciesLocation="species_5"/>
+									</eventsRec>
+									<clade>
+										<name>PDECA_0039.PE53</name>
+										<eventsRec>
+											<leaf speciesLocation="PDECA"/>
+										</eventsRec>
+									</clade>
+									<clade>
+										<name>PDODE_0041.PE52</name>
+										<eventsRec>
+											<leaf speciesLocation="PDODE"/>
+										</eventsRec>
+									</clade>
+								</clade>
+							</clade>
+						</clade>
+					</clade>
+				</clade>
+			</clade>
+			<clade>
+				<name>PCAUD_0004.PE291</name>
+				<eventsRec>
+					<leaf speciesLocation="PCAUD"/>
+				</eventsRec>
+			</clade>
+		</clade>
+	</clade>
+	<clade>
+		<name>PGOER_009.PE77</name>
+		<eventsRec>
+			<leaf speciesLocation="PGOER"/>
+		</eventsRec>
+	</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
