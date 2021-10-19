@@ -102,16 +102,19 @@ fn display_help(programe_name:String) {
     println!(".recphylo    => recPhyloXML");
     println!("any other    => newick");
     println!("");
+    println!("Home page: https://github.com/simonpenel/thirdkind/wiki");
+    println!("");
     println!("About recPhyloXML format: http://phylariane.univ-lyon1.fr/recphyloxml/");
     println!("recPhyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198865/");
     println!("About phyloXML format: http://www.phyloxml.org/");
     println!("phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/");
     println!("");
-    println!("Examples with recPhyloXML files:");
+    println!("Examples with recPhyloXML files (available at https://github.com/simonpenel/thirdkind):");
     println!("{} -f recphylo_examples/FAM000297_reconciliated.recphylo  -b", programe_name);
     println!("{} -f recphylo_examples/concat.xml -b -t 0 ", programe_name);
     println!("{} -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1", programe_name);
     println!("{} -f recphylo_examples/testfiles -m -b -t 3 -J", programe_name);
+    println!("{} -f paramecium_data/liste.txt -m -b -t 25 -J", programe_name);
     println!("{} -f recphylo_examples/test2/hote_parasite_page2.recphylo  \
     -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  ", programe_name);
     println!("{} -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml \
