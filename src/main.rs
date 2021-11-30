@@ -1,4 +1,4 @@
-/// name = "rectree2svg"
+/// name = "thirdkind"
 /// version = "2.4.4"
 /// authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
 /// release = "18/11/2021"
