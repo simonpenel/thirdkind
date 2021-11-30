@@ -366,15 +366,15 @@ fn main()  {
         // Fill global parasite pipe tree and is roots and path
         // genes trees
         // ---------------------------------------------------------
+        println!("\nBuilding 'lower' gene vs 'upper' symbiote reconciliation svg file [{}]",outfile_gene_para.clone());
         read_recphyloxml_multi(infile_gs,&mut global_pipe_parasite,&mut path_genes,&mut global_roots);
         let  nb_gntree =  path_genes.len().clone();
-        println!("Number of gene trees : {}",nb_gntree);
+        println!("Number of 'lower' gene trees : {}",nb_gntree);
         info!("List of gene trees : {:?}",path_genes);
         let  nb_parasite_pipe =  global_roots.len().clone();
-        println!("Number of symbiote trees : {}",nb_parasite_pipe);
-        println!("List of species trees roots : {:?}",global_roots);
+        println!("Number of 'upper' symbiote trees : {}",nb_parasite_pipe);
+        println!("List of 'upper' symbiote tree roots : {:?}",global_roots);
         info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
-        println!();
 
         // ---------------------------------------------------------
         // Generate svg of the global parasite pipe tree and  path
@@ -434,14 +434,18 @@ fn main()  {
         // ---------------------------------------------------------
         let mut tree_host_pipe: ArenaTree<String> = ArenaTree::default();
         let mut path_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        println!("\nBuilding 'lower' symbiote vs 'upper' host reconciliation svg file [{}]",outfile_para_host.clone());
+
         // ---------------------------------------------------------
         // Fill  host pipe tree and is roots and path parasite trees
         // ---------------------------------------------------------
         let mut global_roots: std::vec::Vec<usize> = Vec::new();
         read_recphyloxml_multi(infile_sh,&mut tree_host_pipe,&mut path_para_trees, &mut global_roots);
         let  nb_parasite_path =  path_para_trees.len().clone();
-        println!("Number of pipe symbiote trees in gene-symbiote file : {}",nb_parasite_pipe);
-        println!("Number of path symbiote trees in symbiote-host file : {}",nb_parasite_path);
+        let  nb_hosts_pipe = global_roots.len();
+        println!("Number of 'upper' symbiote trees in gene-symbiote file : {}",nb_parasite_pipe);
+        println!("Number of 'lower' symbiote trees in symbiote-host file : {}",nb_parasite_path);
+        println!("Number of 'upper' host trees in symbiote-host file : {}",nb_hosts_pipe);
         if nb_parasite_path != nb_parasite_pipe {
             println!();
             println!("==============================================");
@@ -515,13 +519,11 @@ fn main()  {
         // ---------------------------------------------------------
         // Generation of first 3 levels svg
         // ---------------------------------------------------------
-        println!("Building svg 1: reconciled pipe symbiote tree(s) with gene tree(s) [{}]",
+        println!("\nBuilding 'mapped 1': reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) [{}]",
             outfile_mapped_1);
-        info!("Symbiote trees as a 'path tree' : {:?}",path_para_trees);
-        info!("Symbiote tree as a 'pipe tree' : {:?}",global_pipe_parasite);
-        println!("==============================================");
-        println!("Map symbiote as 'path' to symbiote as 'pipe'");
-        println!("==============================================");
+        info!("Symbiote trees as a 'lower tree' : {:?}",path_para_trees);
+        info!("Symbiote tree as a 'upper tree' : {:?}",global_pipe_parasite);
+        println!("Map symbiote as 'lower' to symbiote as 'upper'");
         let mut i = 0;
         while i < nb_parasite_pipe {
             map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
@@ -550,10 +552,7 @@ fn main()  {
         // // Define a temporary copy of the species tree
         // _global_pipe_parasite = global_pipe_parasite.copie();
         // }
-
-        println!("==============================================");
-        println!("Map symbiote as 'pipe' to symbiote as 'path'");
-        println!("==============================================");
+        println!("Map symbiote as 'upper' to symbiote as 'lower'");
         // if thickness_flag_1st {
         //     let mut i = 0;
         //     while i < nb_parasite_pipe {
@@ -569,9 +568,7 @@ fn main()  {
         }
         // }
         info!("Global pipe symbiote after mapping s2g : {:?}",global_pipe_parasite);
-        println!("==============================================");
-        println!("Map symbiote as 'path' to symbiote as 'pipe' again");
-        println!("==============================================");
+        println!("Map symbiote as 'lower' to symbiote as 'upper' again");
         let mut i = 0;
         while i < nb_parasite_pipe {
             map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
@@ -609,7 +606,7 @@ fn main()  {
         // Generation of second 3 levels svg
         // ---------------------------------------------------------
         println!();
-        println!("Building svg 2:  symbiote tree(s) within host pipe tree and mapped gene transfers [{}]",
+        println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
             outfile_mapped_2);
         let mut i = 0;
         // We get the gene transfer here again, but they will be mapped
@@ -661,6 +658,9 @@ fn main()  {
                 info!("Browser OK");
             }
         }
+
+        println!("\nBuilding 'phyloxml style' svg files...");
+
         //  Simple tree of the parasite
         reset_pos(&mut global_pipe_parasite);
         phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_symbiote_simple.svg".to_string());
@@ -682,7 +682,7 @@ fn main()  {
         // Generation of third 3 levels svg UNDER DEVELOPMENT
         // --------------------------------------------------------
         println!();
-        println!("Building svg 3: pipe host tree with gene tree(s) inside [{}]",outfile_mapped_3);
+        println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
         map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
         reset_pos(&mut tree_host_pipe);
         let mut i = 0;
@@ -700,7 +700,7 @@ fn main()  {
                 info!("Browser OK");
             }
         }
-        println!("Output files:");
+        println!("\nOutput summary:");
         println!(" - thirdkind_host_simple.svg ...... 1 level:  host tree");
         let mut i = 0;
         while i < nb_parasite_pipe {
@@ -708,11 +708,11 @@ fn main()  {
             i = i + 1;
         }
         println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
-        println!(" - thirdkind_gene_symbiote.svg .... 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
-        println!(" - thirdkind_symbiote_host.svg .... 2 levels: pipe host tree with symbiote tree(s) inside");
-        println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled pipe symbiote tree(s) with gene tree(s)");
-        println!(" - thirdkind_mapped_2.svg ........  3 levels: symbiote-host reconciliation plus gene transfers");
-        println!(" - thirdkind_mapped_3.svg ........  3 levels: pipe host tree with gene tree(s) inside");
+        println!(" - thirdkind_gene_symbiote.svg .... 2 levels: 'upper' symbiote tree(s) with 'lower' gene tree(s) inside");
+        println!(" - thirdkind_symbiote_host.svg .... 2 levels: 'upper' host tree with 'lower' symbiote tree(s) inside");
+        println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside");
+        println!(" - thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers");
+        println!(" - thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside");
 
         if nb_parasite_path != nb_parasite_pipe {
             println!();
