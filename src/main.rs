@@ -708,7 +708,7 @@ fn main()  {
             i = i + 1;
         }
         println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
-        println!(" - thirdkind_gene_symbiote.svg ........ 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
+        println!(" - thirdkind_gene_symbiote.svg .... 2 levels: pipe symbiote tree(s) with gene tree(s) inside");
         println!(" - thirdkind_symbiote_host.svg .... 2 levels: pipe host tree with symbiote tree(s) inside");
         println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled pipe symbiote tree(s) with gene tree(s)");
         println!(" - thirdkind_mapped_2.svg ........  3 levels: symbiote-host reconciliation plus gene transfers");
