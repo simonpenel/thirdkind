@@ -658,9 +658,7 @@ fn main()  {
                 info!("Browser OK");
             }
         }
-
         println!("\nBuilding 'phyloxml style' svg files...");
-
         //  Simple tree of the parasite
         reset_pos(&mut global_pipe_parasite);
         phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_symbiote_simple.svg".to_string());
@@ -674,7 +672,6 @@ fn main()  {
             phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
             i = i + 1;
         }
-
         //
         // GENE-PARASITE-HOST  STUFF : MAP3
         //
@@ -713,7 +710,6 @@ fn main()  {
         println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside");
         println!(" - thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers");
         println!(" - thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside");
-
         if nb_parasite_path != nb_parasite_pipe {
             println!();
             println!("==============================================");
@@ -755,7 +751,6 @@ fn main()  {
         // Empty additional transfers
         let mut transfers = vec![];
         let mut sp_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-
         for filename in files {
             println!("Processing file {}",filename);
             // On cree une structure Arena pour l'arbre d'espece
@@ -860,7 +855,6 @@ fn main()  {
         // get the url
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
-
         // Creation d'une structure ArenaTree (pour phyloxml et newick)
         // -----------------------------------------------------------
         let mut tree: ArenaTree<String> = ArenaTree::default();
