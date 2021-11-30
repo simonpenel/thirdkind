@@ -1,15 +1,16 @@
 /// name = "rectree2svg"
-/// version = "2.2.0"
+/// version = "2.4.4"
 /// authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
-/// release = "18/04/2021"
+/// release = "18/11/2021"
 /// license = "CECILL-2.1"
 ///
 /// Usage:
-/// Draw phylogenetic trees in a svg file.
-/// Draw multiple reconciled gene trees with the associated species tree.
-/// Draw simple gene or species tree too.
-/// Read a newick, phyloxml or recPhyloXML file.
-/// Format is guessed according to filename (default is newick).
+/// Build svg representations of phylogenetic reconciled (or not) trees with events (loss, duplication, speciation, transfer).
+/// Input one newick or phyloxml file -> a svg representation of the tree with node events
+/// Input one recphyloxml file -> a svg representation of the "lower" gene (or symbiot) tree(s) inside the associated "upper" species (or host) tree
+/// Input a file describing multiples recphyloxml files -> a svg representation of the "lower" gene (or symbiot) tree(s) inside the associated "upper" species (or host) tree
+/// Input two nested recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
+
 
 use std::fs;
 use std::env;
