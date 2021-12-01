@@ -328,9 +328,9 @@ fn main()  {
     options.thickness_flag = thickness_flag_1st;
     options.thickness_gene = thickness_gene_1st;
     options.thickness_thresh = thickness_thresh_1st;
-    // ================================================================================================
-    //          RECONCILIATION A 3 NIVEAUX
-    // ================================================================================================
+    // ==========================
+    // RECONCILIATION A 3 NIVEAUX
+    // ==========================
     if level3 {
         // Traitement de 2 fichier fichiers recPhyloXML
         println!("Two reconciled files => displaying 3-levels reconciliations. ");
@@ -345,9 +345,9 @@ fn main()  {
         // Gestion de l'option free_living dans le cas d'une
         let free_living_3l = options.free_living;
         options.free_living = false;
-        //
-        // GENE - PARASITE STUFF
-        //
+        // ===============
+        // GENE - PARASITE
+        // ===============
         // ---------------------------------------------------------
         // Create a structure Arena for the global parasite pipe
         // tree and a vector of structures Arena for gene path trees
@@ -413,9 +413,9 @@ fn main()  {
             recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
                 &transfers,outfile_gene_para);
         }
-        //
-        // PARASITE-HOST  STUFF
-        //
+        // ==============
+        // PARASITE-HOST
+        // =============
         // ---------------------------------------------------------
         // Create a structure Arena for the host pipe tree and a
         // vector of structures Arena for parasite path trees
@@ -492,12 +492,9 @@ fn main()  {
             recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
                 &config, true, &transfers,outfile_para_host);
         }
-        //
-        // GENE-PARASITE-HOST  STUFF : MAP1
-        //
-        // ---------------------------------------------------------
-        // Generation of first 3 levels svg
-        // ---------------------------------------------------------
+        // =========================
+        // GENE-PARASITE-HOST : MAP1
+        // =========================
         println!("\nBuilding 'mapped 1': reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) [{}]",
             outfile_mapped_1);
         info!("Symbiote trees as a 'lower tree' : {:?}",path_para_trees);
@@ -553,12 +550,9 @@ fn main()  {
                 info!("Browser OK");
             }
         }
-        //
-        // GENE-PARASITE-HOST  STUFF : MAP2
-        //
-        // ---------------------------------------------------------
-        // Generation of second 3 levels svg
-        // ---------------------------------------------------------
+		// =========================
+        // GENE-PARASITE-HOST : MAP2
+        // =========================
         println!();
         println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
             outfile_mapped_2);
@@ -625,12 +619,9 @@ fn main()  {
             phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
             i = i + 1;
         }
-        //
-        // GENE-PARASITE-HOST  STUFF : MAP3
-        //
-        // ---------------------------------------------------------
-        // Generation of third 3 levels svg UNDER DEVELOPMENT
-        // --------------------------------------------------------
+		// =========================
+        // GENE-PARASITE-HOST : MAP3
+        // =========================
         println!();
         println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
         map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
