@@ -11,7 +11,7 @@ Build  svg representations of  phylogenetic reconciled (or not) trees with event
 
 * Input one newick or phyloxml file -> a svg representation of the tree with node events
 
-* Input one recphyloxml file -> a svg representation of the  "path" gene (or symbiot) tree(s) inside the associated "pipe" species (or host) tree
+* Input one recphyloxml file -> a svg representation of the   gene (or symbiot) 'lower' tree(s) inside the associated species (or host) 'upper' tree
 
 * Input two recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
 
@@ -141,24 +141,24 @@ Usage:
     -o outputfile : set name of output file
     -O switching nodes in order to minimise transfer crossings (under development)
     -p : build a phylogram
-    -P : pipe species tree uniformisation
-    -r ratio : set the ratio between width of species and gene tree.
-               Default 1.0, you usualy do not need to change it.
+    -P : species 'upper' tree uniformisation
+    -r ratio : set the ratio between width of species and gene tree
+               Default 1.0, you usualy do not need to change it
     -s : drawing species tree only
     -S : display node support
-    -t <t> : redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher tan t.
-             Only one gene is displayed.
-    -T <n> : with option -t, select the gene to display.
-    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.
+    -t <t> : redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher tan t
+             Only one gene is displayed
+    -T <n> : with option -t, select the gene to display
+    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file
     -U <n> : same as -T with -t, but for -u
     -v : verbose
     -W width : multiply the tree width by factor 'width'
 
     Note on -b option : you must set a browser as default application for opening svg file
 
-    Note on -g option : this will generate 3-levels reconciliation svg files.
+    Note on -g option : this will generate 3-levels reconciliation svg files
     For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
-    The -t/-u options are not totally implemented for the mapped_1/2/3 svg output files.
+    The -t/-u options are not totally implemented for the mapped_1/2/3 svg output files
 
 `Input format is guessed according to the file name extension:`
 

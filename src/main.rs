@@ -73,16 +73,16 @@ fn display_help(programe_name:String) {
     println!("    -o outputfile : set name of output file");
     println!("    -O switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : build a phylogram");
-    println!("    -P : pipe species tree uniformisation");
-    println!("    -r ratio : set the ratio between width of species and gene tree.");
-    println!("               Default 1.0, you usualy do not need to change it. ");
+    println!("    -P : species 'upper' tree uniformisation");
+    println!("    -r ratio : set the ratio between width of species and gene tree");
+    println!("               Default 1.0, you usualy do not need to change it");
 
     println!("    -s : drawing species tree only");
     println!("    -S : display node support");
     println!("    -t <t> : redudant transfers are displayed as one, with opacity according \
-    to abundance and only if abundance is higher tan t.\n             Only one gene is displayed.");
-    println!("    -T <n> : with option -t, select the gene to display.");
-    println!("    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.");
+    to abundance and only if abundance is higher tan t\n             Only one gene is displayed");
+    println!("    -T <n> : with option -t, select the gene to display");
+    println!("    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file");
     println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
     println!("    -W width : multiply the tree width by factor 'width'");
@@ -568,7 +568,7 @@ fn main()  {
             i = i +  1;
         }
         // }
-        info!("Global pipe symbiote after mapping s2g : {:?}",global_pipe_parasite);
+        info!("Global upper symbiote tree after mapping s2g : {:?}",global_pipe_parasite);
         println!("Map symbiote as 'lower' to symbiote as 'upper' again");
         let mut i = 0;
         while i < nb_parasite_pipe {
