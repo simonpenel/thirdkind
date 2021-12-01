@@ -550,7 +550,7 @@ fn main()  {
                 info!("Browser OK");
             }
         }
-		// =========================
+        // =========================
         // GENE-PARASITE-HOST : MAP2
         // =========================
         println!();
@@ -619,7 +619,7 @@ fn main()  {
             phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
             i = i + 1;
         }
-		// =========================
+        // =========================
         // GENE-PARASITE-HOST : MAP3
         // =========================
         println!();
