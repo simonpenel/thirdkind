@@ -11,7 +11,6 @@
 /// Input a file describing multiples recphyloxml files -> a svg representation of the "lower" gene (or symbiot) tree(s) inside the associated "upper" species (or host) tree
 /// Input two nested recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
 
-
 use std::fs;
 use std::env;
 use std::process;
@@ -33,7 +32,7 @@ fn display_usage(programe_name:String) {
     println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
-        println!();
+    println!();
     println!("Get help:");
     println!("{} -h ",programe_name);
     process::exit(1);
@@ -76,7 +75,6 @@ fn display_help(programe_name:String) {
     println!("    -P : species 'upper' tree uniformisation");
     println!("    -r ratio : set the ratio between width of species and gene tree");
     println!("               Default 1.0, you usualy do not need to change it");
-
     println!("    -s : drawing species tree only");
     println!("    -S : display node support");
     println!("    -t <t> : redudant transfers are displayed as one, with opacity according \
@@ -95,7 +93,6 @@ fn display_help(programe_name:String) {
     println!("    The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.");
     println!("");
     println!("Input format is guessed according to the file name extension:");
-
     println!(".phyloxml    => phyloXML");
     println!(".xml         => recPhyloxml");
     println!(".recphyloxml => recPhyloXML");
@@ -137,15 +134,14 @@ fn main()  {
     let mut config: Config = Config::new();
     // Charge la config par deuakt si elle existe
     let fconf = "config_default.txt";
-     if fs::metadata(fconf).is_ok() {
-         set_config(fconf.to_string(), &mut config);
-
-     }
+    if fs::metadata(fconf).is_ok() {
+		set_config(fconf.to_string(), &mut config);
+    }
     // Gestion des arguments et des options
     // ------------------------------------
     let args: Vec<String> = std::env::args().collect();
     if args.len() == 1 {
-         display_usage(args[0].to_string());
+        display_usage(args[0].to_string());
     }
     let mut opts = getopt::Parser::new(&args, "c:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
@@ -328,15 +324,13 @@ fn main()  {
     if nb_args != 1 {
          display_usage(args[0].to_string());
     }
-
     // Setting options on thickness
     options.thickness_flag = thickness_flag_1st;
     options.thickness_gene = thickness_gene_1st;
     options.thickness_thresh = thickness_thresh_1st;
-
-// ================================================================================================
-//          RECONCILIATION A 3 NIVEAUX
-// ================================================================================================
+    // ================================================================================================
+    //          RECONCILIATION A 3 NIVEAUX
+    // ================================================================================================
     if level3 {
         // Traitement de 2 fichier fichiers recPhyloXML
         println!("Two reconciled files => displaying 3-levels reconciliations. ");
@@ -348,8 +342,7 @@ fn main()  {
         let transfers = vec![]; // Initialise transfers
         let mut transfers_gene = vec![]; // Transferts de genes
         let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
-
-        // Gestion de l'optiopn free_living dans le cas d'une
+        // Gestion de l'option free_living dans le cas d'une
         let free_living_3l = options.free_living;
         options.free_living = false;
         //
@@ -362,7 +355,6 @@ fn main()  {
         let mut global_pipe_parasite: ArenaTree<String> = ArenaTree::default();
         let mut global_roots: std::vec::Vec<usize> = Vec::new();
         let mut path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
-
         // ---------------------------------------------------------
         // Fill global parasite pipe tree and is roots and path
         // genes trees
@@ -376,12 +368,10 @@ fn main()  {
         println!("Number of 'upper' symbiote trees : {}",nb_parasite_pipe);
         println!("List of 'upper' symbiote tree roots : {:?}",global_roots);
         info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
-
         // ---------------------------------------------------------
         // Generate svg of the global parasite pipe tree and  path
         // genes trees (outfile_gene_para)
         // ---------------------------------------------------------
-
         // If  the option -t is on :
         if thickness_flag_1st {
             // check that gene nb is correct
@@ -390,7 +380,6 @@ fn main()  {
                 nb_gntree,thickness_gene_1st);
                 process::exit(1);
             }
-
             //  Get the transfers in the genes
             transfers_gene = get_gtransfer(&mut path_genes[0]);
             let mut i = 1;
@@ -405,7 +394,6 @@ fn main()  {
             // Define the unique gene wich is selected
             let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
             selected_gene_trees.push(path_genes[thickness_gene_1st-1].copie());
-
             // Define a temporary copy of the species tree
             let mut _global_pipe_parasite = global_pipe_parasite.copie();
             // Set options
@@ -425,7 +413,6 @@ fn main()  {
             recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
                 &transfers,outfile_gene_para);
         }
-
         //
         // PARASITE-HOST  STUFF
         //
@@ -436,7 +423,6 @@ fn main()  {
         let mut tree_host_pipe: ArenaTree<String> = ArenaTree::default();
         let mut path_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
         println!("\nBuilding 'lower' symbiote vs 'upper' host reconciliation svg file [{}]",outfile_para_host.clone());
-
         // ---------------------------------------------------------
         // Fill  host pipe tree and is roots and path parasite trees
         // ---------------------------------------------------------
@@ -455,28 +441,23 @@ fn main()  {
             println!("==============================================");
             println!();
         }
-
         // ---------------------------------------------------------
         // Generate svg of the host pipe tree and path symbiote trees
         // ---------------------------------------------------------
-
         // Reset the option
         options.thickness_flag = false;
         options.free_living = free_living_3l;
-
         // If  the option -u is on :
         if thickness_flag_2nd {
             options.thickness_flag = true;
             options.thickness_gene = thickness_gene_2nd;
             options.thickness_thresh = thickness_thresh_2nd;
-
             // check that the number pf the parasite is correct
             if options.thickness_gene > nb_parasite_path {
                 println!("There are only {} parasites in the file, unable to display gene #{}",
                 nb_parasite_path,options.thickness_gene);
                 process::exit(1);
             }
-
             // Get teh transfers in the parasites
             transfers_para = get_gtransfer(&mut path_para_trees[0]);
             let mut i = 1;
@@ -498,7 +479,6 @@ fn main()  {
             selected_para_trees.push(_path_para_trees.remove(options.thickness_gene-1));
             // Define a tmprary copy of the host
             let mut _tree_host_pipe = tree_host_pipe.copie();
-
             //  Create the svg from the temprary variables
             recphyloxml_processing(&mut _tree_host_pipe, &mut selected_para_trees, &mut options,
             &config, true, &transfers_para, outfile_para_host.clone());
@@ -506,14 +486,12 @@ fn main()  {
             // _tree_host_pipe path_para_trees
             recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
                  &config,true, &transfers,"tmpfile2.svg".to_string());
-
         }
         // No -u option
         else {
             recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
                 &config, true, &transfers,outfile_para_host);
         }
-
         //
         // GENE-PARASITE-HOST  STUFF : MAP1
         //
@@ -537,37 +515,12 @@ fn main()  {
             reset_pos(&mut path_genes[i]);
             i = i + 1;
         }
-
-        //  We need to handel the -t option
-        //  C'est complexe il faut eliminer les noeuds associer aux genes qui ne sont pas selectionnes
-        //  A developper
-        // let mut _path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
-        // let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-        // let mut _global_pipe_parasite: ArenaTree<String> = ArenaTree::default();
-        // if thickness_flag_1st {
-        //     for i in 0 .. path_genes.len() {
-        //         _path_genes.push(path_genes[i].copie());
-        //     }
-        // // Define the unique gene wich is selected
-        // selected_gene_trees.push(_path_genes.remove(thickness_gene_1st-1));
-        // // Define a temporary copy of the species tree
-        // _global_pipe_parasite = global_pipe_parasite.copie();
-        // }
         println!("Map symbiote as 'upper' to symbiote as 'lower'");
-        // if thickness_flag_1st {
-        //     let mut i = 0;
-        //     while i < nb_parasite_pipe {
-        //         map_parasite_s2g(&mut _global_pipe_parasite, &mut path_para_trees[i], &mut selected_gene_trees);
-        //         i = i +  1;
-        //     }
-        // }
-        // else {
         let mut i = 0;
         while i < nb_parasite_pipe {
             map_parasite_s2g(&mut global_pipe_parasite, &mut path_para_trees[i],&mut path_genes);
             i = i +  1;
         }
-        // }
         info!("Global upper symbiote tree after mapping s2g : {:?}",global_pipe_parasite);
         println!("Map symbiote as 'lower' to symbiote as 'upper' again");
         let mut i = 0;
@@ -636,7 +589,6 @@ fn main()  {
         }
         // Setting option to false because we dont want the parasite transerst to be hidden
         options.thickness_flag = false;
-
         if thickness_flag_2nd {
             // On ajoute les transferts de paraistes au transferts de gene
             options.thickness_flag = true;
@@ -720,11 +672,9 @@ fn main()  {
             println!();
         }
     }
-
     // =================================
     //  RECONCILIATION A 2 DEUX NIVEAUX
     // =================================
-
     else if multiple_files {
         if options.real_length_flag {
             println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
@@ -942,9 +892,12 @@ fn main()  {
     }
 }
 
+
+// Function set_config
+// -------------------
 fn set_config(configfile: String, config: &mut Config) {
     let contents = fs::read_to_string(configfile)
-                .expect("Something went wrong reading the config file");
+    .expect("Something went wrong reading the config file");
     let conf = contents.split('\n');
     for line in conf {
         let test: Vec<&str> = line.split(':').collect();
@@ -993,6 +946,5 @@ fn set_config(configfile: String, config: &mut Config) {
                 _ => {},
             }
         }
-
     }
 }
