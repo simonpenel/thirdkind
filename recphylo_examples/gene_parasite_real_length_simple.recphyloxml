@@ -1,0 +1,114 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+  <name>parasite ROOT</name>
+  <branch_length>0.5</branch_length>
+  <clade>
+    <name>free living species X</name>
+    <branch_length>1.5</branch_length>
+  </clade>
+  <clade>
+    <name>parasite EF-BC</name>
+    <branch_length>1.5</branch_length>
+    <clade>
+      <name>parasite B-C</name>
+      <branch_length>2.5</branch_length>
+      <clade>
+        <name>parasite B</name>
+        <branch_length>3.5</branch_length>
+      </clade>
+      <clade>
+        <name>parasite C</name>
+      <branch_length>0.5</branch_length>
+      </clade>
+    </clade>
+    <clade>
+      <name>parasite E-F</name>
+    <branch_length>0.5</branch_length>
+      <clade>
+        <name>parasite E</name>
+      <branch_length>4.5</branch_length>
+      </clade>
+      <clade>
+        <name>parasite F</name>
+        <branch_length>2.5</branch_length>
+      </clade>
+    </clade>
+  </clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny>
+<clade>
+  <name>Gene EFBC</name>
+  <eventsRec>
+    <speciation speciesLocation="parasite EF-BC"/>
+  </eventsRec>
+  <clade>
+    <name>Gene BC</name>
+    <eventsRec>
+      <speciation speciesLocation="parasite B-C"/>
+    </eventsRec>
+    <clade>
+    <name>Gene B</name>
+      <eventsRec>
+        <duplication speciesLocation="parasite B"/>
+      </eventsRec>
+    <clade>
+      <name>Gene B1</name>
+      <eventsRec>
+        <leaf speciesLocation="parasite B"/>
+      </eventsRec>
+    </clade>
+    <clade>
+      <name>Gene B2</name>
+      <eventsRec>
+        <leaf speciesLocation="parasite B"/>
+      </eventsRec>
+    </clade>
+  </clade>
+    <clade>
+      <name>Gene C</name>
+      <eventsRec>
+        <branchingOut speciesLocation="parasite C"/>
+      </eventsRec>
+      <clade>
+      <name>Gene D1</name>
+      <eventsRec>
+        <transferBack destinationSpecies="parasite C"/>
+        <leaf speciesLocation="parasite E"/>
+      </eventsRec>
+      </clade>
+      <clade>
+        <name> Gene C1 </name>
+        <eventsRec>
+          <loss speciesLocation="parasite C"/>
+        </eventsRec>
+      </clade>
+    </clade>
+  </clade>
+  <clade>
+  <name>Gene EF</name>
+    <eventsRec>
+      <speciation speciesLocation="parasite E-F"/>
+    </eventsRec>
+    <clade>
+      <name> Gene E1 </name>
+      <eventsRec>
+        <loss speciesLocation="parasite E"/>
+      </eventsRec>
+    </clade>
+    <clade>
+      <name> Gene F1 </name>
+      <eventsRec>
+        <leaf speciesLocation="parasite F"/>
+      </eventsRec>
+    </clade>
+  </clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
