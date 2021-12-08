@@ -887,8 +887,18 @@ fn main()  {
 // Function set_config
 // -------------------
 fn set_config(configfile: String, config: &mut Config) {
-    let contents = fs::read_to_string(configfile)
-    .expect("Something went wrong reading the config file");
+    let contents = fs::read_to_string(configfile);
+    // .expect("Something went wrong reading the config file");
+    let contents = match contents {
+        Ok(contents) => contents,
+        Err(err) => {
+            eprintln!("Something went wrong when reading the configuration file.\n{}",err);
+            eprintln!("Please check file name and path.");
+            process::exit(1);
+        }
+    };
+
+
     let conf = contents.split('\n');
     for line in conf {
         let test: Vec<&str> = line.split(':').collect();
