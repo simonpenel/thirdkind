@@ -29,7 +29,7 @@ fn display_usage(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!();
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!();
@@ -46,9 +46,10 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
+    println!("    -a : analysis of redundant transfers");
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
     println!("    -d fontsize: set font size for gene trees");
@@ -143,13 +144,14 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "c:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "ac:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
     let mut nb_args = 0;
     let mut level3 = false; // Affichage à 3 niveaux
     let mut multiple_files = false;
+    let mut display_transfers = false;
     let mut _format = Format::Newick;
     // 1st level file option
     let mut thickness_thresh_1st = 0;
@@ -200,6 +202,7 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('a', None) =>  display_transfers = true,
                     Opt('e', None) => options.free_living = true,
                     Opt('E', None) => {
                         options.free_living = true;
@@ -734,11 +737,64 @@ fn main()  {
                 }
                 i = i + 1;
             }
-            info!("Transfers = {:?}",transfers);
             let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
             selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
             recphyloxml_processing(&mut sp_trees[0], &mut selected_gene_trees, &mut options,
                 &config, true, &transfers, outfile);
+            info!("Transfers = {:?}",transfers);
+            if display_transfers {
+                // Affiche l'abondance des transferts
+                let mut unique_transfers: std::vec::Vec<(String,String)> =  vec![];
+                let mut scores: std::vec::Vec<usize> =  vec![];
+                let mut score_max = 1;
+                for transfer in transfers {
+                    let mut transfer_it =  unique_transfers.iter();
+                    let index = transfer_it.position(|r| r == &transfer);
+                    match index {
+                        None => {
+                            unique_transfers.push(transfer.clone());
+                            scores.push(1)},
+                        Some(i) => {
+                            scores[i] = scores[i]+ 1;
+                            if scores[i] > score_max {
+                                score_max = scores[i];
+                            }
+                        },
+                    }
+                }
+                #[derive(Debug, Eq, Ord, PartialEq, PartialOrd)]
+                struct TransfersWithScore {
+                    transfer: (String, String),
+                    score: usize,
+                }
+                impl TransfersWithScore {
+                    pub fn new(transfer: (String,String), score: usize) -> Self {
+                        TransfersWithScore {
+                            transfer,
+                            score
+                        }
+                    }
+                }
+                let mut sorted_transfers: std::vec::Vec<TransfersWithScore> = vec![];
+                let mut  i_trans = 0;
+                while i_trans < unique_transfers.len() {
+                    let (end,start) = &unique_transfers[i_trans];
+                    let score = scores[i_trans];
+                    if score > thickness_thresh_1st {
+                        sorted_transfers.push(TransfersWithScore::new((end.to_string(),start.to_string()),score));
+                    }
+                    i_trans = i_trans + 1;
+                }
+                sorted_transfers.sort_by(|a, b| a.score.cmp(&b.score));
+                println!("Transfers found more than {} times :",thickness_thresh_1st);
+                let mut i_sort = 0;
+                while i_sort < sorted_transfers.len() {
+                    let (end,start) = &sorted_transfers[i_sort].transfer;
+                    let score =  &sorted_transfers[i_sort].score;
+                    println!("{} => {} ({})",end,start,score);
+                    i_sort = i_sort + 1;
+                }
+            }
         }
         else {
             if options.disp_gene  > 0 {
