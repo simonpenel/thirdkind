@@ -49,7 +49,7 @@ fn display_help(programe_name:String) {
     println!("{} -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
-    println!("    -a : analysis of redundant transfers");
+    println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
     println!("    -c configfile: use a configuration file");
     println!("    -d fontsize: set font size for gene trees");
