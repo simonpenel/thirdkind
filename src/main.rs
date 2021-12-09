@@ -51,14 +51,14 @@ fn display_help(programe_name:String) {
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
-    println!("    -c configfile: use a configuration file");
-    println!("    -d fontsize: set font size for gene trees");
-    println!("    -D fontsize: set font size for species trees");
+    println!("    -c configfile : use a configuration file");
+    println!("    -d fontsize : set font size for gene trees");
+    println!("    -D fontsize : set font size for species trees");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
     external tree (free_living option) and superposed in case of multiple genes");
     println!("    -E : the node associated to FREE_LIVING are drawned in an \
     external tree (free_living option) and shifted in case of multiple genes");
-    println!("    -F phylo/recphylo: force format phyloXML/recPhyloXML");
+    println!("    -F phylo/recphylo : force format phyloXML/recPhyloXML");
     println!("    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)");
     println!("    -G <n> : display the gene #n in phyloxml style (no species tree)");
     println!("    -h : help");
@@ -71,7 +71,7 @@ fn display_help(programe_name:String) {
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile : set name of output file");
-    println!("    -O switching nodes in order to minimise transfer crossings (under development) ");
+    println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : build a phylogram");
     println!("    -P : species 'upper' tree uniformisation");
     println!("    -r ratio : set the ratio between width of species and gene tree");
