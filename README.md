@@ -120,13 +120,14 @@ Usage:
 
     thirdkind -f input file [-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
 
+    -a : output the redundant transfers analysis
     -b : open svg in browser
-    -c configfile: use a configuration file
-    -d fontsize: set font size for gene trees
-    -D fontsize: set font size for species trees
+    -c configfile : use a configuration file
+    -d fontsize : set font size for gene trees
+    -D fontsize : set font size for species trees
     -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and superposed in case of multiple genes
     -E : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and shifted in case of multiple genes
-    -F phylo/recphylo: force format phyloXML/recPhyloXML
+    -F phylo/recphylo : force format phyloXML/recPhyloXML
     -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)
     -G <n> : display the gene #n in phyloxml style (no species tree)
     -h : help
@@ -139,7 +140,7 @@ Usage:
     -L : display as landscape
     -m : the input file (-f) is a list of recphyloxml files
     -o outputfile : set name of output file
-    -O switching nodes in order to minimise transfer crossings (under development)
+    -O : switching nodes in order to minimise transfer crossings (under development) 
     -p : build a phylogram
     -P : species 'upper' tree uniformisation
     -r ratio : set the ratio between width of species and gene tree
