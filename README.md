@@ -136,12 +136,11 @@ Usage:
     -i : display internal gene nodes
     -I : display internal species nodes
     -J : with option -t, display the abundance of redudant transfers
-    -l factor : use branch length, multiplied by the given factor in case of newick/phyloxml,
-                and by an optimised factor in case of recphyloxml
+    -l factor : use branch length, multiplied by the given factor 
     -L : display as landscape
     -m : the input file (-f) is a list of recphyloxml files
     -o outputfile : set name of output file
-    -O : switching nodes in order to minimise transfer crossings (under development) 
+    -O : switching nodes in order to minimise transfer crossings (under development)
     -p : build a phylogram
     -P : species 'upper' tree uniformisation
     -r ratio : set the ratio between width of species and gene tree

@@ -66,8 +66,7 @@ fn display_help(programe_name:String) {
     println!("    -i : display internal gene nodes");
     println!("    -I : display internal species nodes");
     println!("    -J : with option -t, display the abundance of redudant transfers");
-    println!("    -l factor : use branch length, multiplied by the given factor in case of newick/phyloxml,");
-    println!("                and by an optimised factor in case of recphyloxml");
+    println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile : set name of output file");
@@ -670,9 +669,9 @@ fn main()  {
     //  RECONCILIATION A 2 DEUX NIVEAUX
     // =================================
     else if multiple_files {
-        if options.real_length_flag {
-            println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
-        };
+        // if options.real_length_flag {
+        //     println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
+        // };
         // get the url
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
@@ -871,9 +870,9 @@ fn main()  {
             },
             // Recphyloxml
             Format::Recphyloxml => {
-                if options.real_length_flag {
-                    println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
-                }
+                // if options.real_length_flag {
+                //     println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
+                // }
                 // On cree une structure Arena pour l'arbre d'espece
                 // et un vecteur de  structures Arena pour le(s) arbres de gènes
                 // -------------------------------------------------------------
