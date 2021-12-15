@@ -4,6 +4,7 @@ Drawing reconciled phylogenetic trees  allowing 1, 2 or 3 reconciliation levels
 Homepage: https://github.com/simonpenel/thirdkind/wiki
 
 [![thirdkind at crates.io](https://img.shields.io/crates/v/thirdkind.svg)](https://crates.io/crates/thirdkind)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
 
