@@ -136,7 +136,7 @@ Usage:
     -i : display internal gene nodes
     -I : display internal species nodes
     -J : with option -t, display the abundance of redudant transfers
-    -l factor : use branch length, multiplied by the given factor 
+    -l factor : use branch length, multiplied by the given factor
     -L : display as landscape
     -m : the input file (-f) is a list of recphyloxml files
     -o outputfile : set name of output file
