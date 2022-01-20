@@ -1,0 +1,120 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+  <name>symbiote ROOT</name>
+  <clade>
+    <name>free living species X</name>
+  </clade>
+  <clade>
+    <name>symbiote EF-BC</name>
+    <clade>
+      <name>symbiote B-C</name>
+      <clade>
+        <name>symbiote B</name>
+      </clade>
+      <clade>
+        <name>symbiote C</name>
+      </clade>
+    </clade>
+    <clade>
+      <name>symbiote E-F</name>
+      <clade>
+        <name>symbiote E</name>
+      </clade>
+      <clade>
+        <name>symbiote F</name>
+      </clade>
+    </clade>
+  </clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny>
+
+<clade>
+<name>Gene ROOT</name>
+  <eventsRec>
+    <speciation speciesLocation="symbiote ROOT"/>
+  </eventsRec>
+
+<clade>
+  <name>gene X1</name>
+  <eventsRec>
+    <leaf speciesLocation="free living species X" />
+  </eventsRec>
+</clade>
+
+<clade>
+  <name>Gene EFBC</name>
+  <eventsRec>
+    <speciation speciesLocation="symbiote EF-BC"/>
+  </eventsRec>
+  <clade>
+    <name>Gene BC</name>
+    <eventsRec>
+      <speciation speciesLocation="symbiote B-C"/>
+    </eventsRec>
+    <clade>
+    <name>Gene B</name>
+      <eventsRec>
+        <duplication speciesLocation="symbiote B"/>
+      </eventsRec>
+    <clade>
+      <name>Gene B1</name>
+      <eventsRec>
+        <leaf speciesLocation="symbiote B"/>
+      </eventsRec>
+    </clade>
+    <clade>
+      <name>Gene B2</name>
+      <eventsRec>
+        <leaf speciesLocation="symbiote B"/>
+      </eventsRec>
+    </clade>
+  </clade>
+    <clade>
+      <name>Gene C</name>
+      <eventsRec>
+        <branchingOut speciesLocation="symbiote C"/>
+      </eventsRec>
+      <clade>
+      <name>Gene D1</name>
+      <eventsRec>
+        <transferBack destinationSpecies="symbiote C"/>
+        <leaf speciesLocation="symbiote E"/>
+      </eventsRec>
+      </clade>
+      <clade>
+        <name> Gene C1 </name>
+        <eventsRec>
+          <loss speciesLocation="symbiote C"/>
+        </eventsRec>
+      </clade>
+    </clade>
+  </clade>
+  <clade>
+  <name>Gene EF</name>
+    <eventsRec>
+      <speciation speciesLocation="symbiote E-F"/>
+    </eventsRec>
+    <clade>
+      <name> Gene E1 </name>
+      <eventsRec>
+        <loss speciesLocation="symbiote E"/>
+      </eventsRec>
+    </clade>
+    <clade>
+      <name> Gene F1 </name>
+      <eventsRec>
+        <leaf speciesLocation="symbiote F"/>
+      </eventsRec>
+    </clade>
+  </clade>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>

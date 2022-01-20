@@ -1,0 +1,80 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+  <name>host root</name>
+  <clade>
+    <name>host 1</name>
+  </clade>
+  <clade>
+    <name>host 34</name>
+    <clade>
+      <name>host 3</name>
+    </clade>
+    <clade>
+      <name>host 4</name>
+    </clade>
+  </clade>
+</clade>
+</phylogeny>
+</spTree>
+<recGeneTree>
+<phylogeny>
+<clade>
+  <name>symbiote ROOT</name>
+  <eventsRec>
+    <speciation speciesLocation="host root"/>
+  </eventsRec>
+  <clade>
+    <name>free living species X</name>
+    <eventsRec>
+      <leaf speciesLocation="FREE_LIVING"/>
+    </eventsRec>
+  </clade>
+  <clade>
+    <name>symbiote EF-BC</name>
+    <eventsRec>
+      <speciation speciesLocation="host 34"/>
+    </eventsRec>
+    <clade>
+      <name>symbiote E-F</name>
+      <eventsRec>
+        <duplication speciesLocation="host 4"/>
+      </eventsRec>
+      <clade>
+        <name>symbiote E</name>
+        <eventsRec>
+          <leaf speciesLocation="host 4"/>
+        </eventsRec>
+      </clade>
+      <clade>
+        <name>symbiote F</name>
+        <eventsRec>
+          <leaf speciesLocation="host 4"/>
+        </eventsRec>
+      </clade>
+    </clade>
+    <clade>
+      <name>symbiote B-C</name>
+      <eventsRec>
+        <branchingOut speciesLocation="host 3"/>
+      </eventsRec>
+      <clade>
+        <name>symbiote B</name>
+        <eventsRec>
+          <transferBack destinationSpecies="host 4" />
+          <leaf speciesLocation="host 4"/>
+        </eventsRec>
+      </clade>
+      <clade>
+        <name>symbiote C</name>
+        <eventsRec>
+          <leaf speciesLocation="host 3"/>
+        </eventsRec>
+      </clade>
+    </clade>
+  </clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
