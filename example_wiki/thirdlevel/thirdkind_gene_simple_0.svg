@@ -1,0 +1,195 @@
+<svg height="1575" viewBox="-7.5 52.5 1315 1695" width="1195" xmlns="http://www.w3.org/2000/svg">
+<style>
+.gene { font:  10px; fill:blue; } .support { font: 10px; fill: red; }
+</style>
+<g transform="translate(  -7.5 1627.5) rotate(-90 0 0 ) ">
+<circle cx="1325.1746" cy="60" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1120.3491,120 L1120.3491,60 L1325.1746,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1120.3491" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M830.69824,180 L830.69824,120 L1120.3491,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="830.69824" cy="180" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M420.14648,240 L420.14648,180 L830.69824,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="420.14648" cy="240" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M0,900 L0,240 L420.14648,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M-1,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 -5,910)" x="-5" y="910">
+Escherichia_coli_K12_MG1655
+</text>
+<path d="M840.29297,300 L840.29297,240 L420.14648,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="840.29297" cy="300" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M750.58594,360 L750.58594,300 L840.29297,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="750.58594" cy="360" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M661.1719,420 L661.1719,360 L750.58594,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="661.1719" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M572.34375,480 L572.34375,420 L661.1719,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="572.34375" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M484.6875,540 L484.6875,480 L572.34375,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M478.6875,534 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 484.6875 540)"/>
+<path d="M369.375,600 L369.375,540 L484.6875,540" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="369.375" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M369.375,594 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<path d="M228.75,660 L228.75,600 L369.375,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="228.75" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M105,720 L105,660 L228.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="105" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M60,900 L60,720 L105,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M59,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 55,910)" x="55" y="910">
+ECUMA
+</text>
+<path d="M150,780 L150,720 L105,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="150" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M120,900 L120,780 L150,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M119,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 115,910)" x="115" y="910">
+EKOCA
+</text>
+<path d="M180,900 L180,780 L150,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M179,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 175,910)" x="175" y="910">
+ELAFE
+</text>
+<path d="M352.5,720 L352.5,660 L228.75,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="352.5" cy="720" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M285,780 L285,720 L352.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="285" cy="780" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M240,900 L240,780 L285,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M239,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 235,910)" x="235" y="910">
+EPSPA
+</text>
+<path d="M330,840 L330,780 L285,780" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="330" cy="840" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M300,900 L300,840 L330,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M299,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 295,910)" x="295" y="910">
+ESPPA
+</text>
+<path d="M360,900 L360,840 L330,840" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M359,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 355,910)" x="355" y="910">
+ESPPS
+</text>
+<path d="M420,900 L420,720 L352.5,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M419,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 415,910)" x="415" y="910">
+EPSTX
+</text>
+<path d="M510,660 L510,600 L369.375,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="510" cy="660" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M480,900 L480,660 L510,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M479,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 475,910)" x="475" y="910">
+ECURT
+</text>
+<path d="M540,900 L540,660 L510,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M539,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 535,910)" x="535" y="910">
+ECURV
+</text>
+<path d="M600,870 L600,540 L484.6875,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M600,862 l0,16 M592,870 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 600 870)"/>
+<text class="gene" transform="rotate(90 595,880)" x="595" y="880">
+enterobacteria8LOSS
+</text>
+<path d="M660,900 L660,480 L572.34375,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M659,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 655,910)" x="655" y="910">
+EwAmC
+</text>
+<path d="M750,480 L750,420 L661.1719,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="750" cy="480" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M720,900 L720,480 L750,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M719,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 715,910)" x="715" y="910">
+EwApS
+</text>
+<path d="M780,900 L780,480 L750,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M779,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 775,910)" x="775" y="910">
+EwDaI
+</text>
+<path d="M840,900 L840,360 L750.58594,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M839,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 835,910)" x="835" y="910">
+EwBiE
+</text>
+<path d="M930,360 L930,300 L840.29297,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M927,357 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M900,900 L900,360 L930,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M899,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 895,910)" x="895" y="910">
+Pantoea_gaviniae_DSM_22758
+</text>
+<path d="M960,900 L960,360 L930,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M959,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 955,910)" x="955" y="910">
+Pantoea_calida_DSM_22759
+</text>
+<path d="M1241.25,240 L1241.25,180 L830.69824,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1241.25" cy="240" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1162.5,300 L1162.5,240 L1241.25,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1162.5" cy="300" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1095,360 L1095,300 L1162.5,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1089,354 l0,12 l12,0 l0,-12 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 1095 360)"/>
+<path d="M1050,420 L1050,360 L1095,360" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="1050" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1050,414 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<path d="M1020,900 L1020,420 L1050,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1019,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1015,910)" x="1015" y="910">
+HCURT
+</text>
+<path d="M1080,900 L1080,420 L1050,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1079,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1075,910)" x="1075" y="910">
+HCURV
+</text>
+<path d="M1140,870 L1140,360 L1095,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1140,862 l0,16 M1132,870 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 1140 870)"/>
+<text class="gene" transform="rotate(90 1135,880)" x="1135" y="880">
+enterobacteria20LOSS
+</text>
+<path d="M1230,360 L1230,300 L1162.5,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1230" cy="360" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1200,900 L1200,360 L1230,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1199,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1195,910)" x="1195" y="910">
+Hamiltonella_defensa_ZA17
+</text>
+<path d="M1260,900 L1260,360 L1230,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1259,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1255,910)" x="1255" y="910">
+Hamiltonella_defensa_5AT
+</text>
+<path d="M1320,900 L1320,240 L1241.25,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1319,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1315,910)" x="1315" y="910">
+Yersinia_pestis_CO92
+</text>
+<path d="M1410,180 L1410,120 L1120.3491,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1410" cy="180" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1380,900 L1380,180 L1410,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1379,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1375,910)" x="1375" y="910">
+Sodalis_praecaptivus_HS1
+</text>
+<path d="M1440,900 L1440,180 L1410,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1439,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1435,910)" x="1435" y="910">
+Sodalis_pierantonius_SOPE
+</text>
+<path d="M1530,120 L1530,60 L1325.1746,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="1530" cy="120" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
+<path d="M1500,900 L1500,120 L1530,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1499,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1495,910)" x="1495" y="910">
+Photorhabdus_luminescens_TTO1
+</text>
+<path d="M1560,900 L1560,120 L1530,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1559,899 l0,2 l2,0 l0,-2 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<text class="gene" transform="rotate(90 1555,910)" x="1555" y="910">
+Photorhabdus_asymbiotica_ATCC43949
+</text>
+</g>
+</svg>

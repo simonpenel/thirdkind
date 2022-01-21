@@ -1,9 +1,6 @@
 <svg height="1950" viewBox="-7.5 52.5 1322.5 2070" width="1202.5" xmlns="http://www.w3.org/2000/svg">
 <style>
-.gene { font:  10px serif; fill:blue; }
-</style>
-<style>
-.support { font:  10px serif; fill: red; }
+.gene { font:  10px; fill:blue; } .support { font: 10px; fill: red; }
 </style>
 <g transform="translate(  -7.5 2002.5) rotate(-90 0 0 ) ">
 <circle cx="1659.2239" cy="60" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
