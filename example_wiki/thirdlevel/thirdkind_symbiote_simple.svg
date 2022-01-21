@@ -181,17 +181,17 @@ Photorhabdus_asymbiotica_ATCC43949
 <path d="M545.15625,600 L545.15625,540 L688.8281,540" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
 <circle cx="545.15625" cy="600" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
 <path d="M545.15625,594 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
-<path d="M832.5,840 L832.5,540 L688.8281,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
-<path d="M832.5,832 l0,16 M824.5,840 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 832.5 840)"/>
-<text class="gene" transform="rotate(90 827.5,850)" x="827.5" y="850">
+<path d="M832.5,870 L832.5,540 L688.8281,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M832.5,862 l0,16 M824.5,870 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 832.5 870)"/>
+<text class="gene" transform="rotate(90 827.5,880)" x="827.5" y="880">
 enterobacteria8LOSS
 </text>
 <path d="M1365,420 L1365,360 L1413.75,360" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
 <circle cx="1365" cy="420" fill="blue" opacity="0.9" r="3" stroke="blue" stroke-width="1"/>
 <path d="M1365,414 l-12,-12 l24,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
-<path d="M1462.5,840 L1462.5,360 L1413.75,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
-<path d="M1462.5,832 l0,16 M1454.5,840 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 1462.5 840)"/>
-<text class="gene" transform="rotate(90 1457.5,850)" x="1457.5" y="850">
+<path d="M1462.5,870 L1462.5,360 L1413.75,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1462.5,862 l0,16 M1454.5,870 l16,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="4" transform="rotate(45 1462.5 870)"/>
+<text class="gene" transform="rotate(90 1457.5,880)" x="1457.5" y="880">
 enterobacteria20LOSS
 </text>
 </g>
