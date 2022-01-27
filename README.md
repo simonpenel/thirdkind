@@ -119,10 +119,11 @@ Format is guessed according to filename (default is newick)
 
 Usage:
 
-    thirdkind -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
+    thirdkind -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
 
     -a : output the redundant transfers analysis
     -b : open svg in browser
+    -B : with option -l, display branch length
     -c configfile : use a configuration file
     -d fontsize : set font size for gene trees
     -D fontsize : set font size for species trees
