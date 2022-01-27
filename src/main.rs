@@ -29,7 +29,7 @@ fn display_usage(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!();
     println!("Usage:");
-    println!("{} -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!();
@@ -46,11 +46,12 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-a][-b][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
+    println!("    -B : with option -l, display branch length");
     println!("    -c configfile : use a configuration file");
     println!("    -d fontsize : set font size for gene trees");
     println!("    -D fontsize : set font size for species trees");
@@ -143,7 +144,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -212,6 +213,7 @@ fn main()  {
                     Opt('J', None) => options.thickness_disp_score = true,
                     Opt('m', None) => multiple_files = true,
                     Opt('b', None) => options.open_browser = true,
+                    Opt('B', None) => options.branch = true,
                     Opt('r', Some(string)) => {
                         options.ratio = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
