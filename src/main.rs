@@ -70,7 +70,7 @@ fn display_help(programe_name:String) {
     println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
-    println!("    -o outputfile : set name of output file");
+    println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : build a phylogram");
     println!("    -P : species 'upper' tree uniformisation");
@@ -338,11 +338,22 @@ fn main()  {
     if level3 {
         // Traitement de 2 fichier fichiers recPhyloXML
         println!("Two reconciled files => displaying 3-levels reconciliations. ");
-        let  outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
-        let  outfile_para_host = String::from("thirdkind_symbiote_host.svg");
-        let  outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
-        let  outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
-        let  outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
+
+        let  mut outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
+        let  mut outfile_para_host = String::from("thirdkind_symbiote_host.svg");
+        let  mut outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
+        let  mut outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
+        let  mut outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
+
+        if outfile == "thirdkind.svg" {
+            outfile = String::from("");
+        }
+        outfile_gene_para = outfile.clone()+&outfile_gene_para;
+        outfile_para_host = outfile.clone()+&outfile_para_host;
+        outfile_mapped_1 = outfile.clone()+&outfile_mapped_1;
+        outfile_mapped_2 = outfile.clone()+&outfile_mapped_2;
+        outfile_mapped_3 = outfile.clone()+&outfile_mapped_3;
+
         let transfers = vec![]; // Initialise transfers
         let mut transfers_gene = vec![]; // Transferts de genes
         let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
@@ -612,15 +623,15 @@ fn main()  {
         println!("\nBuilding 'phyloxml style' svg files...");
         //  Simple tree of the parasite
         reset_pos(&mut global_pipe_parasite);
-        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,"thirdkind_symbiote_simple.svg".to_string());
+        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,outfile.clone()+&"thirdkind_symbiote_simple.svg".to_string());
         reset_pos(&mut tree_host_pipe);
         //  Simple tree of the host
-        phyloxml_processing(&mut tree_host_pipe, &mut options, &config,"thirdkind_host_simple.svg".to_string());
+        phyloxml_processing(&mut tree_host_pipe, &mut options, &config,outfile.clone()+&"thirdkind_host_simple.svg".to_string());
         //  Simple trees of the genes
         let mut i = 0;
         while i < nb_parasite_pipe {
             reset_pos(&mut path_para_trees[i]);
-            phyloxml_processing(&mut path_para_trees[i], &mut options, &config,("thirdkind_gene_simple_".to_owned()+&i.to_string()+".svg").to_string());
+            phyloxml_processing(&mut path_para_trees[i], &mut options, &config,(outfile.clone()+&"thirdkind_gene_simple_"+&i.to_string()+".svg").to_string());
             i = i + 1;
         }
         // =========================
@@ -638,26 +649,26 @@ fn main()  {
         // Reset the option
         options.free_living = false;
         recphyloxml_processing(&mut tree_host_pipe, &mut path_genes, &mut options, &config,
-            true, &vec![],outfile_mapped_3);
-        let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_3.svg".to_string());
+            true, &vec![],outfile_mapped_3.clone());
+        let url_file = format!("file:///{}/{}", path.display(),outfile_mapped_3);
         if options.open_browser {
             if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
                 info!("Browser OK");
             }
         }
         println!("\nOutput summary:");
-        println!(" - thirdkind_host_simple.svg ...... 1 level:  host tree");
+        println!(" - {}thirdkind_host_simple.svg ...... 1 level:  host tree",outfile);
         let mut i = 0;
         while i < nb_parasite_pipe {
-            println!(" - thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",&i);
+            println!(" - {}thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",outfile,&i);
             i = i + 1;
         }
-        println!(" - thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)");
-        println!(" - thirdkind_gene_symbiote.svg .... 2 levels: 'upper' symbiote tree(s) with 'lower' gene tree(s) inside");
-        println!(" - thirdkind_symbiote_host.svg .... 2 levels: 'upper' host tree with 'lower' symbiote tree(s) inside");
-        println!(" - thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside");
-        println!(" - thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers");
-        println!(" - thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside");
+        println!(" - {}thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)",outfile);
+        println!(" - {}thirdkind_gene_symbiote.svg .... 2 levels: 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
+        println!(" - {}thirdkind_symbiote_host.svg .... 2 levels: 'upper' host tree with 'lower' symbiote tree(s) inside",outfile);
+        println!(" - {}thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
+        println!(" - {}thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers",outfile);
+        println!(" - {}thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside",outfile);
         if nb_parasite_path != nb_parasite_pipe {
             println!();
             println!("==============================================");
