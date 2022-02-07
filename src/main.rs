@@ -449,12 +449,13 @@ fn main()  {
         println!("Number of 'lower' symbiote trees in symbiote-host file : {}",nb_parasite_path);
         println!("Number of 'upper' host trees in symbiote-host file : {}",nb_hosts_pipe);
         if nb_parasite_path != nb_parasite_pipe {
-            println!();
-            println!("==============================================");
-            println!("Error! Different number of parasite trees in the 2 files!");
-            println!("       Resulting svg will be incomplete.");
-            println!("==============================================");
-            println!();
+            eprintln!();
+            eprintln!("==============================================");
+            eprintln!("Error! Different number of parasite trees in the 2 files!");
+            eprintln!("       Resulting svg will be incomplete.");
+            eprintln!("==============================================");
+            eprintln!();
+            process::exit(1);
         }
         // ---------------------------------------------------------
         // Generate svg of the host pipe tree and path symbiote trees
@@ -670,12 +671,13 @@ fn main()  {
         println!(" - {}thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers",outfile);
         println!(" - {}thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside",outfile);
         if nb_parasite_path != nb_parasite_pipe {
-            println!();
-            println!("==============================================");
-            println!("Error! Different number of symbiote trees in the 2 files!");
-            println!("       Resulting svg will be incomplete.");
-            println!("==============================================");
-            println!();
+            eprintln!();
+            eprintln!("==============================================");
+            eprintln!("Error! Different number of symbiote trees in the 2 files!");
+            eprintln!("       Resulting svg will be incomplete.");
+            eprintln!("==============================================");
+            eprintln!();
+            process::exit(1)
         }
     }
     // =================================
