@@ -164,7 +164,7 @@ fn main()  {
     loop {
         match opts.next().transpose() {
             Err(err) => {
-                eprintln!("Error : {}",err);
+                eprintln!("ERROR: {}",err);
                 std::process::exit(1);
             },
             Ok(res) => match res {
@@ -175,7 +175,7 @@ fn main()  {
                             "recphylo" => Format::Recphyloxml,
                             "phyloxml" => Format::Phyloxml,
                             _ => {
-                                eprintln!("Error! Please give a correct format (recphylo/phyloxml)");
+                                eprintln!("ERROR: Please give a correct format (recphylo/phyloxml)");
                                 process::exit(1);
                             },
                         };
@@ -188,7 +188,7 @@ fn main()  {
                         options.disp_gene = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -G option");
+                                eprintln!("ERROR: Please give a integer value with -G option");
                                 process::exit(1);
                             },
                         };
@@ -197,7 +197,7 @@ fn main()  {
                         options.height = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a numeric value with -H option");
+                                eprintln!("ERROR: Please give a numeric value with -H option");
                                 process::exit(1);
                             },
                         };
@@ -218,7 +218,7 @@ fn main()  {
                         options.ratio = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a numeric value with -r option");
+                                eprintln!("ERROR: Please give a numeric value with -r option");
                                 process::exit(1);
                             },
                         };
@@ -231,7 +231,7 @@ fn main()  {
                         thickness_thresh_1st = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -t option");
+                                eprintln!("ERROR: Please give a integer value with -t option");
                                 process::exit(1);
                             },
                         };
@@ -241,7 +241,7 @@ fn main()  {
                         thickness_gene_1st = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -T option");
+                                eprintln!("ERROR: Please give a integer value with -T option");
                                 process::exit(1);
                             },
                         };
@@ -250,7 +250,7 @@ fn main()  {
                         thickness_thresh_2nd = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -u option");
+                                eprintln!("ERROR: Please give a integer value with -u option");
                                 process::exit(1);
                             },
                         };
@@ -260,7 +260,7 @@ fn main()  {
                         thickness_gene_2nd = match string.parse::<usize>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -U option");
+                                eprintln!("ERROR: Please give a integer value with -U option");
                                 process::exit(1);
                             },
                         };
@@ -271,7 +271,7 @@ fn main()  {
                         options.scale = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a numeric value with -l option");
+                                eprintln!("ERROR: Please give a numeric value with -l option");
                                 process::exit(1);
                             },
                         };
@@ -290,7 +290,7 @@ fn main()  {
                         config.gene_police_size = match string.parse::<usize>(){
                             Ok(valeur) => valeur.to_string(),
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -d option");
+                                eprintln!("ERROR: Please give a integer value with -d option");
                                 process::exit(1);
                             },
                         };
@@ -299,7 +299,7 @@ fn main()  {
                         config.species_police_size = match string.parse::<usize>(){
                             Ok(valeur) => valeur.to_string(),
                             Err(_err) => {
-                                eprintln!("Error! Please give a integer value with -D option");
+                                eprintln!("ERROR: Please give a integer value with -D option");
                                 process::exit(1);
                             },
                         };
@@ -315,7 +315,7 @@ fn main()  {
                         options.width = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("Error! Please give a numeric value with -W option");
+                                eprintln!("ERROR: Please give a numeric value with -W option");
                                 process::exit(1);
                             },
                         };
@@ -450,10 +450,8 @@ fn main()  {
         println!("Number of 'upper' host trees in symbiote-host file : {}",nb_hosts_pipe);
         if nb_parasite_path != nb_parasite_pipe {
             eprintln!();
-            eprintln!("==============================================");
-            eprintln!("Error! Different number of parasite trees in the 2 files!");
+            eprintln!("ERROR: Different number of parasite trees in the 2 files!");
             eprintln!("       Resulting svg will be incomplete.");
-            eprintln!("==============================================");
             eprintln!();
             process::exit(1);
         }
@@ -672,10 +670,8 @@ fn main()  {
         println!(" - {}thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside",outfile);
         if nb_parasite_path != nb_parasite_pipe {
             eprintln!();
-            eprintln!("==============================================");
-            eprintln!("Error! Different number of symbiote trees in the 2 files!");
+            eprintln!("ERROR: Different number of symbiote trees in the 2 files!");
             eprintln!("       Resulting svg will be incomplete.");
-            eprintln!("==============================================");
             eprintln!();
             process::exit(1)
         }
