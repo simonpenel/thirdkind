@@ -231,8 +231,8 @@ phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
 
 # Citation
 
-"Thirdkind: displaying phylogenetic encounters beyond 2-
-level reconciliation", Bioinfomartics, on press.
+https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac062/6525213
+
 
 # Contact
 
