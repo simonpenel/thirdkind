@@ -1,20 +1,22 @@
 # thirdkind
 Drawing reconciled phylogenetic trees  allowing 1, 2 or 3 reconciliation levels
 
-Homepage: https://github.com/simonpenel/thirdkind/wiki
-
-[![thirdkind at crates.io](https://img.shields.io/crates/v/thirdkind.svg)](https://crates.io/crates/thirdkind)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-
-
-
 Build  svg representations of  phylogenetic reconciled (or not) trees with events (loss, duplication, speciation, transfer).
 
 * Input one newick or phyloxml file -> a svg representation of the tree with node events
 
 * Input one recphyloxml file -> a svg representation of the   gene (or symbiot) 'lower' tree(s) inside the associated species (or host) 'upper' tree
 
-* Input two recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
+* Input a set of recphyloxml files -> a svg representation of all the   gene (or symbiot) 'lower' tree(s) inside the associated species (or host) 'upper' tree, or only 1 gene tree  with the transfers of all genes (or symbiotes)  allowing to visualise transfers for different scenarios or histories.
+
+* Input two nested recphyloxml files -> several svg representations allowing to display 3 level reconciliations (for example gene/symbiot/host)
+
+# Homepage 
+homepage : https://github.com/simonpenel/thirdkind/wiki
+
+[![thirdkind at crates.io](https://img.shields.io/crates/v/thirdkind.svg)](https://crates.io/crates/thirdkind)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
 
 
 # Keywords:
