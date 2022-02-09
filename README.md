@@ -232,5 +232,9 @@ phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
 "Thirdkind: displaying phylogenetic encounters beyond 2-
 level reconciliation", Bioinfomartics, on press.
 
+# Contact
+
+https://lbbe.univ-lyon1.fr/fr/annuaire-des-membres/penel-simon
+
 # Licence
 CECILL: https://choosealicense.com/licenses/cecill-2.1/
