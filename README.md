@@ -227,5 +227,10 @@ See: http://www.phyloxml.org/
 
 phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
 
+# Citation
+
+"Thirdkind: displaying phylogenetic encounters beyond 2-
+level reconciliation", Bioinfomartics, on press.
+
 # Licence
 CECILL: https://choosealicense.com/licenses/cecill-2.1/
