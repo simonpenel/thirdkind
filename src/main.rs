@@ -47,7 +47,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
@@ -72,8 +72,8 @@ fn display_help(programe_name:String) {
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
-    println!("    -p : build a phylogram");
-    println!("    -P : species 'upper' tree uniformisation");
+    // println!("    -p : build a phylogram");
+    println!("    -p : species 'upper' tree uniformisation");
     println!("    -r ratio : set the ratio between width of species and gene tree");
     println!("               Default 1.0, you usualy do not need to change it");
     println!("    -s : drawing species tree only");
@@ -144,7 +144,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:OpPr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -223,8 +223,8 @@ fn main()  {
                             },
                         };
                     },
-                    Opt('p', None) => options.clado_flag = false,
-                    Opt('P', None) => options.uniform = true,
+                    // Opt('p', None) => options.clado_flag = false,
+                    Opt('p', None) => options.uniform = true,
                     Opt('s', None) => options.species_only_flag = true,
                     Opt('S', None) => options.support = true,
                     Opt('t', Some(string)) => {
