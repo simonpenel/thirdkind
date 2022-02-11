@@ -124,7 +124,7 @@ Format is guessed according to filename (default is newick)
 
 Usage:
 
-    thirdkind -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-P][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
+    thirdkind -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
 
     -a : output the redundant transfers analysis
     -b : open svg in browser
@@ -147,8 +147,7 @@ Usage:
     -m : the input file (-f) is a list of recphyloxml files
     -o outputfile : set name of output file
     -O : switching nodes in order to minimise transfer crossings (under development)
-    -p : build a phylogram
-    -P : species 'upper' tree uniformisation
+    -p : species 'upper' tree uniformisation
     -r ratio : set the ratio between width of species and gene tree
                Default 1.0, you usualy do not need to change it
     -s : drawing species tree only
