@@ -28,7 +28,7 @@ phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
 # Graphical interface
 
-A web sever dedicated to the graphical interface of thirdkind is available here: http://thirdkind.univ-lyon1.fr/
+A web sever dedicated to the graphical interface of _thirdkind_ is available here: http://thirdkind.univ-lyon1.fr/
 
 # Output examples of 2-levels visualisation:
 
@@ -94,7 +94,7 @@ https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b523
 
 # Install:
 
-thirdkind is written in Rust. The code is managed using Cargo and published on crates.io.
+_thirdkind_ is written in Rust. The code is managed using Cargo and published on crates.io.
 
 Install cargo:
 
@@ -212,7 +212,7 @@ Contents of a configuration file :
 
 # Using the API light_phylogeny:
 
-thirdkind uses the light_phylogeny library:
+_thirdkind_ uses the light_phylogeny library:
 
 https://github.com/simonpenel/light_phylogeny/wiki
 
