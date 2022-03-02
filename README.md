@@ -28,7 +28,7 @@ phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
 # Graphical interface
 
-A web sever dedicated to graphical interface is available here: http://thirdkind.univ-lyon1.fr/
+A web sever dedicated to the graphical interface of thirdkind is available here: http://thirdkind.univ-lyon1.fr/
 
 # Output examples of 2-levels visualisation:
 
