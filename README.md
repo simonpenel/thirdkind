@@ -89,7 +89,7 @@ https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b523
 
 # Graphical interface
 
-A web sever dedicated to graphical interface will be available soon.
+A web sever dedicated to graphical interface is available here: http://thirdkind.univ-lyon1.fr/
 
 # Install:
 
