@@ -26,6 +26,10 @@ phylogeny, reconciled trees, phylogenetic trees, reconciliation, visualisation, 
 
 phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
+# Graphical interface
+
+A web sever dedicated to graphical interface is available here: http://thirdkind.univ-lyon1.fr/
+
 # Output examples of 2-levels visualisation:
 
 single gene reconciliation with species tree:
@@ -87,9 +91,6 @@ https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b523
 host tree with associated gene trees:
 https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_3.svg
 
-# Graphical interface
-
-A web sever dedicated to graphical interface is available here: http://thirdkind.univ-lyon1.fr/
 
 # Install:
 
