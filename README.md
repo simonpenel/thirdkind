@@ -160,12 +160,18 @@ Usage:
     -U <n> : same as -T with -t, but for -u
     -v : verbose
     -W width : multiply the tree width by factor 'width'
+    -x : tidy mode
+    -X : tidy mode, avoiding leave names superposition
 
     Note on -b option : you must set a browser as default application for opening svg file
 
     Note on -g option : this will generate 3-levels reconciliation svg files
     For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
     The -t/-u options are not totally implemented for the mapped_1/2/3 svg output files
+
+    Note on -x/-X options : the non-layered tidy tree layout is described in :
+                            'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
+                            Software: Practice and Experience, 44(12): 1467–1484.'
 
 `Input format is guessed according to the file name extension:`
 

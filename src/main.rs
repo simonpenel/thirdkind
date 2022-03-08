@@ -85,8 +85,8 @@ fn display_help(programe_name:String) {
     println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
     println!("    -W width : multiply the tree width by factor 'width'");
-    println!("    -x : tidy mode");
-    println!("    -X : species name length aware tidy mode");
+    println!("    -x : tidy mode (non-layered tidy tree layout)");
+    println!("    -X : tidy mode, avoiding leave names superposition");
     println!("");
     println!("    Note on -b option : you must set a browser as default application for opening \
     svg file");
@@ -94,6 +94,10 @@ fn display_help(programe_name:String) {
     println!("    Note on -g option : this will generate 3-levels reconciliation svg files.");
     println!("    For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f");
     println!("    The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.");
+    println!("");
+    println!("    Note on -x/-X options : the non-layered tidy tree layout is described in :");
+    println!("                            'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.");
+    println!("                            Software: Practice and Experience, 44(12): 1467–1484.'");
     println!("");
     println!("Input format is guessed according to the file name extension:");
     println!(".phyloxml    => phyloXML");
