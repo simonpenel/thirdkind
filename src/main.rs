@@ -124,6 +124,9 @@ fn display_help(programe_name:String) {
     -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  ", programe_name);
     println!("{} -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml \
      -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b", programe_name);
+    println!("{} -f newick_examples/virus.nhx -l 4 -b", programe_name);
+    println!("{} -f newick_examples/virus.nhx -l 4 -x -b", programe_name);
+    println!("{} -f newick_examples/virus.nhx -l 4 -X -b", programe_name);
     process::exit(1);
 }
 /// enum of the possible input file Formats

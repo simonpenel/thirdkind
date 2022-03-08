@@ -191,7 +191,9 @@ You will find several input file examples in recphylo_examples and xml_examples 
     thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
     thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
     thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
-
+    thirdkind -f newick_examples/virus.nhx -l 4  -b
+    thirdkind -f newick_examples/virus.nhx -l 4 -x  -b
+    thirdkind -f newick_examples/virus.nhx -l 4 -X  -b
 # Configuration file:
 
 You may configure some of the features of the svg with the -c option.
