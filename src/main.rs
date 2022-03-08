@@ -31,7 +31,7 @@ fn display_usage(programe_name:String) {
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
-    [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X]",programe_name);
     println!();
     println!("Get help:");
     println!("{} -h ",programe_name);
@@ -48,7 +48,7 @@ fn display_help(programe_name:String) {
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
-    [-t threshold][-T #][-u threshold][-U #][-v][-W width]",programe_name);
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
     println!("    -B : with option -l, display branch length");
@@ -85,6 +85,8 @@ fn display_help(programe_name:String) {
     println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
     println!("    -W width : multiply the tree width by factor 'width'");
+    println!("    -x : tidy mode");
+    println!("    -X : species name length aware tidy mode");
     println!("");
     println!("    Note on -b option : you must set a browser as default application for opening \
     svg file");
@@ -144,7 +146,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:");
+    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:xX");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -320,6 +322,11 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('x', None) =>  options.tidy = true,
+                    Opt('X', None) =>  {
+                        options.tidy = true;
+                        options.tidy_leaves_check = true;
+                        },
                     _ => unreachable!(),
                 }
             }
