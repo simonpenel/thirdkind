@@ -160,12 +160,18 @@ Usage:
     -U <n> : same as -T with -t, but for -u
     -v : verbose
     -W width : multiply the tree width by factor 'width'
+    -x : tidy mode
+    -X : tidy mode, avoiding leave names superposition
 
     Note on -b option : you must set a browser as default application for opening svg file
 
     Note on -g option : this will generate 3-levels reconciliation svg files
     For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
     The -t/-u options are not totally implemented for the mapped_1/2/3 svg output files
+
+    Note on -x/-X options : the non-layered tidy tree layout is described in :
+                            'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
+                            Software: Practice and Experience, 44(12): 1467–1484.'
 
 `Input format is guessed according to the file name extension:`
 
@@ -185,7 +191,9 @@ You will find several input file examples in recphylo_examples and xml_examples 
     thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
     thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo  -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b  
     thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
-
+    thirdkind -f newick_examples/virus.nhx -l 4  -b
+    thirdkind -f newick_examples/virus.nhx -l 4 -x  -b
+    thirdkind -f newick_examples/virus.nhx -l 4 -X  -b
 # Configuration file:
 
 You may configure some of the features of the svg with the -c option.
