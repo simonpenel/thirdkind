@@ -1013,7 +1013,7 @@ fn main()  {
                     &mut global_roots
                 );
                 let  nb_gntree =  gene_trees.len().clone();
-                println!("Number of gene trees : {}",nb_gntree);
+                // println!("Number of gene trees : {}",nb_gntree);
                 info!("List of gene trees : {:?}",gene_trees);
                 if options.thickness_flag {
                     if options.thickness_gene > nb_gntree {
