@@ -72,7 +72,6 @@ fn display_help(programe_name:String) {
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
-    // println!("    -p : build a phylogram");
     println!("    -p : species 'upper' tree uniformisation");
     println!("    -r ratio : set the ratio between width of species and gene tree");
     println!("               Default 1.0, you usualy do not need to change it");
@@ -232,7 +231,6 @@ fn main()  {
                             },
                         };
                     },
-                    // Opt('p', None) => options.clado_flag = false,
                     Opt('p', None) => options.uniform = true,
                     Opt('s', None) => options.species_only_flag = true,
                     Opt('S', None) => options.support = true,
@@ -291,7 +289,7 @@ fn main()  {
                         env::set_var("RUST_LOG", "info");
                         env_logger::init();
                         info!("Verbosity set to Info");
-                        },
+                    },
                     Opt('c', Some(string)) => {
                         set_config(string, &mut config);
                     },
@@ -333,7 +331,7 @@ fn main()  {
                     Opt('X', None) =>  {
                         options.tidy = true;
                         options.tidy_leaves_check = true;
-                        },
+                    },
                     _ => unreachable!(),
                 }
             }
@@ -352,22 +350,19 @@ fn main()  {
     if level3 {
         // Traitement de 2 fichier fichiers recPhyloXML
         println!("Two reconciled files => displaying 3-levels reconciliations. ");
-
         let  mut outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
         let  mut outfile_para_host = String::from("thirdkind_symbiote_host.svg");
         let  mut outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
         let  mut outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
         let  mut outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
-
         if outfile == "thirdkind.svg" {
             outfile = String::from("");
         }
-        outfile_gene_para = outfile.clone()+&outfile_gene_para;
-        outfile_para_host = outfile.clone()+&outfile_para_host;
-        outfile_mapped_1 = outfile.clone()+&outfile_mapped_1;
-        outfile_mapped_2 = outfile.clone()+&outfile_mapped_2;
-        outfile_mapped_3 = outfile.clone()+&outfile_mapped_3;
-
+        outfile_gene_para = outfile.clone() + &outfile_gene_para;
+        outfile_para_host = outfile.clone() + &outfile_para_host;
+        outfile_mapped_1 = outfile.clone() + &outfile_mapped_1;
+        outfile_mapped_2 = outfile.clone() + &outfile_mapped_2;
+        outfile_mapped_3 = outfile.clone() + &outfile_mapped_3;
         let transfers = vec![]; // Initialise transfers
         let mut transfers_gene = vec![]; // Transferts de genes
         let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
@@ -389,11 +384,16 @@ fn main()  {
         // genes trees
         // ---------------------------------------------------------
         println!("\nBuilding 'lower' gene vs 'upper' symbiote reconciliation svg file [{}]",outfile_gene_para.clone());
-        read_recphyloxml_multi(infile_gs,&mut global_pipe_parasite,&mut path_genes,&mut global_roots);
+        read_recphyloxml_multi(
+            infile_gs,
+            &mut global_pipe_parasite,
+            &mut path_genes,
+            &mut global_roots,
+        );
         let  nb_gntree =  path_genes.len().clone();
         println!("Number of 'lower' gene trees : {}",nb_gntree);
         info!("List of gene trees : {:?}",path_genes);
-        let  nb_parasite_pipe =  global_roots.len().clone();
+        let nb_parasite_pipe = global_roots.len().clone();
         println!("Number of 'upper' symbiote trees : {}",nb_parasite_pipe);
         println!("List of 'upper' symbiote tree roots : {:?}",global_roots);
         info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
@@ -406,7 +406,7 @@ fn main()  {
             // check that gene nb is correct
             if thickness_gene_1st > nb_gntree {
                 println!("There are only {} genes in the file, unable to display gene #{}",
-                nb_gntree,thickness_gene_1st);
+                nb_gntree, thickness_gene_1st);
                 process::exit(1);
             }
             //  Get the transfers in the genes
@@ -430,17 +430,36 @@ fn main()  {
             options.thickness_gene = thickness_gene_1st;
             options.thickness_thresh = thickness_thresh_1st;
             //  Create the svg from temporary variables
-            recphyloxml_processing(&mut _global_pipe_parasite, &mut selected_gene_trees, &mut options,
-                &config, true, &transfers_gene, outfile_gene_para.clone());
+            recphyloxml_processing(
+                &mut _global_pipe_parasite,
+                &mut selected_gene_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers_gene,
+                outfile_gene_para.clone(),
+            );
             // We need to run again with the current variables, because we need the upddated
             // global_pipe_parasite path_genes
-            recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
-                &transfers,"tmpfile.svg".to_string());
+            recphyloxml_processing(
+                &mut global_pipe_parasite,
+                &mut path_genes,
+                &mut options,
+                &config,true,
+                &transfers,
+                "tmpfile.svg".to_string(),
+            );
         }
         // No -t option
         else {
-            recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,true,
-                &transfers,outfile_gene_para);
+            recphyloxml_processing(
+                &mut global_pipe_parasite,
+                &mut  path_genes,
+                &mut options,
+                &config,true,
+                &transfers,
+                outfile_gene_para,
+            );
         }
         // ==============
         // PARASITE-HOST
@@ -456,7 +475,12 @@ fn main()  {
         // Fill  host pipe tree and is roots and path parasite trees
         // ---------------------------------------------------------
         let mut global_roots: std::vec::Vec<usize> = Vec::new();
-        read_recphyloxml_multi(infile_sh,&mut tree_host_pipe,&mut path_para_trees, &mut global_roots);
+        read_recphyloxml_multi(
+            infile_sh,
+            &mut tree_host_pipe,
+            &mut path_para_trees,
+            &mut global_roots
+        );
         let  nb_parasite_path =  path_para_trees.len().clone();
         let  nb_hosts_pipe = global_roots.len();
         println!("Number of 'upper' symbiote trees in gene-symbiote file : {}",nb_parasite_pipe);
@@ -508,17 +532,38 @@ fn main()  {
             // Define a tmprary copy of the host
             let mut _tree_host_pipe = tree_host_pipe.copie();
             //  Create the svg from the temprary variables
-            recphyloxml_processing(&mut _tree_host_pipe, &mut selected_para_trees, &mut options,
-            &config, true, &transfers_para, outfile_para_host.clone());
+            recphyloxml_processing(
+                &mut _tree_host_pipe,
+                &mut selected_para_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers_para,
+                outfile_para_host.clone(),
+            );
             // We need to run again with the current variables, because we need the upddated
             // _tree_host_pipe path_para_trees
-            recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
-                 &config,true, &transfers,"tmpfile2.svg".to_string());
+            recphyloxml_processing(
+                &mut tree_host_pipe,
+                &mut  path_para_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers,
+                "tmpfile2.svg".to_string(),
+            );
         }
         // No -u option
         else {
-            recphyloxml_processing(&mut tree_host_pipe,&mut  path_para_trees, &mut options,
-                &config, true, &transfers,outfile_para_host);
+            recphyloxml_processing(
+                &mut tree_host_pipe,
+                &mut  path_para_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers,
+                outfile_para_host,
+            );
         }
         // =========================
         // GENE-PARASITE-HOST : MAP1
@@ -543,7 +588,7 @@ fn main()  {
         println!("Map symbiote as 'upper' to symbiote as 'lower'");
         let mut i = 0;
         while i < nb_parasite_pipe {
-            map_parasite_s2g(&mut global_pipe_parasite, &mut path_para_trees[i],&mut path_genes);
+            map_parasite_s2g(&mut global_pipe_parasite, &mut path_para_trees[i], &mut path_genes);
             i = i +  1;
         }
         info!("Global upper symbiote tree after mapping s2g : {:?}",global_pipe_parasite);
@@ -569,12 +614,19 @@ fn main()  {
             options.thickness_thresh = thickness_thresh_1st;
         }
         // attention on ne remape pas
-        recphyloxml_processing(&mut global_pipe_parasite,&mut  path_genes, &mut options, &config,false,
-            &transfers_gene,outfile_mapped_1);
+        recphyloxml_processing(
+            &mut global_pipe_parasite,
+            &mut  path_genes,
+            &mut options,
+            &config,
+            false,
+            &transfers_gene,
+            outfile_mapped_1,
+        );
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_1.svg".to_string());
         if options.open_browser {
-            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
                 info!("Browser OK");
             }
         }
@@ -624,27 +676,49 @@ fn main()  {
         // Reset the option
         options.free_living = free_living_3l;
         // attention on ne remape pas
-        recphyloxml_processing(&mut tree_host_pipe, &mut path_para_trees, &mut options, &config,
-            false, &mapped_gene_transfers,outfile_mapped_2);
+        recphyloxml_processing(
+            &mut tree_host_pipe,
+            &mut path_para_trees,
+            &mut options,
+            &config,
+            false,
+            &mapped_gene_transfers,
+            outfile_mapped_2,
+        );
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_2.svg".to_string());
         if options.open_browser {
-            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
                 info!("Browser OK");
             }
         }
         println!("\nBuilding 'phyloxml style' svg files...");
         //  Simple tree of the parasite
         reset_pos(&mut global_pipe_parasite);
-        phyloxml_processing(&mut global_pipe_parasite, &mut options, &config,outfile.clone()+&"thirdkind_symbiote_simple.svg".to_string());
+        phyloxml_processing(
+            &mut global_pipe_parasite,
+            &mut options,
+            &config,
+            outfile.clone() + &"thirdkind_symbiote_simple.svg".to_string(),
+        );
         reset_pos(&mut tree_host_pipe);
         //  Simple tree of the host
-        phyloxml_processing(&mut tree_host_pipe, &mut options, &config,outfile.clone()+&"thirdkind_host_simple.svg".to_string());
+        phyloxml_processing(
+            &mut tree_host_pipe,
+            &mut options,
+            &config,
+            outfile.clone() + &"thirdkind_host_simple.svg".to_string(),
+        );
         //  Simple trees of the genes
         let mut i = 0;
         while i < nb_parasite_pipe {
             reset_pos(&mut path_para_trees[i]);
-            phyloxml_processing(&mut path_para_trees[i], &mut options, &config,(outfile.clone()+&"thirdkind_gene_simple_"+&i.to_string()+".svg").to_string());
+            phyloxml_processing(
+                &mut path_para_trees[i],
+                &mut options,
+                &config,
+                (outfile.clone() + &"thirdkind_gene_simple_" + &i.to_string() +".svg").to_string(),
+            );
             i = i + 1;
         }
         // =========================
@@ -661,11 +735,18 @@ fn main()  {
         }
         // Reset the option
         options.free_living = false;
-        recphyloxml_processing(&mut tree_host_pipe, &mut path_genes, &mut options, &config,
-            true, &vec![],outfile_mapped_3.clone());
+        recphyloxml_processing(
+            &mut tree_host_pipe,
+            &mut path_genes,
+            &mut options,
+            &config,
+            true,
+            &vec![],
+            outfile_mapped_3.clone(),
+        );
         let url_file = format!("file:///{}/{}", path.display(),outfile_mapped_3);
         if options.open_browser {
-            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
                 info!("Browser OK");
             }
         }
@@ -694,9 +775,6 @@ fn main()  {
     //  RECONCILIATION A 2 DEUX NIVEAUX
     // =================================
     else if multiple_files {
-        // if options.real_length_flag {
-        //     println!("Note: when using real length option with recPhyloXML, the scaling of branches is automatic.");
-        // };
         // get the url
         let path = env::current_dir().expect("Unable to get current dir");
         let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
@@ -734,8 +812,12 @@ fn main()  {
             // Empty additional transfers
             // let mut transfers = vec![];
             let mut _global_roots: std::vec::Vec<usize> = Vec::new();
-            read_recphyloxml_multi(filename.to_string(), &mut _sp_tree, &mut _gene_trees,
-                &mut _global_roots);
+            read_recphyloxml_multi(
+                filename.to_string(),
+                &mut _sp_tree,
+                &mut _gene_trees,
+                &mut _global_roots,
+            );
             let  nb_gntree =  _gene_trees.len().clone();
             println!("Number of gene trees : {}",nb_gntree);
             info!("List of gene trees : {:?}",_gene_trees);
@@ -748,7 +830,7 @@ fn main()  {
         if options.thickness_flag {
             if options.thickness_gene > nb_gntree {
                 println!("There are only {} genes in the file, unable to display gene #{}",
-                nb_gntree,options.thickness_gene);
+                nb_gntree, options.thickness_gene);
                 process::exit(1);
             }
             //  Recupere les transferts
@@ -763,8 +845,15 @@ fn main()  {
             }
             let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
             selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
-            recphyloxml_processing(&mut sp_trees[0], &mut selected_gene_trees, &mut options,
-                &config, true, &transfers, outfile);
+            recphyloxml_processing(
+                &mut sp_trees[0],
+                &mut selected_gene_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers,
+                outfile,
+            );
             info!("Transfers = {:?}",transfers);
             if display_transfers {
                 // Affiche l'abondance des transferts
@@ -779,7 +868,7 @@ fn main()  {
                             unique_transfers.push(transfer.clone());
                             scores.push(1)},
                         Some(i) => {
-                            scores[i] = scores[i]+ 1;
+                            scores[i] = scores[i] + 1;
                             if scores[i] > score_max {
                                 score_max = scores[i];
                             }
@@ -805,7 +894,7 @@ fn main()  {
                     let (end,start) = &unique_transfers[i_trans];
                     let score = scores[i_trans];
                     if score > thickness_thresh_1st {
-                        sorted_transfers.push(TransfersWithScore::new((end.to_string(),start.to_string()),score));
+                        sorted_transfers.push(TransfersWithScore::new((end.to_string(), start.to_string()), score));
                     }
                     i_trans = i_trans + 1;
                 }
@@ -815,7 +904,7 @@ fn main()  {
                 while i_sort < sorted_transfers.len() {
                     let (end,start) = &sorted_transfers[i_sort].transfer;
                     let score =  &sorted_transfers[i_sort].score;
-                    println!("{} => {} ({})",end,start,score);
+                    println!("{} => {} ({})", end, start, score);
                     i_sort = i_sort + 1;
                 }
             }
@@ -832,12 +921,19 @@ fn main()  {
                 phyloxml_processing(&mut tree, &options, &config, outfile);
             }
             else {
-                recphyloxml_processing(&mut sp_trees[0],&mut  gene_trees, &mut options,
-                    &config,true, &transfers, outfile);
+                recphyloxml_processing(
+                    &mut sp_trees[0],
+                    &mut  gene_trees,
+                    &mut options,
+                    &config,
+                    true,
+                    &transfers,
+                    outfile,
+                );
             }
         }
         if options.open_browser {
-            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
                 info!("Browser OK");
             }
         }
@@ -910,8 +1006,12 @@ fn main()  {
                 // Empty additional transfers
                 let mut transfers = vec![];
                 let mut global_roots: std::vec::Vec<usize> = Vec::new();
-                read_recphyloxml_multi(filename.to_string(), &mut sp_tree, &mut gene_trees,
-                    &mut global_roots);
+                read_recphyloxml_multi(
+                    filename.to_string(),
+                    &mut sp_tree,
+                    &mut gene_trees,
+                    &mut global_roots
+                );
                 let  nb_gntree =  gene_trees.len().clone();
                 println!("Number of gene trees : {}",nb_gntree);
                 info!("List of gene trees : {:?}",gene_trees);
@@ -933,37 +1033,49 @@ fn main()  {
                     }
                     info!("Transfers = {:?}",transfers);
                     let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-                    selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
-                    recphyloxml_processing(&mut sp_tree, &mut selected_gene_trees, &mut options,
-                        &config, true, &transfers, outfile);
+                    selected_gene_trees.push(gene_trees.remove(options.thickness_gene - 1));
+                    recphyloxml_processing(
+                        &mut sp_tree,
+                        &mut selected_gene_trees,
+                        &mut options,
+                        &config,
+                        true,
+                        &transfers,
+                        outfile,
+                    );
+                    }
+                else {
+                    if options.disp_gene  > 0 {
+                        // On traite l'arbre de gene comme un arbre au format phylxoml
+                        if options.disp_gene > nb_gntree {
+                            println!("There are only {} genes in the file, unable to display gene #{}",
+                            nb_gntree,options.disp_gene);
+                            process::exit(1);
+                        }
+                        let  mut tree = &mut gene_trees[options.disp_gene-1];
+                        phyloxml_processing(&mut tree, &options, &config, outfile);
                     }
                     else {
-                        if options.disp_gene  > 0 {
-                            // On traite l'arbre de gene comme un arbre au format phylxoml
-                            if options.disp_gene > nb_gntree {
-                                println!("There are only {} genes in the file, unable to display gene #{}",
-                                nb_gntree,options.disp_gene);
-                                process::exit(1);
-                            }
-                            let  mut tree = &mut gene_trees[options.disp_gene-1];
-                            phyloxml_processing(&mut tree, &options, &config, outfile);
-                        }
-                    else {
-                        recphyloxml_processing(&mut sp_tree,&mut  gene_trees, &mut options,
-                             &config,true, &transfers, outfile);
-                        }
+                        recphyloxml_processing(
+                            &mut sp_tree,
+                            &mut  gene_trees,
+                            &mut options,
+                            &config,
+                            true,
+                            &transfers,
+                            outfile,
+                        );
                     }
-                },
-            }
+                }
+            },
+        }
         if options.open_browser {
-            if webbrowser::open_browser(Browser::Default,&url_file).is_ok() {
+            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
                 info!("Browser OK");
             }
         }
     }
 }
-
-
 // Function set_config
 // -------------------
 fn set_config(configfile: String, config: &mut Config) {
@@ -975,10 +1087,8 @@ fn set_config(configfile: String, config: &mut Config) {
             eprintln!("Something went wrong when reading the configuration file.\n{}",err);
             eprintln!("Please check file name and path.");
             process::exit(1);
-        }
+        },
     };
-
-
     let conf = contents.split('\n');
     for line in conf {
         let test: Vec<&str> = line.split(':').collect();
