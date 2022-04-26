@@ -102,7 +102,7 @@ Install cargo:
 
 or for Windows see  https://doc.rust-lang.org/cargo/getting-started/installation.html
 
-Note:
+**Note:**
 
 Since Rust does not include its own linker yet, you need to have a C compiler like gcc installed to act as the linker.
 If it is note the case,  install essential build needed by Rust:
