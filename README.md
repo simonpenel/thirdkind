@@ -102,6 +102,13 @@ Install cargo:
 
 or for Windows see  https://doc.rust-lang.org/cargo/getting-started/installation.html
 
+Note:
+
+Since Rust does not include its own linker yet, you need to have a C compiler like gcc installed to act as the linker.
+If it is note the case,  install essential build needed by Rust:
+
+    sudo apt install build-essential
+
 Once Cargo is installed just open a new terminal and type:
 
     cargo install thirdkind
@@ -113,12 +120,6 @@ Clone or download  the sources here https://github.com/simonpenel/thirdkind and 
     cargo build --release
     target/release/thirdkind -h
 
-Note:
-
-Since Rust does not include its own linker yet, you need to have a C compiler like gcc installed to act as the linker.
-If it is note the case,  install essential build needed by Rust:
-
-    sudo apt install build-essential
 
 
 # Run the binary:
