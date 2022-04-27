@@ -104,7 +104,7 @@ or for Windows see  https://doc.rust-lang.org/cargo/getting-started/installation
 
 **Note:**
 
-Since Rust does not include its own linker yet, you need to have a C compiler like gcc installed to act as the linker.
+Since Rust does not include its own linker yet,building _thirdkind_ needs to have a C compiler like gcc installed to act as the linker.
 If it is note the case,  install essential build needed by Rust:
 
     sudo apt install build-essential
