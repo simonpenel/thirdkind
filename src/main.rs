@@ -30,7 +30,7 @@ fn display_usage(programe_name:String) {
     println!();
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X]",programe_name);
     println!();
     println!("Get help:");
@@ -47,7 +47,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
@@ -67,6 +67,7 @@ fn display_help(programe_name:String) {
     println!("    -i : display internal gene nodes");
     println!("    -I : display internal species nodes");
     println!("    -J : with option -t, display the abundance of redudant transfers");
+    println!("    -k size: size of the circles, crosses, squares, etc.");
     println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
@@ -152,7 +153,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJl:Lmo:Opr:sSt:T:u:U:vW:xX");
+    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJk:l:Lmo:Opr:sSt:T:u:U:vW:xX");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -219,6 +220,15 @@ fn main()  {
                     Opt('i', None) => options.gene_internal = true,
                     Opt('I', None) => options.species_internal = true,
                     Opt('J', None) => options.thickness_disp_score = true,
+                    Opt('k', Some(string)) => {
+                        options.squaresize = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -h option");
+                                process::exit(1);
+                            },
+                        };
+                    },
                     Opt('m', None) => multiple_files = true,
                     Opt('b', None) => options.open_browser = true,
                     Opt('B', None) => options.branch = true,
