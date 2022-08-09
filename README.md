@@ -129,7 +129,7 @@ Format is guessed according to filename (default is newick)
 
 Usage:
 
-    thirdkind -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]
+    thirdkind -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]
 
     -a : output the redundant transfers analysis
     -b : open svg in browser
@@ -147,6 +147,7 @@ Usage:
     -i : display internal gene nodes
     -I : display internal species nodes
     -J : with option -t, display the abundance of redudant transfers
+    -k size: size of the circles, crosses, squares, etc.
     -l factor : use branch length, multiplied by the given factor
     -L : display as landscape
     -m : the input file (-f) is a list of recphyloxml files
@@ -166,6 +167,9 @@ Usage:
     -W width : multiply the tree width by factor 'width'
     -x : tidy mode
     -X : tidy mode, avoiding leave names superposition
+    -z thickness: thickness of the gene tree
+    -Z thickness: thickness of the species tree
+
 
     Note on -b option : you must set a browser as default application for opening svg file
 
