@@ -1,7 +1,7 @@
 /// name = "thirdkind"
-/// version = "2.4.4"
+/// version = "3.2.0"
 /// authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
-/// release = "18/11/2021"
+/// release = "09/08/2022"
 /// license = "CECILL-2.1"
 ///
 /// Usage:
@@ -31,7 +31,7 @@ fn display_usage(programe_name:String) {
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
-    [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X]",programe_name);
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
     println!("{} -h ",programe_name);
@@ -48,7 +48,7 @@ fn display_help(programe_name:String) {
     println!("Usage:");
     println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
-    [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X]",programe_name);
+    [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -b : open svg in browser");
     println!("    -B : with option -l, display branch length");
@@ -87,6 +87,8 @@ fn display_help(programe_name:String) {
     println!("    -W width : multiply the tree width by factor 'width'");
     println!("    -x : tidy mode (non-layered tidy tree layout)");
     println!("    -X : tidy mode, avoiding leave names superposition");
+    println!("    -z thickness: thickness of the gene tree");
+    println!("    -Z thickness: thickness of the species tree");
     println!("");
     println!("    Note on -b option : you must set a browser as default application for opening \
     svg file");
@@ -153,7 +155,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJk:l:Lmo:Opr:sSt:T:u:U:vW:xX");
+    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJk:l:Lmo:Opr:sSt:T:u:U:vW:xXz:Z:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -342,6 +344,25 @@ fn main()  {
                         options.tidy = true;
                         options.tidy_leaves_check = true;
                     },
+                    Opt('z', Some(string)) => {
+                        options.gthickness = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -z option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('Z', Some(string)) => {
+                        options.sthickness = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -Z option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+
                     _ => unreachable!(),
                 }
             }
