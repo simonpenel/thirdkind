@@ -226,7 +226,7 @@ fn main()  {
                         options.squaresize = match string.parse::<f32>(){
                             Ok(valeur) => valeur,
                             Err(_err) => {
-                                eprintln!("ERROR: Please give a numeric value with -h option");
+                                eprintln!("ERROR: Please give a numeric value with -k option");
                                 process::exit(1);
                             },
                         };
