@@ -29,8 +29,8 @@ fn display_usage(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!();
     println!("Usage:");
-    println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
+    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
@@ -46,10 +46,11 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-a][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-o output file][-O][-p][-r ratio][-s][-S]\
+    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
+    println!("    -A node name : display transfers starting from this node only");
     println!("    -b : open svg in browser");
     println!("    -B : with option -l, display branch length");
     println!("    -c configfile : use a configuration file");
@@ -71,6 +72,7 @@ fn display_help(programe_name:String) {
     println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
+    println!("    -N node name : display transfers ending to this node only");
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : species 'upper' tree uniformisation");
@@ -155,7 +157,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "ac:bBd:D:eEf:F:g:G:hH:iIJk:l:Lmo:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:l:LmN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -214,6 +216,8 @@ fn main()  {
                         };
                     },
                     Opt('a', None) =>  display_transfers = true,
+                    Opt('A', Some(string)) => { options.trans_end = Some(string);}, // On inverse start et end
+                    Opt('N', Some(string)) => { options.trans_start = Some(string);}, // On inverse start et end
                     Opt('e', None) => options.free_living = true,
                     Opt('E', None) => {
                         options.free_living = true;
@@ -937,6 +941,15 @@ fn main()  {
                     let score =  &sorted_transfers[i_sort].score;
                     println!("{} => {} ({})", end, start, score);
                     i_sort = i_sort + 1;
+                }
+
+                match  options.trans_end {
+                    Some(string) =>  println!("Only transfers starting with {} will be displayed",string),
+                    None => {},
+                }
+                match  options.trans_start {
+                    Some(string) =>  println!("Only transfers ending to {} will be displayed",string),
+                    None => {},
                 }
             }
         }
