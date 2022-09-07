@@ -82,7 +82,7 @@ fn display_help(programe_name:String) {
     println!("    -S : display node support");
     println!("    -t <t> : redudant transfers are displayed as one, with opacity according \
     to abundance and only if abundance is higher tan t\n             Only one gene is displayed");
-    println!("    -T <n> : with option -t, select the gene to display");
+    println!("    -T <n> : with option -t, select the gene to display. If set to 0, no gene is displayed");
     println!("    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file");
     println!("    -U <n> : same as -T with -t, but for -u");
     println!("    -v : verbose");
@@ -879,7 +879,9 @@ fn main()  {
                 i = i + 1;
             }
             let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
+            if options.thickness_gene > 0 {
+                selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
+            }
             recphyloxml_processing(
                 &mut sp_trees[0],
                 &mut selected_gene_trees,
@@ -1077,7 +1079,9 @@ fn main()  {
                     }
                     info!("Transfers = {:?}",transfers);
                     let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+                    if options.thickness_gene > 0 {
                     selected_gene_trees.push(gene_trees.remove(options.thickness_gene - 1));
+                    }
                     recphyloxml_processing(
                         &mut sp_tree,
                         &mut selected_gene_trees,
