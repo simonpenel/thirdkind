@@ -157,7 +157,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:l:LmN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -236,6 +236,7 @@ fn main()  {
                         };
                     },
                     Opt('m', None) => multiple_files = true,
+                    Opt('M', None) => options.mid_dist = true,
                     Opt('b', None) => options.open_browser = true,
                     Opt('B', None) => options.branch = true,
                     Opt('r', Some(string)) => {
