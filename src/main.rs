@@ -30,7 +30,7 @@ fn display_usage(programe_name:String) {
     println!();
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
@@ -47,7 +47,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -A node name : display transfers starting from this node only");
@@ -72,6 +72,7 @@ fn display_help(programe_name:String) {
     println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
+    println!("    -M : display duplication node at mid-distance in the branch (in progress)");
     println!("    -N node name : display transfers ending to this node only");
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
