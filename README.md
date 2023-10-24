@@ -129,7 +129,7 @@ Format is guessed according to filename (default is newick)
 
 Usage:
 
-    thirdkind -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-N eNd][-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]
+    thirdkind -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]
 
     -a : output the redundant transfers analysis
     -A node name : display transfers starting from this node only
@@ -152,9 +152,10 @@ Usage:
     -l factor : use branch length, multiplied by the given factor
     -L : display as landscape
     -m : the input file (-f) is a list of recphyloxml files
+    -M : display duplication node at mid-distance in the branch (in progress)  
     -N node name : display transfers ending to this node only
     -o outputfile/prefix : set the name of the output file/set the prefix of the output files
-    -O : switching nodes in order to minimise transfer crossings (under development) 
+    -O : switching nodes in order to minimise transfer crossings (under development)
     -p : species 'upper' tree uniformisation
     -r ratio : set the ratio between width of species and gene tree
                Default 1.0, you usualy do not need to change it
