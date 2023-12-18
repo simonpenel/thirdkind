@@ -1,5 +1,6 @@
 *.svg
 *.xml
+*.xcf
 *.sh
 *.tar
 *.ini
