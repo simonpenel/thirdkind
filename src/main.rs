@@ -536,6 +536,7 @@ fn main()  {
         // Reset the option
         options.thickness_flag = false;
         options.free_living = free_living_3l;
+        config.species_color="blue".to_string();
         // If  the option -u is on :
         if thickness_flag_2nd {
             options.thickness_flag = true;
@@ -611,6 +612,7 @@ fn main()  {
         info!("Symbiote tree as a 'upper tree' : {:?}",global_pipe_parasite);
         println!("Map symbiote as 'lower' to symbiote as 'upper'");
         let mut i = 0;
+        config.species_color="pink".to_string();
         while i < nb_parasite_pipe {
             map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
             i = i + 1;
@@ -674,6 +676,7 @@ fn main()  {
         println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
             outfile_mapped_2);
         let mut i = 0;
+        config.species_color="blue".to_string();
         // We get the gene transfer here again, but they will be mapped
         let gene_transfers = get_gtransfer(&mut path_genes[i]);
         info!("Transfers = {:?}",gene_transfers);
@@ -763,6 +766,7 @@ fn main()  {
         // =========================
         println!();
         println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
+        config.species_color="blue".to_string();
         map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
         reset_pos(&mut tree_host_pipe);
         let mut i = 0;
