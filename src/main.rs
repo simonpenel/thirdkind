@@ -536,7 +536,7 @@ fn main()  {
         // Reset the option
         options.thickness_flag = false;
         options.free_living = free_living_3l;
-        config.species_color="blue".to_string();
+        config.species_color="violet".to_string();
         // If  the option -u is on :
         if thickness_flag_2nd {
             options.thickness_flag = true;
@@ -676,7 +676,7 @@ fn main()  {
         println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
             outfile_mapped_2);
         let mut i = 0;
-        config.species_color="blue".to_string();
+        config.species_color="violet".to_string();
         // We get the gene transfer here again, but they will be mapped
         let gene_transfers = get_gtransfer(&mut path_genes[i]);
         info!("Transfers = {:?}",gene_transfers);
@@ -734,6 +734,7 @@ fn main()  {
         }
         println!("\nBuilding 'phyloxml style' svg files...");
         //  Simple tree of the parasite
+        config.single_gene_color="pink".to_string();
         reset_pos(&mut global_pipe_parasite);
         phyloxml_processing(
             &mut global_pipe_parasite,
@@ -743,6 +744,7 @@ fn main()  {
         );
         reset_pos(&mut tree_host_pipe);
         //  Simple tree of the host
+        config.single_gene_color="violet".to_string();
         phyloxml_processing(
             &mut tree_host_pipe,
             &mut options,
@@ -766,7 +768,7 @@ fn main()  {
         // =========================
         println!();
         println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
-        config.species_color="blue".to_string();
+        config.species_color="violet".to_string();
         map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
         reset_pos(&mut tree_host_pipe);
         let mut i = 0;
