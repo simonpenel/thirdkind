@@ -114,6 +114,8 @@ fn display_help(programe_name:String) {
     println!("");
     println!("Home page: https://github.com/simonpenel/thirdkind/wiki");
     println!("");
+    println!("Publication: https://academic.oup.com/bioinformatics/article/38/8/2350/6525213");
+    println!("");
     println!("About recPhyloXML format: http://phylariane.univ-lyon1.fr/recphyloxml/");
     println!("recPhyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198865/");
     println!("About phyloXML format: http://www.phyloxml.org/");
