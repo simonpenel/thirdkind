@@ -1,8 +1,8 @@
 <svg height="1470" viewBox="-22.5 52.5 694.75 1590" width="522.5" xmlns="http://www.w3.org/2000/svg">
 <style>
-.species { font: italic 12px; fill: orange; } .gene_0 { font: 10px; fill:rgb(8, 30, 160); }  .gene_1 { font: 10px; fill:rgb(145, 75, 198); }  .gene_2 { font: 10px; fill:rgb(19, 155, 17); } 
+.species { font: italic ; font-size: 12px; fill: orange; } .gene_0 { font-size: 10px; fill:rgb(49, 197, 216); }  .gene_1 { font-size: 10px; fill:rgb(138, 72, 219); }  .gene_2 { font-size: 10px; fill:rgb(156, 229, 73); } 
 </style>
-<g transform="translate(  -22.5 1522.5) rotate(-90 0 0 ) ">
+<g transform="translate(  -22.5 1500) rotate(-90 0 0 ) ">
 <path d="M237.1875,108.75 l0,22.5 l22.5,0 l0,-22.5 z" fill="pink" opacity="0.9" stroke="pink" stroke-width="3"/>
 <path d="M106.875,175.5 L106.875,112.5 L237.9375,112.5 M121.875,175.5 L121.875,127.5 L248.4375,127.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
 <path d="M-22.5,423 L-22.5,172.5 L103.875,172.5 M22.5,423 L22.5,187.5 L114.375,187.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
@@ -97,155 +97,155 @@ p1_18
 <text class="species" transform="rotate(90 1372.5,457.5)" x="1357.5" y="432.5">
 p1_19
 </text>
-<path d="M989.0625,166.5 l-6,-6 l12,0 z" fill="rgb(8, 30, 160)" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<circle cx="989.0625" cy="172.5" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M727.5,225 L727.5,172.5 L989.0625,172.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M725.5,223 l0,4 l4,0 l0,-4 z" fill="rgb(8, 30, 160)" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3" transform="rotate(45 727.5 225)"/>
-<path d="M1200 345 L 1200 330M1200 341.25L 1196.25 337.5M1200 341.25L 1203.75 337.5M1200 330 Q 963.75 217.5 727.5 225" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-dasharray="1, 1" stroke-width="3"/>
-<circle cx="1200" cy="345" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M1095,495 L1095,345 L1200,345" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1094.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M989.0625,166.5 l-6,-6 l12,0 z" fill="rgb(49, 197, 216)" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<circle cx="989.0625" cy="172.5" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M727.5,225 L727.5,172.5 L989.0625,172.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M724.5,222 l0,6 l6,0 l0,-6 z" fill="rgb(49, 197, 216)" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3" transform="rotate(45 727.5 225)"/>
+<path d="M1200 345 L 1200 330M1200 341.25L 1196.25 337.5M1200 341.25L 1203.75 337.5M1200 330 Q 963.75 217.5 727.5 225" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="1200" cy="345" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M1095,495 L1095,345 L1200,345" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1092.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1090,510)" x="1090" y="510">
 gl6
 </text>
-<path d="M1275,495 L1275,345 L1200,345" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1274.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1275,495 L1275,345 L1200,345" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1272.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1270,510)" x="1270" y="510">
 gl5
 </text>
-<path d="M742.5,240 L742.5,225 L727.5,225" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<circle cx="742.5" cy="240" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M675,495 L675,240 L742.5,240" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M674.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M742.5,240 L742.5,225 L727.5,225" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<circle cx="742.5" cy="240" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M675,495 L675,240 L742.5,240" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M672.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 670,510)" x="670" y="510">
 gl8
 </text>
-<path d="M810,495 L810,240 L742.5,240" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M809.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M810,495 L810,240 L742.5,240" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M807.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 805,510)" x="805" y="510">
 gl7
 </text>
-<path d="M1228.125,232.5 L1228.125,172.5 L989.0625,172.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<circle cx="1228.125" cy="232.5" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M1061.25,292.5 L1061.25,232.5 L1228.125,232.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<circle cx="1061.25" cy="292.5" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M945,352.5 L945,292.5 L1061.25,292.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<circle cx="945" cy="352.5" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M885,495 L885,352.5 L945,352.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M884.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1228.125,232.5 L1228.125,172.5 L989.0625,172.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<circle cx="1228.125" cy="232.5" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M1061.25,292.5 L1061.25,232.5 L1228.125,232.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<circle cx="1061.25" cy="292.5" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M945,352.5 L945,292.5 L1061.25,292.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<circle cx="945" cy="352.5" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M885,495 L885,352.5 L945,352.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M882.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 880,510)" x="880" y="510">
 gl4
 </text>
-<path d="M1020,495 L1020,352.5 L945,352.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1019.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1020,495 L1020,352.5 L945,352.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1017.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1015,510)" x="1015" y="510">
 gl3
 </text>
-<path d="M1185,360 L1185,292.5 L1061.25,292.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<circle cx="1185" cy="360" fill="rgb(8, 30, 160)" opacity="0.9" r="3" stroke="rgb(8, 30, 160)" stroke-width="1"/>
-<path d="M1110,495 L1110,360 L1185,360" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1109.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1185,360 L1185,292.5 L1061.25,292.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<circle cx="1185" cy="360" fill="rgb(49, 197, 216)" opacity="0.9" r="4.5" stroke="rgb(49, 197, 216)" stroke-width="1"/>
+<path d="M1110,495 L1110,360 L1185,360" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1107.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1105,510)" x="1105" y="510">
 gl2
 </text>
-<path d="M1260,495 L1260,360 L1185,360" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1259.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1260,495 L1260,360 L1185,360" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1257.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1255,510)" x="1255" y="510">
 gl1
 </text>
-<path d="M1380,495 L1380,232.5 L1228.125,232.5" fill="none" opacity="0.9" stroke="rgb(8, 30, 160)" stroke-width="3"/>
-<path d="M1379.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1380,495 L1380,232.5 L1228.125,232.5" fill="none" opacity="0.9" stroke="rgb(49, 197, 216)" stroke-width="3"/>
+<path d="M1377.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1375,510)" x="1375" y="510">
 gl0
 </text>
-<path d="M768.28125,114 l-6,-6 l12,0 z" fill="rgb(145, 75, 198)" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<circle cx="768.28125" cy="120" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M974.0625,187.5 L974.0625,120 L768.28125,120" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="974.0625" cy="187.5" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M757.5,255 L757.5,187.5 L974.0625,187.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="757.5" cy="255" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M690,495 L690,255 L757.5,255" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M689.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M768.28125,114 l-6,-6 l12,0 z" fill="rgb(138, 72, 219)" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<circle cx="768.28125" cy="120" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M974.0625,187.5 L974.0625,120 L768.28125,120" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="974.0625" cy="187.5" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M757.5,255 L757.5,187.5 L974.0625,187.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="757.5" cy="255" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M690,495 L690,255 L757.5,255" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M687.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 685,510)" x="685" y="510">
 gl6
 </text>
-<path d="M795,495 L795,255 L757.5,255" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M794.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M795,495 L795,255 L757.5,255" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M792.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 790,510)" x="790" y="510">
 gl5
 </text>
-<path d="M1213.125,247.5 L1213.125,187.5 L974.0625,187.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="1213.125" cy="247.5" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M1076.25,307.5 L1076.25,247.5 L1213.125,247.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="1076.25" cy="307.5" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M960,367.5 L960,307.5 L1076.25,307.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="960" cy="367.5" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M900,495 L900,367.5 L960,367.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M899.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1213.125,247.5 L1213.125,187.5 L974.0625,187.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="1213.125" cy="247.5" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M1076.25,307.5 L1076.25,247.5 L1213.125,247.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="1076.25" cy="307.5" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M960,367.5 L960,307.5 L1076.25,307.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="960" cy="367.5" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M900,495 L900,367.5 L960,367.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M897.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 895,510)" x="895" y="510">
 gl4
 </text>
-<path d="M1005,495 L1005,367.5 L960,367.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M1004.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1005,495 L1005,367.5 L960,367.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M1002.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 1000,510)" x="1000" y="510">
 gl3
 </text>
-<path d="M1170,375 L1170,307.5 L1076.25,307.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<circle cx="1170" cy="375" fill="rgb(145, 75, 198)" opacity="0.9" r="3" stroke="rgb(145, 75, 198)" stroke-width="1"/>
-<path d="M1125,495 L1125,375 L1170,375" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M1124.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1170,375 L1170,307.5 L1076.25,307.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<circle cx="1170" cy="375" fill="rgb(138, 72, 219)" opacity="0.9" r="4.5" stroke="rgb(138, 72, 219)" stroke-width="1"/>
+<path d="M1125,495 L1125,375 L1170,375" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M1122.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 1120,510)" x="1120" y="510">
 gl2
 </text>
-<path d="M1245,495 L1245,375 L1170,375" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M1244.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1245,495 L1245,375 L1170,375" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M1242.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 1240,510)" x="1240" y="510">
 gl1
 </text>
-<path d="M1365,495 L1365,247.5 L1213.125,247.5" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M1364.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1365,495 L1365,247.5 L1213.125,247.5" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M1362.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_1" transform="rotate(90 1360,510)" x="1360" y="510">
 gl0
 </text>
-<path d="M555,180 L555,120 L768.28125,120" fill="none" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="3"/>
-<path d="M555,176 l0,8 M551,180 l8,0" fill="rgb(145, 75, 198)" opacity="0.9" stroke="rgb(145, 75, 198)" stroke-width="2" transform="rotate(45 555 180)"/>
-<path d="M114.375,174 l-6,-6 l12,0 z" fill="rgb(19, 155, 17)" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="1"/>
-<circle cx="114.375" cy="180" fill="rgb(19, 155, 17)" opacity="0.9" r="3" stroke="rgb(19, 155, 17)" stroke-width="1"/>
-<path d="M-15,427.5 L-15,180 L114.375,180" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M-18,424.5 l0,6 l6,0 l0,-6 z" fill="rgb(19, 155, 17)" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M-15,495 L-15,427.5 L-15,427.5" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M-15.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M555,180 L555,120 L768.28125,120" fill="none" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3"/>
+<path d="M555,174 l0,12 M549,180 l12,0" fill="rgb(138, 72, 219)" opacity="0.9" stroke="rgb(138, 72, 219)" stroke-width="3" transform="rotate(45 555 180)"/>
+<path d="M114.375,174 l-6,-6 l12,0 z" fill="rgb(156, 229, 73)" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="1"/>
+<circle cx="114.375" cy="180" fill="rgb(156, 229, 73)" opacity="0.9" r="4.5" stroke="rgb(156, 229, 73)" stroke-width="1"/>
+<path d="M-15,427.5 L-15,180 L114.375,180" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M-18,424.5 l0,6 l6,0 l0,-6 z" fill="rgb(156, 229, 73)" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M-15,495 L-15,427.5 L-15,427.5" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M-17.25,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 -20,510)" x="-20" y="510">
 gl3
 </text>
-<path d="M0,457.5 L0,427.5 L-15,427.5" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M-3,454.5 l0,6 l6,0 l0,-6 z" fill="rgb(19, 155, 17)" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M0,495 L0,457.5 L0,457.5" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M-0.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M0,457.5 L0,427.5 L-15,427.5" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M-3,454.5 l0,6 l6,0 l0,-6 z" fill="rgb(156, 229, 73)" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M0,495 L0,457.5 L0,457.5" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M-2.25,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 -5,510)" x="-5" y="510">
 gl5
 </text>
-<path d="M15,495 L15,457.5 L0,457.5" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M14.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M15,495 L15,457.5 L0,457.5" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M12.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 10,510)" x="10" y="510">
 gl4
 </text>
-<path d="M228.75,240 L228.75,180 L114.375,180" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<circle cx="228.75" cy="240" fill="rgb(19, 155, 17)" opacity="0.9" r="3" stroke="rgb(19, 155, 17)" stroke-width="1"/>
-<path d="M172.5,300 L172.5,240 L228.75,240" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<circle cx="172.5" cy="300" fill="rgb(19, 155, 17)" opacity="0.9" r="3" stroke="rgb(19, 155, 17)" stroke-width="1"/>
-<path d="M142.5,495 L142.5,300 L172.5,300" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M142,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M228.75,240 L228.75,180 L114.375,180" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<circle cx="228.75" cy="240" fill="rgb(156, 229, 73)" opacity="0.9" r="4.5" stroke="rgb(156, 229, 73)" stroke-width="1"/>
+<path d="M172.5,300 L172.5,240 L228.75,240" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<circle cx="172.5" cy="300" fill="rgb(156, 229, 73)" opacity="0.9" r="4.5" stroke="rgb(156, 229, 73)" stroke-width="1"/>
+<path d="M142.5,495 L142.5,300 L172.5,300" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M140.25,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 137.5,510)" x="137.5" y="510">
 gl2
 </text>
-<path d="M202.5,495 L202.5,300 L172.5,300" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M202,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M202.5,495 L202.5,300 L172.5,300" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M200.25,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 197.5,510)" x="197.5" y="510">
 gl1
 </text>
-<path d="M285,495 L285,240 L228.75,240" fill="none" opacity="0.9" stroke="rgb(19, 155, 17)" stroke-width="3"/>
-<path d="M284.5,494.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M285,495 L285,240 L228.75,240" fill="none" opacity="0.9" stroke="rgb(156, 229, 73)" stroke-width="3"/>
+<path d="M282.75,492.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_2" transform="rotate(90 280,510)" x="280" y="510">
 gl0
 </text>

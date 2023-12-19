@@ -1,8 +1,8 @@
 <svg height="2010" viewBox="-7.5 52.5 1459.25 2130" width="1217.5" xmlns="http://www.w3.org/2000/svg">
 <style>
-.species { font: italic 12px; fill: orange; } .gene_0 { font: 10px; fill:rgb(31, 153, 183); } 
+.species { font: italic ; font-size: 12px; fill: orange; } .gene_0 { font-size: 10px; fill:rgb(77, 98, 181); } 
 </style>
-<g transform="translate(  -7.5 2062.5) rotate(-90 0 0 ) ">
+<g transform="translate(  -7.5 2055) rotate(-90 0 0 ) ">
 <path d="M1398.4479,108 L1398.4479,52.5 L1648.7239,52.5 M1428.4479,108 L1428.4479,67.5 L1659.2239,67.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
 <path d="M1056.8958,175.5 L1056.8958,105 L1395.4479,105 M1071.8958,175.5 L1071.8958,135 L1413.4479,135" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
 <path d="M550.979,235.5 L550.979,172.5 L1053.8958,172.5 M565.979,235.5 L565.979,187.5 L1064.3958,187.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
@@ -164,168 +164,168 @@ enterobacteria8LOSS
 <text class="species" transform="rotate(90 1462.5,870)" x="1447.5" y="852.5">
 enterobacteria20LOSS
 </text>
-<path d="M1659.2239,54 l-6,-6 l12,0 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<circle cx="1659.2239" cy="60" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1405.9479,112.5 L1405.9479,60 L1659.2239,60" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1403.9479,110.5 l0,4 l4,0 l0,-4 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3" transform="rotate(45 1405.9479 112.5)"/>
-<path d="M1657.5 930 L 1657.5 915M1657.5 926.25L 1653.75 922.5M1657.5 926.25L 1661.25 922.5M1657.5 915 Q 1531.7239 453.75 1405.9479 112.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-dasharray="1, 1" stroke-width="3"/>
-<path d="M1657,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1659.2239,54 l-6,-6 l12,0 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<circle cx="1659.2239" cy="60" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1405.9479,112.5 L1405.9479,60 L1659.2239,60" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1402.9479,109.5 l0,6 l6,0 l0,-6 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1405.9479 112.5)"/>
+<path d="M1657.5 930 L 1657.5 915M1657.5 926.25L 1653.75 922.5M1657.5 926.25L 1661.25 922.5M1657.5 915 Q 1531.7239 453.75 1405.9479 112.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-dasharray="1, 1" stroke-width="3"/>
+<path d="M1655.25,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1652.5,945)" x="1652.5" y="945">
 Yersinia_pestis_CO92
 </text>
-<path d="M1420.9479,127.5 L1420.9479,112.5 L1405.9479,112.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1420.9479" cy="127.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1064.3958,180 L1064.3958,127.5 L1420.9479,127.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1064.3958" cy="180" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M558.479,240 L558.479,180 L1064.3958,180" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="558.479" cy="240" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M0,930 L0,240 L558.479,240" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M-0.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1420.9479,127.5 L1420.9479,112.5 L1405.9479,112.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1420.9479" cy="127.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1064.3958,180 L1064.3958,127.5 L1420.9479,127.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1064.3958" cy="180" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M558.479,240 L558.479,180 L1064.3958,180" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="558.479" cy="240" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M0,930 L0,240 L558.479,240" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M-2.25,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 -5,945)" x="-5" y="945">
 Escherichia_coli_K12_MG1655
 </text>
-<path d="M1109.458,285 L1109.458,240 L558.479,240" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1106.458,282 l0,6 l6,0 l0,-6 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1124.458,300 L1124.458,285 L1109.458,285" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1124.458" cy="300" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M996.416,352.5 L996.416,300 L1124.458,300" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="996.416" cy="352.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M882.83203,412.5 L882.83203,352.5 L996.416,352.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="882.83203" cy="412.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M990,480 L990,412.5 L882.83203,412.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="990" cy="480" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M960,930 L960,480 L990,480" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M959.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1109.458,285 L1109.458,240 L558.479,240" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1106.458,282 l0,6 l6,0 l0,-6 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1124.458,300 L1124.458,285 L1109.458,285" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1124.458" cy="300" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M996.416,352.5 L996.416,300 L1124.458,300" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="996.416" cy="352.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M882.83203,412.5 L882.83203,352.5 L996.416,352.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="882.83203" cy="412.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M990,480 L990,412.5 L882.83203,412.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="990" cy="480" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M960,930 L960,480 L990,480" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M957.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 955,945)" x="955" y="945">
 EwApS.l.l.l
 </text>
-<path d="M1020,915 L1020,480 L990,480" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1020,911 l0,8 M1016,915 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1020 915)"/>
-<path d="M790.66406,480 L790.66406,412.5 L882.83203,412.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M790.66406,476 l0,8 M786.66406,480 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 790.66406 480)"/>
-<path d="M1125,907.5 L1125,352.5 L996.416,352.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1125,903.5 l0,8 M1121,907.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1125 907.5)"/>
-<path d="M1237.5,352.5 L1237.5,300 L1124.458,300" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1237.5" cy="352.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1260,930 L1260,352.5 L1237.5,352.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1259.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1020,915 L1020,480 L990,480" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1020,909 l0,12 M1014,915 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1020 915)"/>
+<path d="M790.66406,480 L790.66406,412.5 L882.83203,412.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M790.66406,474 l0,12 M784.66406,480 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 790.66406 480)"/>
+<path d="M1125,907.5 L1125,352.5 L996.416,352.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1125,901.5 l0,12 M1119,907.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1125 907.5)"/>
+<path d="M1237.5,352.5 L1237.5,300 L1124.458,300" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1237.5" cy="352.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1260,930 L1260,352.5 L1237.5,352.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1257.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1255,945)" x="1255" y="945">
 Pantoea_calida_DSM_22759.l
 </text>
-<path d="M1200,915 L1200,352.5 L1237.5,352.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1200,911 l0,8 M1196,915 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1200 915)"/>
-<path d="M1109.458,315 L1109.458,285 L1109.458,285" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1109.458" cy="315" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1011.416,367.5 L1011.416,315 L1109.458,315" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1011.416" cy="367.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1110,930 L1110,367.5 L1011.416,367.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1109.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1200,915 L1200,352.5 L1237.5,352.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1200,909 l0,12 M1194,915 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1200 915)"/>
+<path d="M1109.458,315 L1109.458,285 L1109.458,285" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1109.458" cy="315" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1011.416,367.5 L1011.416,315 L1109.458,315" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1011.416" cy="367.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1110,930 L1110,367.5 L1011.416,367.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1107.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1105,945)" x="1105" y="945">
 EwBiE.l.l
 </text>
-<path d="M897.83203,427.5 L897.83203,367.5 L1011.416,367.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M897.83203,423.5 l0,8 M893.83203,427.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 897.83203 427.5)"/>
-<path d="M1222.5,367.5 L1222.5,315 L1109.458,315" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1222.5,363.5 l0,8 M1218.5,367.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1222.5 367.5)"/>
-<path d="M1570.3125,240 L1570.3125,180 L1064.3958,180" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1570.3125,236 l0,8 M1566.3125,240 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1570.3125 240)"/>
-<path d="M1770,172.5 L1770,127.5 L1420.9479,127.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1768,170.5 l0,4 l4,0 l0,-4 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3" transform="rotate(45 1770 172.5)"/>
-<path d="M545.15625 600 L 545.15625 585M545.15625 596.25L 541.40625 592.5M545.15625 596.25L 548.90625 592.5M545.15625 585 Q 1157.5781 318.75 1770 172.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-dasharray="1, 1" stroke-width="3"/>
-<circle cx="545.15625" cy="600" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M362.8125,660 L362.8125,600 L545.15625,600" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="362.8125" cy="660" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M172.5,705 L172.5,660 L362.8125,660" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M169.5,702 l0,6 l6,0 l0,-6 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M172.5,720 L172.5,705 L172.5,705" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="172.5" cy="720" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M90,930 L90,720 L172.5,720" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M89.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M897.83203,427.5 L897.83203,367.5 L1011.416,367.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M897.83203,421.5 l0,12 M891.83203,427.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 897.83203 427.5)"/>
+<path d="M1222.5,367.5 L1222.5,315 L1109.458,315" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1222.5,361.5 l0,12 M1216.5,367.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1222.5 367.5)"/>
+<path d="M1570.3125,240 L1570.3125,180 L1064.3958,180" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1570.3125,234 l0,12 M1564.3125,240 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1570.3125 240)"/>
+<path d="M1770,172.5 L1770,127.5 L1420.9479,127.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1767,169.5 l0,6 l6,0 l0,-6 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1770 172.5)"/>
+<path d="M545.15625 600 L 545.15625 585M545.15625 596.25L 541.40625 592.5M545.15625 596.25L 548.90625 592.5M545.15625 585 Q 1157.5781 318.75 1770 172.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="545.15625" cy="600" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M362.8125,660 L362.8125,600 L545.15625,600" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="362.8125" cy="660" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M172.5,705 L172.5,660 L362.8125,660" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M169.5,702 l0,6 l6,0 l0,-6 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M172.5,720 L172.5,705 L172.5,705" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="172.5" cy="720" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M90,930 L90,720 L172.5,720" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M87.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 85,945)" x="85" y="945">
 ECUMA
 </text>
-<path d="M270,772.5 L270,720 L172.5,720" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="270" cy="772.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M195,930 L195,772.5 L270,772.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M194.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M270,772.5 L270,720 L172.5,720" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="270" cy="772.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M195,930 L195,772.5 L270,772.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M192.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 190,945)" x="190" y="945">
 EKOCA.l
 </text>
-<path d="M330,907.5 L330,772.5 L270,772.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M330,903.5 l0,8 M326,907.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 330 907.5)"/>
-<path d="M187.5,735 L187.5,705 L172.5,705" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="187.5" cy="735" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M255,787.5 L255,735 L187.5,735" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="255" cy="787.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M315,930 L315,787.5 L255,787.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M314.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M330,907.5 L330,772.5 L270,772.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M330,901.5 l0,12 M324,907.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 330 907.5)"/>
+<path d="M187.5,735 L187.5,705 L172.5,705" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="187.5" cy="735" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M255,787.5 L255,735 L187.5,735" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="255" cy="787.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M315,930 L315,787.5 L255,787.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M312.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 310,945)" x="310" y="945">
 ELAFE.l.l
 </text>
-<path d="M210,922.5 L210,787.5 L255,787.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M210,918.5 l0,8 M206,922.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 210 922.5)"/>
-<path d="M105,922.5 L105,735 L187.5,735" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M105,918.5 l0,8 M101,922.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 105 922.5)"/>
-<path d="M545.625,720 L545.625,660 L362.8125,660" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="545.625" cy="720" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M461.25,780 L461.25,720 L545.625,720" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="461.25" cy="780" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M405,930 L405,780 L461.25,780" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M404.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M210,922.5 L210,787.5 L255,787.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M210,916.5 l0,12 M204,922.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 210 922.5)"/>
+<path d="M105,922.5 L105,735 L187.5,735" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M105,916.5 l0,12 M99,922.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 105 922.5)"/>
+<path d="M545.625,720 L545.625,660 L362.8125,660" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="545.625" cy="720" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M461.25,780 L461.25,720 L545.625,720" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="461.25" cy="780" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M405,930 L405,780 L461.25,780" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M402.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 400,945)" x="400" y="945">
 EPSPA
 </text>
-<path d="M517.5,840 L517.5,780 L461.25,780" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="517.5" cy="840" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M487.5,930 L487.5,840 L517.5,840" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M487,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M517.5,840 L517.5,780 L461.25,780" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="517.5" cy="840" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M487.5,930 L487.5,840 L517.5,840" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M485.25,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 482.5,945)" x="482.5" y="945">
 ESPPA
 </text>
-<path d="M547.5,930 L547.5,840 L517.5,840" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M547,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M547.5,930 L547.5,840 L517.5,840" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M545.25,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 542.5,945)" x="542.5" y="945">
 ESPPS
 </text>
-<path d="M630,930 L630,720 L545.625,720" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M629.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M630,930 L630,720 L545.625,720" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M627.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 625,945)" x="625" y="945">
 EPSTX
 </text>
-<path d="M735,652.5 L735,600 L545.15625,600" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M733,650.5 l0,4 l4,0 l0,-4 z" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3" transform="rotate(45 735 652.5)"/>
-<path d="M1365 420 L 1365 405M1365 416.25L 1361.25 412.5M1365 416.25L 1368.75 412.5M1365 405 Q 1050 468.75 735 652.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-dasharray="1, 1" stroke-width="3"/>
-<circle cx="1365" cy="420" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1335,930 L1335,420 L1365,420" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1334.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M735,652.5 L735,600 L545.15625,600" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M732,649.5 l0,6 l6,0 l0,-6 z" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 735 652.5)"/>
+<path d="M1365 420 L 1365 405M1365 416.25L 1361.25 412.5M1365 416.25L 1368.75 412.5M1365 405 Q 1050 468.75 735 652.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="1365" cy="420" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1335,930 L1335,420 L1365,420" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1332.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1330,945)" x="1330" y="945">
 HCURT
 </text>
-<path d="M1395,930 L1395,420 L1365,420" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1394.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1395,930 L1395,420 L1365,420" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1392.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1390,945)" x="1390" y="945">
 HCURV
 </text>
-<path d="M720,667.5 L720,652.5 L735,652.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M720,663.5 l0,8 M716,667.5 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 720 667.5)"/>
-<path d="M1755,187.5 L1755,172.5 L1770,172.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1755" cy="187.5" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1732.5,930 L1732.5,187.5 L1755,187.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1732,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M720,667.5 L720,652.5 L735,652.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M720,661.5 l0,12 M714,667.5 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 720 667.5)"/>
+<path d="M1755,187.5 L1755,172.5 L1770,172.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1755" cy="187.5" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1732.5,930 L1732.5,187.5 L1755,187.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1730.25,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1727.5,945)" x="1727.5" y="945">
 Sodalis_praecaptivus_HS1.l
 </text>
-<path d="M1792.5,915 L1792.5,187.5 L1755,187.5" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1792.5,911 l0,8 M1788.5,915 l8,0" fill="rgb(31, 153, 183)" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="2" transform="rotate(45 1792.5 915)"/>
-<path d="M1905,120 L1905,60 L1659.2239,60" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<circle cx="1905" cy="120" fill="rgb(31, 153, 183)" opacity="0.9" r="3" stroke="rgb(31, 153, 183)" stroke-width="1"/>
-<path d="M1875,930 L1875,120 L1905,120" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1874.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1792.5,915 L1792.5,187.5 L1755,187.5" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1792.5,909 l0,12 M1786.5,915 l12,0" fill="rgb(77, 98, 181)" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3" transform="rotate(45 1792.5 915)"/>
+<path d="M1905,120 L1905,60 L1659.2239,60" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<circle cx="1905" cy="120" fill="rgb(77, 98, 181)" opacity="0.9" r="4.5" stroke="rgb(77, 98, 181)" stroke-width="1"/>
+<path d="M1875,930 L1875,120 L1905,120" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1872.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1870,945)" x="1870" y="945">
 Photorhabdus_luminescens_TTO1
 </text>
-<path d="M1935,930 L1935,120 L1905,120" fill="none" opacity="0.9" stroke="rgb(31, 153, 183)" stroke-width="3"/>
-<path d="M1934.5,929.5 l0,1 l1,0 l0,-1 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
+<path d="M1935,930 L1935,120 L1905,120" fill="none" opacity="0.9" stroke="rgb(77, 98, 181)" stroke-width="3"/>
+<path d="M1932.75,927.75 l0,4.5 l4.5,0 l0,-4.5 z" fill="red" opacity="0.9" stroke="red" stroke-width="3"/>
 <text class="gene_0" transform="rotate(90 1930,945)" x="1930" y="945">
 Photorhabdus_asymbiotica_ATCC43949
 </text>
