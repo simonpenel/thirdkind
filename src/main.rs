@@ -30,7 +30,7 @@ fn display_usage(programe_name:String) {
     println!();
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
@@ -47,7 +47,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -A node name : display transfers starting from this node only");
@@ -69,6 +69,7 @@ fn display_help(programe_name:String) {
     println!("    -I : display internal species nodes");
     println!("    -J : with option -t, display the abundance of redudant transfers");
     println!("    -k size: size of the circles, crosses, squares, etc.");
+    println!("    -K Bezier parameter: curvature of the transfers and branches leading to free living organisms.");
     println!("    -l factor : use branch length, multiplied by the given factor");
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
@@ -160,7 +161,7 @@ fn main()  {
     if args.len() == 1 {
         display_usage(args[0].to_string());
     }
-    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
     let mut infile_sh = String::new(); // symbiote host file
     let mut infile_gs = String::new(); // gene symbiote file
     let mut outfile = String::from("thirdkind.svg");
@@ -238,6 +239,15 @@ fn main()  {
                             },
                         };
                     },
+                    Opt('K', Some(string)) => {
+                        config.bezier = match string.parse::<f32>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -K option");
+                                process::exit(1);
+                            },
+                        };
+                    },                   
                     Opt('m', None) => multiple_files = true,
                     Opt('M', None) => options.mid_dist = true,
                     Opt('b', None) => options.open_browser = true,
