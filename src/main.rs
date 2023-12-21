@@ -28,6 +28,10 @@ fn display_usage(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!();
+    println!("Bug report, question or suggestion : simon.penel@univ-lyon1.fr");
+    println!();
+    println!("Home page: https://github.com/simonpenel/thirdkind/wiki");
+    println!("");   
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
@@ -135,6 +139,8 @@ fn display_help(programe_name:String) {
     println!("{} -f newick_examples/virus.nhx -l 4 -b", programe_name);
     println!("{} -f newick_examples/virus.nhx -l 4 -x -b", programe_name);
     println!("{} -f newick_examples/virus.nhx -l 4 -X -b", programe_name);
+    println!();
+    println!("Bug report, question or suggestion : simon.penel@univ-lyon1.fr");
     process::exit(1);
 }
 /// enum of the possible input file Formats
