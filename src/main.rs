@@ -19,6 +19,241 @@ use webbrowser::{Browser};
 use light_phylogeny::*;
 use log::{info};
 
+fn set_options(
+    args: Vec<String>,
+    options: &mut Options,
+    config: &mut Config,
+    infile_gs: &mut String,
+    infile_sh: &mut String,
+    outfile: &mut String,
+    mut thickness_thresh_1st: &mut usize,
+    thickness_gene_1st: &mut usize,
+    thickness_thresh_2nd: &mut usize,
+    thickness_gene_2nd: &mut usize,
+    level3: &mut bool, 
+    display_transfers: &mut bool,
+    multiple_files: &mut bool,
+    thickness_flag_1st: &mut bool,
+    thickness_flag_2nd: &mut bool,
+    mut _format:  &mut Format){
+    let mut nb_args = 0;
+    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+        loop {
+        match opts.next().transpose() {
+            Err(err) => {
+                eprintln!("ERROR: {}",err);
+                std::process::exit(1);
+            },
+            Ok(res) => match res {
+                None => break,
+                Some(opt) => match opt {
+                    Opt('F', Some(string)) => {
+                        let format = match string.as_str() {
+                            "recphylo" => Format::Recphyloxml,
+                            "phyloxml" => Format::Phyloxml,
+                            _ => {
+                                eprintln!("ERROR: Please give a correct format (recphylo/phyloxml)");
+                                process::exit(1);
+                            },
+                        };
+                        *_format = format;
+                    },
+                    Opt('g', Some(string)) => {
+                        *infile_gs = string.clone();
+                        *level3 = true;
+                    },
+                    Opt('G', Some(string)) => {
+                        options.disp_gene = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -G option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('H', Some(string)) => {
+                        options.height = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -H option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('a', None) =>  *display_transfers = true,
+                    Opt('A', Some(string)) => { options.trans_end = Some(string);}, // On inverse start et end
+                    Opt('N', Some(string)) => { options.trans_start = Some(string);}, // On inverse start et end
+                    Opt('e', None) => options.free_living = true,
+                    Opt('E', None) => {
+                        options.free_living = true;
+                        options.free_living_shift = true;
+                        },
+                    Opt('i', None) => options.gene_internal = true,
+                    Opt('I', None) => options.species_internal = true,
+                    Opt('J', None) => options.thickness_disp_score = true,
+                    Opt('k', Some(string)) => {
+                        options.squaresize = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -k option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('K', Some(string)) => {
+                        config.bezier = match string.parse::<f32>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -K option");
+                                process::exit(1);
+                            },
+                        };
+                    },                   
+                    Opt('m', None) => *multiple_files = true,
+                    Opt('M', None) => options.mid_dist = true,
+                    Opt('b', None) => options.open_browser = true,
+                    Opt('B', None) => options.branch = true,
+                    Opt('r', Some(string)) => {
+                        options.ratio = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -r option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('p', None) => options.uniform = true,
+                    Opt('s', None) => options.species_only_flag = true,
+                    Opt('S', None) => options.support = true,
+                    Opt('t', Some(string)) => {
+                        let _thickness_thresh_1st = match string.parse::<usize>(){
+                            Ok( valeur) =>  valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -t option");
+                                process::exit(1);
+                            },
+                        };
+                        *thickness_thresh_1st = _thickness_thresh_1st;
+                        *thickness_flag_1st = true;
+                    },
+                    Opt('T', Some(string)) => {
+                        *thickness_gene_1st = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -T option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('u', Some(string)) => {
+                        *thickness_thresh_2nd = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -u option");
+                                process::exit(1);
+                            },
+                        };
+                        *thickness_flag_2nd = true;
+                    },
+                    Opt('U', Some(string)) => {
+                        *thickness_gene_2nd = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -U option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('l', Some(string)) => {
+                        options.real_length_flag = true;
+                        options.uniform = false; // In case we deal with a recphyloxml
+                        options.scale = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -l option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('L', None) => options.rotate = false,
+                    Opt('v', None) => {
+                        options.verbose = true;
+                        env::set_var("RUST_LOG", "info");
+                        env_logger::init();
+                        info!("Verbosity set to Info");
+                    },
+                    Opt('c', Some(string)) => {
+                        set_config(string,  config);
+                    },
+                    Opt('d', Some(string)) => {
+                        config.gene_police_size = match string.parse::<usize>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -d option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('D', Some(string)) => {
+                        config.species_police_size = match string.parse::<usize>(){
+                            Ok(valeur) => valeur.to_string(),
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -D option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('f', Some(string)) => {
+                        *infile_sh = string.clone();
+                        nb_args += 1;
+                    },
+                    Opt('o', Some(string)) => *outfile = string.clone(),
+                    Opt('O', None) => options.optimisation = true,
+                    Opt('h', None) => display_help(args[0].to_string()),
+                    Opt('W', Some(string)) => {
+                        options.width = match string.parse::<f32>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a numeric value with -W option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('x', None) =>  options.tidy = true,
+                    Opt('X', None) =>  {
+                        options.tidy = true;
+                        options.tidy_leaves_check = true;
+                    },
+                    Opt('z', Some(string)) => {
+                        options.gthickness = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -z option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+                    Opt('Z', Some(string)) => {
+                        options.sthickness = match string.parse::<usize>(){
+                            Ok(valeur) => valeur,
+                            Err(_err) => {
+                                eprintln!("ERROR: Please give a integer value with -Z option");
+                                process::exit(1);
+                            },
+                        };
+                    },
+
+                    _ => unreachable!(),
+                }
+            }
+        }
+    }
+    if nb_args != 1 {
+        display_usage(args[0].to_string());
+    }
+
+}
+
 // Message d'aide court
 // --------------------
 fn display_usage(programe_name:String) {
@@ -184,6 +419,7 @@ fn main()  {
     let mut thickness_thresh_2nd = 0;
     let mut thickness_gene_2nd = 1;
     let mut thickness_flag_2nd = false;
+
     loop {
         match opts.next().transpose() {
             Err(err) => {
@@ -395,6 +631,14 @@ fn main()  {
     if nb_args != 1 {
          display_usage(args[0].to_string());
     }
+
+
+
+    set_options( args, &mut options, &mut config, &mut infile_gs, &mut infile_sh, &mut outfile,
+        &mut thickness_thresh_1st,&mut thickness_gene_1st, &mut thickness_thresh_2nd,
+        &mut thickness_gene_2nd, &mut level3, &mut display_transfers, &mut multiple_files,
+        &mut thickness_flag_1st, &mut thickness_flag_2nd, &mut _format);
+
     // Setting options on thickness
     options.thickness_flag = thickness_flag_1st;
     options.thickness_gene = thickness_gene_1st;
