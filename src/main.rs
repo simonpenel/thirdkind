@@ -256,7 +256,6 @@ fn set_options(
     }
 
 }
-
 // Message d'aide court
 // --------------------
 fn display_usage(programe_name:String) {
