@@ -19,6 +19,8 @@ use webbrowser::{Browser};
 use light_phylogeny::*;
 use log::{info};
 
+// Analyse des options
+// -------------------
 fn set_options(
     args: Vec<String>,
     options: &mut Options,
