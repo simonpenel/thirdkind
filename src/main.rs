@@ -35,10 +35,11 @@ fn set_options(
     multiple_files: &mut bool,
     thickness_flag_1st: &mut bool,
     thickness_flag_2nd: &mut bool,
-    mut _format:  &mut Format){
+    mut _format:  &mut Format)
+    {
     let mut nb_args = 0;
     let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
-        loop {
+    loop {
         match opts.next().transpose() {
             Err(err) => {
                 eprintln!("ERROR: {}",err);
