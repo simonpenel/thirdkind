@@ -256,6 +256,633 @@ fn set_options(
     }
 
 }
+fn process_3levels(
+    outfile: &mut String,
+    mut options: Options,
+    mut config:  Config,
+    infile_gs: String,
+    infile_sh: String,
+    thickness_thresh_1st: usize,
+    thickness_gene_1st: usize,
+    thickness_thresh_2nd: usize,
+    thickness_gene_2nd: usize,
+    thickness_flag_1st: bool,
+    thickness_flag_2nd:  bool
+    )
+    {
+    // Traitement de 2 fichier fichiers recPhyloXML
+    println!("Two reconciled files => displaying 3-levels reconciliations. ");
+    let  mut outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
+    let  mut outfile_para_host = String::from("thirdkind_symbiote_host.svg");
+    let  mut outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
+    let  mut outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
+    let  mut outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
+    if outfile == "thirdkind.svg" {
+        *outfile = String::from("");
+    }
+    outfile_gene_para = outfile.clone() + &outfile_gene_para;
+    outfile_para_host = outfile.clone() + &outfile_para_host;
+    outfile_mapped_1 = outfile.clone() + &outfile_mapped_1;
+    outfile_mapped_2 = outfile.clone() + &outfile_mapped_2;
+    outfile_mapped_3 = outfile.clone() + &outfile_mapped_3;
+    let transfers = vec![]; // Initialise transfers
+    let mut transfers_gene = vec![]; // Transferts de genes
+    let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
+    // Gestion de l'option free_living dans le cas d'une
+    let free_living_3l = options.free_living;
+    options.free_living = false;
+    // ===============
+    // GENE - PARASITE
+    // ===============
+    // ---------------------------------------------------------
+    // Create a structure Arena for the global parasite pipe
+    // tree and a vector of structures Arena for gene path trees
+    // ---------------------------------------------------------
+    let mut global_pipe_parasite: ArenaTree<String> = ArenaTree::default();
+    let mut global_roots: std::vec::Vec<usize> = Vec::new();
+    let mut path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
+    // ---------------------------------------------------------
+    // Fill global parasite pipe tree and is roots and path
+    // genes trees
+    // ---------------------------------------------------------
+    println!("\nBuilding 'lower' gene vs 'upper' symbiote reconciliation svg file [{}]",outfile_gene_para.clone());
+    read_recphyloxml_multi(
+        infile_gs,
+        &mut global_pipe_parasite,
+        &mut path_genes,
+        &mut global_roots,
+    );
+    let  nb_gntree =  path_genes.len().clone();
+    println!("Number of 'lower' gene trees : {}",nb_gntree);
+    info!("List of gene trees : {:?}",path_genes);
+    let nb_parasite_pipe = global_roots.len().clone();
+    println!("Number of 'upper' symbiote trees : {}",nb_parasite_pipe);
+    println!("List of 'upper' symbiote tree roots : {:?}",global_roots);
+    info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
+    // ---------------------------------------------------------
+    // Generate svg of the global parasite pipe tree and  path
+    // genes trees (outfile_gene_para)
+    // ---------------------------------------------------------
+    // If  the option -t is on :
+    if thickness_flag_1st {
+        // check that gene nb is correct
+        if thickness_gene_1st > nb_gntree {
+            println!("There are only {} genes in the file, unable to display gene #{}",
+            nb_gntree, thickness_gene_1st);
+            process::exit(1);
+        }
+        //  Get the transfers in the genes
+        transfers_gene = get_gtransfer(&mut path_genes[0]);
+        let mut i = 1;
+        while i < nb_gntree {
+            let gene_transfer = get_gtransfer(&mut path_genes[i]);
+            for val in gene_transfer {
+                transfers_gene.push(val);
+            }
+            i = i + 1;
+        }
+        println!("Transfers (genes) = {:?}",transfers_gene);
+        // Define the unique gene wich is selected
+        let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        selected_gene_trees.push(path_genes[thickness_gene_1st-1].copie());
+        // Define a temporary copy of the species tree
+        let mut _global_pipe_parasite = global_pipe_parasite.copie();
+        // Set options
+        options.thickness_flag = true;
+        options.thickness_gene = thickness_gene_1st;
+        options.thickness_thresh = thickness_thresh_1st;
+        //  Create the svg from temporary variables
+        recphyloxml_processing(
+            &mut _global_pipe_parasite,
+            &mut selected_gene_trees,
+            &mut options,
+            &config,
+            true,
+            &transfers_gene,
+            outfile_gene_para.clone(),
+        );
+        // We need to run again with the current variables, because we need the upddated
+        // global_pipe_parasite path_genes
+        recphyloxml_processing(
+            &mut global_pipe_parasite,
+            &mut path_genes,
+            &mut options,
+            &config,true,
+            &transfers,
+            "tmpfile.svg".to_string(),
+        );
+    }
+    // No -t option
+    else {
+        recphyloxml_processing(
+            &mut global_pipe_parasite,
+            &mut  path_genes,
+            &mut options,
+            &config,true,
+            &transfers,
+            outfile_gene_para,
+        );
+    }
+    // ==============
+    // PARASITE-HOST
+    // =============
+    // ---------------------------------------------------------
+    // Create a structure Arena for the host pipe tree and a
+    // vector of structures Arena for parasite path trees
+    // ---------------------------------------------------------
+    let mut tree_host_pipe: ArenaTree<String> = ArenaTree::default();
+    let mut path_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+    println!("\nBuilding 'lower' symbiote vs 'upper' host reconciliation svg file [{}]",outfile_para_host.clone());
+    // ---------------------------------------------------------
+    // Fill  host pipe tree and is roots and path parasite trees
+    // ---------------------------------------------------------
+    let mut global_roots: std::vec::Vec<usize> = Vec::new();
+    read_recphyloxml_multi(
+        infile_sh,
+        &mut tree_host_pipe,
+        &mut path_para_trees,
+        &mut global_roots
+    );
+    let  nb_parasite_path =  path_para_trees.len().clone();
+    let  nb_hosts_pipe = global_roots.len();
+    println!("Number of 'upper' symbiote trees in gene-symbiote file : {}",nb_parasite_pipe);
+    println!("Number of 'lower' symbiote trees in symbiote-host file : {}",nb_parasite_path);
+    println!("Number of 'upper' host trees in symbiote-host file : {}",nb_hosts_pipe);
+    if nb_parasite_path != nb_parasite_pipe {
+        eprintln!();
+        eprintln!("ERROR: Different number of parasite trees in the 2 files!");
+        eprintln!("       Resulting svg will be incomplete.");
+        eprintln!();
+        process::exit(1);
+    }
+    // ---------------------------------------------------------
+    // Generate svg of the host pipe tree and path symbiote trees
+    // ---------------------------------------------------------
+    // Reset the option
+    options.thickness_flag = false;
+    options.free_living = free_living_3l;
+    config.species_color="violet".to_string();
+    // If  the option -u is on :
+    if thickness_flag_2nd {
+        options.thickness_flag = true;
+        options.thickness_gene = thickness_gene_2nd;
+        options.thickness_thresh = thickness_thresh_2nd;
+        // check that the number pf the parasite is correct
+        if options.thickness_gene > nb_parasite_path {
+            println!("There are only {} parasites in the file, unable to display gene #{}",
+            nb_parasite_path,options.thickness_gene);
+            process::exit(1);
+        }
+        // Get teh transfers in the parasites
+        transfers_para = get_gtransfer(&mut path_para_trees[0]);
+        let mut i = 1;
+        while i < nb_parasite_path {
+            let gene_transfer = get_gtransfer(&mut path_para_trees[i]);
+            for val in gene_transfer {
+                transfers_para.push(val);
+            }
+        i = i + 1;
+        }
+        println!("Transfers (parasites) = {:?}",transfers_para);
+        // Define a temporary copy of the paraistes
+        let mut _path_para_trees: std::vec::Vec<ArenaTree<String>> = Vec::new();
+        for i in 0 .. path_para_trees.len() {
+            _path_para_trees.push(path_para_trees[i].copie());
+        }
+        // Define the unique parasite  wich is selected
+        let mut selected_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        selected_para_trees.push(_path_para_trees.remove(options.thickness_gene-1));
+        // Define a tmprary copy of the host
+        let mut _tree_host_pipe = tree_host_pipe.copie();
+        //  Create the svg from the temprary variables
+        recphyloxml_processing(
+            &mut _tree_host_pipe,
+            &mut selected_para_trees,
+            &mut options,
+            &config,
+            true,
+            &transfers_para,
+            outfile_para_host.clone(),
+        );
+        // We need to run again with the current variables, because we need the upddated
+        // _tree_host_pipe path_para_trees
+        recphyloxml_processing(
+            &mut tree_host_pipe,
+            &mut  path_para_trees,
+            &mut options,
+            &config,
+            true,
+            &transfers,
+            "tmpfile2.svg".to_string(),
+        );
+    }
+    // No -u option
+    else {
+        recphyloxml_processing(
+            &mut tree_host_pipe,
+            &mut  path_para_trees,
+            &mut options,
+            &config,
+            true,
+            &transfers,
+            outfile_para_host,
+        );
+    }
+    // =========================
+    // GENE-PARASITE-HOST : MAP1
+    // =========================
+    println!("\nBuilding 'mapped 1': reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) [{}]",
+        outfile_mapped_1);
+    info!("Symbiote trees as a 'lower tree' : {:?}",path_para_trees);
+    info!("Symbiote tree as a 'upper tree' : {:?}",global_pipe_parasite);
+    println!("Map symbiote as 'lower' to symbiote as 'upper'");
+    let mut i = 0;
+    config.species_color="pink".to_string();
+    while i < nb_parasite_pipe {
+        map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
+        i = i + 1;
+    }
+    info!("Global symbiote tree wih events : {:?}",global_pipe_parasite);
+    reset_pos(&mut global_pipe_parasite);
+    let mut i = 0;
+    while i < nb_gntree {
+        reset_pos(&mut path_genes[i]);
+        i = i + 1;
+    }
+    println!("Map symbiote as 'upper' to symbiote as 'lower'");
+    let mut i = 0;
+    while i < nb_parasite_pipe {
+        map_parasite_s2g(&mut global_pipe_parasite, &mut path_para_trees[i], &mut path_genes);
+        i = i +  1;
+    }
+    info!("Global upper symbiote tree after mapping s2g : {:?}",global_pipe_parasite);
+    println!("Map symbiote as 'lower' to symbiote as 'upper' again");
+    let mut i = 0;
+    while i < nb_parasite_pipe {
+        map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
+        i = i + 1;
+    }
+    reset_pos(&mut global_pipe_parasite);
+    let mut i = 0;
+    while i < nb_gntree {
+        reset_pos(&mut path_genes[i]);
+        i = i + 1;
+    }
+    // Reset the option
+    options.thickness_flag = false;
+    options.free_living = false;
+    //  option -t is on
+    if thickness_flag_1st {
+        options.thickness_flag = true;
+        options.thickness_gene = thickness_gene_1st;
+        options.thickness_thresh = thickness_thresh_1st;
+    }
+    // attention on ne remape pas
+    recphyloxml_processing(
+        &mut global_pipe_parasite,
+        &mut  path_genes,
+        &mut options,
+        &config,
+        false,
+        &transfers_gene,
+        outfile_mapped_1,
+    );
+    let path = env::current_dir().expect("Unable to get current dir");
+    let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_1.svg".to_string());
+    if options.open_browser {
+        if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+            info!("Browser OK");
+        }
+    }
+    // =========================
+    // GENE-PARASITE-HOST : MAP2
+    // =========================
+    println!();
+    println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
+        outfile_mapped_2);
+    let mut i = 0;
+    config.species_color="violet".to_string();
+    // We get the gene transfer here again, but they will be mapped
+    let gene_transfers = get_gtransfer(&mut path_genes[i]);
+    info!("Transfers = {:?}",gene_transfers);
+    let mut mapped_gene_transfers = map_transfer_mul(gene_transfers, &mut path_para_trees);
+    info!("Mapped transfers = {:?}",mapped_gene_transfers);
+    i = i + 1;
+    while i < nb_gntree {
+        let gene_transfers = get_gtransfer(&mut path_genes[i]);
+        info!("Transfers = {:?}",gene_transfers);
+        let mapped = map_transfer_mul(gene_transfers, &mut path_para_trees);
+        info!("Mapped transfers = {:?}",mapped);
+        for val in mapped {
+            mapped_gene_transfers.push(val);
+        }
+        i = i + 1;
+    }
+    info!("Mapped transfers = {:?}",mapped_gene_transfers);
+    // Reseting the pipe and the paths
+    reset_pos(&mut tree_host_pipe);
+    let mut i = 0;
+    while i < nb_parasite_pipe {
+        reset_pos(&mut path_para_trees[i]);
+        i = i + 1;
+    }
+    // Setting option to false because we dont want the parasite transerst to be hidden
+    options.thickness_flag = false;
+    if thickness_flag_2nd {
+        // On ajoute les transferts de paraistes au transferts de gene
+        options.thickness_flag = true;
+        options.thickness_gene = thickness_gene_2nd;
+        options.thickness_thresh = thickness_thresh_2nd;
+        //  Create the svg from temporary variables
+        for val in transfers_para {
+            mapped_gene_transfers.push(val);
+        }
+    }
+    // Reset the option
+    options.free_living = free_living_3l;
+    // attention on ne remape pas
+    recphyloxml_processing(
+        &mut tree_host_pipe,
+        &mut path_para_trees,
+        &mut options,
+        &config,
+        false,
+        &mapped_gene_transfers,
+        outfile_mapped_2,
+    );
+    let path = env::current_dir().expect("Unable to get current dir");
+    let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_2.svg".to_string());
+    if options.open_browser {
+        if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+            info!("Browser OK");
+        }
+    }
+    println!("\nBuilding 'phyloxml style' svg files...");
+    //  Simple tree of the parasite
+    config.single_gene_color="pink".to_string();
+    reset_pos(&mut global_pipe_parasite);
+    phyloxml_processing(
+        &mut global_pipe_parasite,
+        &mut options,
+        &config,
+        outfile.clone() + &"thirdkind_symbiote_simple.svg".to_string(),
+    );
+    reset_pos(&mut tree_host_pipe);
+    //  Simple tree of the host
+    config.single_gene_color="violet".to_string();
+    phyloxml_processing(
+        &mut tree_host_pipe,
+        &mut options,
+        &config,
+        outfile.clone() + &"thirdkind_host_simple.svg".to_string(),
+    );
+    //  Simple trees of the genes
+    let mut i = 0;
+    while i < nb_parasite_pipe {
+        reset_pos(&mut path_para_trees[i]);
+        phyloxml_processing(
+            &mut path_para_trees[i],
+            &mut options,
+            &config,
+            (outfile.clone() + &"thirdkind_gene_simple_" + &i.to_string() +".svg").to_string(),
+        );
+        i = i + 1;
+    }
+    // =========================
+    // GENE-PARASITE-HOST : MAP3
+    // =========================
+    println!();
+    println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
+    config.species_color="violet".to_string();
+    map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
+    reset_pos(&mut tree_host_pipe);
+    let mut i = 0;
+    while i < nb_gntree {
+        reset_pos(&mut path_genes[i]);
+        i = i + 1;
+    }
+    // Reset the option
+    options.free_living = false;
+    recphyloxml_processing(
+        &mut tree_host_pipe,
+        &mut path_genes,
+        &mut options,
+        &config,
+        true,
+        &vec![],
+        outfile_mapped_3.clone(),
+    );
+    let url_file = format!("file:///{}/{}", path.display(),outfile_mapped_3);
+    if options.open_browser {
+        if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+            info!("Browser OK");
+        }
+    }
+    println!("\nOutput summary:");
+    println!(" - {}thirdkind_host_simple.svg ...... 1 level:  host tree",outfile);
+    let mut i = 0;
+    while i < nb_parasite_pipe {
+        println!(" - {}thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",outfile,&i);
+        i = i + 1;
+    }
+    println!(" - {}thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)",outfile);
+    println!(" - {}thirdkind_gene_symbiote.svg .... 2 levels: 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
+    println!(" - {}thirdkind_symbiote_host.svg .... 2 levels: 'upper' host tree with 'lower' symbiote tree(s) inside",outfile);
+    println!(" - {}thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
+    println!(" - {}thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers",outfile);
+    println!(" - {}thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside",outfile);
+    if nb_parasite_path != nb_parasite_pipe {
+        eprintln!();
+        eprintln!("ERROR: Different number of symbiote trees in the 2 files!");
+        eprintln!("       Resulting svg will be incomplete.");
+        eprintln!();
+        process::exit(1)
+    }
+}
+
+fn process_2levels_multifile(
+    outfile: String,
+    mut options: Options,
+    config:  Config,
+    infile_sh: String,
+    thickness_thresh_1st: usize,
+    display_transfers: bool
+)
+    {
+    // get the url
+    let path = env::current_dir().expect("Unable to get current dir");
+    let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
+    println!("Multiple files processing:");
+    let multifilename = &infile_sh.clone();
+    let contents = fs::read_to_string(multifilename);
+    let contents = match contents {
+        Ok(contents) => contents,
+        Err(err) => {
+            eprintln!("Something went wrong when reading the  input file {}.\n{}",
+                multifilename,err);
+            eprintln!("Please check file name and path.");
+            process::exit(1);
+        }
+    };
+    let files = contents.lines();
+    // let mut sp_tree: ArenaTree<String> = ArenaTree::default();
+    // Creation du vecteur de structure ArenaTree pour les genes
+    // ---------------------------------------------------------
+    let mut gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+    // Empty additional transfers
+    let mut transfers = vec![];
+    let mut sp_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+    for filename in files {
+        println!("Processing file {}",filename);
+        // On cree une structure Arena pour l'arbre d'espece
+        // et un vecteur de  structures Arena pour le(s) arbres de gènes
+        // -------------------------------------------------------------
+        // Creation de la structure ArenaTree pour l'arbre d'espece
+        // --------------------------------------------------------
+        let mut _sp_tree: ArenaTree<String> = ArenaTree::default();
+        // Creation du vecteur de structure ArenaTree pour les genes
+        // ---------------------------------------------------------
+        let mut _gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        // Empty additional transfers
+        // let mut transfers = vec![];
+        let mut _global_roots: std::vec::Vec<usize> = Vec::new();
+        read_recphyloxml_multi(
+            filename.to_string(),
+            &mut _sp_tree,
+            &mut _gene_trees,
+            &mut _global_roots,
+        );
+        let  nb_gntree =  _gene_trees.len().clone();
+        println!("Number of gene trees : {}",nb_gntree);
+        info!("List of gene trees : {:?}",_gene_trees);
+        gene_trees.append(&mut _gene_trees);
+        sp_trees.push(_sp_tree);
+    }
+    let  nb_gntree =  gene_trees.len().clone();
+    println!("Total number of gene trees : {}",nb_gntree);
+    info!("List of all gene trees : {:?}",gene_trees);
+    if options.thickness_flag {
+        if options.thickness_gene > nb_gntree {
+            println!("There are only {} genes in the file, unable to display gene #{}",
+            nb_gntree, options.thickness_gene);
+            process::exit(1);
+        }
+        //  Recupere les transferts
+        transfers = get_gtransfer(&mut gene_trees[0]);
+        let mut i = 1;
+        while i < nb_gntree {
+            let gene_transfer = get_gtransfer(&mut gene_trees[i]);
+            for val in gene_transfer {
+                transfers.push(val);
+            }
+            i = i + 1;
+        }
+        let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+        if options.thickness_gene > 0 {
+            selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
+        }
+        recphyloxml_processing(
+            &mut sp_trees[0],
+            &mut selected_gene_trees,
+            &mut options,
+            &config,
+            true,
+            &transfers,
+            outfile,
+        );
+        info!("Transfers = {:?}",transfers);
+        if display_transfers {
+            // Affiche l'abondance des transferts
+            let mut unique_transfers: std::vec::Vec<(String,String)> =  vec![];
+            let mut scores: std::vec::Vec<usize> =  vec![];
+            let mut score_max = 1;
+            for transfer in transfers {
+                let mut transfer_it =  unique_transfers.iter();
+                let index = transfer_it.position(|r| r == &transfer);
+                match index {
+                    None => {
+                        unique_transfers.push(transfer.clone());
+                        scores.push(1)},
+                    Some(i) => {
+                        scores[i] = scores[i] + 1;
+                        if scores[i] > score_max {
+                            score_max = scores[i];
+                        }
+                    },
+                }
+            }
+            #[derive(Debug, Eq, Ord, PartialEq, PartialOrd)]
+            struct TransfersWithScore {
+                transfer: (String, String),
+                score: usize,
+            }
+            impl TransfersWithScore {
+                pub fn new(transfer: (String,String), score: usize) -> Self {
+                    TransfersWithScore {
+                        transfer,
+                        score
+                    }
+                }
+            }
+            let mut sorted_transfers: std::vec::Vec<TransfersWithScore> = vec![];
+            let mut  i_trans = 0;
+            while i_trans < unique_transfers.len() {
+                let (end,start) = &unique_transfers[i_trans];
+                let score = scores[i_trans];
+                if score > thickness_thresh_1st {
+                    sorted_transfers.push(TransfersWithScore::new((end.to_string(), start.to_string()), score));
+                }
+                i_trans = i_trans + 1;
+            }
+            sorted_transfers.sort_by(|a, b| a.score.cmp(&b.score));
+            println!("Transfers found more than {} times :",thickness_thresh_1st);
+            let mut i_sort = 0;
+            while i_sort < sorted_transfers.len() {
+                let (end,start) = &sorted_transfers[i_sort].transfer;
+                let score =  &sorted_transfers[i_sort].score;
+                println!("{} => {} ({})", end, start, score);
+                i_sort = i_sort + 1;
+            }
+
+            match  options.trans_end {
+                Some(string) =>  println!("Only transfers starting with {} will be displayed",string),
+                None => {},
+            }
+            match  options.trans_start {
+                Some(string) =>  println!("Only transfers ending to {} will be displayed",string),
+                None => {},
+            }
+        }
+    }
+    else {
+        if options.disp_gene  > 0 {
+            // On traite l'arbre de gene comme un arbre au format phylxoml
+            if options.disp_gene > nb_gntree {
+                println!("There are only {} genes in the file, unable to display gene #{}",
+                    nb_gntree,options.disp_gene);
+                    process::exit(1);
+                }
+            let  mut tree = &mut gene_trees[options.disp_gene-1];
+            phyloxml_processing(&mut tree, &options, &config, outfile);
+        }
+        else {
+            recphyloxml_processing(
+                &mut sp_trees[0],
+                &mut  gene_trees,
+                &mut options,
+                &config,
+                true,
+                &transfers,
+                outfile,
+            );
+        }
+    }
+    if options.open_browser {
+        if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+            info!("Browser OK");
+        }
+    }
+}
 // Message d'aide court
 // --------------------
 fn display_usage(programe_name:String) {
@@ -434,612 +1061,33 @@ fn main()  {
     // RECONCILIATION A 3 NIVEAUX
     // ==========================
     if level3 {
-        // Traitement de 2 fichier fichiers recPhyloXML
-        println!("Two reconciled files => displaying 3-levels reconciliations. ");
-        let  mut outfile_gene_para = String::from("thirdkind_gene_symbiote.svg");
-        let  mut outfile_para_host = String::from("thirdkind_symbiote_host.svg");
-        let  mut outfile_mapped_1 = String::from("thirdkind_mapped_1.svg");
-        let  mut outfile_mapped_2 = String::from("thirdkind_mapped_2.svg");
-        let  mut outfile_mapped_3 = String::from("thirdkind_mapped_3.svg");
-        if outfile == "thirdkind.svg" {
-            outfile = String::from("");
-        }
-        outfile_gene_para = outfile.clone() + &outfile_gene_para;
-        outfile_para_host = outfile.clone() + &outfile_para_host;
-        outfile_mapped_1 = outfile.clone() + &outfile_mapped_1;
-        outfile_mapped_2 = outfile.clone() + &outfile_mapped_2;
-        outfile_mapped_3 = outfile.clone() + &outfile_mapped_3;
-        let transfers = vec![]; // Initialise transfers
-        let mut transfers_gene = vec![]; // Transferts de genes
-        let mut transfers_para = vec![]; // Transferts de parasites(ou symbiotes)
-        // Gestion de l'option free_living dans le cas d'une
-        let free_living_3l = options.free_living;
-        options.free_living = false;
-        // ===============
-        // GENE - PARASITE
-        // ===============
-        // ---------------------------------------------------------
-        // Create a structure Arena for the global parasite pipe
-        // tree and a vector of structures Arena for gene path trees
-        // ---------------------------------------------------------
-        let mut global_pipe_parasite: ArenaTree<String> = ArenaTree::default();
-        let mut global_roots: std::vec::Vec<usize> = Vec::new();
-        let mut path_genes: std::vec::Vec<ArenaTree<String>> = Vec::new();
-        // ---------------------------------------------------------
-        // Fill global parasite pipe tree and is roots and path
-        // genes trees
-        // ---------------------------------------------------------
-        println!("\nBuilding 'lower' gene vs 'upper' symbiote reconciliation svg file [{}]",outfile_gene_para.clone());
-        read_recphyloxml_multi(
+        process_3levels(
+            &mut outfile,
+            options,
+            config,
             infile_gs,
-            &mut global_pipe_parasite,
-            &mut path_genes,
-            &mut global_roots,
-        );
-        let  nb_gntree =  path_genes.len().clone();
-        println!("Number of 'lower' gene trees : {}",nb_gntree);
-        info!("List of gene trees : {:?}",path_genes);
-        let nb_parasite_pipe = global_roots.len().clone();
-        println!("Number of 'upper' symbiote trees : {}",nb_parasite_pipe);
-        println!("List of 'upper' symbiote tree roots : {:?}",global_roots);
-        info!("Global symbiote pipe tree : {:?}",global_pipe_parasite);
-        // ---------------------------------------------------------
-        // Generate svg of the global parasite pipe tree and  path
-        // genes trees (outfile_gene_para)
-        // ---------------------------------------------------------
-        // If  the option -t is on :
-        if thickness_flag_1st {
-            // check that gene nb is correct
-            if thickness_gene_1st > nb_gntree {
-                println!("There are only {} genes in the file, unable to display gene #{}",
-                nb_gntree, thickness_gene_1st);
-                process::exit(1);
-            }
-            //  Get the transfers in the genes
-            transfers_gene = get_gtransfer(&mut path_genes[0]);
-            let mut i = 1;
-            while i < nb_gntree {
-                let gene_transfer = get_gtransfer(&mut path_genes[i]);
-                for val in gene_transfer {
-                    transfers_gene.push(val);
-                }
-                i = i + 1;
-            }
-            println!("Transfers (genes) = {:?}",transfers_gene);
-            // Define the unique gene wich is selected
-            let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            selected_gene_trees.push(path_genes[thickness_gene_1st-1].copie());
-            // Define a temporary copy of the species tree
-            let mut _global_pipe_parasite = global_pipe_parasite.copie();
-            // Set options
-            options.thickness_flag = true;
-            options.thickness_gene = thickness_gene_1st;
-            options.thickness_thresh = thickness_thresh_1st;
-            //  Create the svg from temporary variables
-            recphyloxml_processing(
-                &mut _global_pipe_parasite,
-                &mut selected_gene_trees,
-                &mut options,
-                &config,
-                true,
-                &transfers_gene,
-                outfile_gene_para.clone(),
-            );
-            // We need to run again with the current variables, because we need the upddated
-            // global_pipe_parasite path_genes
-            recphyloxml_processing(
-                &mut global_pipe_parasite,
-                &mut path_genes,
-                &mut options,
-                &config,true,
-                &transfers,
-                "tmpfile.svg".to_string(),
-            );
-        }
-        // No -t option
-        else {
-            recphyloxml_processing(
-                &mut global_pipe_parasite,
-                &mut  path_genes,
-                &mut options,
-                &config,true,
-                &transfers,
-                outfile_gene_para,
-            );
-        }
-        // ==============
-        // PARASITE-HOST
-        // =============
-        // ---------------------------------------------------------
-        // Create a structure Arena for the host pipe tree and a
-        // vector of structures Arena for parasite path trees
-        // ---------------------------------------------------------
-        let mut tree_host_pipe: ArenaTree<String> = ArenaTree::default();
-        let mut path_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-        println!("\nBuilding 'lower' symbiote vs 'upper' host reconciliation svg file [{}]",outfile_para_host.clone());
-        // ---------------------------------------------------------
-        // Fill  host pipe tree and is roots and path parasite trees
-        // ---------------------------------------------------------
-        let mut global_roots: std::vec::Vec<usize> = Vec::new();
-        read_recphyloxml_multi(
             infile_sh,
-            &mut tree_host_pipe,
-            &mut path_para_trees,
-            &mut global_roots
-        );
-        let  nb_parasite_path =  path_para_trees.len().clone();
-        let  nb_hosts_pipe = global_roots.len();
-        println!("Number of 'upper' symbiote trees in gene-symbiote file : {}",nb_parasite_pipe);
-        println!("Number of 'lower' symbiote trees in symbiote-host file : {}",nb_parasite_path);
-        println!("Number of 'upper' host trees in symbiote-host file : {}",nb_hosts_pipe);
-        if nb_parasite_path != nb_parasite_pipe {
-            eprintln!();
-            eprintln!("ERROR: Different number of parasite trees in the 2 files!");
-            eprintln!("       Resulting svg will be incomplete.");
-            eprintln!();
-            process::exit(1);
-        }
-        // ---------------------------------------------------------
-        // Generate svg of the host pipe tree and path symbiote trees
-        // ---------------------------------------------------------
-        // Reset the option
-        options.thickness_flag = false;
-        options.free_living = free_living_3l;
-        config.species_color="violet".to_string();
-        // If  the option -u is on :
-        if thickness_flag_2nd {
-            options.thickness_flag = true;
-            options.thickness_gene = thickness_gene_2nd;
-            options.thickness_thresh = thickness_thresh_2nd;
-            // check that the number pf the parasite is correct
-            if options.thickness_gene > nb_parasite_path {
-                println!("There are only {} parasites in the file, unable to display gene #{}",
-                nb_parasite_path,options.thickness_gene);
-                process::exit(1);
-            }
-            // Get teh transfers in the parasites
-            transfers_para = get_gtransfer(&mut path_para_trees[0]);
-            let mut i = 1;
-            while i < nb_parasite_path {
-                let gene_transfer = get_gtransfer(&mut path_para_trees[i]);
-                for val in gene_transfer {
-                    transfers_para.push(val);
-                }
-            i = i + 1;
-            }
-            println!("Transfers (parasites) = {:?}",transfers_para);
-            // Define a temporary copy of the paraistes
-            let mut _path_para_trees: std::vec::Vec<ArenaTree<String>> = Vec::new();
-            for i in 0 .. path_para_trees.len() {
-                _path_para_trees.push(path_para_trees[i].copie());
-            }
-            // Define the unique parasite  wich is selected
-            let mut selected_para_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            selected_para_trees.push(_path_para_trees.remove(options.thickness_gene-1));
-            // Define a tmprary copy of the host
-            let mut _tree_host_pipe = tree_host_pipe.copie();
-            //  Create the svg from the temprary variables
-            recphyloxml_processing(
-                &mut _tree_host_pipe,
-                &mut selected_para_trees,
-                &mut options,
-                &config,
-                true,
-                &transfers_para,
-                outfile_para_host.clone(),
-            );
-            // We need to run again with the current variables, because we need the upddated
-            // _tree_host_pipe path_para_trees
-            recphyloxml_processing(
-                &mut tree_host_pipe,
-                &mut  path_para_trees,
-                &mut options,
-                &config,
-                true,
-                &transfers,
-                "tmpfile2.svg".to_string(),
-            );
-        }
-        // No -u option
-        else {
-            recphyloxml_processing(
-                &mut tree_host_pipe,
-                &mut  path_para_trees,
-                &mut options,
-                &config,
-                true,
-                &transfers,
-                outfile_para_host,
-            );
-        }
-        // =========================
-        // GENE-PARASITE-HOST : MAP1
-        // =========================
-        println!("\nBuilding 'mapped 1': reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) [{}]",
-            outfile_mapped_1);
-        info!("Symbiote trees as a 'lower tree' : {:?}",path_para_trees);
-        info!("Symbiote tree as a 'upper tree' : {:?}",global_pipe_parasite);
-        println!("Map symbiote as 'lower' to symbiote as 'upper'");
-        let mut i = 0;
-        config.species_color="pink".to_string();
-        while i < nb_parasite_pipe {
-            map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
-            i = i + 1;
-        }
-        info!("Global symbiote tree wih events : {:?}",global_pipe_parasite);
-        reset_pos(&mut global_pipe_parasite);
-        let mut i = 0;
-        while i < nb_gntree {
-            reset_pos(&mut path_genes[i]);
-            i = i + 1;
-        }
-        println!("Map symbiote as 'upper' to symbiote as 'lower'");
-        let mut i = 0;
-        while i < nb_parasite_pipe {
-            map_parasite_s2g(&mut global_pipe_parasite, &mut path_para_trees[i], &mut path_genes);
-            i = i +  1;
-        }
-        info!("Global upper symbiote tree after mapping s2g : {:?}",global_pipe_parasite);
-        println!("Map symbiote as 'lower' to symbiote as 'upper' again");
-        let mut i = 0;
-        while i < nb_parasite_pipe {
-            map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
-            i = i + 1;
-        }
-        reset_pos(&mut global_pipe_parasite);
-        let mut i = 0;
-        while i < nb_gntree {
-            reset_pos(&mut path_genes[i]);
-            i = i + 1;
-        }
-        // Reset the option
-        options.thickness_flag = false;
-        options.free_living = false;
-        //  option -t is on
-        if thickness_flag_1st {
-            options.thickness_flag = true;
-            options.thickness_gene = thickness_gene_1st;
-            options.thickness_thresh = thickness_thresh_1st;
-        }
-        // attention on ne remape pas
-        recphyloxml_processing(
-            &mut global_pipe_parasite,
-            &mut  path_genes,
-            &mut options,
-            &config,
-            false,
-            &transfers_gene,
-            outfile_mapped_1,
-        );
-        let path = env::current_dir().expect("Unable to get current dir");
-        let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_1.svg".to_string());
-        if options.open_browser {
-            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                info!("Browser OK");
-            }
-        }
-        // =========================
-        // GENE-PARASITE-HOST : MAP2
-        // =========================
-        println!();
-        println!("Building 'mapped 2':  'lower' symbiote tree(s) within 'upper' host tree and mapped gene transfers [{}]",
-            outfile_mapped_2);
-        let mut i = 0;
-        config.species_color="violet".to_string();
-        // We get the gene transfer here again, but they will be mapped
-        let gene_transfers = get_gtransfer(&mut path_genes[i]);
-        info!("Transfers = {:?}",gene_transfers);
-        let mut mapped_gene_transfers = map_transfer_mul(gene_transfers, &mut path_para_trees);
-        info!("Mapped transfers = {:?}",mapped_gene_transfers);
-        i = i + 1;
-        while i < nb_gntree {
-            let gene_transfers = get_gtransfer(&mut path_genes[i]);
-            info!("Transfers = {:?}",gene_transfers);
-            let mapped = map_transfer_mul(gene_transfers, &mut path_para_trees);
-            info!("Mapped transfers = {:?}",mapped);
-            for val in mapped {
-                mapped_gene_transfers.push(val);
-            }
-            i = i + 1;
-        }
-        info!("Mapped transfers = {:?}",mapped_gene_transfers);
-        // Reseting the pipe and the paths
-        reset_pos(&mut tree_host_pipe);
-        let mut i = 0;
-        while i < nb_parasite_pipe {
-            reset_pos(&mut path_para_trees[i]);
-            i = i + 1;
-        }
-        // Setting option to false because we dont want the parasite transerst to be hidden
-        options.thickness_flag = false;
-        if thickness_flag_2nd {
-            // On ajoute les transferts de paraistes au transferts de gene
-            options.thickness_flag = true;
-            options.thickness_gene = thickness_gene_2nd;
-            options.thickness_thresh = thickness_thresh_2nd;
-            //  Create the svg from temporary variables
-            for val in transfers_para {
-                mapped_gene_transfers.push(val);
-            }
-        }
-        // Reset the option
-        options.free_living = free_living_3l;
-        // attention on ne remape pas
-        recphyloxml_processing(
-            &mut tree_host_pipe,
-            &mut path_para_trees,
-            &mut options,
-            &config,
-            false,
-            &mapped_gene_transfers,
-            outfile_mapped_2,
-        );
-        let path = env::current_dir().expect("Unable to get current dir");
-        let url_file = format!("file:///{}/{}", path.display(),"thirdkind_mapped_2.svg".to_string());
-        if options.open_browser {
-            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                info!("Browser OK");
-            }
-        }
-        println!("\nBuilding 'phyloxml style' svg files...");
-        //  Simple tree of the parasite
-        config.single_gene_color="pink".to_string();
-        reset_pos(&mut global_pipe_parasite);
-        phyloxml_processing(
-            &mut global_pipe_parasite,
-            &mut options,
-            &config,
-            outfile.clone() + &"thirdkind_symbiote_simple.svg".to_string(),
-        );
-        reset_pos(&mut tree_host_pipe);
-        //  Simple tree of the host
-        config.single_gene_color="violet".to_string();
-        phyloxml_processing(
-            &mut tree_host_pipe,
-            &mut options,
-            &config,
-            outfile.clone() + &"thirdkind_host_simple.svg".to_string(),
-        );
-        //  Simple trees of the genes
-        let mut i = 0;
-        while i < nb_parasite_pipe {
-            reset_pos(&mut path_para_trees[i]);
-            phyloxml_processing(
-                &mut path_para_trees[i],
-                &mut options,
-                &config,
-                (outfile.clone() + &"thirdkind_gene_simple_" + &i.to_string() +".svg").to_string(),
-            );
-            i = i + 1;
-        }
-        // =========================
-        // GENE-PARASITE-HOST : MAP3
-        // =========================
-        println!();
-        println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
-        config.species_color="violet".to_string();
-        map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
-        reset_pos(&mut tree_host_pipe);
-        let mut i = 0;
-        while i < nb_gntree {
-            reset_pos(&mut path_genes[i]);
-            i = i + 1;
-        }
-        // Reset the option
-        options.free_living = false;
-        recphyloxml_processing(
-            &mut tree_host_pipe,
-            &mut path_genes,
-            &mut options,
-            &config,
-            true,
-            &vec![],
-            outfile_mapped_3.clone(),
-        );
-        let url_file = format!("file:///{}/{}", path.display(),outfile_mapped_3);
-        if options.open_browser {
-            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                info!("Browser OK");
-            }
-        }
-        println!("\nOutput summary:");
-        println!(" - {}thirdkind_host_simple.svg ...... 1 level:  host tree",outfile);
-        let mut i = 0;
-        while i < nb_parasite_pipe {
-            println!(" - {}thirdkind_gene_simple_{}.svg .... 2 levels: gene tree(s)",outfile,&i);
-            i = i + 1;
-        }
-        println!(" - {}thirdkind_symbiote_simple.svg .. 2 levels: symbiote tree(s)",outfile);
-        println!(" - {}thirdkind_gene_symbiote.svg .... 2 levels: 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
-        println!(" - {}thirdkind_symbiote_host.svg .... 2 levels: 'upper' host tree with 'lower' symbiote tree(s) inside",outfile);
-        println!(" - {}thirdkind_mapped_1.svg ........  3 levels: reconciled 'upper' symbiote tree(s) with 'lower' gene tree(s) inside",outfile);
-        println!(" - {}thirdkind_mapped_2.svg ........  3 levels: 'upper' host tree with 'lower' symbiote tree(s) inside plus gene transfers",outfile);
-        println!(" - {}thirdkind_mapped_3.svg ........  3 levels: 'upper' host tree with gene tree(s) inside",outfile);
-        if nb_parasite_path != nb_parasite_pipe {
-            eprintln!();
-            eprintln!("ERROR: Different number of symbiote trees in the 2 files!");
-            eprintln!("       Resulting svg will be incomplete.");
-            eprintln!();
-            process::exit(1)
-        }
+            thickness_thresh_1st,
+            thickness_gene_1st,
+            thickness_thresh_2nd,
+            thickness_gene_2nd,
+            thickness_flag_1st,
+            thickness_flag_2nd
+        )
     }
     // =================================
     //  RECONCILIATION A 2 DEUX NIVEAUX
     // =================================
+    // Traitement d'une lisye de fichiers
     else if multiple_files {
-        // get the url
-        let path = env::current_dir().expect("Unable to get current dir");
-        let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
-        println!("Multiple files processing:");
-        let multifilename = &infile_sh.clone();
-        let contents = fs::read_to_string(multifilename);
-        let contents = match contents {
-            Ok(contents) => contents,
-            Err(err) => {
-                eprintln!("Something went wrong when reading the  input file {}.\n{}",
-                    multifilename,err);
-                eprintln!("Please check file name and path.");
-                process::exit(1);
-            }
-        };
-        let files = contents.lines();
-        // let mut sp_tree: ArenaTree<String> = ArenaTree::default();
-        // Creation du vecteur de structure ArenaTree pour les genes
-        // ---------------------------------------------------------
-        let mut gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-        // Empty additional transfers
-        let mut transfers = vec![];
-        let mut sp_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-        for filename in files {
-            println!("Processing file {}",filename);
-            // On cree une structure Arena pour l'arbre d'espece
-            // et un vecteur de  structures Arena pour le(s) arbres de gènes
-            // -------------------------------------------------------------
-            // Creation de la structure ArenaTree pour l'arbre d'espece
-            // --------------------------------------------------------
-            let mut _sp_tree: ArenaTree<String> = ArenaTree::default();
-            // Creation du vecteur de structure ArenaTree pour les genes
-            // ---------------------------------------------------------
-            let mut _gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            // Empty additional transfers
-            // let mut transfers = vec![];
-            let mut _global_roots: std::vec::Vec<usize> = Vec::new();
-            read_recphyloxml_multi(
-                filename.to_string(),
-                &mut _sp_tree,
-                &mut _gene_trees,
-                &mut _global_roots,
-            );
-            let  nb_gntree =  _gene_trees.len().clone();
-            println!("Number of gene trees : {}",nb_gntree);
-            info!("List of gene trees : {:?}",_gene_trees);
-            gene_trees.append(&mut _gene_trees);
-            sp_trees.push(_sp_tree);
-        }
-        let  nb_gntree =  gene_trees.len().clone();
-        println!("Total number of gene trees : {}",nb_gntree);
-        info!("List of all gene trees : {:?}",gene_trees);
-        if options.thickness_flag {
-            if options.thickness_gene > nb_gntree {
-                println!("There are only {} genes in the file, unable to display gene #{}",
-                nb_gntree, options.thickness_gene);
-                process::exit(1);
-            }
-            //  Recupere les transferts
-            transfers = get_gtransfer(&mut gene_trees[0]);
-            let mut i = 1;
-            while i < nb_gntree {
-                let gene_transfer = get_gtransfer(&mut gene_trees[i]);
-                for val in gene_transfer {
-                    transfers.push(val);
-                }
-                i = i + 1;
-            }
-            let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
-            if options.thickness_gene > 0 {
-                selected_gene_trees.push(gene_trees.remove(options.thickness_gene-1));
-            }
-            recphyloxml_processing(
-                &mut sp_trees[0],
-                &mut selected_gene_trees,
-                &mut options,
-                &config,
-                true,
-                &transfers,
-                outfile,
-            );
-            info!("Transfers = {:?}",transfers);
-            if display_transfers {
-                // Affiche l'abondance des transferts
-                let mut unique_transfers: std::vec::Vec<(String,String)> =  vec![];
-                let mut scores: std::vec::Vec<usize> =  vec![];
-                let mut score_max = 1;
-                for transfer in transfers {
-                    let mut transfer_it =  unique_transfers.iter();
-                    let index = transfer_it.position(|r| r == &transfer);
-                    match index {
-                        None => {
-                            unique_transfers.push(transfer.clone());
-                            scores.push(1)},
-                        Some(i) => {
-                            scores[i] = scores[i] + 1;
-                            if scores[i] > score_max {
-                                score_max = scores[i];
-                            }
-                        },
-                    }
-                }
-                #[derive(Debug, Eq, Ord, PartialEq, PartialOrd)]
-                struct TransfersWithScore {
-                    transfer: (String, String),
-                    score: usize,
-                }
-                impl TransfersWithScore {
-                    pub fn new(transfer: (String,String), score: usize) -> Self {
-                        TransfersWithScore {
-                            transfer,
-                            score
-                        }
-                    }
-                }
-                let mut sorted_transfers: std::vec::Vec<TransfersWithScore> = vec![];
-                let mut  i_trans = 0;
-                while i_trans < unique_transfers.len() {
-                    let (end,start) = &unique_transfers[i_trans];
-                    let score = scores[i_trans];
-                    if score > thickness_thresh_1st {
-                        sorted_transfers.push(TransfersWithScore::new((end.to_string(), start.to_string()), score));
-                    }
-                    i_trans = i_trans + 1;
-                }
-                sorted_transfers.sort_by(|a, b| a.score.cmp(&b.score));
-                println!("Transfers found more than {} times :",thickness_thresh_1st);
-                let mut i_sort = 0;
-                while i_sort < sorted_transfers.len() {
-                    let (end,start) = &sorted_transfers[i_sort].transfer;
-                    let score =  &sorted_transfers[i_sort].score;
-                    println!("{} => {} ({})", end, start, score);
-                    i_sort = i_sort + 1;
-                }
-
-                match  options.trans_end {
-                    Some(string) =>  println!("Only transfers starting with {} will be displayed",string),
-                    None => {},
-                }
-                match  options.trans_start {
-                    Some(string) =>  println!("Only transfers ending to {} will be displayed",string),
-                    None => {},
-                }
-            }
-        }
-        else {
-            if options.disp_gene  > 0 {
-                // On traite l'arbre de gene comme un arbre au format phylxoml
-                if options.disp_gene > nb_gntree {
-                    println!("There are only {} genes in the file, unable to display gene #{}",
-                        nb_gntree,options.disp_gene);
-                        process::exit(1);
-                    }
-                let  mut tree = &mut gene_trees[options.disp_gene-1];
-                phyloxml_processing(&mut tree, &options, &config, outfile);
-            }
-            else {
-                recphyloxml_processing(
-                    &mut sp_trees[0],
-                    &mut  gene_trees,
-                    &mut options,
-                    &config,
-                    true,
-                    &transfers,
-                    outfile,
-                );
-            }
-        }
-        if options.open_browser {
-            if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                info!("Browser OK");
-            }
-        }
+        process_2levels_multifile(
+            outfile,
+            options,
+            config,
+            infile_sh,
+            thickness_thresh_1st,
+            display_transfers
+        )
     }
     // Traitement d'un fichier unique qui peu etre newick, phyloXML ou recPhyloXML
     else {
