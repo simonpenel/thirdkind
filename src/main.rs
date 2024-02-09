@@ -19,6 +19,162 @@ use webbrowser::{Browser};
 use light_phylogeny::*;
 use log::{info};
 
+/// enum of the possible input file Formats
+#[derive(Debug)]
+pub enum  Format {
+    Newick,
+    Phyloxml,
+    Recphyloxml,
+}
+
+fn main()  {
+    // Initialise les options
+    let mut options: Options =  Options::new();
+    // Initialise la config
+    let mut config: Config = Config::new();
+    // Charge la config par deuakt si elle existe
+    let fconf = "config_default.txt";
+    if fs::metadata(fconf).is_ok() {
+		set_config(fconf.to_string(), &mut config);
+    }
+    // Gestion des arguments et des options
+    // ------------------------------------
+    let args: Vec<String> = std::env::args().collect();
+    if args.len() == 1 {
+        display_usage(args[0].to_string());
+    }
+    let mut infile_sh = String::new(); // symbiote host file
+    let mut infile_gs = String::new(); // gene symbiote file
+    let mut outfile = String::from("thirdkind.svg");
+    let mut level3 = false; // Affichage à 3 niveaux
+    let mut multiple_files = false;
+    let mut display_transfers = false;
+    let mut _format = Format::Newick;
+    // 1st level file option
+    let mut thickness_thresh_1st = 0;
+    let mut thickness_gene_1st = 1;
+    let mut thickness_flag_1st = false;
+    // 2nd level file option
+    let mut thickness_thresh_2nd = 0;
+    let mut thickness_gene_2nd = 1;
+    let mut thickness_flag_2nd = false;
+    
+    set_options( args, &mut options, &mut config, &mut infile_gs, &mut infile_sh, &mut outfile,
+        &mut thickness_thresh_1st,&mut thickness_gene_1st, &mut thickness_thresh_2nd,
+        &mut thickness_gene_2nd, &mut level3, &mut display_transfers, &mut multiple_files,
+        &mut thickness_flag_1st, &mut thickness_flag_2nd, &mut _format);
+
+    // Setting options on thickness
+    options.thickness_flag = thickness_flag_1st;
+    options.thickness_gene = thickness_gene_1st;
+    options.thickness_thresh = thickness_thresh_1st;
+    
+    // ==========================
+    // RECONCILIATION A 3 NIVEAUX
+    // ==========================
+    if level3 {
+        process_3levels(
+            &mut outfile,
+            options,
+            config,
+            infile_gs,
+            infile_sh,
+            thickness_thresh_1st,
+            thickness_gene_1st,
+            thickness_thresh_2nd,
+            thickness_gene_2nd,
+            thickness_flag_1st,
+            thickness_flag_2nd
+        )
+    }
+    // =================================
+    //  RECONCILIATION A 2 DEUX NIVEAUX
+    // =================================
+    // Traitement d'une lisye de fichiers
+    else if multiple_files {
+        process_2levels_multifile(
+            outfile,
+            options,
+            config,
+            infile_sh,
+            thickness_thresh_1st,
+            display_transfers
+        )
+    }
+    // Traitement d'un fichier unique qui peu etre newick, phyloXML ou recPhyloXML
+    else {
+        // Determination du format
+        // ------------------------
+        let filename = &infile_sh.clone();
+        info!("Input filename is {}",filename);
+        let dot = filename.rfind('.');
+        let format = match dot {
+            None => Format::Newick,
+            Some(dot) => {
+                let suffix = &filename[dot..];
+                info!("File suffix is {:?}",suffix);
+                match suffix {
+                    ".xml" => Format::Recphyloxml,
+                    ".phyloxml" => Format::Phyloxml,
+                    ".recphyloxml" => Format::Recphyloxml,
+                    ".recPhyloXML" => Format::Recphyloxml,
+                    ".recphylo" => Format::Recphyloxml,
+                    _ => Format::Newick,
+                }
+            },
+        };
+        let format = match _format {
+            Format::Newick => {
+                println!("Assume that format is {:?}",format);
+                format
+            },
+            _ => {
+                println!("User defined format {:?}",_format);
+                _format
+            },
+        };
+        // get the url
+        let path = env::current_dir().expect("Unable to get current dir");
+        let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
+        // Creation d'une structure ArenaTree (pour phyloxml et newick)
+        // -----------------------------------------------------------
+        let mut tree: ArenaTree<String> = ArenaTree::default();
+        // Charge l'arbre selon le format de fichier
+        //  ----------------------------------------
+        match format {
+            // Phymxoml
+            Format::Phyloxml => {
+                read_phyloxml(filename.to_string(), &mut tree);
+                phyloxml_processing(&mut tree, &options, &config, outfile);
+                if options.open_browser {
+                    if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+                        info!("Browser OK");
+                    }
+                }
+            },
+            // Newick
+            Format::Newick => {
+                read_newick(filename.to_string(), &mut tree);
+                phyloxml_processing(&mut tree, &options, &config, outfile);
+                if options.open_browser {
+                    if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
+                        info!("Browser OK");
+                    }
+                }
+            },
+            // Recphyloxml
+            Format::Recphyloxml => {
+                process_2levels_singlefile(
+                    outfile,
+                    options,
+                    config,
+                    filename.to_string(),
+                );
+            },
+        }
+    }
+}
+
 // Analyse des options
 // -------------------
 fn set_options(
@@ -1100,161 +1256,6 @@ fn display_help(programe_name:String) {
     println!();
     println!("Bug report, question or suggestion : simon.penel@univ-lyon1.fr");
     process::exit(1);
-}
-/// enum of the possible input file Formats
-#[derive(Debug)]
-pub enum  Format {
-    Newick,
-    Phyloxml,
-    Recphyloxml,
-}
-
-fn main()  {
-    // Initialise les options
-    let mut options: Options =  Options::new();
-    // Initialise la config
-    let mut config: Config = Config::new();
-    // Charge la config par deuakt si elle existe
-    let fconf = "config_default.txt";
-    if fs::metadata(fconf).is_ok() {
-		set_config(fconf.to_string(), &mut config);
-    }
-    // Gestion des arguments et des options
-    // ------------------------------------
-    let args: Vec<String> = std::env::args().collect();
-    if args.len() == 1 {
-        display_usage(args[0].to_string());
-    }
-    let mut infile_sh = String::new(); // symbiote host file
-    let mut infile_gs = String::new(); // gene symbiote file
-    let mut outfile = String::from("thirdkind.svg");
-    let mut level3 = false; // Affichage à 3 niveaux
-    let mut multiple_files = false;
-    let mut display_transfers = false;
-    let mut _format = Format::Newick;
-    // 1st level file option
-    let mut thickness_thresh_1st = 0;
-    let mut thickness_gene_1st = 1;
-    let mut thickness_flag_1st = false;
-    // 2nd level file option
-    let mut thickness_thresh_2nd = 0;
-    let mut thickness_gene_2nd = 1;
-    let mut thickness_flag_2nd = false;
-    
-    set_options( args, &mut options, &mut config, &mut infile_gs, &mut infile_sh, &mut outfile,
-        &mut thickness_thresh_1st,&mut thickness_gene_1st, &mut thickness_thresh_2nd,
-        &mut thickness_gene_2nd, &mut level3, &mut display_transfers, &mut multiple_files,
-        &mut thickness_flag_1st, &mut thickness_flag_2nd, &mut _format);
-
-    // Setting options on thickness
-    options.thickness_flag = thickness_flag_1st;
-    options.thickness_gene = thickness_gene_1st;
-    options.thickness_thresh = thickness_thresh_1st;
-    
-    // ==========================
-    // RECONCILIATION A 3 NIVEAUX
-    // ==========================
-    if level3 {
-        process_3levels(
-            &mut outfile,
-            options,
-            config,
-            infile_gs,
-            infile_sh,
-            thickness_thresh_1st,
-            thickness_gene_1st,
-            thickness_thresh_2nd,
-            thickness_gene_2nd,
-            thickness_flag_1st,
-            thickness_flag_2nd
-        )
-    }
-    // =================================
-    //  RECONCILIATION A 2 DEUX NIVEAUX
-    // =================================
-    // Traitement d'une lisye de fichiers
-    else if multiple_files {
-        process_2levels_multifile(
-            outfile,
-            options,
-            config,
-            infile_sh,
-            thickness_thresh_1st,
-            display_transfers
-        )
-    }
-    // Traitement d'un fichier unique qui peu etre newick, phyloXML ou recPhyloXML
-    else {
-        // Determination du format
-        // ------------------------
-        let filename = &infile_sh.clone();
-        info!("Input filename is {}",filename);
-        let dot = filename.rfind('.');
-        let format = match dot {
-            None => Format::Newick,
-            Some(dot) => {
-                let suffix = &filename[dot..];
-                info!("File suffix is {:?}",suffix);
-                match suffix {
-                    ".xml" => Format::Recphyloxml,
-                    ".phyloxml" => Format::Phyloxml,
-                    ".recphyloxml" => Format::Recphyloxml,
-                    ".recPhyloXML" => Format::Recphyloxml,
-                    ".recphylo" => Format::Recphyloxml,
-                    _ => Format::Newick,
-                }
-            },
-        };
-        let format = match _format {
-            Format::Newick => {
-                println!("Assume that format is {:?}",format);
-                format
-            },
-            _ => {
-                println!("User defined format {:?}",_format);
-                _format
-            },
-        };
-        // get the url
-        let path = env::current_dir().expect("Unable to get current dir");
-        let url_file = format!("file:///{}/{}", path.display(),outfile.clone());
-        // Creation d'une structure ArenaTree (pour phyloxml et newick)
-        // -----------------------------------------------------------
-        let mut tree: ArenaTree<String> = ArenaTree::default();
-        // Charge l'arbre selon le format de fichier
-        //  ----------------------------------------
-        match format {
-            // Phymxoml
-            Format::Phyloxml => {
-                read_phyloxml(filename.to_string(), &mut tree);
-                phyloxml_processing(&mut tree, &options, &config, outfile);
-                if options.open_browser {
-                    if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                        info!("Browser OK");
-                    }
-                }
-            },
-            // Newick
-            Format::Newick => {
-                read_newick(filename.to_string(), &mut tree);
-                phyloxml_processing(&mut tree, &options, &config, outfile);
-                if options.open_browser {
-                    if webbrowser::open_browser(Browser::Default, &url_file).is_ok() {
-                        info!("Browser OK");
-                    }
-                }
-            },
-            // Recphyloxml
-            Format::Recphyloxml => {
-                process_2levels_singlefile(
-                    outfile,
-                    options,
-                    config,
-                    filename.to_string(),
-                );
-            },
-        }
-    }
 }
 // Function set_config
 // -------------------
