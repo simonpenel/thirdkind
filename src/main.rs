@@ -701,8 +701,8 @@ fn process_3levels(
         process::exit(1)
     }
 }
-// Traitement à 2 niveaux de multiples fichiers
-// --------------------------------------------
+// Traitement à 2 niveaux de multiples fichiers recPhyloXML
+// --------------------------------------------------------
 fn process_2levels_multifile(
     outfile: String,
     mut options: Options,
@@ -886,7 +886,8 @@ fn process_2levels_multifile(
         }
     }
 }
-
+// Traitement à 2 niveaux d'1 seul fichier recPhyloXML
+// ---------------------------------------------------
 fn process_2levels_singlefile(
     outfile: String,
     mut options: Options,
