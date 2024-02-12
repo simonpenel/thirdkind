@@ -175,7 +175,7 @@ fn main()  {
     }
 }
 
-// Analyse des options
+/// Analyse des options
 // -------------------
 fn set_options(
     args: Vec<String>,
@@ -412,7 +412,7 @@ fn set_options(
     }
 
 }
-// Traitement à 3 niveaux
+/// Traitement à 3 niveaux
 // ----------------------
 fn process_3levels(
     outfile: &mut String,
@@ -857,7 +857,7 @@ fn process_3levels(
         process::exit(1)
     }
 }
-// Traitement à 2 niveaux de multiples fichiers recPhyloXML
+/// Traitement à 2 niveaux de multiples fichiers recPhyloXML
 // --------------------------------------------------------
 fn process_2levels_multifile(
     outfile: String,
@@ -1042,7 +1042,7 @@ fn process_2levels_multifile(
         }
     }
 }
-// Traitement à 2 niveaux d'1 seul fichier recPhyloXML
+/// Traitement à 2 niveaux d'1 seul fichier recPhyloXML
 // ---------------------------------------------------
 fn process_2levels_singlefile(
     outfile: String,
@@ -1133,7 +1133,7 @@ fn process_2levels_singlefile(
         }
     }
 }
-// Message d'aide court
+/// Message d'aide court
 // --------------------
 fn display_usage(programe_name:String) {
     const VERSION: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
@@ -1155,7 +1155,7 @@ fn display_usage(programe_name:String) {
     println!("{} -h ",programe_name);
     process::exit(1);
 }
-// Message d'aide etendu
+/// Message d'aide etendu
 // ---------------------
 fn display_help(programe_name:String) {
     const VERSION: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
@@ -1257,8 +1257,8 @@ fn display_help(programe_name:String) {
     println!("Bug report, question or suggestion : simon.penel@univ-lyon1.fr");
     process::exit(1);
 }
-// Function set_config
-// -------------------
+/// Analyse du fichier de configuration
+// -----------------------------------
 fn set_config(configfile: String, config: &mut Config) {
     let contents = fs::read_to_string(configfile);
     // .expect("Something went wrong reading the config file");
