@@ -58,11 +58,12 @@ fn main()  {
     let mut thickness_thresh_2nd = 0;
     let mut thickness_gene_2nd = 1;
     let mut thickness_flag_2nd = false;
-    
+    let mut selected_genes:std::vec::Vec<usize> = Vec::new();
+
     set_options( args, &mut options, &mut config, &mut infile_gs, &mut infile_sh, &mut outfile,
         &mut thickness_thresh_1st,&mut thickness_gene_1st, &mut thickness_thresh_2nd,
         &mut thickness_gene_2nd, &mut level3, &mut display_transfers, &mut multiple_files,
-        &mut thickness_flag_1st, &mut thickness_flag_2nd, &mut _format);
+        &mut thickness_flag_1st, &mut thickness_flag_2nd, &mut _format, &mut selected_genes);
 
     // Setting options on thickness
     options.thickness_flag = thickness_flag_1st;
@@ -169,6 +170,7 @@ fn main()  {
                     options,
                     config,
                     filename.to_string(),
+                    selected_genes,
                 );
             },
         }
@@ -193,10 +195,11 @@ fn set_options(
     multiple_files: &mut bool,
     thickness_flag_1st: &mut bool,
     thickness_flag_2nd: &mut bool,
-    mut _format:  &mut Format)
+    mut _format:  &mut Format,
+    selected_genes: &mut Vec<usize>)
     {
     let mut nb_args = 0;
-    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMN:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opr:sSt:T:u:U:vW:xXz:Z:");
     loop {
         match opts.next().transpose() {
             Err(err) => {
@@ -241,6 +244,19 @@ fn set_options(
                     },
                     Opt('a', None) =>  *display_transfers = true,
                     Opt('A', Some(string)) => { options.trans_end = Some(string);}, // On inverse start et end
+                    Opt('n', Some(string)) => {
+                        // Selection des genes a visualiser
+                        let _bufstr: Vec<&str> = string.split(',').collect();
+                        *selected_genes  = _bufstr.iter().map(
+                            |x|  match x.parse::<usize>() {
+                                Ok(valeur) => valeur,
+                                Err(_err) => {
+                                    eprintln!("ERROR: Please give integer values with -n option");
+                                    process::exit(1);
+                                },
+                            }
+                        ).collect();
+                    }, 
                     Opt('N', Some(string)) => { options.trans_start = Some(string);}, // On inverse start et end
                     Opt('e', None) => options.free_living = true,
                     Opt('E', None) => {
@@ -409,6 +425,17 @@ fn set_options(
     }
     if nb_args != 1 {
         display_usage(args[0].to_string());
+    }
+    if selected_genes.len() > 0 {
+        if *thickness_flag_1st  {
+            eprintln!("ERROR: Options -t and -n are incompatible");
+            process::exit(1);
+        }
+        if *level3  {
+            eprintln!("ERROR: Options -g and -n are incompatible");
+            process::exit(1);
+        }
+        println!("Selected genes : {:?}",selected_genes);
     }
 
 }
@@ -1049,6 +1076,7 @@ fn process_2levels_singlefile(
     mut options: Options,
     config:  Config,
     filename: String,
+    selected_genes: Vec<usize>,
 )
     {
     // On cree une structure Arena pour l'arbre d'espece
@@ -1073,6 +1101,7 @@ fn process_2levels_singlefile(
     );
     let  nb_gntree =  gene_trees.len().clone();
     info!("List of gene trees : {:?}",gene_trees);
+
     if options.thickness_flag {
         if options.thickness_gene > nb_gntree {
             println!("There are only {} genes in the file, unable to display gene #{}",
@@ -1116,9 +1145,31 @@ fn process_2levels_singlefile(
             phyloxml_processing(&mut tree, &options, &config, outfile);
         }
         else {
+            let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+            if selected_genes.len() > 0 {
+                let selected_genes_iter = selected_genes.iter();
+                for _gi in selected_genes_iter {
+                    if _gi > &nb_gntree {
+                        println!("There are only {} genes in the file, unable to display  gene number {} from {:?}", nb_gntree,_gi,selected_genes);
+                        process::exit(1);
+                    }
+                }
+                let gene_trees_iter = gene_trees.into_iter();
+                let mut gene_num = 1;
+                for val in gene_trees_iter {
+                    if  selected_genes.contains(&gene_num) {
+                        info!("Selected gene {:?}",val);
+                        selected_gene_trees.push(val)
+                    }
+                    gene_num +=1;
+                }
+            }
+            else {
+                selected_gene_trees = gene_trees;
+            }
             recphyloxml_processing(
                 &mut sp_tree,
-                &mut  gene_trees,
+                &mut  selected_gene_trees,
                 &mut options,
                 &config,
                 true,
@@ -1148,7 +1199,7 @@ fn display_usage(programe_name:String) {
     println!("");   
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
@@ -1165,7 +1216,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -A node name : display transfers starting from this node only");
@@ -1192,6 +1243,7 @@ fn display_help(programe_name:String) {
     println!("    -L : display as landscape");
     println!("    -m : the input file (-f) is a list of recphyloxml files");
     println!("    -M : display duplication node at mid-distance in the branch (in progress)");
+    println!("    -n gene list : list of gene index to display. For example: 1,2,6,9");
     println!("    -N node name : display transfers ending to this node only");
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
