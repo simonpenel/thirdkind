@@ -200,7 +200,7 @@ fn set_options(
     selected_genes: &mut Vec<usize>)
     {
     let mut nb_args = 0;
-    let mut opts = getopt::Parser::new(&args, "aA:c:bBd:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opr:sSt:T:u:U:vW:xXz:Z:");
     loop {
         match opts.next().transpose() {
             Err(err) => {
@@ -245,6 +245,14 @@ fn set_options(
                     },
                     Opt('a', None) =>  *display_transfers = true,
                     Opt('A', Some(string)) => { options.trans_end = Some(string);}, // On inverse start et end
+                    Opt('C', Some(string)) => {
+                        // Couleurs de genes
+                        let _bufstr: Vec<&str> = string.split(',').collect();
+                        for color  in _bufstr {
+                            options.gene_colors.push(color.to_string());
+                        }
+                        println!("User-defined colors : {:?}",options.gene_colors);
+                    }, 
                     Opt('n', Some(string)) => {
                         // Selection des genes a visualiser
                         let _bufstr: Vec<&str> = string.split(',').collect();
@@ -1222,7 +1230,7 @@ fn display_usage(programe_name:String) {
     println!("Home page: https://github.com/simonpenel/thirdkind/wiki");
     println!("");   
     println!("Usage:");
-    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colors][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
@@ -1239,7 +1247,7 @@ fn display_help(programe_name:String) {
     println!("{} v{}", NAME.unwrap_or("unknown"),VERSION.unwrap_or("unknown"));
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
-    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
+    println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colors][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
@@ -1247,6 +1255,7 @@ fn display_help(programe_name:String) {
     println!("    -b : open svg in browser");
     println!("    -B : with option -l, display branch length");
     println!("    -c configfile : use a configuration file");
+    println!("    -C gene colors : user defined colors for genes.  For example: \"red,violet,#4A38C4,orange\"");
     println!("    -d fontsize : set font size for gene trees");
     println!("    -D fontsize : set font size for species trees");
     println!("    -e : the node associated to FREE_LIVING are drawned in an \
