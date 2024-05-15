@@ -99,7 +99,8 @@ fn main()  {
             config,
             infile_sh,
             thickness_thresh_1st,
-            display_transfers
+            display_transfers,
+            selected_genes
         )
     }
     // Traitement d'un fichier unique qui peu etre newick, phyloXML ou recPhyloXML
@@ -892,7 +893,8 @@ fn process_2levels_multifile(
     config:  Config,
     infile_sh: String,
     thickness_thresh_1st: usize,
-    display_transfers: bool
+    display_transfers: bool,
+    selected_genes: Vec<usize>,
 )
     {
     // get the url
@@ -1052,9 +1054,31 @@ fn process_2levels_multifile(
             phyloxml_processing(&mut tree, &options, &config, outfile);
         }
         else {
+            let mut selected_gene_trees:std::vec::Vec<ArenaTree<String>> = Vec::new();
+            if selected_genes.len() > 0 {
+                let selected_genes_iter = selected_genes.iter();
+                for _gi in selected_genes_iter {
+                    if _gi > &nb_gntree {
+                        println!("There are only {} genes in the file, unable to display  gene number {} from {:?}", nb_gntree,_gi,selected_genes);
+                        process::exit(1);
+                    }
+                }
+                let gene_trees_iter = gene_trees.into_iter();
+                let mut gene_num = 1;
+                for val in gene_trees_iter {
+                    if  selected_genes.contains(&gene_num) {
+                        info!("Selected gene {:?}",val);
+                        selected_gene_trees.push(val)
+                    }
+                    gene_num +=1;
+                }
+            }
+            else {
+                selected_gene_trees = gene_trees;
+            }
             recphyloxml_processing(
                 &mut sp_trees[0],
-                &mut  gene_trees,
+                &mut  selected_gene_trees,
                 &mut options,
                 &config,
                 true,
