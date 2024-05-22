@@ -1,0 +1,63 @@
+<svg height="337.5" viewBox="-15 172.5 810.25 457.5" width="627.5" xmlns="http://www.w3.org/2000/svg">
+<style>
+.species { font: italic ; font-size: 12px; fill: orange; } .gene_0 { font-size: 10px; fill:blue; } 
+</style>
+<g transform="translate(  -15 495) rotate(-90 0 0 ) ">
+<path d="M60,340.5 L60,172.5 L154.5,172.5 M90,340.5 L90,187.5 L165,187.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<path d="M-15,618 L-15,337.5 L57,337.5 M15,618 L15,382.5 L75,382.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<path d="M-15,618 L-15,660 L15,660 L15,618" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<text class="species" transform="rotate(90 0,630)" x="-15" y="605">
+a
+</text>
+<path d="M172.5,603 L172.5,337.5 L93,337.5 M127.5,603 L127.5,382.5 L75,382.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<path d="M127.5,603 L127.5,660 L172.5,660 L172.5,603" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<text class="species" transform="rotate(90 150,630)" x="135" y="597.5">
+b
+</text>
+<path d="M262.5,625.5 L262.5,172.5 L175.5,172.5 M247.5,625.5 L247.5,187.5 L165,187.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<path d="M247.5,625.5 L247.5,660 L262.5,660 L262.5,625.5" fill="none" opacity="0.9" stroke="pink" stroke-width="6"/>
+<text class="species" transform="rotate(90 255,630)" x="240" y="612.5">
+c
+</text>
+<path d="M165,174 l-6,-6 l12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<circle cx="165" cy="180" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M255,660 L255,180 L165,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M249,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 250,675)" x="250" y="675">
+c1
+</text>
+<path d="M67.5,345 L67.5,180 L165,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M64.5,342 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M67.5,360 L67.5,345 L67.5,345" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="67.5" cy="360" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M-7.5,660 L-7.5,360 L67.5,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M-13.5,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 -12.5,675)" x="-12.5" y="675">
+a2
+</text>
+<path d="M150,607.5 L150,360 L67.5,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M147,604.5 l0,6 l6,0 l0,-6 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M165,660 L165,607.5 L150,607.5" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M159,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 160,675)" x="160" y="675">
+b1
+</text>
+<path d="M150,660 L150,607.5 L150,607.5" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M144,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 145,675)" x="145" y="675">
+b2
+</text>
+<path d="M82.5,375 L82.5,345 L67.5,345" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="82.5" cy="375" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M7.5,660 L7.5,375 L82.5,375" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M1.5,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 2.5,675)" x="2.5" y="675">
+a1
+</text>
+<path d="M135,660 L135,375 L82.5,375" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M129,660 a3,3,0,0,1,12,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 130,675)" x="130" y="675">
+b3
+</text>
+</g>
+</svg>
