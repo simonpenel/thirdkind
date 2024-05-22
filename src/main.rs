@@ -200,7 +200,7 @@ fn set_options(
     selected_genes: &mut Vec<usize>)
     {
     let mut nb_args = 0;
-    let mut opts = getopt::Parser::new(&args, "aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opr:sSt:T:u:U:vW:xXz:Z:");
+    let mut opts = getopt::Parser::new(&args, "aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opq:r:sSt:T:u:U:vW:xXz:Z:");
     loop {
         match opts.next().transpose() {
             Err(err) => {
@@ -307,6 +307,14 @@ fn set_options(
                         };
                     },
                     Opt('p', None) => options.uniform = true,
+                    Opt('q', Some(string)) => {
+                        // noeuds de genes
+                        let _bufstr: Vec<&str> = string.split(',').collect();
+                        for node  in _bufstr {
+                            options.node_colors.push(node.to_string());
+                        }
+                        println!("Nodes to be colored : {:?}",options.node_colors);
+                    },                     
                     Opt('s', None) => options.species_only_flag = true,
                     Opt('S', None) => options.support = true,
                     Opt('t', Some(string)) => {
@@ -1231,7 +1239,7 @@ fn display_usage(programe_name:String) {
     println!("");   
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colors][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-q nodes to be colored][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width][-x][-X][-z thickness][-Z thickness]",programe_name);
     println!();
     println!("Get help:");
@@ -1248,7 +1256,7 @@ fn display_help(programe_name:String) {
     println!("{}", DESCRIPTION.unwrap_or("unknown"));
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colors][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
-    [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-r ratio][-s][-S]\
+    [-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-q nodes to be colored][-r ratio][-s][-S]\
     [-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]",programe_name);
     println!("    -a : output the redundant transfers analysis");
     println!("    -A node name : display transfers starting from this node only");
@@ -1281,6 +1289,7 @@ fn display_help(programe_name:String) {
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : species 'upper' tree uniformisation");
+    println!("    -q nodes to be colored : the descendants of each nodes will be drawn with a different color.  For example: \"m3,m25,m36\"");    
     println!("    -r ratio : set the ratio between width of species and gene tree");
     println!("               Default 1.0, you usualy do not need to change it");
     println!("    -s : drawing species tree only");
