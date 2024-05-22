@@ -1,0 +1,117 @@
+<svg height="915" viewBox="-7.5 52.5 705 1035" width="585" xmlns="http://www.w3.org/2000/svg">
+<style>
+.gene { font-size: 10px; fill:blue; } .support { font-size: 10px; fill: red; } .branch { font-size: 10px; fill: black; }
+</style>
+<g transform="translate(  -7.5 970) rotate(-90 0 0 ) ">
+<path d="M428.90625,52.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M97.5,120 L97.5,60 L436.40625,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="97.5" cy="120" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M30,180 L30,120 L97.5,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M22.5,172.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M0,480 L0,180 L30,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M-15,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 -5,490)" x="-5" y="490">
+TELLI_121.PE20
+</text>
+<path d="M60,480 L60,180 L30,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M45,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 55,490)" x="55" y="490">
+TELLI_60.PE125
+</text>
+<path d="M165,180 L165,120 L97.5,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="165" cy="180" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M120,450 L120,180 L165,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M120,435 l0,30 M105,450 l30,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="7.5" transform="rotate(45 120 450)"/>
+<text class="gene" transform="rotate(90 115,460)" x="115" y="460">
+loss
+</text>
+<path d="M210,240 L210,180 L165,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M202.5,232.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M180,480 L180,240 L210,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M165,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 175,490)" x="175" y="490">
+TTHER_4729.PE1
+</text>
+<path d="M240,480 L240,240 L210,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M225,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 235,490)" x="235" y="490">
+TTHER_4660.PE8
+</text>
+<path d="M775.3125,120 L775.3125,60 L436.40625,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="775.3125" cy="120" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M650.625,180 L650.625,120 L775.3125,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M643.125,172.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M536.25,240 L536.25,180 L650.625,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M528.75,232.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M442.5,300 L442.5,240 L536.25,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="442.5" cy="300" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M375,360 L375,300 L442.5,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M367.5,352.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M330,420 L330,360 L375,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M322.5,412.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M300,480 L300,420 L330,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M285,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 295,490)" x="295" y="490">
+TTHER_4783.PE1
+</text>
+<path d="M360,480 L360,420 L330,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M345,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 355,490)" x="355" y="490">
+TTHER_4717.PE39
+</text>
+<path d="M420,480 L420,360 L375,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M405,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 415,490)" x="415" y="490">
+TTHER_4674.PE29
+</text>
+<path d="M510,360 L510,300 L442.5,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M502.5,352.5 l0,15 l15,0 l0,-15 z" fill="orange" opacity="0.9" stroke="orange" stroke-width="3" transform="rotate(45 510 360)"/>
+<path d="M480,480 L480,360 L510,360" fill="none" opacity="0.9" stroke="blue" stroke-dasharray="1, 1" stroke-width="3"/>
+<path d="M465,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<path d="M480,474 l-15,-15 l30,0 z" fill="yellow" opacity="0.9" stroke="yellow" stroke-width="1"/>
+<text class="gene" transform="rotate(90 475,490)" x="475" y="490">
+TELLI_36.PE69
+</text>
+<path d="M540,480 L540,360 L510,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M525,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 535,490)" x="535" y="490">
+TMALA_9.PE79
+</text>
+<path d="M630,300 L630,240 L536.25,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="630" cy="300" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M600,450 L600,300 L630,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M600,435 l0,30 M585,450 l30,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="7.5" transform="rotate(45 600 450)"/>
+<text class="gene" transform="rotate(90 595,460)" x="595" y="460">
+loss
+</text>
+<path d="M660,480 L660,300 L630,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M645,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 655,490)" x="655" y="490">
+TMALA_47.PE86
+</text>
+<path d="M765,240 L765,180 L650.625,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="765" cy="240" fill="blue" opacity="0.9" r="11.25" stroke="blue" stroke-width="1"/>
+<path d="M720,450 L720,240 L765,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M720,435 l0,30 M705,450 l30,0" fill="blue" opacity="0.9" stroke="blue" stroke-width="7.5" transform="rotate(45 720 450)"/>
+<text class="gene" transform="rotate(90 715,460)" x="715" y="460">
+loss
+</text>
+<path d="M810,300 L810,240 L765,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M802.5,292.5 l0,15 l15,0 l0,-15 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M780,480 L780,300 L810,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M765,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 775,490)" x="775" y="490">
+TMALA_47.PE70
+</text>
+<path d="M840,480 L840,300 L810,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M825,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 835,490)" x="835" y="490">
+TMALA_47.PE79
+</text>
+<path d="M900,480 L900,120 L775.3125,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M885,480 a7.5,7.5,0,0,1,30,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 895,490)" x="895" y="490">
+TELLI_7.PE357
+</text>
+</g>
+</svg>
