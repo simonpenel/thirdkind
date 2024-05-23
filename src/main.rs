@@ -24,6 +24,18 @@ use clap::Parser;
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
+
+    // aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opq:Q:r:sSt:T:u:U:vW:xXz:Z:
+
+    /// Display transfers analysis
+    #[arg(short='a',long,default_value_t = false)]
+    output_transfer_analysis: bool,
+
+
+    /// Display transfers starting from this node only
+    #[arg(short='A', long)]
+    starting_node: Option<String>,
+
     /// Input file
     #[arg(short='i', long)]
     input_file: String,
@@ -55,7 +67,7 @@ fn main()  {
     let args = Args::parse();
     println!("{:?}",args);
 
-    
+
     // Initialise les options
     let mut options: Options =  Options::new();
     // Initialise la config
