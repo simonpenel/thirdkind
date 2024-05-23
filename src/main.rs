@@ -18,6 +18,29 @@ use getopt::Opt;
 use webbrowser::{Browser};
 use light_phylogeny::*;
 use log::{info};
+use clap::Parser;
+
+/// Gestion des arguments
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+struct Args {
+    /// Input file
+    #[arg(short='i', long)]
+    input_file: String,
+
+    /// Number of times to greet
+    #[arg(short, long, default_value_t = 1)]
+    count: u8,
+
+    /// Numero de tel
+    #[arg(short='X',long,default_value_t = String::from("007"))]
+    num: String,
+
+    /// Martien
+    #[arg(short='M',long,default_value_t = false)]
+    martien: bool,
+
+}
 
 /// enum of the possible input file Formats
 #[derive(Debug)]
@@ -28,6 +51,11 @@ pub enum  Format {
 }
 
 fn main()  {
+
+    let args = Args::parse();
+    println!("{:?}",args);
+
+    
     // Initialise les options
     let mut options: Options =  Options::new();
     // Initialise la config
