@@ -31,10 +31,13 @@ struct Args {
     #[arg(short='a',long,default_value_t = false)]
     output_transfer_analysis: bool,
 
-
     /// Display transfers starting from this node only
     #[arg(short='A', long)]
     starting_node: Option<String>,
+
+    /// Open svg in browser 
+    #[arg(short='b',long,default_value_t = false)]
+    browser: bool,
 
     /// Input file
     #[arg(short='i', long)]
