@@ -40,7 +40,7 @@ struct Args {
     browser: bool,
 
     /// Input file
-    #[arg(short='i', long)]
+    #[arg(short='f', long)]
     input_file: String,
 
     /// Number of times to greet
