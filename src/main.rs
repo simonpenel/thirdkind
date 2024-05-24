@@ -27,33 +27,184 @@ struct Args {
 
     // aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opq:Q:r:sSt:T:u:U:vW:xXz:Z:
 
-    /// Display transfers analysis
+    /// Display transfers analysis.
     #[arg(short='a',long,default_value_t = false)]
     output_transfer_analysis: bool,
 
-    /// Display transfers starting from this node only
+    /// Display transfers starting from this node only.
     #[arg(short='A', long)]
     starting_node: Option<String>,
 
-    /// Open svg in browser 
+    /// Open svg in browser.
     #[arg(short='b',long,default_value_t = false)]
     browser: bool,
 
-    /// Input file
+    /// With option -l, display branch length.
+    #[arg(short='B',long,default_value_t = false)]
+    display_br_length: bool,
+    
+    /// Use configuration file.
+    #[arg(short='c', long)]
+    conf_file: Option<String>,
+  
+  	/// Define colors for gene trees. For example: "red,violet,#4A38C4,orange.
+    #[arg(short='C', long)]
+    gene_colors: Option<String>,  
+    
+    /// Set font size for gene trees.
+    #[arg(short='d', long)]
+    gene_fontsize : Option<usize>,
+
+    /// Set font size for species trees.
+    #[arg(short='D', long)]
+    species_fontsize : Option<usize>,
+
+	/// "free living" option : nodes associated to FREE_LIVING are drawned in an external tree and superposed in case of multiple genes.
+    #[arg(short='e',long,default_value_t = false)]
+    free_living_sup: bool,
+
+	/// "free living" option : nodes associated to FREE_LIVING are drawned in an external tree and shifted in case of multiple genes.
+    #[arg(short='E',long,default_value_t = false)]
+    free_living_shi: bool,    
+ 
+     /// Input tree file (accepted format: newick, phyloXML, recPhyloXML).
     #[arg(short='f', long)]
     input_file: String,
+    
+  	/// Force format phyloXML/recPhyloXML.
+    #[arg(short='F', long)]
+   	format: Option<String>,   
 
-    /// Number of times to greet
-    #[arg(short, long, default_value_t = 1)]
-    count: u8,
+	/// 1st level input file (for example a gene-symbiote file with -f defining a 2nd level symbiote-host file).
+    #[arg(short='g', long)]
+   	nested: Option<String>,
+   	
+   	/// Display the gene number <GENE_PHYLO> in phyloxml style (no species tree).
+   	#[arg(short='G', long)]
+   	gene_phylo: Option<usize>,
+   	
+   	/// Height:  multiply the tree height by factor <HEIGHT>.
+   	#[arg(short='H', long)]
+   	height: Option<f32>,
 
-    /// Numero de tel
-    #[arg(short='X',long,default_value_t = String::from("007"))]
-    num: String,
+	/// Display internal gene node names.
+    #[arg(short='i',long,default_value_t = false)]
+    internal_gene_node: bool,    
+ 
+ 	/// Display internal species node names.
+    #[arg(short='I',long,default_value_t = false)]
+    internal_species_node: bool,         	
 
-    /// Martien
+	/// With option -t, display the abundance of redudant transfers.
+    #[arg(short='J',long,default_value_t = false)]
+    display_tranfers_abundance: bool,         	
+	
+   	/// Size of the circles, crosses, squares, etc.
+   	#[arg(short='k', long)]
+   	symbol_size: Option<usize>,
+   	
+ 	/// Bezier parameter: curvature of the transfers and branches leading to free living organisms.
+   	#[arg(short='K', long)]
+   	bezier: Option<f32>,
+
+	/// Use branch length, multiplied by the given factor.
+   	#[arg(short='l', long)]
+   	branch_length: Option<f32>,
+   	
+ 	/// Display as landscape.
+    #[arg(short='L',long,default_value_t = false)]
+    landscape: bool,     	
+
+ 	/// The input file (-f) is a list of recphyloxml files.
+    #[arg(short='m',long,default_value_t = false)]
+    multiple: bool,    
+
+ 	/// Display duplication node at midway in the branch.
     #[arg(short='M',long,default_value_t = false)]
-    martien: bool,
+    midway: bool,    
+ 
+ 	/// List of the indexes of the gene trees to be displayed. For example: 1,2,6,9.
+    #[arg(short='n', long)]
+   	gene_tree_list: Option<String>,
+   	
+    /// Display transfers ending to this node only.
+    #[arg(short='N', long)]
+    ending_node: Option<String>,
+   	
+    /// Set the name of the output file or the prefix of the output files.
+    #[arg(short='o', long)]
+    output: Option<String>,  
+    
+    /// Switching nodes in order to minimise transfer crossings (under development)
+    #[arg(short='O',long,default_value_t = false)]
+    optimise: bool,    
+
+    /// Species tree uniformisation. All the branches of species have the same width. 
+    #[arg(short='p',long,default_value_t = false)]
+    uniform: bool,    
+ 
+    /// Set the ratio between width of species and gene tree.
+    /// Default is 1.0, you usualy do not need to change it.
+    #[arg(short='r', long)]
+    ratio: Option<f32>,
+
+    /// Display species tree only. 
+    #[arg(short='s',long,default_value_t = false)]
+    species_only: bool,             
+
+    /// Display node support. 
+    #[arg(short='S',long,default_value_t = false)]
+    node_support: bool,   
+    
+    /// Redudant transfers are displayed as one, with opacity according to abundance
+    /// and only if abundance is higher than <THRESHOLD>. Only one gene is displayed.
+    #[arg(short='t', long)]
+    threshold: Option<usize>,
+     
+    /// With option -t, select the index of the gene to display. If set to 0, no gene is displayed.
+    #[arg(short='T', long)]
+    threshold_select: Option<usize>,
+    
+    /// With -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.
+    #[arg(short='u', long)]
+    threshold_nested: Option<usize>,
+     
+    /// Same as -T with -t, but for -u.
+    #[arg(short='U', long)]
+    threshold_nested_select: Option<usize>,   
+ 
+    /// Verbose mode. 
+    #[arg(short='v',long,default_value_t = false)]
+    verbose: bool,  
+
+   	/// Width:  multiply the tree height by factor <WIDTH>.
+   	#[arg(short='W', long)]
+   	width: Option<f32>,   
+   	
+    /// Tidy mode (non-layered tidy tree layout).
+    #[arg(short='x',long,default_value_t = false)]
+    tidy: bool,   
+
+    /// Tidy mode, avoiding leave names superposition.
+    #[arg(short='X',long,default_value_t = false)]
+    tidy_clean: bool,         	
+
+   	/// Thickness of the gene tree.
+   	#[arg(short='z', long)]
+   	gene_thickness: Option<usize>,   
+   	
+   	/// Thickness of the species tree.
+   	#[arg(short='Z', long)]
+   	species_thickness: Option<usize>,      	
+   	              	
+   /*	          	   	   	
+
+    -z thickness: thickness of the gene tree
+    -Z thickness: thickness of the species tree
+*/
+
+
+
 
 }
 
