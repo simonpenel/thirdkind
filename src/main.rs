@@ -23,11 +23,7 @@ use clap::Parser;
 /// Gestion des arguments
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None, after_help = 
-"Some very long explanation that should be printed at the end of the help screen
-    He oui
-    Camarche
-    
-Note on -b option : you must set a browser as default application for opening  svg file
+"Note on -b option : you must set a browser as default application for opening  svg file
 
 Note on -g option : this will generate 3-levels reconciliation svg files.
 
