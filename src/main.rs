@@ -1763,6 +1763,14 @@ fn process_2levels_singlefile(
             else {
                 selected_gene_trees = gene_trees;
             }
+            if options.species_only_flag {
+            phyloxml_processing(
+                &mut sp_tree,
+                &mut options,
+                &config,
+                outfile);
+                }
+            else {
             recphyloxml_processing(
                 &mut sp_tree,
                 &mut  selected_gene_trees,
@@ -1772,6 +1780,7 @@ fn process_2levels_singlefile(
                 &transfers,
                 outfile,
             );
+            }
         }
     }
     if options.open_browser {
