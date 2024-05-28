@@ -169,6 +169,7 @@ struct Args {
     midway: bool,    
  
  	/// List of the indexes of the gene trees to be displayed. For example: 1,2,6,9.
+    /// If 0, only the species ('upper') tree is displayed
     #[arg(short='n', long)]
    	gene_tree_list: Option<String>,
    	
