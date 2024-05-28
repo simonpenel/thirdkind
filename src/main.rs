@@ -722,7 +722,7 @@ fn set_options_2(
 	}
 	if *display_transfers == true {
 		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){
-        	eprintln!("ERROR: with option -a, please input a list of files (option -m) and specify the threshold for transfers redundancy (option -t)");
+        	eprintln!("ERROR: with option -a, please input a list of files (option -m) and specify the threshold for transfers redundancy (option -t).");
             eprintln!("You may use a list containing a single file and set the threshold to 0 if you want to process a single recPhyloXML file.");
             process::exit(1);
 		}
