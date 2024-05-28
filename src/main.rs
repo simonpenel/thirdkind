@@ -1764,6 +1764,9 @@ fn process_2levels_singlefile(
                 selected_gene_trees = gene_trees;
             }
             if options.species_only_flag {
+                if options.species_internal {
+                	options.gene_internal = true;
+                }
             phyloxml_processing(
                 &mut sp_tree,
                 &mut options,
