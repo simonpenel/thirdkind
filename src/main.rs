@@ -72,7 +72,7 @@ struct Args {
 
     // aA:bBc:C:d:D:eEf:F:g:G:hH:iIJk:K:l:LmMn:N:o:Opq:Q:r:sSt:T:u:U:vW:xXz:Z:
 
-    /// Display transfers analysis.
+    /// Display transfers analysis (with -m and -t options).
     #[arg(short='a',long,default_value_t = false)]
     output_transfer_analysis: bool,
 
@@ -719,6 +719,13 @@ fn set_options_2(
 	match args.species_thickness {
 		None => {},
 		Some(entier) => { options.sthickness = entier},
+	}
+	if *display_transfers == true {
+		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){
+        	eprintln!("ERROR: with option -a, please input a list of files (option -m) and specify the threshold for transfers redundancy (option -t)");
+            eprintln!("You may use a list containing a single file and set the threshold to 0 if you want to process a single recPhyloXML file.");
+            process::exit(1);
+		}
 	}			
 }
 
