@@ -128,72 +128,123 @@ Read a newick, phyloxml or recPhyloXML file and create a svg.
 Format is guessed according to filename (default is newick)
 
 
-    Usage:
-    thirdkind -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colours][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h][-H height][-i][-I][-J][-k symbol size][-K Bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-q nodes to be coloured][-Q background colour][-r ratio][-s][-S][-t threshold][-T #][-u threshold][-U #][-v][-W width]|-x][-X][-z thickness][-Z thickness]
-    -a : output the redundant transfers analysis
-    -A node name : display transfers starting from this node only
-    -b : open svg in browser
-    -B : with option -l, display branch length
-    -c configfile : use a configuration file
-    -C gene colours : user defined colours for genes.  For example: "red,violet,#4A38C4,orange"
-    -d fontsize : set font size for gene trees
-    -D fontsize : set font size for species trees
-    -e : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and superposed in case of multiple genes
-    -E : the node associated to FREE_LIVING are drawned in an external tree (free_living option) and shifted in case of multiple genes
-    -F phylo/recphylo : force format phyloXML/recPhyloXML
-    -g 2nd level input file (for example a gene-symbiote file with -f defining a symbiote-host file)
-    -G <n> : display the gene #n in phyloxml style (no species tree)
-    -h : help
-    -H height : multiply the tree height by factor 'height'
-    -i : display internal gene nodes
-    -I : display internal species nodes
-    -J : with option -t, display the abundance of redudant transfers
-    -k size: size of the circles, crosses, squares, etc.
-    -K Bezier parameter: curvature of the transfers and branches leading to free living organisms.
-    -l factor : use branch length, multiplied by the given factor
-    -L : display as landscape
-    -m : the input file (-f) is a list of recphyloxml files
-    -M : display duplication node at mid-distance in the branch (in progress)
-    -n gene list : list of gene index to display. For example: 1,2,6,9
-    -N node name : display transfers ending to this node only
-    -o outputfile/prefix : set the name of the output file/set the prefix of the output files
-    -O : switching nodes in order to minimise transfer crossings (under development) 
-    -p : species 'upper' tree uniformisation
-    -q nodes to be coloured : the descendants of each nodes will be drawn with a different colour.  For example: "m3,m25,m36"
-    -Q colour: background colour
-    -r ratio : set the ratio between width of species and gene tree
-               Default 1.0, you usualy do not need to change it
-    -s : drawing species tree only
-    -S : display node support
-    -t <t> : redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher tan t
-             Only one gene is displayed
-    -T <n> : with option -t, select the gene to display. If set to 0, no gene is displayed
-    -u <t> : with -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file
-    -U <n> : same as -T with -t, but for -u
-    -v : verbose
-    -W width : multiply the tree width by factor 'width'
-    -x : tidy mode (non-layered tidy tree layout)
-    -X : tidy mode, avoiding leave names superposition
-    -z thickness: thickness of the gene tree
-    -Z thickness: thickness of the species tree
+    Usage: thirdkind [OPTIONS] --input-file <INPUT_FILE>
 
-    Note on -b option : you must set a browser as default application for opening svg file
+    Options:
+      -a, --output-transfer-analysis
+              Display transfers analysis (with -m and -t options)
+      -A, --starting-node <STARTING_NODE>
+              Display transfers starting from this node only
+      -b, --browser
+              Open svg in browser    
+      -B, --display-br-length
+              With option -l, display branch length
+      -c, --conf-file <CONF_FILE>
+              Use configuration file
+      -C, --gene-colors <GENE_COLORS>
+              Define colors for gene trees. For example: "red,violet,#4A38C4,orange"
+      -d, --gene-fontsize <GENE_FONTSIZE>
+              Set font size for gene trees
+      -D, --species-fontsize <SPECIES_FONTSIZE>
+              Set font size for species trees
+      -e, --free-living-sup
+              "free living" option : nodes associated to FREE_LIVING are drawned in an external tree and superposed in case of multiple genes
+      -E, --free-living-shi
+              "free living" option : nodes associated to FREE_LIVING are drawned in an external tree and shifted in case of multiple genes
+      -f, --input-file <INPUT_FILE>
+              Input tree file (accepted format: newick, phyloXML, recPhyloXML)
+      -F, --format <FORMAT>
+              Force format phyloXML/recPhyloXML
+      -g, --nested <NESTED>
+              1st level input file (for example a gene-symbiote file with -f defining a 2nd level symbiote-host file)
+      -G, --gene-phylo <GENE_PHYLO>
+              Display the gene number <GENE_PHYLO> in phyloxml style (no species tree)
+      -H, --height <HEIGHT>
+              Height:  multiply the tree height by factor <HEIGHT>
+      -i, --internal-gene-node
+              Display internal gene node names
+      -I, --internal-species-node        
+              Display internal species node names
+      -J, --display-transfers-abundance
+              With option -t, display the abundance of redudant transfers
+      -k, --symbol-size <SYMBOL_SIZE>    
+              Size of the circles, crosses, squares, etc
+      -K, --bezier <BEZIER>
+              Bezier parameter: curvature of the transfers and branches leading to free living organisms
+      -l, --branch-length <BRANCH_LENGTH>
+              Use branch length, multiplied by the given factor
+      -L, --landscape
+              Display as landscape
+      -m, --multiple
+              The input file (-f) is a list of recphyloxml files
+      -M, --midway
+              Display duplication node at midway in the branch
+      -n, --gene-tree-list <GENE_TREE_LIST>
+              List of the indexes of the gene trees to be displayed. For example: 1,2,6,9. If 0, only the species ('upper') tree is displayed
+      -N, --ending-node <ENDING_NODE>
+              Display transfers ending to this node only
+      -o, --output <OUTPUT>        
+              Set the name of the output file or the prefix of the output files
+      -O, --optimise
+              Switching nodes in order to minimise transfer crossings (under development)
+      -p, --uniform
+              Species tree uniformisation. All the branches of species have the same width
+      -q, --node-colors <NODE_COLORS>
+              Nodes to be coloured : the descendants of each nodes will be drawn with a different colour. For example: "m3,m25,m36"
+      -Q, --background <BACKGROUND>
+              Background colour
+      -r, --ratio <RATIO>
+              Set the ratio between width of species and gene tree. Default is 1.0, you usualy do not need to change it
+      -s, --species-only
+              Display species tree only in phyloxml style
+      -S, --node-support
+              Display node support
+      -t, --threshold <THRESHOLD>    
+              Redudant transfers are displayed as one, with opacity according to abundance and only if abundance is higher than <THRESHOLD>. Only one gene is displayed    
+      -T, --threshold-select <THRESHOLD_SELECT>
+              With option -t, select the index of the gene to display. If set to 0, no gene is displayed
+      -u, --threshold-nested <THRESHOLD_NESTED>
+              With -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file
+      -U, --threshold-nested-select <THRESHOLD_NESTED_SELECT>
+              Same as -T with -t, but for -u
+      -v, --verbose
+              Verbose mode
+      -W, --width <WIDTH>
+              Width:  multiply the tree height by factor <WIDTH>
+      -x, --tidy
+              Tidy mode (non-layered tidy tree layout)
+      -X, --tidy-clean
+              Tidy mode, avoiding leave names superposition
+      -z, --gene-thickness <GENE_THICKNESS>
+              Thickness of the gene tree
+      -Z, --species-thickness <SPECIES_THICKNESS>
+              Thickness of the species tree
+      -h, --help
+              Print help
+      -V, --version
+              Print version
 
+    Note on -b option : you must set a browser as default application for opening  svg file
+    
     Note on -g option : this will generate 3-levels reconciliation svg files.
+
     For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
-    The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.
+	The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.
 
     Note on -x/-X options : the non-layered tidy tree layout is described in :
-                            'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
-                            Software: Practice and Experience, 44(12): 1467–1484.'
+    	'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time. 
+    	Software: Practice and Experience, 44(12): 1467–1484.'
 
     Input format is guessed according to the file name extension:
-    .phyloxml    => phyloXML
-    .xml         => recPhyloxml
-    .recphyloxml => recPhyloXML
-    .recPhyloXML => recPhyloXML
-    .recphylo    => recPhyloXML
-    any other    => newick
+     	.phyloxml    => phyloXML
+	    .xml         => recPhyloxml
+	    .recphyloxml => recPhyloXML
+ 	    .recPhyloXML => recPhyloXML
+        .recphylo    => recPhyloXML
+        any other    => newick
+
+
+
 
 
 # Examples:
