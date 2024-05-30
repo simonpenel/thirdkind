@@ -17,5 +17,5 @@ log = "0.4.14"
 env_logger = "0.11.2"
 getopt = "1.1.0"
 webbrowser = "0.8.10"
-light_phylogeny = "2.2.6"
+light_phylogeny = "2.2.7"
 clap = { version = "4.5.4", features = ["derive","wrap_help"] }
