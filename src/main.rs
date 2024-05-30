@@ -37,8 +37,8 @@ For example you may input a gene-symbiote recphyloxml file  with -g and symbiote
     Input format is guessed according to the file name extension:
     	.phyloxml    => phyloXML
     	.xml         => recPhyloxml
- 		.recphyloxml => recPhyloXML
- 		.recPhyloXML => recPhyloXML
+    	.recphyloxml => recPhyloXML
+    	.recPhyloXML => recPhyloXML
     	.recphylo    => recPhyloXML
     	any other    => newick
     	
@@ -190,7 +190,7 @@ struct Args {
     uniform: bool,    
      
     /// Nodes to be coloured : the descendants of each nodes will be drawn with a different colour.
-    /// For example: "m3,m25,m36".  
+    /// For example: "m3,m25,m36" (Nodes should be sorted from the top of the tree down to the leaves).  
     #[arg(short='q',long)]
     node_colors: Option<String>,  
     
