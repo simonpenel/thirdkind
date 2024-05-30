@@ -28,13 +28,14 @@ use clap::Parser;
 Note on -g option : this will generate 3-levels reconciliation svg files.
 
 For example you may input a gene-symbiote recphyloxml file  with -g and symbiote-host recphyloxml file with -f
-	The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.
 
-    Note on -x/-X options : the non-layered tidy tree layout is described in :
+The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.
+
+Note on -x/-X options : the non-layered tidy tree layout is described in :
     	'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time. 
     	 Software: Practice and Experience, 44(12): 1467–1484.'
 
-    Input format is guessed according to the file name extension:
+Input format is guessed according to the file name extension:
     	.phyloxml    => phyloXML
     	.xml         => recPhyloxml
     	.recphyloxml => recPhyloXML
@@ -42,14 +43,14 @@ For example you may input a gene-symbiote recphyloxml file  with -g and symbiote
     	.recphylo    => recPhyloXML
     	any other    => newick
     	
-    Home page: https://github.com/simonpenel/thirdkind/wiki
+Home page: https://github.com/simonpenel/thirdkind/wiki
 
-    Publication: https://academic.oup.com/bioinformatics/article/38/8/2350/6525213
+Publication: https://academic.oup.com/bioinformatics/article/38/8/2350/6525213
    
-    About recPhyloXML format: http://phylariane.univ-lyon1.fr/recphyloxml/
-    recPhyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198865/
-    About phyloXML format: http://www.phyloxml.org/
-    phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
+About recPhyloXML format: http://phylariane.univ-lyon1.fr/recphyloxml/
+recPhyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198865/
+About phyloXML format: http://www.phyloxml.org/
+phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
  
     Examples with recPhyloXML files (available at https://github.com/simonpenel/thirdkind):
     thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
