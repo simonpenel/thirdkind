@@ -22,7 +22,7 @@ use clap::Parser;
 
 /// Gestion des arguments
 #[derive(Parser, Debug)]
-#[command(version, about, long_about = None, after_help = 
+#[command(version, about, long_about = None, after_help =
 "Note on -b option : you must set a browser as default application for opening  svg file
 
 Note on -g option : this will generate 3-levels reconciliation svg files.
@@ -32,7 +32,7 @@ For example you may input a gene-symbiote recphyloxml file  with -g and symbiote
 The -t/-u options are not totally implemented for the 3-levels reconciliation svg output files.
 
 Note on -x/-X options : the non-layered tidy tree layout is described in :
-    	'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time. 
+    	'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
     	 Software: Practice and Experience, 44(12): 1467–1484.'
 
 Input format is guessed according to the file name extension:
@@ -42,31 +42,31 @@ Input format is guessed according to the file name extension:
     	.recPhyloXML => recPhyloXML
     	.recphylo    => recPhyloXML
     	any other    => newick
-    	
+
 Home page: https://github.com/simonpenel/thirdkind/wiki
 
 Publication: https://academic.oup.com/bioinformatics/article/38/8/2350/6525213
-   
+
 About recPhyloXML format: http://phylariane.univ-lyon1.fr/recphyloxml/
 recPhyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198865/
 About phyloXML format: http://www.phyloxml.org/
 phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
- 
+
     Examples with recPhyloXML files (available at https://github.com/simonpenel/thirdkind):
     thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo  -b
-    thirdkind -f recphylo_examples/concat.xml -b -t 0 
+    thirdkind -f recphylo_examples/concat.xml -b -t 0
     thirdkind -f recphylo_examples/hote_parasite_page4_BL.recphylo  -b -l 1
     thirdkind -f recphylo_examples/free_living_reconciliated.recphylo -b  -e -L
     thirdkind -f recphylo_examples/testfiles -m -b -t 3 -J
     thirdkind -f paramecium_data/liste.txt -m -b -t 25 -J
-    thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b 
+    thirdkind -f recphylo_examples/test2/hote_parasite_page2.recphylo -g recphylo_examples/test2/gene_parasite_page2.recphylo  -b
     thirdkind -f recphylo_examples/test1_mult_parasite/rechp_dtl.recphyloxml -g recphylo_examples/test1_mult_parasite/recgs_mult_host_dtl.recphyloxml -b
     thirdkind -f recphylo_examples/recgs_dtl.recphyloxml  -b -n 3 -C \"#17387A,#8E3B8B,green\" -k12 -q \"5,6\" -Q \"black\" -Z 1
     thirdkind -f newick_examples/virus.nhx -l 4 -b
     thirdkind -f newick_examples/virus.nhx -l 4 -x -b
     thirdkind -f newick_examples/virus.nhx -l 4 -X -b
- 
-    Bug report, question or suggestion : simon.penel@univ-lyon1.fr   
+
+    Bug report, question or suggestion : simon.penel@univ-lyon1.fr
 "
 )]
 struct Args {
@@ -88,15 +88,15 @@ struct Args {
     /// With option -l, display branch length.
     #[arg(short='B',long,default_value_t = false)]
     display_br_length: bool,
-    
+
     /// Use configuration file.
     #[arg(short='c', long)]
     conf_file: Option<String>,
-  
+
   	/// Define colors for gene trees. For example: "red,violet,#4A38C4,orange.
     #[arg(short='C', long)]
-    gene_colors: Option<String>,  
-    
+    gene_colors: Option<String>,
+
     /// Set font size for gene trees.
     #[arg(short='d', long)]
     gene_fontsize : Option<usize>,
@@ -111,44 +111,49 @@ struct Args {
 
 	/// "free living" option : nodes associated to FREE_LIVING are drawned in an external tree and shifted in case of multiple genes.
     #[arg(short='E',long,default_value_t = false)]
-    free_living_shi: bool,    
- 
+    free_living_shi: bool,
+
     /// Input tree file (accepted format: newick, phyloXML, recPhyloXML).
     #[arg(short='f', long)]
     input_file: String,
-    
+
   	/// Force format phyloXML/recPhyloXML.
     #[arg(short='F', long)]
-   	format: Option<String>,   
+   	format: Option<String>,
 
 	/// 1st level input file (for example a gene-symbiote file with -f defining a 2nd level symbiote-host file).
     #[arg(short='g', long)]
    	nested: Option<String>,
-   	
+
    	/// Display the gene number <GENE_PHYLO> in phyloxml style (no species tree).
    	#[arg(short='G', long)]
    	gene_phylo: Option<usize>,
-   	
+
    	/// Height:  multiply the tree height by factor <HEIGHT>.
    	#[arg(short='H', long)]
    	height: Option<f32>,
 
 	/// Display internal gene node names.
     #[arg(short='i',long,default_value_t = false)]
-    internal_gene_node: bool,    
- 
+    internal_gene_node: bool,
+
  	/// Display internal species node names.
     #[arg(short='I',long,default_value_t = false)]
-    internal_species_node: bool,         	
+    internal_species_node: bool,
+
+    /// List of nodes to merge
+    /// For example: "PBIAU:PTETRD4,species_5:species_6" .
+    #[arg(short='j',long)]
+    merge: Option<String>,
 
 	/// With option -t, display the abundance of redudant transfers.
     #[arg(short='J',long,default_value_t = false)]
-    display_transfers_abundance: bool,         	
-	
+    display_transfers_abundance: bool,
+
    	/// Size of the circles, crosses, squares, etc.
    	#[arg(short='k', long)]
    	symbol_size: Option<f32>,
-   	
+
  	/// Bezier parameter: curvature of the transfers and branches leading to free living organisms.
    	#[arg(short='K', long)]
    	bezier: Option<f32>,
@@ -156,103 +161,112 @@ struct Args {
 	/// Use branch length, multiplied by the given factor.
    	#[arg(short='l', long)]
    	branch_length: Option<f32>,
-   	
+
  	/// Display as landscape.
     #[arg(short='L',long,default_value_t = false)]
-    landscape: bool,     	
+    landscape: bool,
 
  	/// The input file (-f) is a list of recphyloxml files.
     #[arg(short='m',long,default_value_t = false)]
-    multiple: bool,    
+    multiple: bool,
 
  	/// Display duplication node at midway in the branch.
     #[arg(short='M',long,default_value_t = false)]
-    midway: bool,    
- 
+    midway: bool,
+
  	/// List of the indexes of the gene trees to be displayed. For example: 1,2,6,9.
     /// If 0, only the species ('upper') tree is displayed
     #[arg(short='n', long)]
    	gene_tree_list: Option<String>,
-   	
+
     /// Display transfers ending to this node only.
     #[arg(short='N', long)]
     ending_node: Option<String>,
-   	
+
     /// Set the name of the output file or the prefix of the output files.
     #[arg(short='o', long)]
-    output: Option<String>,  
-    
+    output: Option<String>,
+
     /// Switching nodes in order to minimise transfer crossings (under development)
     #[arg(short='O',long,default_value_t = false)]
-    optimise: bool,    
+    optimise: bool,
 
-    /// Species tree uniformisation. All the branches of species have the same width. 
+    /// Species tree uniformisation. All the branches of species have the same width.
     #[arg(short='p',long,default_value_t = false)]
-    uniform: bool,    
-     
+    uniform: bool,
+
+    /// Fill the species tree.
+    #[arg(short='P',long,default_value_t = false)]
+    fill_species: bool,
+
     /// Nodes to be coloured : the descendants of each nodes will be drawn with a different colour.
-    /// For example: "m3,m25,m36" (Nodes should be sorted from the top of the tree down to the leaves).  
+    /// For example: "m3,m25,m36" (Nodes should be sorted from the top of the tree down to the leaves).
     #[arg(short='q',long)]
-    node_colors: Option<String>,  
-    
-    ///  Background colour.  
+    node_colors: Option<String>,
+
+    ///  Background colour.
     #[arg(short='Q',long)]
-    background: Option<String>,  
-    
+    background: Option<String>,
+
     /// Set the ratio between width of species and gene tree.
     /// Default is 1.0, you usualy do not need to change it.
     #[arg(short='r', long)]
     ratio: Option<f32>,
 
-    /// Display species tree only in phyloxml style. 
+    /// Display species tree only in phyloxml style.
     #[arg(short='s',long,default_value_t = false)]
-    species_only: bool,             
+    species_only: bool,
 
-    /// Display node support. 
+    /// Display node support.
     #[arg(short='S',long,default_value_t = false)]
-    node_support: bool,   
-    
+    node_support: bool,
+
     /// Redudant transfers are displayed as one, with opacity according to abundance
     /// and only if abundance is higher than <THRESHOLD>. Only one gene is displayed.
     #[arg(short='t', long)]
     threshold: Option<usize>,
-     
+
     /// With option -t, select the index of the gene to display. If set to 0, no gene is displayed.
     #[arg(short='T', long)]
     threshold_select: Option<usize>,
-    
+
     /// With -g, same as -t, but apply to the '-f' input file, and -t will apply to the '-g' file.
     #[arg(short='u', long)]
     threshold_nested: Option<usize>,
-     
+
     /// Same as -T with -t, but for -u.
     #[arg(short='U', long)]
-    threshold_nested_select: Option<usize>,   
- 
-    /// Verbose mode. 
+    threshold_nested_select: Option<usize>,
+
+    /// Verbose mode.
     #[arg(short='v',long,default_value_t = false)]
-    verbose: bool,  
+    verbose: bool,
+
+    /// List of nodes whose left and right children will be switched
+    /// For example: "species_13", "species_14" .
+    #[arg(short='w',long)]
+    switch: Option<String>,
 
    	/// Width:  multiply the tree height by factor <WIDTH>.
    	#[arg(short='W', long)]
-   	width: Option<f32>,   
-   	
+   	width: Option<f32>,
+
     /// Tidy mode (non-layered tidy tree layout).
     #[arg(short='x',long,default_value_t = false)]
-    tidy: bool,   
+    tidy: bool,
 
     /// Tidy mode, avoiding leave names superposition.
     #[arg(short='X',long,default_value_t = false)]
-    tidy_clean: bool,         	
+    tidy_clean: bool,
 
    	/// Thickness of the gene tree.
    	#[arg(short='z', long)]
-   	gene_thickness: Option<usize>,   
-   	
+   	gene_thickness: Option<usize>,
+
    	/// Thickness of the species tree.
    	#[arg(short='Z', long)]
-   	species_thickness: Option<usize>,      	
-   	             
+   	species_thickness: Option<usize>,
+
 }
 
 /// enum of the possible input file Formats
@@ -305,7 +319,7 @@ fn main()  {
     options.thickness_flag = thickness_flag_1st;
     options.thickness_gene = thickness_gene_1st;
     options.thickness_thresh = thickness_thresh_1st;
-    
+
     // ==========================
     // RECONCILIATION A 3 NIVEAUX
     // ==========================
@@ -428,13 +442,13 @@ fn set_options_2(
     thickness_gene_1st: &mut usize,
     thickness_thresh_2nd: &mut usize,
     thickness_gene_2nd: &mut usize,
-    level3: &mut bool, 
+    level3: &mut bool,
     display_transfers: &mut bool,
     multiple_files: &mut bool,
     thickness_flag_1st: &mut bool,
     thickness_flag_2nd: &mut bool,
     mut _format:  &mut Format,
-    selected_genes: &mut Vec<usize>) 
+    selected_genes: &mut Vec<usize>)
 	{
 	// -a
 	/*match args.output_transfer_analysis {
@@ -444,7 +458,7 @@ fn set_options_2(
 		false => {}
 		}*/
 	*display_transfers = args.output_transfer_analysis;
-	
+
 	// -A
 	/*match args.starting_node {
 		None => {},
@@ -453,44 +467,44 @@ fn set_options_2(
 			},
 		}*/
 	options.trans_end = args.starting_node;
-		
-	// -b 
+
+	// -b
 	options.open_browser = args.browser;
-	
+
 	// -B
 	options.branch = args.display_br_length;
-	
-	// -c 
+
+	// -c
 	match args.conf_file {
 		None => {},
 		Some(string)=> { set_config(string, config) },
 		};
 
-	// -C 
+	// -C
 	match args.gene_colors {
 		None => {},
-		Some(string)=> { 
+		Some(string)=> {
 			// Couleurs de genes
-            let _bufstr: Vec<&str> = string.split(',').collect();
-            for color  in _bufstr {
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for color  in bufstr {
             	options.gene_colors.push(color.to_string());
              }
              println!("User-defined colours : {:?}",options.gene_colors);
 		 },
 		};
-	
+
 	// -d
 	match args.gene_fontsize {
 		None => {},
-		Some(entier) => { config.gene_police_size = entier.to_string() } 
+		Some(entier) => { config.gene_police_size = entier.to_string() }
 	}
 
 	// -D
 	match args.species_fontsize {
 		None => {},
-		Some(entier) => { config.species_police_size = entier.to_string() } 
+		Some(entier) => { config.species_police_size = entier.to_string() }
 	}
-	
+
 	// -e
 	match args.free_living_sup {
 		true => { options.free_living = true } ,
@@ -499,21 +513,21 @@ fn set_options_2(
 
 	// -E
 	match args.free_living_shi {
-		true => 
-			{ 
+		true =>
+			{
 			options.free_living = true;
 			options.free_living_shift = true;
 			} ,
 		false => {}
-	}	
-	
+	}
+
 	// -f
 	*infile_sh = args.input_file;
-	
-	// -F 
+
+	// -F
 	match args.format {
 		None => {},
-		Some(string) => { 
+		Some(string) => {
 			let format = match string.as_str() {
             	"recphylo" => Format::Recphyloxml,
                 "phyloxml" => Format::Phyloxml,
@@ -525,7 +539,7 @@ fn set_options_2(
         	*_format = format;
         }
 	}
-	
+
 	// -g
 	match args.nested {
 		None => {},
@@ -534,66 +548,86 @@ fn set_options_2(
              *level3 = true;
         }
 	}
-	
-	// -G 
+
+	// -G
 	match args.gene_phylo {
 		None => {},
 		Some(entier) => { options.disp_gene = entier }
 	}
-	
-	// -H 
+
+	// -H
 	match args.height {
 		None => {},
 		Some(flottant) => { options.height = flottant }
 		}
-	
-	// -i 
+
+	// -i
 	options.gene_internal = args.internal_gene_node;
-	
-	// -I 
-	options.species_internal = args.internal_species_node;	
-	
+
+	// -I
+	options.species_internal = args.internal_species_node;
+
+    // -j
+	match args.merge {
+		None => {},
+		Some(string)=> {
+			// Couples
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for couple  in bufstr {
+                let bufstr2: Vec<&str> = couple.split(':').collect();
+                if bufstr2.len() != 2 {
+                    panic!("With the '-j' '--merge' option, argument should be \
+                    node1:node2,node4:node5 to merge node1 with node2 and node4 with node5")
+                }
+                let node1 = bufstr2[0];
+                let node2 = bufstr2[1];
+            	options.hybrid.push((node1.to_string(),node2.to_string()));
+            }
+            println!("Couples of nodes to be merged : {:?}",options.hybrid);
+		 },
+	};
+
 	// -J
 	options.thickness_disp_score = args.display_transfers_abundance;
-	
-	// -k 
+
+	// -k
 	match args.symbol_size {
 		None => {},
 		Some(flottant) => { options.squaresize = flottant }
 	}
 
-	// -K 
+	// -K
 	match args.bezier {
 		None => {},
 		Some(flottant) => { config.bezier = flottant.to_string() }
-	}		  
-	
-	// -l 
+	}
+
+	// -l
 	match args.branch_length {
 		None => {},
 		Some(flottant) => {
-			options.scale  = flottant; 
+			options.scale  = flottant;
 			options.real_length_flag = true;
             options.uniform = false; // In case we deal with a recphyloxml
 		 }
 	}
-		
+
 	// -L
 	options.rotate = !args.landscape;
-	
-	// -m 
+
+	// -m
 	*multiple_files = args.multiple;
-	
+
 	// -M
 	options.mid_dist = args.midway;
-	
-	// -n 
+
+	// -n
 	match args.gene_tree_list {
 		None => {},
-		Some(string)=> { 
+		Some(string)=> {
 			// Couleurs de genes
-            let _bufstr: Vec<&str> = string.split(',').collect();
-            *selected_genes  = _bufstr.iter().map(
+            let bufstr: Vec<&str> = string.split(',').collect();
+            *selected_genes  = bufstr.iter().map(
             	|x|  match x.parse::<usize>() {
                 	Ok(valeur) => valeur,
                     Err(_err) => {
@@ -603,8 +637,8 @@ fn set_options_2(
                     }
             ).collect();
 		 },
-		};	
-	
+		};
+
 	// -N
 	options.trans_start = args.ending_node;
 
@@ -613,61 +647,64 @@ fn set_options_2(
 		None => {},
 		Some(string)=> { *outfile = string },
 	}
-	
-	// -O 
+
+	// -O
 	options.optimisation = args.optimise;
-	
-	// -p 
+
+	// -p
 	options.uniform = args.uniform;
+
+    // -P
+    options.fill_species = args.fill_species;
 
 	// -q
 	match args.node_colors {
 		None => {},
-		Some(string)=> { 
+		Some(string)=> {
 			// Noeuds a colorer
-            let _bufstr: Vec<&str> = string.split(',').collect();
-            for node  in _bufstr {
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for node  in bufstr {
             	options.node_colors.push(node.to_string());
             }
             println!("Nodes to be coloured : {:?}",options.node_colors);
 		 },
 	};
-	
+
 	// -Q
 	match args.background {
 		None => {},
 		Some(string)=> { options.bckg_color = string },
 	}
-	
-	// -r 
+
+	// -r
 	match args.ratio {
 		None => {},
 		Some(flottant) => { options.ratio = flottant }
-	}	
-		 
+	}
+
 	// -s
 	options.species_only_flag = args.species_only;
-	
+
 	// -S
 	options.support = args.node_support;
-	
-	// -t 
+
+	// -t
 	match args.threshold {
 		None => {},
 		Some(entier) => {
-			//let _thickness_thresh_1st = entier; 
+			//let _thickness_thresh_1st = entier;
 			*thickness_thresh_1st = entier;
        		 *thickness_flag_1st = true;
 		},
 	}
-	
+
 	// -T
 	match args.threshold_select {
 		None => {},
 		Some(entier) => { *thickness_gene_1st = entier},
 	}
-	
-	// -u 
+
+	// -u
 	match args.threshold_nested {
 		None => {},
 		Some(entier) => {
@@ -675,13 +712,13 @@ fn set_options_2(
        	 	*thickness_flag_2nd = true;
 		},
 	}
-	
+
 	// -U
 	match args.threshold_nested_select {
 		None => {},
 		Some(entier) => { *thickness_gene_2nd = entier},
-	}		
-	
+	}
+
 	// -v
 	match args.verbose {
 		true =>  {
@@ -690,18 +727,29 @@ fn set_options_2(
             env_logger::init();
             info!("Verbosity set to Info");
 		},
-		false => {}, 
+		false => {},
 	}
-	
-	// -W 
+    // -w
+	match args.switch {
+		None => {},
+		Some(string)=> {
+			// Noeuds donton swicth les enfants
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for node  in bufstr {
+            	options.switches.push(node.to_string());
+            }
+            println!("Parent(s) of nodes to be switched : {:?}",options.switches);
+		 },
+	};
+    // -W
 	match args.width {
 		None => {},
 		Some(flottant) => { options.width = flottant }
-	}		
+	}
 
 	// -x
 	options.tidy = args.tidy;
-	
+
 	// -X
 	match args.tidy_clean {
 		true => {
@@ -710,13 +758,13 @@ fn set_options_2(
 		},
 		false => {},
 	}
-	
+
 	// -z
 	match args.gene_thickness {
 		None => {},
 		Some(entier) => { options.gthickness = entier},
-	}	
-	
+	}
+
 	// -Z
 	match args.species_thickness {
 		None => {},
@@ -728,7 +776,7 @@ fn set_options_2(
             eprintln!("You may use a list containing a single file and set the threshold to 0 if you want to process a single recPhyloXML file.");
             process::exit(1);
 		}
-	}			
+	}
 }
 
 /// Analyse des options
@@ -745,7 +793,7 @@ fn set_options(
     thickness_gene_1st: &mut usize,
     thickness_thresh_2nd: &mut usize,
     thickness_gene_2nd: &mut usize,
-    level3: &mut bool, 
+    level3: &mut bool,
     display_transfers: &mut bool,
     multiple_files: &mut bool,
     thickness_flag_1st: &mut bool,
@@ -801,16 +849,16 @@ fn set_options(
                     Opt('A', Some(string)) => { options.trans_end = Some(string);}, // On inverse start et end
                     Opt('C', Some(string)) => {
                         // Couleurs de genes
-                        let _bufstr: Vec<&str> = string.split(',').collect();
-                        for color  in _bufstr {
+                        let bufstr: Vec<&str> = string.split(',').collect();
+                        for color  in bufstr {
                             options.gene_colors.push(color.to_string());
                         }
                         println!("User-defined colours : {:?}",options.gene_colors);
-                    }, 
+                    },
                     Opt('n', Some(string)) => {
                         // Selection des genes a visualiser
-                        let _bufstr: Vec<&str> = string.split(',').collect();
-                        *selected_genes  = _bufstr.iter().map(
+                        let bufstr: Vec<&str> = string.split(',').collect();
+                        *selected_genes  = bufstr.iter().map(
                             |x|  match x.parse::<usize>() {
                                 Ok(valeur) => valeur,
                                 Err(_err) => {
@@ -819,7 +867,7 @@ fn set_options(
                                 },
                             }
                         ).collect();
-                    }, 
+                    },
                     Opt('N', Some(string)) => { options.trans_start = Some(string);}, // On inverse start et end
                     Opt('e', None) => options.free_living = true,
                     Opt('E', None) => {
@@ -846,7 +894,7 @@ fn set_options(
                                 process::exit(1);
                             },
                         };
-                    },                   
+                    },
                     Opt('m', None) => *multiple_files = true,
                     Opt('M', None) => options.mid_dist = true,
                     Opt('b', None) => options.open_browser = true,
@@ -863,15 +911,15 @@ fn set_options(
                     Opt('p', None) => options.uniform = true,
                     Opt('q', Some(string)) => {
                         // noeuds de genes
-                        let _bufstr: Vec<&str> = string.split(',').collect();
-                        for node  in _bufstr {
+                        let bufstr: Vec<&str> = string.split(',').collect();
+                        for node  in bufstr {
                             options.node_colors.push(node.to_string());
                         }
                         println!("Nodes to be coloured : {:?}",options.node_colors);
                     },
                     Opt('Q', Some(string)) => {
                         options.bckg_color = string.to_string();
-                    },                     
+                    },
                     Opt('s', None) => options.species_only_flag = true,
                     Opt('S', None) => options.support = true,
                     Opt('t', Some(string)) => {
@@ -1729,7 +1777,7 @@ fn process_2levels_singlefile(
             &transfers,
             outfile,
         );
-    }  
+    }
     else {
         if options.disp_gene  > 0 {
             // On traite l'arbre de gene comme un arbre au format phylxoml
@@ -1806,7 +1854,7 @@ fn display_usage(programe_name:String) {
     println!("Bug report, question or suggestion : simon.penel@univ-lyon1.fr");
     println!();
     println!("Home page: https://github.com/simonpenel/thirdkind/wiki");
-    println!("");   
+    println!("");
     println!("Usage:");
     println!("{} -f input file [-a][-A stArt][-b][-B][-c config file][-C user-defined gene colours][-d fontsize][-D fontsize][-e][-E][-F format][-g input file][-G #][-h]\
     [-H height][-i][-I][-J][-k symbol size][-K bezier parameter][-l factor][-L][-m][-M][-n gene list][-N eNd][-o output file][-O][-p][-q nodes to be coloured][-Q background colour][-r ratio][-s][-S]\
@@ -1860,8 +1908,8 @@ fn display_help(programe_name:String) {
     println!("    -o outputfile/prefix : set the name of the output file/set the prefix of the output files");
     println!("    -O : switching nodes in order to minimise transfer crossings (under development) ");
     println!("    -p : species 'upper' tree uniformisation");
-    println!("    -q nodes to be coloured : the descendants of each nodes will be drawn with a different colour.  For example: \"m3,m25,m36\"");    
-    println!("    -Q colour: background colour");    
+    println!("    -q nodes to be coloured : the descendants of each nodes will be drawn with a different colour.  For example: \"m3,m25,m36\"");
+    println!("    -Q colour: background colour");
     println!("    -r ratio : set the ratio between width of species and gene tree");
     println!("               Default 1.0, you usualy do not need to change it");
     println!("    -s : drawing species tree only");
