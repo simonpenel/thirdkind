@@ -576,8 +576,9 @@ fn set_options_2(
             for couple  in bufstr {
                 let bufstr2: Vec<&str> = couple.split(':').collect();
                 if bufstr2.len() != 2 {
-                    panic!("With the '-j' '--merge' option, argument should be \
-                    node1:node2,node4:node5 to merge node1 with node2 and node4 with node5")
+                    eprintln!("ERROR : With the '-j' '--merge' option, argument should be \
+                node1:node2[,node4:node5][,...] to merge node1 with node2 [and node4 with node5]");
+                    std::process::exit(1)
                 }
                 let node1 = bufstr2[0];
                 let node2 = bufstr2[1];
