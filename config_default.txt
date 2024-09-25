@@ -1,5 +1,5 @@
 species_color:pink
-species_opacity:0.9
+species_opacity:1.0
 single_gene_color:blue
 gene_opacity:0.9
 species_police_color:orange
