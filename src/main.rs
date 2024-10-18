@@ -1120,6 +1120,10 @@ fn process_3levels(
         &mut path_genes,
         &mut global_roots,
     );
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("blue".to_string());
+    config.species_color="pink".to_string();
+    config.species_police_color="pink".to_string();
     let  nb_gntree =  path_genes.len().clone();
     println!("Number of 'lower' gene trees : {}",nb_gntree);
     info!("List of gene trees : {:?}",path_genes);
@@ -1230,6 +1234,10 @@ fn process_3levels(
     options.thickness_flag = false;
     options.free_living = free_living_3l;
     config.species_color="violet".to_string();
+    config.species_police_color="violet".to_string();
+    // set the gene to pink ( ie the species color)
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("pink".to_string());
     // If  the option -u is on :
     if thickness_flag_2nd {
         options.thickness_flag = true;
@@ -1306,6 +1314,7 @@ fn process_3levels(
     println!("Map symbiote as 'lower' to symbiote as 'upper'");
     let mut i = 0;
     config.species_color="pink".to_string();
+    config.species_police_color="pink".to_string();
     while i < nb_parasite_pipe {
         map_parasite_g2s(&mut global_pipe_parasite, &mut path_para_trees[i]);
         i = i + 1;
@@ -1345,6 +1354,9 @@ fn process_3levels(
         options.thickness_gene = thickness_gene_1st;
         options.thickness_thresh = thickness_thresh_1st;
     }
+    // reset the gene color which was set to pink
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("blue".to_string());
     // attention on ne remape pas
     recphyloxml_processing(
         &mut global_pipe_parasite,
@@ -1370,6 +1382,7 @@ fn process_3levels(
         outfile_mapped_2);
     let mut i = 0;
     config.species_color="violet".to_string();
+    config.species_police_color="violet".to_string();
     // We get the gene transfer here again, but they will be mapped
     let gene_transfers = get_gtransfer(&mut path_genes[i]);
     info!("Transfers = {:?}",gene_transfers);
@@ -1406,6 +1419,9 @@ fn process_3levels(
             mapped_gene_transfers.push(val);
         }
     }
+    // set the gene to pink ( ie the species color)
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("pink".to_string());
     // Reset the option
     options.free_living = free_living_3l;
     // attention on ne remape pas
@@ -1428,6 +1444,8 @@ fn process_3levels(
     println!("\nBuilding 'phyloxml style' svg files...");
     //  Simple tree of the parasite
     config.single_gene_color="pink".to_string();
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("pink".to_string());
     reset_pos(&mut global_pipe_parasite);
     phyloxml_processing(
         &mut global_pipe_parasite,
@@ -1438,6 +1456,8 @@ fn process_3levels(
     reset_pos(&mut tree_host_pipe);
     //  Simple tree of the host
     config.single_gene_color="violet".to_string();
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("violet".to_string());
     phyloxml_processing(
         &mut tree_host_pipe,
         &mut options,
@@ -1445,6 +1465,8 @@ fn process_3levels(
         outfile.clone() + &"thirdkind_host_simple.svg".to_string(),
     );
     //  Simple trees of the genes
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("blue".to_string());
     let mut i = 0;
     while i < nb_parasite_pipe {
         reset_pos(&mut path_para_trees[i]);
@@ -1462,6 +1484,7 @@ fn process_3levels(
     println!();
     println!("Building 'mapped 3': 'upper' host tree with gene tree(s) inside [{}]",outfile_mapped_3);
     config.species_color="violet".to_string();
+    config.species_police_color="violet".to_string();
     map_gene_host(&mut path_genes, &mut path_para_trees, &mut tree_host_pipe);
     reset_pos(&mut tree_host_pipe);
     let mut i = 0;
@@ -1471,6 +1494,9 @@ fn process_3levels(
     }
     // Reset the option
     options.free_living = false;
+    // reset the gene color ( which wax set  to pink the species color)
+    options.gene_colors = Vec::new();
+    options.gene_colors.push("blue".to_string());
     recphyloxml_processing(
         &mut tree_host_pipe,
         &mut path_genes,
