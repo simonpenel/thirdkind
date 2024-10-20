@@ -30,66 +30,9 @@ phyloXML, recPhyloXML, rooted newick ( NHX balises will not be considered ).
 
 A web sever dedicated to the graphical interface of _thirdkind_ is available here: http://thirdkind.univ-lyon1.fr/
 
-# Output examples of 2-levels visualisation:
+# Output examples
 
-single gene reconciliation with species tree:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/74b9c84a5b2ed84ff5230fc3a52af856b9aba53d/output_examples/thirdkind_example1.svg
-
-
-the same gene reconciliation without the species tree:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/74b9c84a5b2ed84ff5230fc3a52af856b9aba53d/output_examples/thirdkind_example1_bis.svg
-
-
-multiple genes reconciliation:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/70a7a11aa89eda61926c5cabf221f47bb44e3409/output_examples/thirdkind_example4.svg
-
-real length with recPhyloXML file:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/b084872f02a758702e0f90543c715862729166a5/output_examples/thirdkind_real_length.svg
-
-using a  "free living" species:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/0f8ff64838fc7676b2e98542e953c4ccc9f45c62/output_examples/thirdkind_fl_example2.svg
-
-
-multiple "spTree":
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/79344589aa8b91a909386d22c95a01bc8c795396/output_examples/thirdkind_multspec.svg
-
-multiple gene trees reconciliation with redundant transfers. Display only 1 gene tree and the transfers in red with an opacity according to the abundance of the transfer:
-
-https://raw.githubusercontent.com/simonpenel/thirdkind/70a7a11aa89eda61926c5cabf221f47bb44e3409/output_examples/thirdkind_example2.svg
-
-
-# Output examples of 3-levels visualisation:
-
-## Example 1
-
-reconciled symbiote tree with associated gene trees:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_1.svg
-
-symbiote-host reconciliation plus mapped gene transfers:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_2.svg
-
-host tree with associated gene trees:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example3_mapped_3.svg
-
-
-## Example 2
-
-reconciled symbiote trees with associated gene trees:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_1.svg
-
-
-symbiote-host reconciliation plus mapped gene transfers:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_2.svg
-
-
-host tree with associated gene trees:
-https://raw.githubusercontent.com/simonpenel/thirdkind/abfb9e6a28d03860bea43b52312dc706554fd53d/output_examples/thirdkind_example4_mapped_3.svg
+For output examples, please see home page  https://github.com/simonpenel/thirdkind/wiki
 
 
 # Install:
