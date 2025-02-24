@@ -14,6 +14,7 @@
 use std::fs;
 use std::env;
 use std::process;
+use std::collections::HashMap;
 use getopt::Opt;
 use webbrowser::{Browser};
 use light_phylogeny::*;
@@ -267,6 +268,9 @@ struct Args {
    	#[arg(short='Z', long)]
    	species_thickness: Option<usize>,
 
+    /// Timelline files
+    #[arg(long)]
+    timelines: Option<String>,
 }
 
 /// enum of the possible input file Formats
@@ -771,6 +775,41 @@ fn set_options_2(
 		None => {},
 		Some(entier) => { options.sthickness = entier},
 	}
+    // -timelines
+	match args.timelines {
+		None => {},
+		Some(string)=> {
+			// Liste des fichiers
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for file  in bufstr {
+            	println!("File {}",file);
+                let mut time_line = HashMap::new();
+                let contents = fs::read_to_string(file);
+                let contents = match contents {
+                    Ok(contents) => contents,
+                    Err(err) => {
+                        eprintln!("Something went wrong when reading the  input file {}.\n{}",
+                            file,err);
+                        eprintln!("Please check file name and path.");
+                        process::exit(1);
+                    }
+                };
+                for line  in contents.lines(){
+                    println!("{}",line);
+                    let buftl: Vec<&str> = line.split('=').collect();
+                    println!("{:?}",buftl);
+                    if buftl.len() == 2 {
+                        time_line.insert(buftl[0].to_string(),buftl[1].to_string());
+                    }
+                    else {
+                        eprintln!("WARNING: Wrong timeline format in file {} at line [{}].",file,line);
+                    }
+                };
+                options.time_lines.push(time_line);
+            }
+		 },
+	};
+
 	if *display_transfers == true {
 		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){
         	eprintln!("ERROR: with option -a, please input a list of files (option -m) and specify the threshold for transfers redundancy (option -t).");
