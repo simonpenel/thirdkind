@@ -51,6 +51,12 @@ Since Rust does not include its own linker yet,building _thirdkind_ needs to hav
 If it is note the case,  install essential build needed by Rust:
 
     sudo apt install build-essential
+    
+**Note:**
+
+If your version of rust is too old, update to the last version with the command
+
+    rustup update
 
 Once Cargo is installed just open a new terminal and type:
 

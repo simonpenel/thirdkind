@@ -36,6 +36,23 @@ Note on -x/-X options : the non-layered tidy tree layout is described in :
     	'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
     	 Software: Practice and Experience, 44(12): 1467–1484.'
 
+Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
+    
+        For example:
+        species_14=#ce70aa
+        species_16=red
+        POCTAK8=%circle:green
+        PDODE=%square:#4bb356
+    
+        Codes can be associated to leaves only.
+        Available codes:
+        %circle
+        %cross
+        %halfcircle
+        %square
+        %triangle
+
+
 Input format is guessed according to the file name extension:
     	.phyloxml    => phyloXML
     	.xml         => recPhyloxml
@@ -196,7 +213,7 @@ struct Args {
     #[arg(short='p',long,default_value_t = false)]
     uniform: bool,
 
-    /// Fill the species tree.
+    /// Do not fill the species tree.
     #[arg(short='P',long,default_value_t = false)]
     fill_species: bool,
 
@@ -268,7 +285,8 @@ struct Args {
    	#[arg(short='Z', long)]
    	species_thickness: Option<usize>,
 
-    /// Timelline files
+    /// Timeline files. A timeline file describe the timeline (see below)
+    /// For example: "tl1,tl2,tl3".
     #[arg(long)]
     timelines: Option<String>,
 }
@@ -660,7 +678,7 @@ fn set_options_2(
 	options.uniform = args.uniform;
 
     // -P
-    options.fill_species = args.fill_species;
+    options.fill_species = !args.fill_species;
 
 	// -q
 	match args.node_colors {
@@ -782,7 +800,6 @@ fn set_options_2(
 			// Liste des fichiers
             let bufstr: Vec<&str> = string.split(',').collect();
             for file  in bufstr {
-            	println!("File {}",file);
                 let mut time_line = HashMap::new();
                 let contents = fs::read_to_string(file);
                 let contents = match contents {
@@ -795,10 +812,9 @@ fn set_options_2(
                     }
                 };
                 for line  in contents.lines(){
-                    println!("{}",line);
                     let buftl: Vec<&str> = line.split('=').collect();
-                    println!("{:?}",buftl);
                     if buftl.len() == 2 {
+                        println!("\t{} {} -> {}",file,buftl[0],buftl[1]);
                         time_line.insert(buftl[0].to_string(),buftl[1].to_string());
                     }
                     else {
