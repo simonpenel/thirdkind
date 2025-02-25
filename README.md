@@ -214,7 +214,7 @@ Format is guessed according to filename (default is newick)
     		'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
     	 	Software: Practice and Experience, 44(12): 1467–1484.'
 
-Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
+	Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
     
         For example:
         species_14=#ce70aa
