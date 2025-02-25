@@ -192,6 +192,8 @@ Format is guessed according to filename (default is newick)
           	Thickness of the gene tree
   	-Z, --species-thickness <SPECIES_THICKNESS>
           	Thickness of the species tree
+        --timelines <TIMELINES>
+          Timeline files. A timeline file describe the timeline (see below) For example: "tl1,tl2,tl3"
   	-h, --help
           	Print help
   	-V, --version
@@ -211,6 +213,23 @@ Format is guessed according to filename (default is newick)
 	Note on -x/-X options : the non-layered tidy tree layout is described in :
     		'van der Ploeg, A. 2014. Drawing non-layered tidy trees in linear time.
     	 	Software: Practice and Experience, 44(12): 1467–1484.'
+
+Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
+    
+        For example:
+        species_14=#ce70aa
+        species_16=red
+        POCTAK8=%circle:green
+        PDODE=%square:#4bb356
+    
+        Codes can be associated to leaves only.
+        Available codes:
+        %circle
+        %cross
+        %halfcircle
+        %square
+        %triangle
+
 
 	Input format is guessed according to the file name extension:
     		.phyloxml    => phyloXML
