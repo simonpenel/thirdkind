@@ -213,7 +213,7 @@ struct Args {
     #[arg(short='p',long,default_value_t = false)]
     uniform: bool,
 
-    /// Do not fill the species tree.
+    /// Fill the species tree.
     #[arg(short='P',long,default_value_t = false)]
     fill_species: bool,
 
@@ -678,7 +678,7 @@ fn set_options_2(
 	options.uniform = args.uniform;
 
     // -P
-    options.fill_species = !args.fill_species;
+    options.fill_species = args.fill_species;
 
 	// -q
 	match args.node_colors {
