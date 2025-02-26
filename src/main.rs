@@ -37,13 +37,13 @@ Note on -x/-X options : the non-layered tidy tree layout is described in :
     	 Software: Practice and Experience, 44(12): 1467–1484.'
 
 Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
-    
+
         For example:
         species_14=#ce70aa
         species_16=red
         POCTAK8=%circle:green
         PDODE=%square:#4bb356
-    
+
         Codes can be associated to leaves only.
         Available codes:
         %circle
@@ -287,7 +287,7 @@ struct Args {
 
     /// Timeline files. A timeline file describe the timeline (see below)
     /// For example: "tl1,tl2,tl3".
-    #[arg(long)]
+    #[arg(short='y',long)]
     timelines: Option<String>,
 }
 
