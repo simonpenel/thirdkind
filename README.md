@@ -184,7 +184,7 @@ Format is guessed according to filename (default is newick)
           	example: "species_13,species_14"
   	-W, --width <WIDTH>
           	Width:  multiply the tree height by factor <WIDTH>
-	  -x, --tidy
+  	-x, --tidy
           	Tidy mode (non-layered tidy tree layout)
   	-X, --tidy-clean
           	Tidy mode, avoiding leave names superposition
