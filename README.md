@@ -181,7 +181,7 @@ Format is guessed according to filename (default is newick)
           	Verbose mode
   	-w, --switch <SWITCH>
           	List of nodes whose left and right children will be switched For
-          	example: "species_13", "species_14"
+          	example: "species_13,species_14"
   	-W, --width <WIDTH>
           	Width:  multiply the tree height by factor <WIDTH>
 	  -x, --tidy
@@ -191,7 +191,7 @@ Format is guessed according to filename (default is newick)
     -y, --timelines <TIMELINES>
             Timeline files. A timeline file describe the timeline (see below) For example: "tl1,tl2,tl3"
     -Y, --collapsed-nodes <COLLAPSED_NODES>
-          List of nodes whose  will be collapsed For example: "species_13", "species_14"        
+          List of nodes whose  will be collapsed For example: "species_13,species_14"        
   	-z, --gene-thickness <GENE_THICKNESS>
           	Thickness of the gene tree
   	-Z, --species-thickness <SPECIES_THICKNESS>
