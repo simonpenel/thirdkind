@@ -261,7 +261,7 @@ struct Args {
     verbose: bool,
 
     /// List of nodes whose left and right children will be switched
-    /// For example: "species_13", "species_14" .
+    /// For example: "species_13,species_14" .
     #[arg(short='w',long)]
     switch: Option<String>,
 
@@ -277,6 +277,16 @@ struct Args {
     #[arg(short='X',long,default_value_t = false)]
     tidy_clean: bool,
 
+    /// Timeline files. A timeline file describe the timeline (see below)
+    /// For example: "tl1,tl2,tl3".
+    #[arg(short='y',long)]
+    timelines: Option<String>,
+
+    /// List of nodes whose  will be collapsed
+    /// For example: "species_13,species_14" .
+    #[arg(short='Y',long)]
+    collapsed_nodes: Option<String>,
+
    	/// Thickness of the gene tree.
    	#[arg(short='z', long)]
    	gene_thickness: Option<usize>,
@@ -284,11 +294,6 @@ struct Args {
    	/// Thickness of the species tree.
    	#[arg(short='Z', long)]
    	species_thickness: Option<usize>,
-
-    /// Timeline files. A timeline file describe the timeline (see below)
-    /// For example: "tl1,tl2,tl3".
-    #[arg(short='y',long)]
-    timelines: Option<String>,
 }
 
 /// enum of the possible input file Formats
@@ -793,7 +798,7 @@ fn set_options_2(
 		None => {},
 		Some(entier) => { options.sthickness = entier},
 	}
-    // -timelines
+    // -y -timelines
 	match args.timelines {
 		None => {},
 		Some(string)=> {
@@ -825,6 +830,19 @@ fn set_options_2(
             }
 		 },
 	};
+
+    // -Y
+    match args.collapsed_nodes {
+        None => {},
+        Some(string)=> {
+            // Noeuds donton swicth les enfants
+            let bufstr: Vec<&str> = string.split(',').collect();
+            for node  in bufstr {
+                options.collapsed_nodes.push(node.to_string());
+            }
+            println!("Nodes to be collapsed : {:?}",options.collapsed_nodes);
+         },
+    };
 
 	if *display_transfers == true {
 		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){

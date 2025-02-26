@@ -51,7 +51,7 @@ Since Rust does not include its own linker yet,building _thirdkind_ needs to hav
 If it is note the case,  install essential build needed by Rust:
 
     sudo apt install build-essential
-    
+
 **Note:**
 
 If your version of rust is too old, update to the last version with the command
@@ -184,16 +184,18 @@ Format is guessed according to filename (default is newick)
           	example: "species_13", "species_14"
   	-W, --width <WIDTH>
           	Width:  multiply the tree height by factor <WIDTH>
-	-x, --tidy
+	  -x, --tidy
           	Tidy mode (non-layered tidy tree layout)
   	-X, --tidy-clean
           	Tidy mode, avoiding leave names superposition
+    -y, --timelines <TIMELINES>
+            Timeline files. A timeline file describe the timeline (see below) For example: "tl1,tl2,tl3"
+    -Y, --collapsed-nodes <COLLAPSED_NODES>
+          List of nodes whose  will be collapsed For example: "species_13", "species_14"        
   	-z, --gene-thickness <GENE_THICKNESS>
           	Thickness of the gene tree
   	-Z, --species-thickness <SPECIES_THICKNESS>
           	Thickness of the species tree
-        --timelines <TIMELINES>
-          Timeline files. A timeline file describe the timeline (see below) For example: "tl1,tl2,tl3"
   	-h, --help
           	Print help
   	-V, --version
@@ -215,13 +217,13 @@ Format is guessed according to filename (default is newick)
     	 	Software: Practice and Experience, 44(12): 1467–1484.'
 
 	Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE instruction.
-    
+
         For example:
         species_14=#ce70aa
         species_16=red
         POCTAK8=%circle:green
         PDODE=%square:#4bb356
-    
+
         Codes can be associated to leaves only.
         Available codes:
         %circle
@@ -313,5 +315,3 @@ https://lbbe.univ-lyon1.fr/fr/annuaire-des-membres/penel-simon
 # Licence
 
 CECILL: https://choosealicense.com/licenses/cecill-2.1/
-
-
