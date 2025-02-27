@@ -282,7 +282,7 @@ struct Args {
     #[arg(short='y',long)]
     timelines: Option<String>,
 
-    /// List of nodes whose  will be collapsed
+    /// List of nodes to be collapsed
     /// For example: "species_13,species_14" .
     #[arg(short='Y',long)]
     collapsed_nodes: Option<String>,
