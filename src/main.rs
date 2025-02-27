@@ -231,6 +231,12 @@ struct Args {
     #[arg(short='r', long)]
     ratio: Option<f32>,
 
+    /// Picturefile. A  file describing the picture to be assiciated
+    /// to a node (see below)
+    #[arg(short='R',long)]
+    pictures: Option<String>,
+
+
     /// Display species tree only in phyloxml style.
     #[arg(short='s',long,default_value_t = false)]
     species_only: bool,
@@ -710,6 +716,32 @@ fn set_options_2(
 		Some(flottant) => { options.ratio = flottant }
 	}
 
+    // -R 
+    match args.pictures {
+        None => {},
+        Some(file)=> {
+                let mut pictures = HashMap::new();
+                let contents = fs::read_to_string(file);
+                let contents = match contents {
+                    Ok(contents) => contents,
+                    Err(err) => {
+                        eprintln!("Something went wrong when reading the  input pictures file {}",err);
+                        process::exit(1);
+                    }
+                };
+                for line  in contents.lines(){
+                    let buftl: Vec<&str> = line.split('=').collect();
+                    if buftl.len() == 2 {
+                        pictures.insert(buftl[0].to_string(),buftl[1].to_string());
+                    }
+                    else {
+                        eprintln!("WARNING: Wrong picture format in picture file at line [{}].",line);
+                    }
+                };
+                options.pictures =  pictures;
+            
+         },
+    };
 	// -s
 	options.species_only_flag = args.species_only;
 
