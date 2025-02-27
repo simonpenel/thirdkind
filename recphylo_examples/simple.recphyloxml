@@ -1,0 +1,157 @@
+<recPhylo>
+<spTree>
+<phylogeny>
+<clade>
+ <name>geo0</name>
+<clade>
+ <name>geo1</name>
+<clade>
+ <name>geo2</name>
+<clade>
+ <name>Homo</name>
+</clade>
+<clade>
+ <name>Pan</name>
+</clade>
+</clade>
+<clade>
+ <name>Mus</name>
+</clade>
+</clade>
+<clade>
+ <name>outgroup</name>
+</clade>
+</clade>
+</phylogeny>
+</spTree>
+
+<recGeneTree>
+<phylogeny rooted="true"><id>1</id><clade>
+ <name>pop0</name>
+<eventsRec>
+<speciation speciesLocation="geo0"/>
+</eventsRec>
+<clade>
+ <name>pop1</name>
+<eventsRec>
+<duplication speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop2</name>
+<eventsRec>
+<duplication speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop3</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>pop4</name>
+<eventsRec>
+<speciation speciesLocation="geo2"/>
+</eventsRec>
+<clade>
+ <name>h9</name>
+<eventsRec>
+<duplication speciesLocation="Homo"/>
+</eventsRec>
+<clade>
+ <name>pop6</name>
+<eventsRec>
+<duplication speciesLocation="Homo"/>
+</eventsRec>
+<clade>
+ <name>h8</name>
+<eventsRec>
+<leaf speciesLocation="Homo"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>h7</name>
+<eventsRec>
+<leaf speciesLocation="Homo"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>h6</name>
+<eventsRec>
+<leaf speciesLocation="Homo"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>p4</name>
+<eventsRec>
+<leaf speciesLocation="Pan"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>m5</name>
+<eventsRec>
+<leaf speciesLocation="Mus"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>pop7</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>p1</name>
+<eventsRec>
+<speciation speciesLocation="geo2"/>
+</eventsRec>
+<clade>
+ <name>h2</name>
+<eventsRec>
+<leaf speciesLocation="Pan"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>h1</name>
+<eventsRec>
+<loss speciesLocation="Homo"/>
+</eventsRec>
+</clade>
+</clade>
+<clade>
+ <name>m4</name>
+<eventsRec>
+<leaf speciesLocation="Mus"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>m3</name>
+<eventsRec>
+<speciation speciesLocation="geo1"/>
+</eventsRec>
+<clade>
+ <name>m2</name>
+<eventsRec>
+<leaf speciesLocation="Mus"/>
+</eventsRec>
+</clade>
+<clade>
+ <name>m1</name>
+<eventsRec>
+<loss speciesLocation="geo2"/>
+</eventsRec>
+</clade>
+</clade>
+</clade>
+<clade>
+ <name>outgroup</name>
+<eventsRec>
+<leaf speciesLocation="outgroup"/>
+</eventsRec>
+</clade>
+</clade>
+</phylogeny>
+</recGeneTree>
+</recPhylo>
