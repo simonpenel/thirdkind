@@ -53,6 +53,19 @@ Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE in
         %triangle
 
 
+Note on pictures : the picture file should contains a list of NODE_NAME=PICTURE_DESCRIPTION instructions.
+        
+        The format of PICTURE_DESCRIPTION is  \"picture_path:picture_size:shift_x:shift_y\"
+        where shift_x and shift_y describe the picture position relative to the node position.
+        For example:
+
+        outgroup=Cisco.png:130:0:-400
+        Mus=Mus_musculus_by_George_Shuklin.png:130:60:-150
+        Pan=extract_from_015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.png:85:40:90
+        Homo=Zinaida-Serebryakova-Self-Portrait.jpg:100:50:90
+
+
+
 Input format is guessed according to the file name extension:
     	.phyloxml    => phyloXML
     	.xml         => recPhyloxml
@@ -83,6 +96,9 @@ phyloXML paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2774328/
     thirdkind -f newick_examples/virus.nhx -l 4 -b
     thirdkind -f newick_examples/virus.nhx -l 4 -x -b
     thirdkind -f newick_examples/virus.nhx -l 4 -X -b
+    thirdkind -f recphylo_examples/recgs_dtl.recphyloxml -b -n 2,3 -C \"#17387A,#8E3B8B\" -k8  --timelines recphylo_examples/time_line_1,recphylo_examples/time_line_2,recphylo_examples/time_line_3
+    thirdkind -f recphylo_examples/FAM000297_reconciliated.recphylo -Y species_3,species_9,species_2,species_5,species_14 -b
+    thirdkind -f recphylo_examples/simple.recphyloxml -P   -C blue -R pictures_file -b
 
     Bug report, question or suggestion : simon.penel@univ-lyon1.fr
 "
@@ -231,7 +247,7 @@ struct Args {
     #[arg(short='r', long)]
     ratio: Option<f32>,
 
-    /// Picturefile. A  file describing the picture to be assiciated
+    /// Picturefile. A  file describing the picture to be associated
     /// to a node (see below)
     #[arg(short='R',long)]
     pictures: Option<String>,
