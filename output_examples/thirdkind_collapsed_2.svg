@@ -1,0 +1,112 @@
+<svg height="855" style="background-color:White" viewBox="-7.5 52.5 955 975" width="835" xmlns="http://www.w3.org/2000/svg">
+<style>
+.gene { font-size: 10px; fill:blue; } .support { font-size: 10px; fill: red; } .branch { font-size: 10px; fill: black; }
+</style>
+<style>
+
+</style>
+<g transform="translate(  -7.5 910) rotate(-90 0 0 ) ">
+<circle cx="61.157227" cy="60" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M0,120 L0,60 L61.157227,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M0,120 l-12,-12 l24,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1" transform="rotate(180 0 120)"/>
+<text class="gene" transform="rotate(90 -5,130)" x="0" y="130">
+species_2
+</text>
+<path d="M122.31445,120 L122.31445,60 L61.157227,60" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="122.31445" cy="120" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M60,780 L60,120 L122.31445,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="60" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 55,790)" x="60" y="790">
+PBURS
+</text>
+<path d="M184.6289,180 L184.6289,120 L122.31445,120" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="184.6289" cy="180" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M120,780 L120,180 L184.6289,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="120" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 115,790)" x="120" y="790">
+PPOLY
+</text>
+<path d="M249.25781,240 L249.25781,180 L184.6289,180" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="249.25781" cy="240" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M180,780 L180,240 L249.25781,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="180" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 175,790)" x="180" y="790">
+PGOER
+</text>
+<path d="M318.51563,300 L318.51563,240 L249.25781,240" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="318.51563" cy="300" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M240,780 L240,300 L318.51563,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="240" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 235,790)" x="240" y="790">
+PCAUD
+</text>
+<path d="M397.03125,360 L397.03125,300 L318.51563,300" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="397.03125" cy="360" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M300,780 L300,360 L397.03125,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="300" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 295,790)" x="300" y="790">
+PMUL
+</text>
+<path d="M494.0625,420 L494.0625,360 L397.03125,360" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="494.0625" cy="420" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M390,480 L390,420 L494.0625,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="390" cy="480" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M360,540 L360,480 L390,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M360,540 l-12,-12 l24,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1" transform="rotate(180 360 540)"/>
+<text class="gene" transform="rotate(90 355,550)" x="360" y="550">
+species_3
+</text>
+<path d="M420,780 L420,480 L390,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="420" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 415,790)" x="420" y="790">
+PSEXA
+</text>
+<path d="M598.125,480 L598.125,420 L494.0625,420" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="598.125" cy="480" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M510,540 L510,480 L598.125,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="510" cy="540" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M480,600 L480,540 L510,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M480,600 l-12,-12 l24,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1" transform="rotate(180 480 600)"/>
+<text class="gene" transform="rotate(90 475,610)" x="480" y="610">
+species_5
+</text>
+<path d="M540,600 L540,540 L510,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M540,600 l-12,-12 l24,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1" transform="rotate(180 540 600)"/>
+<text class="gene" transform="rotate(90 535,610)" x="540" y="610">
+species_9
+</text>
+<path d="M686.25,540 L686.25,480 L598.125,480" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="686.25" cy="540" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M600,780 L600,540 L686.25,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="600" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 595,790)" x="600" y="790">
+PBIAU
+</text>
+<path d="M772.5,600 L772.5,540 L686.25,540" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="772.5" cy="600" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M705,660 L705,600 L772.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="705" cy="660" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M660,780 L660,660 L705,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="660" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 655,790)" x="660" y="790">
+PNOVA
+</text>
+<path d="M750,720 L750,660 L705,660" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="750" cy="720" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<path d="M720,780 L720,720 L750,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="720" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 715,790)" x="720" y="790">
+PQUAD
+</text>
+<path d="M780,780 L780,720 L750,720" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<circle cx="780" cy="780" fill="blue" opacity="0.9" r="4.5" stroke="blue" stroke-width="1"/>
+<text class="gene" transform="rotate(90 775,790)" x="780" y="790">
+PTRED
+</text>
+<path d="M840,660 L840,600 L772.5,600" fill="none" opacity="0.9" stroke="blue" stroke-width="3"/>
+<path d="M840,660 l-12,-12 l24,0 z" fill="blue" opacity="0.9" stroke="blue" stroke-width="1" transform="rotate(180 840 660)"/>
+<text class="gene" transform="rotate(90 835,670)" x="840" y="670">
+species_14
+</text>
+</g>
+</svg>
