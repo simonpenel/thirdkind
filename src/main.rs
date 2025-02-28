@@ -1,7 +1,7 @@
 /// name = "thirdkind"
-/// version = "3.2.0"
+/// version = "3.13.0"
+/// release = "28/2/2025"
 /// authors = ["Simon Penel <simon.penel@univ-lyon1.fr>"]
-/// release = "09/08/2022"
 /// license = "CECILL-2.1"
 ///
 /// Usage:
@@ -54,7 +54,7 @@ Note on timelines : a timeline is described by a list of NODE_NAME=COLOR/CODE in
 
 
 Note on pictures : the picture file should contains a list of NODE_NAME=PICTURE_DESCRIPTION instructions.
-        
+
         The format of PICTURE_DESCRIPTION is  \"picture_path:picture_size:shift_x:shift_y\"
         where shift_x and shift_y describe the picture position relative to the node position.
         For example:
@@ -316,6 +316,12 @@ struct Args {
    	/// Thickness of the species tree.
    	#[arg(short='Z', long)]
    	species_thickness: Option<usize>,
+
+    /// Species tree compression.
+    /// High value = low compression
+    /// (default value : 0.0)
+    #[arg( long)]
+   	compression: Option<f32>,
 }
 
 /// enum of the possible input file Formats
@@ -732,7 +738,7 @@ fn set_options_2(
 		Some(flottant) => { options.ratio = flottant }
 	}
 
-    // -R 
+    // -R
     match args.pictures {
         None => {},
         Some(file)=> {
@@ -755,7 +761,7 @@ fn set_options_2(
                     }
                 };
                 options.pictures =  pictures;
-            
+
          },
     };
 	// -s
@@ -891,6 +897,12 @@ fn set_options_2(
             println!("Nodes to be collapsed : {:?}",options.collapsed_nodes);
          },
     };
+    // species_compression
+	match args.compression {
+		None => {},
+		Some(flottant) => { options.species_compression = flottant},
+	}
+
 
 	if *display_transfers == true {
 		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){
