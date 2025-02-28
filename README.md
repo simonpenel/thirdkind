@@ -188,6 +188,8 @@ Format is guessed according to filename (default is newick)
           Thickness of the gene tree
     -Z, --species-thickness <SPECIES_THICKNESS>
           Thickness of the species tree
+    --compression <COMPRESSION>
+          Species tree compression. High value = low compression (default value : 0.0)
     -h, --help
           Print help
     -V, --version
@@ -223,7 +225,7 @@ Format is guessed according to filename (default is newick)
 
 
     Note on pictures : the picture file should contains a list of NODE_NAME=PICTURE_DESCRIPTION instructions.
-        
+
         The format of PICTURE_DESCRIPTION is  "picture_path:picture_size:shift_x:shift_y"
         where shift_x and shift_y describe the picture position relative to the node position.
         For example:
@@ -242,7 +244,7 @@ Format is guessed according to filename (default is newick)
         .recPhyloXML => recPhyloXML
         .recphylo    => recPhyloXML
         any other    => newick
-  
+
 
 
 # Examples:
