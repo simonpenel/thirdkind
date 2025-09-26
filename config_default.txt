@@ -1,8 +1,8 @@
-species_color:pink
+species_color:orange
 species_opacity:1.0
 single_gene_color:blue
 gene_opacity:0.9
 species_police_color:orange
-species_police_size:12
-gene_police_size:10
+species_police_size:28
+gene_police_size:16
 bezier:1
