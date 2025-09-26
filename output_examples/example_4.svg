@@ -1,0 +1,102 @@
+<svg height="645" style="background-color:White" viewBox="-7.5 52.5 512.15 765" width="356.5" xmlns="http://www.w3.org/2000/svg">
+<style>
+.species { font: italic ; font-size: 28px; fill: orange; } .gene_0 { font-size: 16px; fill:rgb(39, 16, 211); } 
+</style>
+<g transform="translate(  -7.5 690) rotate(-90 0 0 ) ">
+<path d="M191.25,115.5 L191.25,52.5 L343.875,52.5 M206.25,115.5 L206.25,67.5 L354.375,67.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M67.5,175.5 L67.5,112.5 L188.25,112.5 M82.5,175.5 L82.5,127.5 L198.75,127.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M-7.5,318 L-7.5,172.5 L64.5,172.5 M7.5,318 L7.5,187.5 L75,187.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M-7.5,318 L-7.5,345 L7.5,345 L7.5,318" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M165,220.5 L165,172.5 L85.5,172.5 M135,220.5 L135,187.5 L75,187.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M75,310.5 L75,217.5 L132,217.5 M105,310.5 L105,262.5 L150,262.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M75,310.5 L75,345 L105,345 L105,310.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M225,310.5 L225,217.5 L168,217.5 M195,310.5 L195,262.5 L150,262.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M195,310.5 L195,345 L225,345 L225,310.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M330,175.5 L330,112.5 L209.25,112.5 M315,175.5 L315,127.5 L198.75,127.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M285,318 L285,172.5 L312,172.5 M300,318 L300,187.5 L322.5,187.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M285,318 L285,345 L300,345 L300,318" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M367.5,310.5 L367.5,172.5 L333,172.5 M337.5,310.5 L337.5,187.5 L322.5,187.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M337.5,310.5 L337.5,345 L367.5,345 L367.5,310.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M517.5,115.5 L517.5,52.5 L364.875,52.5 M502.5,115.5 L502.5,67.5 L354.375,67.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M427.5,303 L427.5,112.5 L499.5,112.5 M472.5,303 L472.5,127.5 L510,127.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M427.5,303 L427.5,345 L472.5,345 L472.5,303" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M577.5,318 L577.5,112.5 L520.5,112.5 M562.5,318 L562.5,127.5 L510,127.5" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M562.5,318 L562.5,345 L577.5,345 L577.5,318" fill="none" opacity="1.0" stroke="orange" stroke-width="6"/>
+<path d="M510,114 l-6,-6 l12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<circle cx="510" cy="120" fill="rgb(39, 16, 211)" opacity="0.9" r="4.5" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<path d="M570,337.5 L570,120 L510,120" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M564,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 565,352.5)" x="565" y="352.5">
+n
+</text>
+<path d="M435,307.5 L435,120 L510,120" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M432,304.5 l0,6 l6,0 l0,-6 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3" transform="rotate(45 435 307.5)"/>
+<path d="M450,322.5 L450,307.5 L435,307.5" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M450,316.5 l0,12 M444,322.5 l12,0" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3" transform="rotate(45 450 322.5)"/>
+<path d="M465 337.5 L 465 322.5M465 333.75L 461.25 330M465 333.75L 468.75 330M465 322.5 Q 450 255 435 307.5" fill="none" opacity="0.9" stroke="yellow" stroke-dasharray="1, 1" stroke-width="3"/>
+<circle cx="465" cy="337.5" fill="white" opacity="0.9" r="7.2000003" stroke="yellow" stroke-width="1"/>
+<path d="M360 315 L 360 300M360 311.25L 356.25 307.5M360 311.25L 363.75 307.5M360 300 Q 412.5 258.75 465 337.5" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-dasharray="4, 1" stroke-width="3"/>
+<path d="M357,312 l0,6 l6,0 l0,-6 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3" transform="rotate(45 360 315)"/>
+<path d="M345,337.5 L345,315 L360,315" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M339,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 340,352.5)" x="340" y="352.5">
+l
+</text>
+<path d="M292.5 337.5 L 292.5 322.5M292.5 333.75L 288.75 330M292.5 333.75L 296.25 330M292.5 322.5 Q 326.25 258.75 360 315" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-dasharray="1, 1" stroke-width="3"/>
+<path d="M286.5,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 287.5,352.5)" x="287.5" y="352.5">
+k
+</text>
+<path d="M75 180 L 75 165M75 176.25L 71.25 172.5M75 176.25L 78.75 172.5M75 165 Q 270 191.25 465 337.5" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-dasharray="4, 1" stroke-width="3"/>
+<circle cx="75" cy="180" fill="rgb(39, 16, 211)" opacity="0.9" r="4.5" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<path d="M142.5,225 L142.5,180 L75,180" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M139.5,222 l0,6 l6,0 l0,-6 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M157.5,240 L157.5,225 L142.5,225" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<circle cx="157.5" cy="240" fill="rgb(39, 16, 211)" opacity="0.9" r="4.5" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<path d="M217.5,315 L217.5,240 L157.5,240" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M217.5,309 l0,12 M211.5,315 l12,0" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3" transform="rotate(45 217.5 315)"/>
+<path d="M82.5,337.5 L82.5,240 L157.5,240" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M76.5,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 77.5,352.5)" x="77.5" y="352.5">
+h.c
+</text>
+<path d="M142.5,255 L142.5,225 L142.5,225" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<circle cx="142.5" cy="255" fill="rgb(39, 16, 211)" opacity="0.9" r="4.5" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<path d="M202.5,337.5 L202.5,255 L142.5,255" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M196.5,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 197.5,352.5)" x="197.5" y="352.5">
+j
+</text>
+<path d="M97.5,337.5 L97.5,255 L142.5,255" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M91.5,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 92.5,352.5)" x="92.5" y="352.5">
+i
+</text>
+<path d="M0,337.5 L0,180 L75,180" fill="none" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="3"/>
+<path d="M-6,337.5 a3,3,0,0,1,12,0 z" fill="rgb(39, 16, 211)" opacity="0.9" stroke="rgb(39, 16, 211)" stroke-width="1"/>
+<text class="gene_0" transform="rotate(90 -5,352.5)" x="-5" y="352.5">
+g
+</text>
+<text class="species" transform="rotate(90 0,322.5)" x="-14" y="305">
+1
+</text>
+<text class="species" transform="rotate(90 90,322.5)" x="76" y="297.5">
+2
+</text>
+<text class="species" transform="rotate(90 210,322.5)" x="196" y="297.5">
+3
+</text>
+<text class="species" transform="rotate(90 292.5,322.5)" x="278.5" y="305">
+4
+</text>
+<text class="species" transform="rotate(90 352.5,322.5)" x="338.5" y="297.5">
+5
+</text>
+<text class="species" transform="rotate(90 450,322.5)" x="436" y="290">
+6
+</text>
+<text class="species" transform="rotate(90 570,322.5)" x="556" y="305">
+7
+</text>
+</g>
+</svg>
