@@ -190,6 +190,10 @@ Format is guessed according to filename (default is newick)
           Thickness of the species tree
     --compression <COMPRESSION>
           Species tree compression. High value = low compression (default value : 0.0)
+    --species-color <SPECIES_COLOR>
+          Species tree color
+      --species-police-color <SPECIES_POLICE_COLOR>
+          Species tree police color
     -h, --help
           Print help
     -V, --version
