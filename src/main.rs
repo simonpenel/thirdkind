@@ -322,6 +322,14 @@ struct Args {
     /// (default value : 0.0)
     #[arg( long)]
    	compression: Option<f32>,
+
+    /// Species tree color.
+    #[arg( long)]
+   	species_color: Option<String>,
+
+    /// Species tree police color.
+    #[arg( long)]
+   	species_police_color: Option<String>,
 }
 
 /// enum of the possible input file Formats
@@ -903,6 +911,17 @@ fn set_options_2(
 		Some(flottant) => { options.species_compression = flottant},
 	}
 
+    // species_color
+	match args.species_color {
+		None => {},
+		Some(string) => { config.species_color = string},
+	}
+
+    // species_color
+	match args.species_police_color {
+		None => {},
+		Some(string) => { config.species_police_color = string},
+	}    
 
 	if *display_transfers == true {
 		if ! ((*thickness_flag_1st == true) && (*multiple_files == true)){
